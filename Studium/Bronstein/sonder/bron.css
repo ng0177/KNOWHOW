@@ -1,0 +1,381 @@
+/* Century Schoolbook font is very similar to Computer Modern Math: cmmi */
+.MATH    { font-family: "Century Schoolbook", serif; }
+.MATH I  { font-family: "Century Schoolbook", serif; font-style: italic }
+.BOLDMATH { font-family: "Century Schoolbook", serif; font-weight: bold }
+
+/* implement both fixed-size and relative sizes */
+SMALL.XTINY		{ font-size : xx-small }
+SMALL.TINY		{ font-size : x-small  }
+SMALL.SCRIPTSIZE	{ font-size : smaller  }
+SMALL.FOOTNOTESIZE	{ font-size : small    }
+SMALL.SMALL		{  }
+BIG.LARGE		{  }
+BIG.XLARGE		{ font-size : large    }
+BIG.XXLARGE		{ font-size : x-large  }
+BIG.HUGE		{ font-size : larger   }
+BIG.XHUGE		{ font-size : xx-large }
+
+/* H und P */
+body h1, h2, h3, h4, h5, p, th, td, div.inhalt, dt, dd, li    {/* ns 4 */
+        font-family: Arial,helvetica,verdana,lucida,sans-serif;
+        /* background: #ddeeee; */
+}
+
+h1, h2, h3, h4, h5, h6    {
+        text-align: left;
+        font-weight: 700;
+        color: #005A9C;
+        background-color: white;
+	margin-top: 10pt;
+	padding-top: 1pt;
+	margin-bottom: 15pt;
+	padding-bottom: 1pt;
+}
+
+h1    {
+        font-size: 2.5em;
+}
+div.hilfe h1, h1.verz    {
+        font-size: 1.5em;
+}
+h1.navleiste    {
+        font-size: 1.0em;
+	white-space: nowrap;
+}
+
+h2    {
+        font-size: 2.0em;
+}
+div.hilfe h2, h2.verz    {
+        font-size: 1.2em;
+	margin-bottom: 4pt;
+}
+
+h3    {
+        font-size: 1.5em;
+}
+div.hilfe h3, div.hilfe h4   {
+        font-size: 1.0em;
+	margin-bottom: 1pt;
+}
+
+h4    {
+        font-size: 1.2em;
+}
+h5, h6    {
+        font-size: 1.0em;
+}
+
+
+
+/* mathematics styles */
+dd div.displaymath		{ clear: left; }	/* math displays */
+TD.eqno			{ }	/* equation-number cells */
+
+
+/* document-specific styles come next */
+SPAN.textsf		{ font-style: italic  }
+
+dl dt {
+  font-weight:bold;
+  color: #665A66;
+  background-color: white;
+  float: left;
+  clear: left;
+  margin-right:1.0em;
+}
+dl.index dt {
+  font-weight:bold;
+  color: black;
+  background-color: white;
+  float: left;
+  clear: left;
+  margin-right:1.0em;
+}
+dl dd {
+  clear: left;
+   vertical-align: text-bottom;
+}
+.literatur dl dd {
+  clear: none;
+  margin-left: 4em;	
+}
+li {font-weight: bold}
+li span, li p {font-weight: normal}
+
+div.alpha ol li {font-weight: bold; list-style-type: lower-alpha; }
+
+div.inhalt, div.inhalt p {
+        line-height: 1.4em;
+}
+P    {
+        MARGIN-TOP: 0px;
+        MARGIN-BOTTOM: 0.5em;
+        line-height: 1.5em;
+	/* background-color: yellow; */
+}
+
+/*
+div.inhalt p {
+        line-height: 1.5em;
+        background-color: red;
+}
+/*
+*/
+
+img {
+	border: none;
+}
+
+#nav2r img {
+	padding-left: 2pt;
+	padding-right: 4pt;
+} 
+.navigation p {
+        background-color: #ffffff;
+	color: black;
+}
+.navigation {
+	font-size: 80%;
+	margin-bottom: 0pt;
+	padding-bottom: 0pt;
+}
+*#nav1 span#nav1r, *#nav2 span#nav2r  {
+	float: right;
+}
+*#nav1 span a, *#nav2 span a, span.navitop a {
+        text-align: left;
+        padding-left: 2pt;
+        border-left-width: 1px;
+        border-bottom-width: 1px;
+        border-left-style: solid;
+        border-bottom-style: solid;
+        border-left-color: Gray;
+        border-bottom-color: Gray;
+}
+
+/* Link - Reihenfolge LVHA */
+A:link    {
+	background-color: transparent;
+        color: #933;
+        text-decoration: none;
+}
+
+A:visited    {
+	background-color: transparent;
+        color: #933;
+        text-decoration: none;
+}
+
+A:XXhover    {
+	background-color: transparent;
+        color: #c33;
+        text-decoration: underline;
+}
+
+A:active    {
+	background-color: transparent;
+        color: #c33;
+        text-decoration: none;
+}
+
+A.anker:link    {
+	background-color: transparent;
+        color: inherit;
+        text-decoration: none;
+}
+A.anker:visited    {
+	background-color: transparent;
+        color: inherit;
+        text-decoration: none;
+}
+A.anker:hover    {
+	background-color: transparent;
+        color: inherit;
+        text-decoration: none;
+}
+A.anker:active    {
+	background-color: transparent;
+        color: inherit;
+        text-decoration: none;
+}
+
+*.navigation A:link, *.navleiste A:link, span.navitop a:link {
+        font-weight: bold;
+	background-color: transparent;
+        color: #005A9C;
+        text-decoration: none;
+}
+
+*.navigation A:visited, *.navleiste A:visited, span.navitop a:visited {
+        font-weight: bold;
+	background-color: transparent;
+        color: #005A9C;
+        text-decoration: none;
+}
+
+*.navigation A:hover, *.navleiste A:hover, span.navitop a:hover {
+        font-weight: bold;
+	background-color: #005A9C;
+        color: white;
+        text-decoration: none;
+}
+*.navigation p#nav2 span#nav2r A:hover {
+        font-weight: bold;
+	background-color: #005A9C;
+        color: white;
+	border-color: #005A9C;
+        border-width: 2px;
+        text-decoration: none;
+}
+
+*.navigation A:active, *.navleiste A:active, span.navitop a:active {
+        font-weight: bold;
+	background-color: #005A9C;
+        color: white;
+        text-decoration: none;
+}
+
+*.navigation *#nav2 span a.kap, *.navigation *#nav1 a#dtb  {
+	border-color: #005A9C;
+        border-width: 1.5px;
+}
+
+table.bsp {
+	border: 0pt;
+	width: 100%;
+}
+td.bsp_titel {
+	background-color: #006BAD;
+        color: white;
+}
+td.bsp_text p, td.bsp_text dl, td.bsp_text table {
+	text-align: left;
+	margin-left: 20pt;
+}
+
+dt.tablist {
+        font-weight: bold;
+        color: #005A9C;
+	background-color: white;
+}
+span.dtnav {
+        font-weight: bold;
+        color: #005A9C;
+	background-color: white;
+}
+.aktuell    {
+	background-color: #005A9C;
+        color: white; 
+}
+.passiv    {
+	background-color: white;
+        color: gray; 
+}
+
+.navleiste {
+}
+
+*.nowrap {
+	white-space: nowrap;
+}
+
+.begriff {
+        color: #336633; 
+	background-color: white;
+        font-weight: bold;
+}
+img.bsp {
+	float: left;
+	margin-bottom: 15pt;
+	margin-right: 5pt;
+}
+div.hilfe h2, div.hilfe h3 {
+	clear: left;
+}
+div.hilfe li {
+	margin-left: 15pt;
+	font-weight: normal;
+}
+div.hilfe span.nr {
+	color: red;
+	background-color: white;
+}
+
+#indextab {
+	margin-top: 40pt;
+}
+table#indextab td {
+	font-weight: 700;
+	font-size:150%;
+}
+
+ul li div, ol li div {
+	font-weight: normal;
+	display: inline;
+}
+div.displaymath		{ margin-left: 20pt; }	/* KPH */
+div.mathdisplay		{ margin-left: 20pt; }	/* KPH */
+
+span.MATH img {
+	position: relative;
+	top: 2px;
+}
+span.MATH {
+	font-size: 120%;	
+}
+br {
+	clear: left;
+}
+li div.listitem {
+	display: inline;
+}
+.myclass {
+	text-align:left;
+}
+.meqnarr {
+	text-align:left;
+}
+
+dl.index dd dl.index {
+	margin: 1pt;
+	padding:1pt;
+	border: solid;
+	border-width: 1pt;
+	border-color: white;
+        background-color: white;
+        color: black;
+}
+
+div#startcontainer {
+	margin-top: 40pt;
+	margin-left: 40pt;
+	width: 500pt;
+	text-align: center;
+}
+div#startcontainer img {
+	margin-bottom: 10pt;
+	margin-right: 20pt;
+}
+div#startcontainer p {
+	font-size: 110%;
+}
+#tbild {
+	position: relative;
+	top: 0pt;
+	left: 0pt;
+	z-index: 3;
+	float: left;
+	border-right: solid;
+	border-width: 4pt;
+	border-color: #999;
+	margin-right: 10pt;
+}
+#ttext {
+	text-align:left;
+	margin-left: 10pt;
+	padding-left: 10pt;
+}
+#ttext br {
+	clear: none;
+}

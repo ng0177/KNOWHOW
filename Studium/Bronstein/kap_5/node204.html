@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>RSA-Verfahren</title>
+<meta name="description" content="RSA-Verfahren" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node203.html" />
+<link rel="up" href="node201.html" />
+<link rel="next" href="node205.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node203.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node205.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node188.html">Kryptologie</a> <a id="up" href="node201.html">Verfahren mit &#246;ffentlichem Schl&#252;ssel</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00457300000000000000" id="SECTION00457300000000000000"></a> <a name="5566"></a> <a name="5567"></a> <a name="5568"></a> <a name="5569"></a> <a name="5570"></a> <a name="5571"></a> <a name="5572"></a>
+RSA-Verfahren</h3>
+<p>Das RSA-Verfahren ist das popul&auml;rste asymmetrische Verschl&uuml;sselungsverfahren.</p>
+<dl>
+<dt>1.&nbsp;Voraussetzungen:</dt>
+<dd>Man w&auml;hlt zwei gro&szlig;e Primzahlen <span class="MATH"><i>p</i></span> und <span class="MATH"><i>q</i></span> und <span class="MATH"><img width="62" height="33" align="middle" border="0" src="img1425.png" alt="" /></span>. Dabei soll <span class="MATH"><i>pq</i> &gt; 10<sup>200</sup></span> gelten; <span class="MATH"><i>p</i></span> und <span class="MATH"><i>q</i></span> m&uuml;ssen sich als Dezimalzahlen in ihrer L&auml;nge um einige Stellen unterscheiden; die Differenz zischen <span class="MATH"><i>p</i></span> und <span class="MATH"><i>q</i></span> darf aber auch nicht zu gro&szlig; sein. Weiterhin sollen <span class="MATH"><i>p</i>-1</span> und <span class="MATH"><i>q</i>-1</span> gro&szlig;e Primfaktoren enthalten, und der gr&ouml;&szlig;te gemeinsame Teiler von <span class="MATH"><i>p</i>-1</span> und <span class="MATH"><i>q</i>-1</span> soll m&ouml;glichst klein sein. Man w&auml;hle ein <span class="MATH"><img width="51" height="33" align="middle" border="0" src="img1426.png" alt="" /></span>, das teilerfremd zu <span class="MATH">(<i>p</i>-1)(<i>q</i>-1)</span> ist, und berechne ein <span class="MATH"><i>d</i></span> mit <span class="MATH"><img width="71" height="17" align="bottom" border="0" src="img1427.png" alt="" /></span> modulo <span class="MATH"><img width="121" height="37" align="middle" border="0" src="img1428.png" alt="" /></span>. Dann bilden <span class="MATH"><i>n</i></span> und <span class="MATH"><i>e</i></span> den &ouml;ffentlichen Schl&uuml;ssel und <span class="MATH"><i>d</i></span> den privaten Schl&uuml;ssel.</dd>
+<dt>2.&nbsp;Verschl&uuml;sselungsoperation:</dt>
+<dd>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="516" height="66" border="0" src="img1429.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">299</span>a)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>3.&nbsp;Entschl&uuml;sselungsoperation:</dt>
+<dd>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="519" height="68" border="0" src="img1430.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">299</span>b)</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<p>Damit gilt <span class="MATH"><i>D</i>(<i>E</i>(<i>m</i>))=<i>E</i>(<i>D</i>(<i>m</i>))=<i>m</i></span> f&uuml;r jede Nachricht <span class="MATH"><img width="24" height="16" align="bottom" border="0" src="img621.png" alt="" /></span>.</p>
+<p>Die zur Verschl&uuml;sselung verwendete Funktion ist f&uuml;r <span class="MATH"><i>n</i>=<i>pq</i>&gt;10<sup>200</sup></span> ein Kandidat f&uuml;r eine<br />
+<a href="node203.html#Einwegfunktion1">Einwegfunktion mit Fallt&uuml;r</a>. Die Zusatzinformation liegt hier in der Kenntnis der Primfaktorenzerlegung von <span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img745.png" alt="" /></span>. Ohne diese Information ist es praktisch unm&ouml;glich, die Kongruenz<br />
+<span class="MATH"><img width="251" height="37" align="middle" border="0" src="img1431.png" alt="" /></span> zu l&ouml;sen.</p>
+<p>Das RSA-Verfahren gilt weithin als praktisch sicher, sofern die oben genannten Bedingungen erf&uuml;llt sind. Als Nachteil gegen&uuml;ber anderen Verfahren sind die relativ gro&szlig;e Schl&uuml;ssell&auml;nge und die Tatsache zu beachten, da&szlig; RSA gegen&uuml;ber DES um etwa den Faktor 1000 langsamer ist.</p>
+</body>
+</html>

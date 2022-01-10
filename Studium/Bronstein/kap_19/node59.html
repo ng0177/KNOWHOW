@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Stabilit&auml;t gegen&uuml;ber St&ouml;rung der Anfangswerte</title>
+<meta name="description" content="Stabilit&auml;t gegen&uuml;ber St&ouml;rung der Anfangswerte" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node60.html" />
+<link rel="previous" href="node58.html" />
+<link rel="up" href="node56.html" />
+<link rel="next" href="node60.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node58.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node60.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node48.html">Integration gew&#246;hnlicher Differentialgleichungen</a> <a href="node49.html">Anfangswertaufgaben</a> <a id="up" href="node56.html">Konvergenz, Konsistenz, Stabilit&#228;t</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001841530000000000000" id="SECTION001841530000000000000"></a> <a name="2895"></a> <a name="2896"></a> <a name="2897"></a>
+Stabilit&auml;t gegen&uuml;ber St&ouml;rung der Anfangswerte</h4>
+<p>Bei der praktischen Durchf&uuml;hrung von Einschrittverfahren kommt zum globalen Diskretisierungsfehler <span class="MATH"><i>O</i>(<i>h</i><sup><i>p</i></sup>)</span> noch ein Rundungsfehleranteil <span class="MATH"><i>O</i>(1/<i>h</i>)</span> hinzu. Das hat zur Folge, da&szlig; mit einer nicht zu kleinen, endlichen Schrittweite <span class="MATH"><i>h</i> &gt; 0</span> gerechnet werden mu&szlig;. Dabei ist die Frage wichtig, wie sich die numerische L&ouml;sung <span class="MATH"><i>y</i><sub><i>i</i></sub></span> eines Einschrittverfahrens gegen&uuml;ber St&ouml;rungen des Anfangswertes verh&auml;lt, und zwar auch f&uuml;r den Fall <span class="MATH"><img width="73" height="33" align="middle" border="0" src="img333.png" alt="" /></span>.</p>
+<p>In der Theorie der gew&ouml;hnlichen Differentialgleichungen hei&szlig;t eine Anfangswertaufgabe (<a href="node49.html#F1190401">19.93</a>) <span class="begriff">stabil bez&uuml;glich St&ouml;rungen ihrer Anfangswerte</span>, wenn gilt:</p>
+<div class="mathdisplay"><a name="F1190422" id="F1190422"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190422" id="F1190422"></a><img width="202" height="66" border="0" src="img334.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">114</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei ist <span class="MATH"><img width="40" height="37" align="middle" border="0" src="img335.png" alt="" /></span> die L&ouml;sung von (<a href="node49.html#F1190401">19.93</a>) mit der gegen&uuml;ber <span class="MATH"><i>y</i><sub>0</sub></span> gest&ouml;rten Anfangsbedingung <span class="MATH"><img width="92" height="37" align="middle" border="0" src="img336.png" alt="" /></span>. Die Absch&auml;tzung (<a href="#F1190422">19.114</a>) besagt, da&szlig; die L&ouml;sungs&auml;nderung betragsm&auml;&szlig;ig nicht gr&ouml;&szlig;er ist als die St&ouml;rung des Anfangswertes.</p>
+<p>Im allgemeinen l&auml;&szlig;t sich (<a href="#F1190422">19.114</a>) nur schwer &uuml;berpr&uuml;fen. Deshalb f&uuml;hrt man die <span class="begriff">lineare Testaufgabe</span></p>
+<div class="mathdisplay"><a name="F1190423" id="F1190423"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190423" id="F1190423"></a><img width="363" height="66" border="0" src="img337.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">115</span>)</td>
+</tr>
+</table>
+</div>
+<p>ein, die stabil ist, und pr&uuml;ft ein Einschrittverfahren an dieser speziellen Anfangswertaufgabe. Man sagt: Ein konsistentes Einzelschrittverfahren hei&szlig;t f&uuml;r die Schrittweite <span class="MATH"><i>h</i> &gt; 0</span> <span class="begriff">absolut stabil</span> bez&uuml;glich St&ouml;rungen des Anfangswertes, wenn alle damit f&uuml;r das lineare Testproblem (<a href="#F1190423">19.115</a>) berechneten N&auml;herungen <span class="MATH"><i>y</i><sub><i>i</i></sub></span> der Absch&auml;tzung</p>
+<div class="mathdisplay"><a name="F1190424" id="F1190424"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190424" id="F1190424"></a><img width="74" height="66" border="0" src="img338.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">116</span>)</td>
+</tr>
+</table>
+</div>
+<p>gen&uuml;gen.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r (<a href="#F1190423">19.115</a>) ergibt das E<small>ULER</small>sche Polygonzugverfahren (<a href="node50.html#F1190405">19.97</a>) <span class="MATH"><img width="261" height="37" align="middle" border="0" src="img339.png" alt="" /></span>. Man sieht, da&szlig; (<a href="#F1190424">19.116</a>) f&uuml;r <span class="MATH"><img width="104" height="37" align="middle" border="0" src="img340.png" alt="" /></span> gilt, und erh&auml;lt dadurch die Schrittweitenbeschr&auml;nkung <span class="MATH"><img width="114" height="35" align="middle" border="0" src="img341.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

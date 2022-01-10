@@ -1,0 +1,88 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Ungerichtete und gerichtete Graphen</title>
+<meta name="description" content="Ungerichtete und gerichtete Graphen" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node230.html" />
+<link rel="previous" href="node228.html" />
+<link rel="up" href="node228.html" />
+<link rel="next" href="node230.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node228.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node230.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node227.html">Algorithmen der Graphentheorie</a> <a id="up" href="node228.html">Grundbegriffe und Bezeichnungen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00481100000000000000" id="SECTION00481100000000000000"></a> <a name="6327"></a> <a name="6328"></a> <a name="6329"></a> <a name="6330"></a> <a name="6331"></a> <a name="6332"></a> <a name="6333"></a> <a name="6334"></a> <a name="6335"></a> <a name="6336"></a>
+Ungerichtete und gerichtete Graphen</h3>
+<p>Ein <span class="begriff">Graph</span> <span class="MATH"><i>G</i></span> ist ein geordnetes Paar <span class="MATH">(<i>V</i>,<i>E</i>)</span> aus einer Menge <span class="MATH"><i>V</i></span> von <span class="begriff">Knoten</span> und einer Menge <span class="MATH"><i>E</i></span> von <span class="begriff">Kanten</span>. Auf <span class="MATH"><i>E</i></span> ist eine Abbildung (<span class="begriff">Inzidenzfunktion</span>) erkl&auml;rt, die jedem Element von <span class="MATH"><i>E</i></span> eindeutig ein geordnetes oder ungeordnetes Paar (nicht notwendig verschiedener) Elemente von <span class="MATH"><i>V</i></span> zuordnet. Ist jedem Element von <span class="MATH"><i>E</i></span> ein ungeordnetes Paar zugeordnet, dann wird <span class="MATH"><i>G</i></span> ein <span class="begriff">ungerichteter Graph</span> genannt (linke Abbildung).</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a021u" id="BILD_105a021u"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a021u.gif" /></a></p>
+<p class="nachBild">
+Ist dagegen jedem Element von <span class="MATH"><i>E</i></span> ein geordnetes Paar zugeordnet, dann spricht man von einem <span class="begriff">gerichteten Graphen</span> (rechte Abbildung). Die Elemente von <span class="MATH"><i>E</i></span> hei&szlig;en dann auch <span class="begriff">B&ouml;gen</span> oder <span class="begriff">gerichtete Kanten</span>. Alle anderen Graphen werden <span class="begriff">gemischte Graphen</span> genannt.<br />
+In der graphischen Darstellung erscheinen die Knoten der Graphen als Punkte, die gerichteten Kanten als Pfeile und die ungerichteten Kanten als ungerichtete Linien.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r den Graphen <span class="MATH"><i>G</i></span> in der Abbildung</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a023" id="BILD_105a023"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a023.gif" /></a></p>
+<p class="nachBild">
+gilt:</p>
+<p><span class="MATH"><img width="429" height="37" align="middle" border="0" src="img1571.png" alt="" /></span></p>
+<p><span class="MATH"><img width="731" height="37" align="middle" border="0" src="img1572.png" alt="" /></span></p>
+<p><span class="MATH"><img width="287" height="37" align="middle" border="0" src="img1573.png" alt="" /></span></p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r den Graphen <span class="MATH"><i>G</i></span> in der Abbildung</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a022" id="BILD_105a022"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a022.gif" /></a></p>
+<p class="nachBild">
+gilt: <span class="MATH"><img width="373" height="37" align="middle" border="0" src="img1574.png" alt="" /></span></p>
+<p><span class="MATH"><img width="576" height="37" align="middle" border="0" src="img1575.png" alt="" /></span></p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel C</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r den Graphen <span class="MATH"><i>G</i></span> in der Abbildung</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a021" id="BILD_105a021"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a021.gif" /></a></p>
+<p class="nachBild">
+gilt: <span class="MATH"><img width="379" height="37" align="middle" border="0" src="img1576.png" alt="" /></span></p>
+<p><span class="MATH"><img width="597" height="37" align="middle" border="0" src="img1577.png" alt="" /></span></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

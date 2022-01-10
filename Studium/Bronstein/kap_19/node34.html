@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Ableitungsfreies Gau&szlig;-Newton-Verfahren</title>
+<meta name="description" content="Ableitungsfreies Gau&szlig;-Newton-Verfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node33.html" />
+<link rel="up" href="node31.html" />
+<link rel="next" href="node35.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node33.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node35.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node16.html">Numerische L&#246;sung von Gleichungssystemen</a> <a id="up" href="node31.html">Nichtlineare Gleichungssysteme</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001822300000000000000" id="SECTION001822300000000000000"></a><a name="gauss-newton-ver" id="gauss-newton-ver"></a>
+Ableitungsfreies Gau&szlig;-Newton-Verfahren</h3>
+<p><a name="7721"></a> <a name="7722"></a> <a name="7723"></a> <a name="7724"></a> <a name="1885"></a> <a name="1886"></a> <a name="1887"></a> <a name="7725"></a> Zur L&ouml;sung der Quadratmittelaufgabe (<a href="node16.html#F1190202">19.24</a>) geht man im nichtlinearen Fall (<span class="begriff">nichtlineare Ausgleichsaufgabe</span>) iterativ wie folgt vor:</p>
+<ol>
+<li>
+<div>Ausgehend von geeigneten Startn&auml;herungen <span class="MATH"><img width="166" height="47" align="middle" border="0" src="img190.png" alt="" /></span> approximiert man wie beim N<small>EWTON</small>-Verfahren (dort gem&auml;&szlig; (<a href="node33.html#F1190239">19.61</a>)), die nichtlinearen Funktionen <span class="MATH"><img width="284" height="37" align="middle" border="0" src="img208.png" alt="" /></span> durch lineare N&auml;herungen <span class="MATH"><img width="146" height="44" align="middle" border="0" src="img209.png" alt="" /></span>, die in jedem Iterationsschritt gem&auml;&szlig;<br />
+<div class="myclass"><a name="F1190243" id="F1190243"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="326" height="53" align="middle" border="0" src="img210.png" alt="" /></td>
+<td align="center" nowrap="nowrap">+</td>
+<td align="left" nowrap="nowrap"><img width="295" height="71" align="middle" border="0" src="img211.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">65</span>)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="254" height="37" align="middle" border="0" src="img212.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+berechnet werden.</div>
+</li>
+<li>
+<div>Man setzt in (<a href="#F1190243">19.65</a>) <span class="MATH"><img width="133" height="47" align="middle" border="0" src="img213.png" alt="" /></span> und ermittelt die Verbesserungen <span class="MATH"><img width="36" height="47" align="middle" border="0" src="img214.png" alt="" /></span> nach der G<small>AUSS</small>schen Fehlerquadratmethode, d.h. durch L&ouml;sung der linearen Quadratmittelaufgabe
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="202" height="102" border="0" src="img215.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">66</span>)</td>
+</tr>
+</table>
+</div>
+<p>z.B.&nbsp;mit Hilfe der Normalgleichungen (<a href="node25.html#F1190220">19.42</a>), oder des <a href="node83.html#v232">H<small>OUSEHOLDER</small>-Verfahrens</a>.</p>
+</div>
+</li>
+<li>
+<div>Man erh&auml;lt N&auml;herungen f&uuml;r die gesuchte L&ouml;sung durch<br />
+<div class="myclass"><a name="F1190245a" id="F1190245a"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="52" height="47" align="middle" border="0" src="img216.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="145" height="47" align="middle" border="0" src="img217.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">67</span>a)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="52" height="47" align="middle" border="0" src="img216.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="276" height="47" align="middle" border="0" src="img218.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">67</span>b)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+<p>wobei <span class="MATH"><img width="85" height="37" align="middle" border="0" src="img219.png" alt="" /></span> ein Schrittweitenparameter wie beim N<small>EWTON</small>-Verfahren ist.</p>
+</div>
+</li>
+</ol>
+Durch Wiederholung der Schritte 2 und 3 mit <span class="MATH"><img width="52" height="47" align="middle" border="0" src="img220.png" alt="" /></span> an Stelle von <span class="MATH"><img width="35" height="47" align="middle" border="0" src="img221.png" alt="" /></span> erh&auml;lt man das G<small>AUSS</small>-N<small>EWTON</small>-<span class="begriff">Verfahren</span>. Es liefert eine Folge von N&auml;herungswerten, deren Konvergenz sehr stark von der G&uuml;te der Startn&auml;herungen abh&auml;ngt. Mit Hilfe des Schrittweitenparameters <span class="MATH"><img width="15" height="33" align="middle" border="0" src="img206.png" alt="" /></span> l&auml;&szlig;t sich jedoch ein sogenannter <span class="begriff">Abstieg</span>, d.h. eine Verkleinerung der Fehlerquadratsumme, erzielen.<br />
+<p>Wenn die Berechnung der partiellen Ableitungen</p>
+<div align="center" class="mathdisplay"><img width="434" height="89" border="0" src="img222.png" alt="" /></div>
+<p><br clear="all" /></p>
+mit gro&szlig;em Aufwand verbunden ist, kann man die partiellen Ableitungen durch Differenzenquotienten sehr einfach approximieren:<br />
+<div class="myclass"><a name="F1190246" id="F1190246"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="662" height="61" align="middle" border="0" src="img223.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="656" height="55" align="middle" border="0" src="img224.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">68</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+Die sogenannten <span class="begriff">Diskretisierungsschrittweiten</span> <span class="MATH"><img width="35" height="47" align="middle" border="0" src="img225.png" alt="" /></span> k&ouml;nnen in Abh&auml;ngigkeit von Iterationsschritt und Variablen speziell gew&auml;hlt werden.<br />
+Verwendet man die N&auml;herungen (<a href="#F1190246">19.68</a>), dann m&uuml;ssen bei der Durchf&uuml;hrung des G<small>AUSS</small>-N<small>EWTON</small>-Verfahrens nur Funktionswerte <span class="MATH"><i>F</i><sub><i>i</i></sub></span> berechnet werden, d.h., das Verfahren ist dann <span class="begriff">ableitungsfrei</span>.
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Faktorzerlegung von Polynomen</title>
+<meta name="description" content="Faktorzerlegung von Polynomen" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node93.html" />
+<link rel="previous" href="node91.html" />
+<link rel="up" href="node90.html" />
+<link rel="next" href="node93.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node91.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node93.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node82.html">Anwendungen von Computeralgebrasystemen</a> <a href="node83.html">Manipulation algebraischer Ausdr&#252;cke</a> <a id="up" href="node90.html">Maple</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001941220000000000000" id="SECTION001941220000000000000"></a> <a name="2646"></a>
+Faktorzerlegung von Polynomen</h4>
+<p><i class="sans">Maple</i> ist in der Lage Polynome &uuml;ber algebraischen Erweiterungsk&ouml;rpern zu zerlegen, sofern es prinzipiell m&ouml;glich ist.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="552" height="208" border="0" src="img716.png" alt="" /></div>
+<p><br clear="all" /></p>
+Zun&auml;chst hat <i class="sans">Maple</i> eine Faktorzerlegung der beiden Polynome in irreduzible Faktoren bez&uuml;glich des K&ouml;rpers der rationalen Zahlen durchgef&uuml;hrt. Will man eine weitere Zerlegung &uuml;ber einem algebraischen Erweiterungsk&ouml;rper, so ist folgenderma&szlig;en vorzugehen:</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="469" height="118" border="0" src="img717.png" alt="" /></div>
+<p><br clear="all" /></p>
+<i class="sans">Maple</i> hat den zweiten Faktor weiter zerlegt (in diesem Fall nach einer formalen Erweiterung des K&ouml;rpers mit <span class="MATH"><img width="45" height="42" align="middle" border="0" src="img718.png" alt="" /></span>).
+<p>In der Regel wei&szlig; man nicht, ob eine solche Erweiterung m&ouml;glich ist. Sind die Grade der gefundenen Faktoren <span class="MATH"><img width="34" height="33" align="middle" border="0" src="img719.png" alt="" /></span>, so ist dies immer m&ouml;glich. Mit der Operation <span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img489.png" alt="" /></span> lassen sich dann die Wurzeln als algebraische Ausdr&uuml;cke darstellen.</p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="474" height="468" border="0" src="img720.png" alt="" /></div>
+<p><br clear="all" /></p>
+Der Aufruf von <span class="MATH"><i>k</i>[3]</span> ergibt den konjugiert komplexen Wert von <span class="MATH"><i>k</i>[2]</span>.<br />
+<p>Die in diesem Beispiel beschriebene Prozedur liefert im Falle eines Polynoms, das nur &uuml;ber dem K&ouml;rper der reellen oder komplexen Zahlen reduzibel ist, eine Folge der Wurzeln als Gleitpunktzahlen.</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

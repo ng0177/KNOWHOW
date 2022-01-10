@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Revidiertes Simplextableau</title>
+<meta name="description" content="Revidiertes Simplextableau" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node29.html" />
+<link rel="previous" href="node27.html" />
+<link rel="up" href="node27.html" />
+<link rel="next" href="node29.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node27.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node29.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a href="node1.html">Lineare Optimierung</a> <a href="node19.html">Simplexverfahren</a> <a id="up" href="node27.html">Revidiertes Simplexverfahren</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001713410000000000000" id="SECTION001713410000000000000"></a> <a name="1369"></a>
+Revidiertes Simplextableau</h4>
+<p>Das lineare Optimierungsproblem sei in einer Normalform gegeben:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="389" height="66" border="0" src="img132.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">18</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay"><a name="F1180118b" id="F1180118b"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1180118b" id="F1180118b"></a><img width="525" height="161" border="0" src="img133.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">18</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Um zu einer anderen Normalform und damit zu einer anderen Ecke zu wechseln, gen&uuml;gt es, das Gleichungssystem (<a href="#F1180118b">18.18b</a>) mit der entsprechenden Basisinversen zu multiplizieren. Das Simplexverfahren kann also dahingehend modifiziert werden, da&szlig; in jedem Schritt anstatt eines neuen Tableaus nur die Basisinverse ermittelt wird. Vom eigentlichen Tableau sind nur die zur Bestimmung des neuen Pivotelements erforderlichen Gr&ouml;&szlig;en zu berechnen. Ist die Anzahl der Variablen sehr gro&szlig; im Vergleich zur Anzahl der Nebenbedingungen <span class="MATH"><img width="84" height="37" align="middle" border="0" src="img134.png" alt="" /></span>, dann erreicht man mit der revidierten Simplexmethode eine beachtliche Verringerung an Rechenaufwand und Speicherplatz bei gleichzeitiger Erh&ouml;hung der Rechengenauigkeit.<br />
+Die allgemeine Form eines revidierten Simplextableaus zeigt das folgende Schema.</p>
+<div align="center">Schema 7<br />
+<span class="MATH"><img width="399" height="166" align="middle" border="0" src="img135.png" alt="" /></span></div>
+<p>Die eingetragenen Gr&ouml;&szlig;en haben die folgende Bedeutung:</p>
+<ul>
+<li>
+<div><span class="MATH"><img width="92" height="40" align="middle" border="0" src="img136.png" alt="" /></span>: aktuelle Basisvariable.</div>
+</li>
+<li>
+<div><span class="MATH"><img width="79" height="33" align="middle" border="0" src="img137.png" alt="" /></span>: auf Nichtbasisvariable umgerechnete Koeffizienten der Zielfunktion.</div>
+</li>
+<li>
+<div><span class="MATH"><img width="83" height="35" align="middle" border="0" src="img138.png" alt="" /></span>: rechte Seite der aktuellen Normalform.</div>
+</li>
+<li>
+<div><span class="MATH"><i>c</i><sub>0</sub></span>: Wert der Zielfunktion in der Ecke <span class="MATH"><img width="228" height="40" align="middle" border="0" src="img139.png" alt="" /></span>.</div>
+</li>
+<li>
+<div><span class="MATH"><img width="237" height="99" align="middle" border="0" src="img140.png" alt="" /></span>: aktuelle Basisinverse, wobei die Spalten von <span class="MATH"><img width="28" height="17" align="bottom" border="0" src="img141.png" alt="" /></span> die zu den Variablen <span class="MATH"><img width="126" height="33" align="middle" border="0" src="img53.png" alt="" /></span> geh&ouml;renden Spalten der aktuellen Normalform sind.</div>
+</li>
+<li>
+<div><span class="MATH"><img width="143" height="40" align="middle" border="0" src="img142.png" alt="" /></span>: aktuelle Pivotspalte.</div>
+</li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Eingaben und Ausgaben</title>
+<meta name="description" content="Eingaben und Ausgaben" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node55.html" />
+<link rel="up" href="node54.html" />
+<link rel="next" href="node57.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node55.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node57.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node53.html">Maple</a> <a id="up" href="node54.html">Hauptstrukturelemente</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001931200000000000000" id="SECTION001931200000000000000"></a> <a name="1589"></a>
+Eingaben und Ausgaben</h3>
+<p>Im System <i class="sans">Maple</i> haben Eingaben oft die Form</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="221" height="66" border="0" src="img421.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">31</span>)</td>
+</tr>
+</table>
+</div>
+<p>Auch hier ist der erste Teil des Terms, d.h. der vor der &ouml;ffnenden Klammer, in der Regel ein Operator, eine Anweisung oder eine Funktion, die auf die in der Klammer stehenden Teile wirken. In bestimmten F&auml;llen sind als Argumente spezielle Optionen zul&auml;ssig, die spezifische Anwendungen des Operators oder der Funktion steuern. Wichtig ist das abschlie&szlig;ende Semikolon; es teilt <i class="sans">Maple</i> mit, da&szlig; die Eingabe beendet ist. Wird die Eingabe mit einem : beendet, so folgt daraus f&uuml;r <i class="sans">Maple</i>, da&szlig; die Eingabe zwar abzuarbeiten, das Ergebnis jedoch nicht darzustellen ist.</p>
+<p><span class="begriff">Symbole</span>, d.h. Namen in <i class="sans">Maple</i>, k&ouml;nnen aus Buchstaben, Zahlen und dem Unterstrich (<span class="MATH"><img width="15" height="33" align="middle" border="0" src="img218.png" alt="" /></span>) bestehen. An erster Stelle darf keine Zahl stehen. Zwischen Gro&szlig;- und Kleinbuchstaben wird immer unterschieden. Der Unterstrich wird von <i class="sans">Maple</i> f&uuml;r interne Symbole verwendet, er sollte deshalb in selbstdefinierten Symbolen vermieden werden.</p>
+<p><span class="begriff">Zeichenketten</span>, d.h. Objekte vom Typ <span class="MATH"><img width="64" height="33" align="middle" border="0" src="img422.png" alt="" /></span>, sind in Anf&uuml;hrungszeichen '' gefa&szlig;t einzugeben:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="233" height="93" border="0" src="img423.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">32</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die Typpr&uuml;fung mit <span class="MATH"><img width="83" height="33" align="middle" border="0" src="img424.png" alt="" /></span> ergibt <span class="MATH"><img width="64" height="33" align="middle" border="0" src="img425.png" alt="" /></span>.</p>
+<p>Solange einem Symbol kein Wert zugewiesen ist, ist das Symbol vom Typ <span class="MATH"><img width="64" height="33" align="middle" border="0" src="img425.png" alt="" /></span> bzw. <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img426.png" alt="" /></span>, d.h., die Typpr&uuml;fung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="420" height="66" border="0" src="img427.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">33</span>)</td>
+</tr>
+</table>
+</div>
+<p>ergibt <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img428.png" alt="" /></span>.</p>
+<p>Ist dem Nutzer nicht bekannt, ob ein Symbol in <i class="sans">Maple</i> schon mit einem Wert belegt ist, so l&auml;&szlig;t sich das mit der Eingabe <span class="MATH"><img width="53" height="17" align="bottom" border="0" src="img429.png" alt="" /></span> erfragen. Antwortet <i class="sans">Maple</i> mit dem Hinweis, da&szlig; es diesen Namen nicht kennt, so ist das Symbol frei verf&uuml;gbar.</p>
+<p>Nachdem dem Symbol ein Wert mit dem Zuweisungsoperator <span class="MATH">:=</span> zugewiesen wurde, nimmt das Symbol automatisch den Typ des zugewiesenen Wertes an.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Es sei <span class="MATH"><i>x</i>1</span> ein Symbol, das hier als Variable dienen soll. Gibt man ein</p>
+<div align="center" class="mathdisplay"><img width="451" height="66" border="0" src="img430.png" alt="" /></div>
+<p><br clear="all" /></p>
+Wird nunmehr eine Wertzuweisung etwa mit einer ganzen Zahl vorgenommen:<br />
+<div align="center" class="mathdisplay"><img width="263" height="63" border="0" src="img431.png" alt="" /></div>
+<p><br clear="all" /></p>
+und danach <span class="MATH"><img width="148" height="37" align="middle" border="0" src="img432.png" alt="" /></span> eingegeben, so lautet die Antwort jetzt&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="MATH"><img width="77" height="33" align="middle" border="0" src="img433.png" alt="" /></span>.<br /></td>
+</tr>
+</table>
+<p><i class="sans">Maple</i> kennt je nach Version eine betr&auml;chtliche Anzahl von Anweisungen, Funktionen und Operatoren. Nicht alle sind beim Start des Systems sofort aufrufbar. Eine Vielzahl spezieller Funktionen und Operationen ist in Fachgebietspaketen in der <i class="sans">Maple</i>-Bibliothek vorhanden. Es gibt z.B. Pakete zur linearen Algebra, zur Statistik usw. Diese Pakete m&uuml;ssen bei Bedarf mit dem Befehl <span class="MATH"><img width="178" height="37" align="middle" border="0" src="img434.png" alt="" /></span> zugeladen werden (s.&nbsp;<a href="node79.html#MapleBiblioth">Erg&auml;nzungen zur Syntax</a>). Erst danach stehen ihre Operationen und Funktionen dem Nutzer in der &uuml;blichen Art zur Verf&uuml;gung.</p>
+</body>
+</html>

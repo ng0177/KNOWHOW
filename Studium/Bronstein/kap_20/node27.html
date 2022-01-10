@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Begriff und Bedeutung</title>
+<meta name="description" content="Begriff und Bedeutung" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node28.html" />
+<link rel="previous" href="node26.html" />
+<link rel="up" href="node26.html" />
+<link rel="next" href="node28.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node26.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node28.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node19.html">Mathematica</a> <a id="up" href="node26.html">Listen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001924100000000000000" id="SECTION001924100000000000000">Begriff und Bedeutung</a></h3>
+<p>Listen sind in <i class="sans">Mathematica</i> wichtige Instrumente f&uuml;r die Manipulation ganzer Gruppen von Gr&ouml;&szlig;en, die vor allem in der h&ouml;herdimensionalen Algebra und Analysis von gro&szlig;em Wert sind. Da auch allgemein Ausdr&uuml;cke vielfach &Auml;hnlichkeiten mit Listen besitzen, wird der Umgang mit Listen zu einem Musterbeispiel f&uuml;r Manipulationen auf bestimmten Klassen von Ausdr&uuml;cken.</p>
+<p>Unter einer <span class="begriff">Liste</span> versteht man die Zusammenfassung mehrerer Objekte zu einem neuen Objekt, der Liste, wobei in der Liste zun&auml;chst alle Objekte gleichwertig sind und sich nur durch ihren Standort in der Liste voneinander unterscheiden. Die Aufstellung einer Liste erfolgt mit der Angabe</p>
+<div class="mathdisplay"><a name="F1200206" id="F1200206"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1200206" id="F1200206"></a><img width="335" height="66" border="0" src="img102.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">11</span>)</td>
+</tr>
+</table>
+</div>
+<p>Zur Erl&auml;uterung der Arbeit mit Listen wird eine konkrete Liste benutzt, die mit <span class="MATH"><i>l</i>1</span> bezeichnet wird:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="644" height="66" border="0" src="img103.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">12</span>)</td>
+</tr>
+</table>
+</div>
+<p><i class="sans">Mathematica</i> benutzt bei der Wiedergabe der Liste die Kurzform: Einschlu&szlig; in geschweifte Klammern.</p>
+<p>In der folgenden Tabelle sind Befehle dargestellt, die auf Elemente bzw. mehrere Elemente zugreifen und dann eine ,,Unterliste``&nbsp;ausgeben.<br />
+<!-- TabellenStart: T2003 -->
+<a name="t20MathAuswList" id="t20MathAuswList"></a></p>
+<div align="center">Tabelle Befehle f&uuml;r die Auswahl von Listenelementen<br />
+<a name="blist" id="blist"></a>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="70" height="37" align="middle" border="0" src="img104.png" alt="" /></span></td>
+<td align="left">w&auml;hlt das erste Element aus</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="60" height="37" align="middle" border="0" src="img105.png" alt="" /></span></td>
+<td align="left">w&auml;hlt das letzte Element aus</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="85" height="37" align="middle" border="0" src="img106.png" alt="" /></span> oder <span class="MATH"><i>l</i>[[<i>n</i>]]</span></td>
+<td align="left">w&auml;hlt das <span class="MATH"><i>n</i></span>-te Element aus</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="183" height="37" align="middle" border="0" src="img107.png" alt="" /></span></td>
+<td align="left">erstellt eine Liste aus den Elementen mit den angegebenen Nummern</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="141" height="37" align="middle" border="0" src="img108.png" alt="" /></span></td>
+<td align="left">&auml;quivalent zur vorherigen Operation</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="90" height="37" align="middle" border="0" src="img109.png" alt="" /></span></td>
+<td align="left">ergibt die Liste der ersten <span class="MATH"><i>m</i></span> Elemente von <span class="MATH"><i>l</i></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="134" height="37" align="middle" border="0" src="img110.png" alt="" /></span></td>
+<td align="left">ergibt die Liste der Elemente von <span class="MATH"><i>m</i></span> bis <span class="MATH"><i>n</i></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="85" height="37" align="middle" border="0" src="img111.png" alt="" /></span></td>
+<td align="left">ergibt die Liste ohne die ersten <span class="MATH"><i>n</i></span> Elemente</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="134" height="37" align="middle" border="0" src="img112.png" alt="" /></span></td>
+<td align="left">ergibt die Liste ohne Elemente von <span class="MATH"><i>m</i></span> bis <span class="MATH"><i>n</i></span></td>
+</tr>
+</table>
+</div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><a name="1200206"></a>F&uuml;r die Liste <span class="MATH"><i>l</i>1</span> in (<a href="#F1200206">20.11</a>) gilt z.B.</p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="MATH"><img width="508" height="37" align="middle" border="0" src="img113.png" alt="" /></span></p>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="MATH"><img width="719" height="37" align="middle" border="0" src="img114.png" alt="" /></span></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

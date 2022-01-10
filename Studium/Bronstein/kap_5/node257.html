@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Geordnete bin&auml;re B&auml;ume</title>
+<meta name="description" content="Geordnete bin&auml;re B&auml;ume" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node256.html" />
+<link rel="up" href="node253.html" />
+<link rel="next" href="node258.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node256.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node258.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node227.html">Algorithmen der Graphentheorie</a> <a href="node252.html">B&#228;ume und Ger&#252;ste</a> <a id="up" href="node253.html">B&#228;ume</a> </span>
+</p>
+</div>
+<h4><a name="SECTION00483140000000000000" id="SECTION00483140000000000000"></a><a name="GeordnBinBaum" id="GeordnBinBaum"></a><a name="6764"></a> <a name="6765"></a> <a name="6766"></a> <a name="6767"></a> <a name="6768"></a> <a name="6769"></a>
+Geordnete bin&auml;re B&auml;ume</h4>
+<p>Arithmetische Ausdr&uuml;cke kann man durch bin&auml;re B&auml;ume graphisch darstellen. Dabei werden Zahlen und Variablen Knoten vom Grad 1 zugeordnet, den Operationen <span class="MATH"><img width="99" height="37" align="middle" border="0" src="img1637.png" alt="" /></span> entsprechen Knoten vom Grad <span class="MATH"><img width="42" height="33" align="middle" border="0" src="img1638.png" alt="" /></span> und der linke bzw. rechte Teilbaum repr&auml;sentiert den ersten bzw. zweiten Operanden, der im allgemeinen wieder ein Ausdruck ist. Man spricht auch von <span class="begriff">geordneten bin&auml;ren B&auml;umen</span>. In der folgenden Abbildung ist ein Beispiel dargestellt.</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a048" id="BILD_105a048"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a048.gif" /></a></p>
+<p class="nachBild">
+Das Durchlaufen von geordneten bin&auml;ren B&auml;umen kann auf drei verschiedene Arten erfolgen, die rekursiv beschreibbar sind:</p>
+<div align="center">
+<table cellpadding="3">
+<tr valign="baseline">
+<td align="left"><span class="begriff">Inorder-Durchlauf</span>:</td>
+<td align="left">linken Teilbaum der Wurzel (nach Inorder) durchlaufen,</td>
+</tr>
+<tr valign="baseline">
+<td align="left">&nbsp;</td>
+<td align="left">Wurzel durchlaufen,</td>
+</tr>
+<tr valign="baseline">
+<td align="left">&nbsp;</td>
+<td align="left">rechten Teilbaum der Wurzel (nach Inorder) durchlaufen.</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="begriff">Preorder-Durchlauf</span>:</td>
+<td align="left">Wurzel durchlaufen,</td>
+</tr>
+<tr valign="baseline">
+<td align="left">&nbsp;</td>
+<td align="left">linken Teilbaum der Wurzel (nach Preorder) durchlaufen,</td>
+</tr>
+<tr valign="baseline">
+<td align="left">&nbsp;</td>
+<td align="left">rechten Teilbaum der Wurzel (nach Preorder) durchlaufen.</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="begriff">Postorder-Durchlauf</span>:</td>
+<td align="left">linken Teilbaum der Wurzel (nach Postorder) durchlaufen,</td>
+</tr>
+<tr valign="baseline">
+<td align="left">&nbsp;</td>
+<td align="left">rechten Teilbaum der Wurzel (nach Postorder) durchlaufen,</td>
+</tr>
+<tr valign="baseline">
+<td align="left">&nbsp;</td>
+<td align="left">Wurzel durchlaufen.</td>
+</tr>
+</table>
+<br /></div>
+<p>Beim Inorder-Durchlauf &auml;ndert sich die Reihenfolge gegen&uuml;ber dem Ausgangsterm nicht. Die sich aus dem Postorder-Durchlauf ergebende Schreibweise wird <span class="begriff">Postfix-Notation, PN</span><a name="PN" id="PN"></a> oder <span class="begriff">Polnische Notation</span> genannt. Analog ergibt sich aus dem Preorder-Durchlauf die <span class="begriff">Pr&auml;fix-Notation</span> oder <span class="begriff">Umgekehrte Polnische Notation UPN</span>.<br />
+Zur Implementierung von B&auml;umen kann man ausnutzen, da&szlig; Pr&auml;fix- und Postfix-Ausdr&uuml;cke den Baum eindeutig beschreiben.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>In der obigen Abbildung ist der Term <span class="MATH"><img width="115" height="37" align="middle" border="0" src="img1639.png" alt="" /></span> durch einen Graphen dargestellt. Man erh&auml;lt im Inorder-Durchlauf <span class="MATH"><img width="109" height="35" align="middle" border="0" src="img1640.png" alt="" /></span> im Preorder-Durchlauf <span class="MATH"><img width="92" height="35" align="middle" border="0" src="img1641.png" alt="" /></span> und im Postorder-Durchlauf <span class="MATH"><img width="100" height="35" align="middle" border="0" src="img1642.png" alt="" /></span></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

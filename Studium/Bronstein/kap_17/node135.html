@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Melnikov-Methode</title>
+<meta name="description" content="Melnikov-Methode" />
+<meta name="keywords" content="kap_17" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node134.html" />
+<link rel="up" href="node132.html" />
+<link rel="next" href="node136.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node134.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node136.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_17.html">Dynamische Systeme und Chaos</a> <a href="node113.html">Bifurkationstheorie, Wege zum Chaos</a> <a href="node129.html">&#220;berg&#228;nge zum Chaos</a> <a id="up" href="node132.html">Globale homokline Bifurkationen</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001632330000000000000" id="SECTION001632330000000000000">Melnikov-Methode</a></h4>
+<p><a name="5045"></a> <a name="5046"></a> <a name="5047"></a> Gegeben sei die ebene Differentialgleichung</p>
+<div class="mathdisplay"><a name="F1170323" id="F1170323"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1170323" id="F1170323"></a><img width="160" height="66" border="0" src="img1252.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">17</span>.<span class="arabic">83</span>)</td>
+</tr>
+</table>
+</div>
+<p>wobei <span class="MATH"><img width="13" height="16" align="bottom" border="0" src="img558.png" alt="" /></span> ein kleiner Parameter ist. F&uuml;r <span class="MATH"><img width="48" height="16" align="bottom" border="0" src="img1037.png" alt="" /></span> sei (<a href="#F1170323">17.39</a>) ein <a href="node60.html#HamiltSyst1">H<small>AMILTON</small>-System</a>, d.h. f&uuml;r <span class="MATH"><i>f</i>=(<i>f</i><sub>1</sub>,<i>f</i><sub>2</sub>)</span> gelte <span class="MATH"><img width="79" height="61" align="middle" border="0" src="img1253.png" alt="" /></span> und <span class="MATH"><img width="98" height="61" align="middle" border="0" src="img1254.png" alt="" /></span>, wobei <span class="MATH"><img width="142" height="41" align="middle" border="0" src="img1255.png" alt="" /></span> eine <span class="MATH"><i>C</i><sup>3</sup></span>-Funktion sei. Das zeitabh&auml;ngige Vektorfeld <span class="MATH"><img width="133" height="41" align="middle" border="0" src="img1256.png" alt="" /></span> sei zweimal stetig differenzierbar und <span class="MATH"><i>T</i></span>-periodisch bez&uuml;glich des ersten Arguments. Au&szlig;erdem seien <span class="MATH"><i>f</i></span> und <span class="MATH"><i>g</i></span> beschr&auml;nkt auf beschr&auml;nkten Mengen. Bei <span class="MATH"><img width="48" height="16" align="bottom" border="0" src="img1037.png" alt="" /></span> existiere in (<a href="#F1170323">17.39</a>) ein <a href="node34.html#HomoklOrbit1">homokliner Orbit</a> bez&uuml;glich des Sattelpunktes <span class="MATH"><img width="17" height="16" align="bottom" border="0" src="img1111.png" alt="" /></span>. Der P<small>OINCAR&Eacute;</small>-Schnitt<a name="PoincarSchn" id="PoincarSchn"></a> <span class="MATH"><img width="37" height="37" align="middle" border="0" src="img1257.png" alt="" /></span> von (<a href="#F1170323">17.39</a>) im Phasenraum <span class="MATH">{(<i>x</i><sub>1</sub>,<i>x</i><sub>2</sub>,<i>t</i>)}</span> bei <span class="MATH"><i>t</i>=<i>t</i><sub>0</sub></span> sehe aus wie in der folgenden Abbildung.</p>
+<p align="left" class="BILD"><a name="BILD_117a033b" class="BILD" id="BILD_117a033b"><img border="0" alt="BilD" src="../bilder/kap17/t1/117a033b.gif" /></a></p>
+<p class="nachBild">
+Die P<small>OINCAR&Eacute;</small>-Abbildung <span class="MATH"><img width="145" height="37" align="middle" border="0" src="img1258.png" alt="" /></span> hat f&uuml;r kleine <span class="MATH"><img width="32" height="37" align="middle" border="0" src="img1041.png" alt="" /></span> einen Sattel <span class="MATH"><img width="21" height="33" align="middle" border="0" src="img1259.png" alt="" /></span> nahe <span class="MATH"><i>x</i> = 0</span> mit den invarianten Mannigfaltigkeiten <span class="MATH"><img width="63" height="37" align="middle" border="0" src="img1260.png" alt="" /></span> und <span class="MATH"><img width="68" height="37" align="middle" border="0" src="img1261.png" alt="" /></span>. Ist der homokline Orbit des ungest&ouml;rten Systems durch <span class="MATH"><img width="76" height="37" align="middle" border="0" src="img1262.png" alt="" /></span> gegeben, so l&auml;&szlig;t sich der Abstand der Mannigfaltigkeiten <span class="MATH"><img width="63" height="37" align="middle" border="0" src="img1260.png" alt="" /></span> und <span class="MATH"><img width="68" height="37" align="middle" border="0" src="img1261.png" alt="" /></span>, gemessen entlang der Geraden, die durch <span class="MATH"><img width="41" height="37" align="middle" border="0" src="img1263.png" alt="" /></span> verl&auml;uft und senkrecht auf <span class="MATH"><img width="67" height="37" align="middle" border="0" src="img1264.png" alt="" /></span> steht, durch die Formel</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="228" height="92" border="0" src="img1265.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">17</span>.<span class="arabic">84</span>a)</td>
+</tr>
+</table>
+</div>
+<p>berechnen. Dabei ist <span class="MATH"><img width="45" height="37" align="middle" border="0" src="img1266.png" alt="" /></span> die M<small>ELNIKOV</small>-<span class="begriff">Funktion</span>, die durch</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="349" height="117" border="0" src="img1267.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">17</span>.<span class="arabic">84</span>b)</td>
+</tr>
+</table>
+</div>
+<p>definiert ist. F&uuml;r <span class="MATH"><i>a</i> = (<i>a</i><sub>1</sub>,<i>a</i><sub>2</sub>)</span> und <span class="MATH"><i>b</i> = (<i>b</i><sub>1</sub>,<i>b</i><sub>2</sub>)</span> ist <span class="MATH"><img width="161" height="35" align="middle" border="0" src="img1268.png" alt="" /></span>. Besitzt die M<small>ELNIKOV</small>-Funktion <span class="MATH"><i>M</i></span> in <span class="MATH"><i>t</i><sub>0</sub></span> eine einfache Nullstelle, d.h., gilt <span class="MATH"><i>M</i>(<i>t</i><sub>0</sub>) = 0</span> und <span class="MATH"><img width="96" height="37" align="middle" border="0" src="img1269.png" alt="" /></span>, dann schneiden sich die Mannigfaltigkeiten <span class="MATH"><img width="63" height="37" align="middle" border="0" src="img1260.png" alt="" /></span> und <span class="MATH"><img width="64" height="37" align="middle" border="0" src="img1270.png" alt="" /></span> f&uuml;r gen&uuml;gend kleine <span class="MATH"><img width="48" height="33" align="middle" border="0" src="img557.png" alt="" /></span> transversal. Wenn <span class="MATH"><i>M</i></span> keine Nullstellen besitzt, gilt <span class="MATH"><img width="190" height="37" align="middle" border="0" src="img1271.png" alt="" /></span>, d.h., es gibt keine homoklinen Punkte.</p>
+<p><b>Bemerkung:</b> Das ungest&ouml;rte System (<a href="#F1170323">17.39</a>) besitze einen heteroklinen Orbit, gegeben durch <span class="MATH"><img width="79" height="37" align="middle" border="0" src="img1272.png" alt="" /></span>, der aus einem Sattel <span class="MATH">0<sub>1</sub></span> in einen Sattel <span class="MATH">0<sub>2</sub></span> l&auml;uft. Seien <span class="MATH"><img width="22" height="39" align="middle" border="0" src="img1273.png" alt="" /></span> und <span class="MATH"><img width="22" height="39" align="middle" border="0" src="img1274.png" alt="" /></span> die Sattel der P<small>OINCARE</small>-Abbildung <span class="MATH"><img width="39" height="35" align="middle" border="0" src="img1275.png" alt="" /></span> f&uuml;r kleine <span class="MATH"><img width="27" height="37" align="middle" border="0" src="img1276.png" alt="" /></span>. Besitzt <span class="MATH"><img width="28" height="16" align="bottom" border="0" src="img1.png" alt="" /></span>, berechnet wie oben, in <span class="MATH"><i>t</i><sub>0</sub></span> eine einfache Nullstelle, so schneiden sich <span class="MATH"><img width="63" height="39" align="middle" border="0" src="img1277.png" alt="" /></span> und <span class="MATH"><img width="65" height="39" align="middle" border="0" src="img1278.png" alt="" /></span> f&uuml;r kleine <span class="MATH"><img width="48" height="33" align="middle" border="0" src="img557.png" alt="" /></span> transversal.</p>
+<p><!-- BeispielStart: 1170304 -->
+<a name="4342"></a></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Betrachtet wird die periodisch gest&ouml;rte Pendelgleichung <span class="MATH"><img width="161" height="34" align="middle" border="0" src="img1279.png" alt="" /></span>, d.h. das System</p>
+<div align="center" class="mathdisplay"><img width="249" height="63" border="0" src="img1280.png" alt="" /></div>
+<p><br clear="all" /></p>
+in der <span class="MATH"><img width="13" height="16" align="bottom" border="0" src="img558.png" alt="" /></span> ein kleiner Parameter und <span class="MATH"><img width="17" height="16" align="bottom" border="0" src="img115.png" alt="" /></span> ein weiterer Parameter ist. Das ungest&ouml;rte System<br />
+<div align="center" class="mathdisplay"><img width="161" height="63" border="0" src="img1281.png" alt="" /></div>
+<p><br clear="all" /></p>
+ist ein H<small>AMILTON</small>-System mit <span class="MATH"><img width="186" height="59" align="middle" border="0" src="img1282.png" alt="" /></span>. Das ungest&ouml;rte System besitzt (u.a.) ein Paar heterokliner Orbits durch <span class="MATH"><img width="63" height="37" align="middle" border="0" src="img1283.png" alt="" /></span> und <span class="MATH"><img width="51" height="37" align="middle" border="0" src="img1284.png" alt="" /></span>. Im zylindrischen Phasenraum <span class="MATH"><img width="64" height="39" align="middle" border="0" src="img1285.png" alt="" /></span> sind dies homokline Orbits, gegeben durch<br />
+<div align="center" class="mathdisplay"><img width="395" height="85" border="0" src="img1286.png" alt="" /></div>
+<p><br clear="all" /></p>
+Die direkte Berechnung der M<small>ELNIKOV</small>-Funktion liefert<br />
+<div align="center" class="mathdisplay"><img width="192" height="90" border="0" src="img1287.png" alt="" /></div>
+<p><br clear="all" /></p>
+Da <span class="MATH"><i>M</i></span> bei <span class="MATH"><i>t</i><sub>0</sub> = 0</span> eine einfache Nullstelle besitzt, hat die P<small>OINCAR&Eacute;</small>-Abbildung des gest&ouml;rten Systems f&uuml;r kleine <span class="MATH"><img width="48" height="33" align="middle" border="0" src="img557.png" alt="" /></span> transversale homokline Punkte.</td>
+</tr>
+</table>
+</body>
+</html>

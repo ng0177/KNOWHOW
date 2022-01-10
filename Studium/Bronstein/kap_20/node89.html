@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Manipulation nichtpolynomialer Ausdr&uuml;cke</title>
+<meta name="description" content="Manipulation nichtpolynomialer Ausdr&uuml;cke" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node88.html" />
+<link rel="up" href="node84.html" />
+<link rel="next" href="node90.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node88.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node90.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node82.html">Anwendungen von Computeralgebrasystemen</a> <a href="node83.html">Manipulation algebraischer Ausdr&#252;cke</a> <a id="up" href="node84.html">Mathematica</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001941150000000000000" id="SECTION001941150000000000000"></a> <a name="2495"></a> <a name="2496"></a>
+Manipulation nichtpolynomialer Ausdr&uuml;cke</h4>
+<p>Mit dem Befehl <span class="MATH"><img width="83" height="33" align="middle" border="0" src="img693.png" alt="" /></span> k&ouml;nnen oft komplizierte Ausdr&uuml;cke, die nicht polynomialer Natur zu sein brauchen, vereinfacht werden. <i class="sans">Mathematica</i> wird immer versuchen, algebraische Ausdr&uuml;cke unabh&auml;ngig von der Natur der symbolischen Gr&ouml;&szlig;en zu manipulieren. Dabei verwendet es eingebaute Kenntnisse. So kennt <i class="sans">Mathematica</i> z.B. <a href="../kap_1/node28.html#PotRechReg">Regeln der Potenzrechnung</a>:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="429" height="69" border="0" src="img694.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">59</span>)</td>
+</tr>
+</table>
+</div>
+<p>Mit dem Befehl <tt>FullSimplify</tt><span class="MATH">[<i>ausdr</i>]</span> wird <i class="sans">Mathematica</i> einen wesentlich breiteren Ansatz zur Vereinfachung einsetzen.<br />
+F&uuml;r die Manipulation trigonometrischer Aus dr&uuml;cke stehen die Befehle <tt>TrigExpand, TrigFactor, TrigFactorList</tt> und <tt>TrigReduce</tt> zur Verf&uuml;gung.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="299" height="66" border="0" src="img695.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="462" height="67" border="0" src="img696.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="190" height="66" border="0" src="img697.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="459" height="66" border="0" src="img698.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="190" height="66" border="0" src="img699.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="329" height="85" border="0" src="img700.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p>Schlie&szlig;lich sei darauf hingewiesen, da&szlig; der Befehl <span class="MATH"><img width="200" height="37" align="middle" border="0" src="img701.png" alt="" /></span> reelle Variable <span class="MATH"><i>ausdr</i></span> voraussetzt, w&auml;hrend <span class="MATH"><img width="296" height="37" align="middle" border="0" src="img702.png" alt="" /></span> von komplexen Variablen <span class="MATH"><i>xi</i></span> ausgeht.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="539" height="97" border="0" src="img703.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

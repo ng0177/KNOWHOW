@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>IDEA-Algorithmus (International Data Encryption Algorithm)</title>
+<meta name="description" content="IDEA-Algorithmus (International data Encryption Algorithm)" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node205.html" />
+<link rel="up" href="node188.html" />
+<link rel="next" href="node207.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node205.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node207.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a id="up" href="node188.html">Kryptologie</a> </span>
+</p>
+</div>
+<h2><a name="SECTION00459000000000000000" id="SECTION00459000000000000000"></a> <a name="5617"></a>
+IDEA-Algorithmus (<b>I</b>nternational <b>D</b>ata <b>E</b>ncryption <b>A</b>lgorithm)</h2>
+<p>Der IDEA-Algorithmus wurde 1991 von L<small>AI</small> und M<small>ASSAY</small> zum Patent vorgelegt. Wie beim DES-Algorithmus handelt es sich um ein symmetrisches Verschl&uuml;sselungsverfahren; IDEA ist ein potentieller Nachfolger f&uuml;r DES. Der Algorithmus ist insbesondere als Bestandteil des bekannten Softwarepakets PGP (Pretty Good Privacy) zur Verschl&uuml;sselung von e-mails bekannt geworden. Im Unterschied zu DES wurde nicht nur der Algorithmus ver&ouml;ffentlicht, sondern auch seine Entwurfsgrundlagen. Ziel war die Verwendung m&ouml;glichst einfacher Operationen (Addition modulo 2, Addition modulo <span class="MATH"><img width="31" height="19" align="bottom" border="0" src="img1433.png" alt="" /></span>, Multiplikation modulo <span class="MATH">2<sup>16+1</sup></span>).</p>
+<p>Mit IDEA kann man 64-Bit-Klartextbl&ouml;cke verschl&uuml;sseln und bei Wahl der Teilschl&uuml;ssel in umgekehrter Reihenfolge wieder entschl&uuml;sseln. Zur Verschl&uuml;sselung wird jeder 64-Bit-Klartextblock in vier Teilbl&ouml;cke von je 16 Bit aufgeteilt. IDEA benutzt 128-Bit-Schl&uuml;ssel, aus denen 52 Teilschlssel von je 16 Bit erzeugt werden. In 8 Verschl&uuml;sselungsrunden werden jeweils 6 dieser Teilschl&uuml;ssel ben&ouml;tigt; die restlichen 4 Teilschl&uuml;ssel werden in einer Ausgabetransformation mit den vier Textbl&ouml;cken verkn&uuml;pft und abschlie&szlig;end zu einem 64-Bit-Schl&uuml;sseltextblock zusammengesetzt.</p>
+<p>IDEA ist etwa doppelt so schnell wie DES, in Hardware jedoch schwieriger zu implementieren. &Ouml;ffentlich sind keine erfolgreichen Angriffe gegen IDEA bekannt geworden. Angriffe durch Ausprobieren aller Schl&uuml;ssel bleiben bei der Schl&uuml;ssell&auml;nge von 128 Bit wirkungslos.</p>
+</body>
+</html>

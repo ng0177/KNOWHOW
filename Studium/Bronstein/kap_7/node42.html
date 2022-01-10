@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>N&auml;herungsformeln</title>
+<meta name="description" content="N&auml;herungsformeln" />
+<meta name="keywords" content="kap_7" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node43.html" />
+<link rel="previous" href="node41.html" />
+<link rel="up" href="node28.html" />
+<link rel="next" href="node43.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node41.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node43.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_7.html">Unendliche Reihen</a> <a id="up" href="node28.html">Funktionenreihen</a> </span>
+</p>
+</div>
+<h2><a name="SECTION00634000000000000000" id="SECTION00634000000000000000"></a> <a name="2111"></a>
+N&auml;herungsformeln</h2>
+<p>Unter Beschr&auml;nkung auf eine hinreichend kleine Umgebung der Entwicklungsstelle sind mit Hilfe der T<small>AYLOR</small>-Entwicklung rationale N&auml;herungsformeln f&uuml;r viele Funktionen hergeleitet worden, deren erste Glieder f&uuml;r einige dieser Funktionen in der folgenden Tabelle wiedergegeben sind.<br />
+Angaben &uuml;ber die Genauigkeit wurden durch Absch&auml;tzung des Restgliedes erhalten.<br />
+Die Anwendung von <a href="../kap_19/node76.html#app-ausgl">Interpolations- und Ausgleichspolynomen</a> oder <a href="../kap_19/node107.html#darst-splines">Spline-Funktionen</a> bietet weitere M&ouml;glichkeiten der angen&auml;herten Darstellung von Funktionen.</p>
+<p><!-- TabellenStart: T0703 -->
+<a name="t7NaherForm" id="t7NaherForm"></a></p>
+<div align="center">Tabelle N&auml;herungsformeln f&uuml;r einige oft gebrauchte Funktionen<br />
+<a name="t7nahfor" id="t7nahfor"></a>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="center" colspan="2"><span>&nbsp;&nbsp;&nbsp;&nbsp;</span></td>
+<td align="center" colspan="6"><span>Zul&auml;ssiges Intervall f&uuml;r <span class="MATH"><i>x</i></span> bei einem Fehler von</span></td>
+</tr>
+<tr valign="baseline">
+<td align="center">N&auml;herungsformel</td>
+<td align="center">N&auml;chstes<br />
+Glied</td>
+<td align="center" colspan="2"><span><span class="MATH">0,1</span>%</span></td>
+<td align="center" colspan="2"><span><span class="MATH">1</span>%</span></td>
+<td align="center" colspan="2"><span><span class="MATH">10</span>%</span></td>
+</tr>
+<tr valign="baseline">
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center" colspan="1"><span>von</span></td>
+<td align="center" colspan="1"><span>bis</span></td>
+<td align="center" colspan="1"><span>von</span></td>
+<td align="center" colspan="1"><span>bis</span></td>
+<td align="center" colspan="1"><span>von</span></td>
+<td align="center" colspan="1"><span>bis</span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="77" height="16" align="bottom" border="0" src="img277.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="41" height="65" align="middle" border="0" src="img278.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img279.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img280.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img281.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img282.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img283.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img284.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="123" height="65" align="middle" border="0" src="img285.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="51" height="65" align="middle" border="0" src="img286.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img287.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img288.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img289.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img290.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img291.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img292.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="78" height="16" align="bottom" border="0" src="img293.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="41" height="65" align="middle" border="0" src="img294.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img295.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img296.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img297.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img298.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img299.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img300.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="124" height="65" align="middle" border="0" src="img301.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="42" height="65" align="middle" border="0" src="img302.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img303.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img304.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img305.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img306.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img307.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img308.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="82" height="16" align="bottom" border="0" src="img309.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="41" height="65" align="middle" border="0" src="img310.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img311.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img312.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img313.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img314.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img315.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img316.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="127" height="65" align="middle" border="0" src="img317.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="60" height="59" align="middle" border="0" src="img318.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img319.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img320.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img321.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img322.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="69" height="59" align="middle" border="0" src="img323.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="59" align="middle" border="0" src="img324.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="153" height="51" align="middle" border="0" src="img325.png" alt="" /></span><br />
+<span class="MATH"><img width="157" height="65" align="middle" border="0" src="img326.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="50" height="65" align="middle" border="0" src="img327.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="41" align="middle" border="0" src="img328.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="68" height="41" align="middle" border="0" src="img329.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="41" align="middle" border="0" src="img330.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="68" height="41" align="middle" border="0" src="img331.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="41" align="middle" border="0" src="img332.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="68" height="41" align="middle" border="0" src="img333.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="168" height="59" align="middle" border="0" src="img334.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="51" height="65" align="middle" border="0" src="img335.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="41" align="middle" border="0" src="img336.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="68" height="41" align="middle" border="0" src="img337.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="41" align="middle" border="0" src="img338.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="68" height="41" align="middle" border="0" src="img339.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="41" align="middle" border="0" src="img340.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="68" height="41" align="middle" border="0" src="img341.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="136" height="59" align="middle" border="0" src="img342.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="41" height="65" align="middle" border="0" src="img343.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="75" height="33" align="middle" border="0" src="img344.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="60" height="33" align="middle" border="0" src="img345.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="75" height="33" align="middle" border="0" src="img346.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="60" height="33" align="middle" border="0" src="img347.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="75" height="33" align="middle" border="0" src="img348.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="60" height="33" align="middle" border="0" src="img349.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="90" height="36" align="middle" border="0" src="img350.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="41" height="65" align="middle" border="0" src="img351.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="65" height="33" align="middle" border="0" src="img352.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="50" height="33" align="middle" border="0" src="img353.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="65" height="33" align="middle" border="0" src="img354.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="50" height="33" align="middle" border="0" src="img355.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="65" height="33" align="middle" border="0" src="img356.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="50" height="33" align="middle" border="0" src="img357.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="114" height="37" align="middle" border="0" src="img358.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="41" height="65" align="middle" border="0" src="img294.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="65" height="33" align="middle" border="0" src="img359.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="50" height="33" align="middle" border="0" src="img360.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="65" height="33" align="middle" border="0" src="img361.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="50" height="33" align="middle" border="0" src="img362.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="65" height="33" align="middle" border="0" src="img363.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="50" height="33" align="middle" border="0" src="img364.png" alt="" /></span></td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Eigenwerte und Eigenvektoren</title>
+<meta name="description" content="Eigenwerte und Eigenvektoren" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node113.html" />
+<link rel="up" href="node112.html" />
+<link rel="next" href="node115.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node113.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node115.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node82.html">Anwendungen von Computeralgebrasystemen</a> <a href="node107.html">Elemente der linearen Algebra</a> <a id="up" href="node112.html">Maple</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001943220000000000000" id="SECTION001943220000000000000"></a> <a name="3429"></a>
+Eigenwerte und Eigenvektoren</h4>
+<p><i class="sans">Maple</i> stellt mit <span class="MATH"><img width="93" height="33" align="middle" border="0" src="img872.png" alt="" /></span> und <span class="MATH"><img width="103" height="33" align="middle" border="0" src="img873.png" alt="" /></span> spezielle Operatoren f&uuml;r die Bestimmung von Eigenwerten und Eigenvektoren quadratischer Matrizen bereit. Dabei ist zu beachten, da&szlig; die Eigenwertgleichung bei Matrizen der Ordnung <span class="MATH"><i>n</i> &gt; 4</span> im allgemeinen nicht mehr geschlossen l&ouml;sbar ist. Daher liefert <i class="sans">Maple</i> in diesem Fall die Eigenwerte als gen&auml;herte Gleitpunktzahlen.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Es sind die Eigenwerte der 5-dimensionalen <a href="node111.html#HilbertMatrix">H<small>ILBERT</small>-Matrix</a> zu finden.</p>
+<p>Im Paket <tt>linalg</tt> ist eine spezielle Anweisung zur Erzeugung <span class="MATH"><i>n</i></span>-dimensionaler H<small>ILBERT</small>-Matrizen vorhanden. Sie lautet <span class="MATH"><img width="118" height="37" align="middle" border="0" src="img874.png" alt="" /></span>. Ihre Matrixelemente sind <span class="MATH">1/(<i>i</i>+<i>j</i>-<i>x</i>)</span>. Wird <span class="MATH"><i>x</i></span> nicht angegeben, so setzt <i class="sans">Maple</i> automatisch <span class="MATH"><i>x</i>=1</span>. Die Aufgabe wird daher mit der Eingabe</p>
+<div align="center" class="mathdisplay"><img width="224" height="66" border="0" src="img875.png" alt="" /></div>
+<p><br clear="all" /></p>
+gel&ouml;st. <i class="sans">Maple</i> antwortet mit<br />
+<span class="MATH"><img width="544" height="39" align="middle" border="0" src="img876.png" alt="" /></span><br />
+<span class="MATH"><img width="414" height="39" align="middle" border="0" src="img877.png" alt="" /></span><br />
+Mit <span class="MATH"><img width="93" height="16" align="bottom" border="0" src="img789.png" alt="" /></span> kann man dies in eine Folge gen&auml;herter Eigenwerte umwandeln.</td>
+</tr>
+</table>
+</body>
+</html>

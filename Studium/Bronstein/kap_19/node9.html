@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Komplexe Argumentwerte</title>
+<meta name="description" content="Komplexe Argumentwerte" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node8.html" />
+<link rel="up" href="node7.html" />
+<link rel="next" href="node10.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node8.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node10.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node1.html">Numerische L&#246;sung nichtlinearer Gleichungen</a> <a href="node6.html">L&#246;sung von Polynomgleichungen</a> <a id="up" href="node7.html">Horner-Schema</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001812120000000000000" id="SECTION001812120000000000000">Komplexe Argumentwerte</a></h4>
+<p><a name="7153"></a> <a name="7154"></a> Sind die Koeffizienten <span class="MATH"><i>a</i><sub><i>k</i></sub></span> in (<a href="node6.html#F1190111">19.11</a>) reell, so kann die Berechnung von <span class="MATH"><i>p</i><sub><i>n</i></sub>(<i>x</i><sub>0</sub>)</span> f&uuml;r komplexe Werte <span class="MATH"><img width="111" height="34" align="middle" border="0" src="img48.png" alt="" /></span> ganz im Reellen ablaufen. Dazu wird <span class="MATH"><i>p</i><sub><i>n</i></sub>(<i>x</i>)</span> wie folgt zerlegt:</p>
+<div class="myclass"><a name="F1190118a" id="F1190118a"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>p</i><sub><i>n</i></sub>(<i>x</i>)</td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="276" height="41" align="middle" border="0" src="img49.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="375" height="41" align="middle" border="0" src="img50.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">18</span>a)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+mit
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="540" height="67" border="0" src="img51.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">18</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Es ist dann</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="324" height="66" border="0" src="img52.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">18</span>c)</td>
+</tr>
+</table>
+</div>
+<p>Zur Realisierung von (<a href="#F1190118a">19.18a</a>) kann man nach C<small>OLLATZ</small> das folgende sogenannte <span class="begriff">zweizeilige H<small>ORNER</small>-Schema</span> aufstellen:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="338" height="178" border="0" src="img53.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">18</span>d)</td>
+</tr>
+</table>
+</div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><i>p</i><sub>4</sub>(<i>x</i>)=<i>x</i><sup>4</sup>+2<i>x</i><sup>3</sup>-3<i>x</i><sup>2</sup>-7</span>. Der Funktionswert f&uuml;r <span class="MATH"><img width="89" height="34" align="middle" border="0" src="img54.png" alt="" /></span>, d.h. <span class="MATH"><i>p</i>=4</span> und <span class="MATH"><img width="66" height="33" align="middle" border="0" src="img55.png" alt="" /></span>, ist zu berechnen.</p>
+</td>
+</tr>
+</table>
+<p></p>
+<div align="center" class="mathdisplay"><img width="198" height="142" border="0" src="img56.png" alt="" /></div>
+<p><br clear="all" /></p>
+Man liest ab: <span class="MATH"><img width="267" height="37" align="middle" border="0" src="img57.png" alt="" /></span>. <!-- BeispielEnde: 1190105 -->
+</body>
+</html>

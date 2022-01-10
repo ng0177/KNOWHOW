@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Permutationen</title>
+<meta name="description" content="Permutationen" />
+<meta name="keywords" content="kap_16" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node3.html" />
+<link rel="previous" href="node1.html" />
+<link rel="up" href="node1.html" />
+<link rel="next" href="node3.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node1.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node3.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_16.html">Wahrscheinlichkeitsrechnung und Mathematische Statistik</a> <a id="up" href="node1.html">Kombinatorik</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001511000000000000000" id="SECTION001511000000000000000"></a><a name="Permutation" id="Permutation"></a>
+Permutationen</h2>
+<dl>
+<dt>1.&nbsp;Definition:</dt>
+<dd><span class="begriff">Permutation</span> nennt man eine Anordnung von <span class="MATH"><i>n</i></span> Elementen in einer bestimmten Reihenfolge.</dd>
+<dt>2.&nbsp;Anzahl der Permutationen ohne Wiederholung:</dt>
+<dd>F&uuml;r die Anzahl <span class="MATH"><i>P</i><sub><i>n</i></sub></span> der Permutationen von <span class="MATH"><i>n</i></span> verschiedenen Elementen gilt
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="69" height="63" border="0" src="img2.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">1</span>)</td>
+</tr>
+</table>
+</div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>In einem H&ouml;rsaal wurde eine Reihe mit 16 Sitzpl&auml;tzen von genau 16 Studenten besetzt. Es gibt <span class="MATH">16!</span> M&ouml;glichkeiten f&uuml;r die Sitzordnung.</p>
+</td>
+</tr>
+</table>
+</dd>
+<dt>3.&nbsp;Anzahl der Permutationen mit Wiederholung:</dt>
+<dd>F&uuml;r die Anzahl <span class="MATH"><i>P</i><sub><i>n</i></sub><sup>(<i>k</i>)</sup></span> der Permutationen von <span class="MATH"><i>n</i></span> Elementen, darunter <span class="MATH"><i>k</i></span> gleichen <span class="MATH"><img width="69" height="37" align="middle" border="0" src="img3.png" alt="" /></span>, gilt
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="92" height="86" border="0" src="img4.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">2</span>)</td>
+</tr>
+</table>
+</div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Eine Reihe von 16 Sitzpl&auml;tzen im H&ouml;rsaal wird von 16 Studenten mit ihren Taschen belegt. Unter den 16 Taschen befinden sich 4 gleiche. Dann gibt es <span class="MATH">16!/4!</span> M&ouml;glichkeiten f&uuml;r die Anordnung der Taschen.</p>
+</td>
+</tr>
+</table>
+</dd>
+<dt>4.&nbsp;Verallgemeinerung:</dt>
+<dd>F&uuml;r die Anzahl <span class="MATH"><img width="105" height="44" align="middle" border="0" src="img5.png" alt="" /></span> der Permutationen von <span class="MATH"><i>n</i></span> Elementen, eingeteilt in <span class="MATH"><i>m</i></span> Gruppen mit jeweils <span class="MATH"><img width="112" height="35" align="middle" border="0" src="img6.png" alt="" /></span> gleichen Elementen <span class="MATH"><img width="207" height="37" align="middle" border="0" src="img7.png" alt="" /></span>, gilt
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="237" height="89" border="0" src="img8.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">3</span>)</td>
+</tr>
+</table>
+</div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Aus den f&uuml;nf Ziffern 4, 4, 5, 5, 5 k&ouml;nnen <span class="MATH"><img width="155" height="61" align="middle" border="0" src="img9.png" alt="" /></span> verschiedene f&uuml;nfstellige Zahlen gebildet werden.</p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+</body>
+</html>

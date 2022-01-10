@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Anwendung des Newton-Verfahrens</title>
+<meta name="description" content="Anwendung des Newton-Verfahrens" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node79.html" />
+<link rel="previous" href="node77.html" />
+<link rel="up" href="node76.html" />
+<link rel="next" href="node79.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node77.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node79.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a href="node43.html">Nichtlineare Optimierung</a> <a id="up" href="node76.html">Verfahren f&#252;r unrestringierte Aufgaben</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001725200000000000000" id="SECTION001725200000000000000"></a><a name="HesseMatrix1" id="HesseMatrix1"></a><a name="15.2.5.2"></a>
+Anwendung des Newton-Verfahrens</h3>
+<p><a name="6170"></a> <a name="6171"></a> <a name="6172"></a> <a name="6173"></a> Die Funktion <span class="MATH"><i>f</i></span> wird im aktuellen N&auml;herungspunkt <span class="MATH"><img width="24" height="40" align="middle" border="0" src="img459.png" alt="" /></span> durch eine quadratische Funktion approximiert:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="510" height="85" border="0" src="img477.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">77</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei ist <span class="MATH"><img width="55" height="40" align="middle" border="0" src="img478.png" alt="" /></span> die H<small>ESSE</small>-Matrix, d.h. die Matrix der zweiten partiellen Ableitung von <span class="MATH"><i>f</i></span> im Punkt <span class="MATH"><img width="27" height="40" align="middle" border="0" src="img466.png" alt="" /></span>. Ist <span class="MATH"><img width="55" height="40" align="middle" border="0" src="img478.png" alt="" /></span> positiv definit, dann hat <span class="MATH"><img width="39" height="37" align="middle" border="0" src="img479.png" alt="" /></span> an der Stelle <span class="MATH"><img width="41" height="40" align="middle" border="0" src="img453.png" alt="" /></span> mit <span class="MATH"><img width="115" height="40" align="middle" border="0" src="img480.png" alt="" /></span> ein globales Minimum, und man erh&auml;lt f&uuml;r das N<small>EWTON</small>-Verfahren die Iterationsvorschrift</p>
+<div class="myclass"><a name="F1180249a" id="F1180249a"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="41" height="42" align="middle" border="0" src="img473.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="418" height="42" align="middle" border="0" src="img481.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">78</span>a)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="25" height="43" align="middle" border="0" src="img475.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="281" height="42" align="middle" border="0" src="img482.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">78</span>b)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+<p>Das N<small>EWTON</small>-Verfahren hat eine hohe Konvergenzgeschwindigkeit, der aber folgende Nachteile gegen&uuml;berstehen:</p>
+<div class="alpha">
+<ol>
+<li>
+<div>Die Matrix <span class="MATH"><img width="55" height="40" align="middle" border="0" src="img478.png" alt="" /></span> mu&szlig; positiv definit sein.</div>
+</li>
+<li>
+<div>Das Verfahren konvergiert nur f&uuml;r hinreichend gute Startwerte.</div>
+</li>
+<li>
+<div>Es gibt keine Schrittweitensteuerung.</div>
+</li>
+<li>
+<div>Das Verfahren ist im allgemeinen kein Abstiegsverfahren.</div>
+</li>
+<li>
+<div>Der Aufwand zur Berechnung von <span class="MATH"><img width="74" height="41" align="middle" border="0" src="img483.png" alt="" /></span> ist mitunter recht gro&szlig;.</div>
+</li>
+</ol>
+</div>
+<p>Einige Nachteile k&ouml;nnen durch die folgende Version eines <span class="begriff">ged&auml;mpften N<small>EWTON</small>-Verfahrens</span> behoben werden:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="389" height="68" border="0" src="img484.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">79</span>)</td>
+</tr>
+</table>
+</div>
+<p>Der D&auml;mpfungsfaktor <span class="MATH"><img width="25" height="33" align="middle" border="0" src="img465.png" alt="" /></span> kann unter anderem durch <a href="node77.html#GradVerf1">Strahlminimierung</a> ermittelt werden.</p>
+</body>
+</html>

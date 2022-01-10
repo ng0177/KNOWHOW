@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Zyklische Codes</title>
+<meta name="description" content="Zyklische Codes" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node186.html" />
+<link rel="up" href="node183.html" />
+<link rel="next" href="node188.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node186.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node188.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node143.html">Elementare Zahlentheorie</a> <a href="node177.html">Codierungen</a> <a id="up" href="node183.html">Fehlerkorrigierende Codes</a> </span>
+</p>
+</div>
+<h4><a name="SECTION00445240000000000000" id="SECTION00445240000000000000"></a> <a name="5318"></a>
+Zyklische Codes</h4>
+<p>Die zyklischen Codes sind die am besten untersuchten Linearcodes; sie erlauben eine effiziente Codierung und Decodierung.<br />
+Ein (bin&auml;rer) <span class="MATH">(<i>n</i>,<i>k</i>)</span>-Linearcode <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1347.png" alt="" /></span> hei&szlig;t <span class="begriff">zyklisch</span>, wenn f&uuml;r alle <span class="MATH"><img width="81" height="33" align="middle" border="0" src="img1334.png" alt="" /></span> gilt:<br />
+<span class="MATH"><img width="325" height="35" align="middle" border="0" src="img1363.png" alt="" /></span></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="197" height="37" align="middle" border="0" src="img1364.png" alt="" /></span> ist ein zyklischer <span class="MATH">(3,2)</span>-Linearcode.</p>
+</td>
+</tr>
+</table>
+<p>Um effizient mit zyklischen Codes arbeiten zu k&ouml;nnen, stellt man deren Codew&ouml;rter durch Polynome vom Grad <span class="MATH"><img width="69" height="33" align="middle" border="0" src="img994.png" alt="" /></span> mit Koeffizienten aus <span class="MATH"><img width="55" height="37" align="middle" border="0" src="img1365.png" alt="" /></span> dar:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="430" height="67" border="0" src="img1366.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">292</span>)</td>
+</tr>
+</table>
+</div>
+<p>Ein (bin&auml;rer) <span class="MATH">(<i>n</i>,<i>k</i>)</span>-Linearcode <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1347.png" alt="" /></span> ist genau dann zyklisch, wenn f&uuml;r alle <span class="MATH"><i>c</i>(<i>x</i>)</span> gilt:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="294" height="66" border="0" src="img1367.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">293</span>)</td>
+</tr>
+</table>
+</div>
+<p>Einen zyklischen <span class="MATH">(<i>n</i>,<i>k</i>)</span>-Linearcode kann man durch Generatorpolynome und Kontrollpolynome wie folgt beschreiben. Das <span class="begriff">Generatorpolynom</span> <span class="MATH"><i>g</i>(<i>x</i>)</span> vom Grad <span class="MATH"><img width="239" height="37" align="middle" border="0" src="img1368.png" alt="" /></span> ist ein Teiler von <span class="MATH"><i>x</i><sup><i>n</i></sup> -1</span>. Das Polynom <span class="MATH"><i>h</i>(<i>x</i>)</span> vom Grad <span class="MATH"><i>k</i></span> mit <span class="MATH"><i>g</i>(<i>x</i>)<i>h</i>(<i>x</i>) =<i>x</i><sup><i>n</i></sup> -1</span> wird <span class="begriff">Kontrollpolynom</span> genannt. Die Codierung von <span class="MATH"><img width="86" height="33" align="middle" border="0" src="img1333.png" alt="" /></span> in Polynomdarstellung <span class="MATH"><i>a</i>(<i>x</i>)</span> erfolgt durch</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="155" height="66" border="0" src="img1369.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">294</span>)</td>
+</tr>
+</table>
+</div>
+<p><span class="MATH"><i>d</i>(<i>x</i>)</span> ist genau dann ein Element des Codes, wenn das Generatorpolynom <span class="MATH"><i>g</i>(<i>x</i>)</span> ein Teiler von <span class="MATH"><i>d</i>(<i>x</i>)</span> ist, und genau dann, wenn f&uuml;r das Kontrollpolynom <span class="MATH"><i>h</i>(<i>x</i>)</span> die Bedingung <span class="MATH"><img width="233" height="37" align="middle" border="0" src="img1370.png" alt="" /></span> erf&uuml;llt ist.<br />
+Eine besonders wichtige Klasse von zyklischen Codes sind die BCH-Codes, weil man sich dabei eine untere Schranke <span class="MATH"><img width="14" height="17" align="bottom" border="0" src="img1371.png" alt="" /></span> f&uuml;r den Minimalabstand und damit eine untere Schranke f&uuml;r die Fehleranzahl vorgeben kann, die der Code korrigieren soll. Dabei wird <span class="MATH"><img width="14" height="17" align="bottom" border="0" src="img1371.png" alt="" /></span> die Entwurfsdistanz des Codes genannt.<br />
+Ein (bin&auml;rer) <span class="MATH">(<i>n</i>,<i>k</i>)</span>-Linearcode <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1347.png" alt="" /></span> ist ein BCH-Code mit Entwurfsdistanz <span class="MATH"><img width="14" height="17" align="bottom" border="0" src="img1371.png" alt="" /></span>, wenn f&uuml;r sein Generatorpolynom <span class="MATH"><i>g</i>(<i>x</i>)</span> gilt:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="380" height="66" border="0" src="img1372.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">295</span>)</td>
+</tr>
+</table>
+</div>
+<p>wobei <span class="MATH"><img width="17" height="16" align="bottom" border="0" src="img491.png" alt="" /></span> eine primitive <span class="MATH"><i>n</i></span>-te Einheitswurzel und <span class="MATH"><i>b</i></span> eine ganze Zahl ist. Die Polynome <span class="MATH"><img width="62" height="37" align="middle" border="0" src="img1373.png" alt="" /></span> sind Minimalpolynome von <span class="MATH"><img width="24" height="19" align="bottom" border="0" src="img1374.png" alt="" /></span>.<br />
+F&uuml;r einen BCH-Code <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1347.png" alt="" /></span> mit Entwurfsdistanz <span class="MATH"><img width="14" height="17" align="bottom" border="0" src="img1371.png" alt="" /></span> gilt <span class="MATH"><img width="98" height="37" align="middle" border="0" src="img1375.png" alt="" /></span>.</p>
+</body>
+</html>

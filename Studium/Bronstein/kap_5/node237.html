@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Adjazenzmatrix</title>
+<meta name="description" content="Adjazenzmatrix" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node238.html" />
+<link rel="previous" href="node236.html" />
+<link rel="up" href="node228.html" />
+<link rel="next" href="node238.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node236.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node238.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node227.html">Algorithmen der Graphentheorie</a> <a id="up" href="node228.html">Grundbegriffe und Bezeichnungen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00481900000000000000" id="SECTION00481900000000000000"></a> <a name="6465"></a> <a name="6466"></a>
+Adjazenzmatrix</h3>
+<p>Endliche Graphen kann man wie folgt durch eine Matrix beschreiben: Es sei <span class="MATH"><i>G</i>=(<i>V</i>,<i>E</i>)</span> ein Graph mit <span class="MATH"><img width="165" height="37" align="middle" border="0" src="img1594.png" alt="" /></span> und <span class="MATH"><img width="176" height="37" align="middle" border="0" src="img1595.png" alt="" /></span> Dabei bezeichne <span class="MATH"><i>m</i>(<i>v</i><sub><i>i</i></sub>,<i>v</i><sub><i>j</i></sub>)</span> die Anzahl der Kanten von <span class="MATH"><i>v</i><sub><i>i</i></sub></span> nach <span class="MATH"><img width="29" height="33" align="middle" border="0" src="img1596.png" alt="" /></span> Bei ungerichteten Graphen werden Schlingen doppelt gez&auml;hlt; bei gerichteten Graphen z&auml;hlt man Schlingen einfach. Die Matrix <span class="MATH"><i>A</i></span> vom Typ <span class="MATH">(<i>n</i>,<i>n</i>)</span> mit <span class="MATH"><i>A</i>=(<i>m</i>(<i>v</i><sub><i>i</i></sub>,<i>v</i><sub><i>j</i></sub>))</span> wird <span class="begriff">Adjazenzmatrix</span> genannt. Ist der Graph zus&auml;tzlich schlicht, dann hat die Adjazenzmatrix die folgende Gestalt:</p>
+<div class="mathdisplay"><a name="F1050702" id="F1050702"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1050702" id="F1050702"></a><img width="274" height="104" border="0" src="img1597.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">341</span>)</td>
+</tr>
+</table>
+</div>
+<p>D.h. in der Matrix <span class="MATH"><i>A</i></span> steht in der <span class="MATH"><i>i</i></span>-ten Zeile und <span class="MATH"><i>j</i></span>-ten Spalte genau dann eine 1, wenn eine Kante von <span class="MATH"><i>v</i><sub><i>i</i></sub></span> nach <span class="MATH"><i>v</i><sub><i>j</i></sub></span> verl&auml;uft.<br />
+F&uuml;r ungerichtete Graphen ist die Adjazenzmatrix symmetrisch.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Neben der Abbildung ist die Adjazenzmatrix <span class="MATH"><i>A</i>(<i>G</i><sub>1</sub>)</span> des gerichteten Graphen <span class="MATH"><i>G</i><sub>1</sub></span> gezeigt.</p>
+<table cellpadding="3">
+<tr valign="baseline">
+<td align="center">
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a032" id="BILD_105a032"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a032.gif" /></a></p>
+</td>
+<td align="center"><span class="MATH"><img width="148" height="111" align="middle" border="0" src="img1598.png" alt="" /></span></td>
+</tr>
+</table>
+<br /></td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Neben der Abbildung ist die Adjazenzmatrix <span class="MATH"><i>A</i>(<i>G</i><sub>2</sub>)</span> des ungerichteten schlichten Graphen <span class="MATH"><i>G</i><sub>2</sub></span> gezeigt.</p>
+<table cellpadding="3">
+<tr valign="baseline">
+<td align="center">
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a033" id="BILD_105a033"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a033.gif" /></a></p>
+</td>
+<td align="center"><span class="MATH"><img width="179" height="157" align="middle" border="0" src="img1599.png" alt="" /></span></td>
+</tr>
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

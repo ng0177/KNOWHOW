@@ -1,0 +1,94 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Interpolationsformel nach Lagrange</title>
+<meta name="description" content="Interpolationsformel nach Lagrange" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node80.html" />
+<link rel="previous" href="node78.html" />
+<link rel="up" href="node77.html" />
+<link rel="next" href="node80.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node78.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node80.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node76.html">Approximation, Ausgleichsrechnung, Harmonische Analyse</a> <a id="up" href="node77.html">Polynominterpolation</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001861200000000000000" id="SECTION001861200000000000000"></a><a name="LagrIntpolFormel" id="LagrIntpolFormel"></a>
+Interpolationsformel nach Lagrange</h3>
+<p><a name="7399"></a> <a name="7400"></a> Um durch <span class="MATH"><i>n</i>+1</span> Punkte <span class="MATH"><img width="210" height="37" align="middle" border="0" src="img495.png" alt="" /></span> ein Polynom vom Grade <span class="MATH"><i>n</i></span> hindurchzulegen, kann man nach L<small>AGRANGE</small> den folgenden Ansatz benutzen:</p>
+<div class="mathdisplay"><a name="F1190603" id="F1190603"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190603" id="F1190603"></a><img width="231" height="104" border="0" src="img502.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">158</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei werden mit <span class="MATH"><img width="192" height="37" align="middle" border="0" src="img503.png" alt="" /></span> die L<small>AGRANGE</small>schen Grundpolynome bezeichnet. Der Ansatz (<a href="#F1190603">19.158</a>) erf&uuml;llt die Interpolationsbedingung (<a href="node77.html#F1190601">19.156</a>), wenn gilt:</p>
+<div class="mathdisplay"><a name="F1190604" id="F1190604"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190604" id="F1190604"></a><img width="248" height="93" border="0" src="img504.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">159</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei ist <span class="MATH"><img width="29" height="35" align="middle" border="0" src="img505.png" alt="" /></span> das K<small>RONECKER</small>-Symbol. Aus der Bedingung (<a href="#F1190604">19.159</a>) und der Forderung, da&szlig; die L<small>AGRANGE</small>schen Grundpolynome vom Grad <span class="MATH"><i>n</i></span> sein sollen, ergibt sich die Darstellung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="652" height="112" border="0" src="img506.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">160</span>)</td>
+</tr>
+</table>
+</div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Die durch die Wertetabelle</p>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left">x</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">3</td>
+</tr>
+<tr valign="baseline">
+<td align="left">y</td>
+<td align="left">1</td>
+<td align="left">3</td>
+<td align="left">2</td>
+</tr>
+</table>
+gegebenen Punkte sollen mit Hilfe der L<small>AGRANGE</small>schen Interpolationsformel (<a href="#F1190603">19.158</a>) interpoliert werden. Man erh&auml;lt:<br />
+<span class="MATH"><img width="366" height="154" align="middle" border="0" src="img507.png" alt="" /></span><br />
+<span class="MATH"><img width="492" height="59" align="middle" border="0" src="img508.png" alt="" /></span><br />
+Das L<small>AGRANGE</small>sche Interpolationspolynom h&auml;ngt explizit und zwar linear von den gegebenen Funktionswerten <span class="MATH"><img width="23" height="33" align="middle" border="0" src="img509.png" alt="" /></span> ab. Das ist f&uuml;r theoretische &Uuml;berlegungen von Bedeutung<br />
+(s.&nbsp;z.B.&nbsp;<a href="node54.html#AdamsBeshforth">Verfahren von A<small>DAMS-</small>B<small>ASHFORTH</small></a>). F&uuml;r praktische Rechnungen ist die L<small>AGRANGE</small>sche Interpolationsformel weniger geeignet.</td>
+</tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Haupstrukturelemente</title>
+<meta name="description" content="Haupstrukturelemente" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node21.html" />
+<link rel="previous" href="node19.html" />
+<link rel="up" href="node19.html" />
+<link rel="next" href="node21.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node19.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node21.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a id="up" href="node19.html">Mathematica</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001921000000000000000" id="SECTION001921000000000000000"></a> <a name="402"></a> <a name="403"></a> <a name="404"></a> <a name="405"></a>
+Haupstrukturelemente</h2>
+<p>Im System <i class="sans">Mathematica</i> werden die Hauptstrukturelemente einheitlich <span class="begriff">Ausdr&uuml;cke</span> genannt. Ihre Syntax lautet (es sei nochmals betont, da&szlig; die jeweiligen Objekte durch ihr zugeh&ouml;riges Symbol, also ihren Namen, anzugeben sind):</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="207" height="66" border="0" src="img23.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">6</span>)</td>
+</tr>
+</table>
+</div>
+<p>Man bezeichnet <span class="MATH"><img width="42" height="33" align="middle" border="0" src="img24.png" alt="" /></span> als <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img25.png" alt="" /></span> (<span class="begriff">Kopf</span>) des Audruckes; ihm ist der Index <span class="MATH">0</span> zugeordnet. Die Teile <span class="MATH"><img width="157" height="37" align="middle" border="0" src="img26.png" alt="" /></span> sind die <span class="begriff">Elemente</span> des Ausdrucks und unter ihren Indices <span class="MATH"><img width="67" height="33" align="middle" border="0" src="img27.png" alt="" /></span> aufrufbar.</p>
+<p>In vielen F&auml;llen ist der <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img25.png" alt="" /></span> des Ausdrucks ein Operator oder eine Funktion, die Elemente sind die Operanden oder die Variablen, auf die der <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img25.png" alt="" /></span> wirkt.</p>
+<p>Sowohl <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img25.png" alt="" /></span> als auch Elemente eines Ausdrucks k&ouml;nnen wieder Ausdr&uuml;cke sein. Eckige Klammern sind in <i class="sans">Mathematica</i> f&uuml;r die Darstellung von Ausdr&uuml;cken reserviert, sie d&uuml;rfen nur in diesem Zusammenhang verwendet werden.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Der Term <span class="MATH"><img width="131" height="37" align="middle" border="0" src="img28.png" alt="" /></span>, der in <i class="sans">Mathematica</i> auch in dieser Infix-Form eingegeben werden darf, hat die vollst&auml;ndige Form (<span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img29.png" alt="" /></span>)</p>
+<div align="center" class="mathdisplay"><img width="256" height="66" border="0" src="img30.png" alt="" /></div>
+<p><br clear="all" /></p>
+ist also ebenfalls ein Ausdruck. Mit <span class="MATH"><img width="101" height="33" align="middle" border="0" src="img31.png" alt="" /></span> und <span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img32.png" alt="" /></span> werden die die entsprechenden arithmetischen Operatoren bezeichnet.<br /></td>
+</tr>
+</table>
+<p>Man erkennt an dem Beispiel, da&szlig; alle einfachen mathematischen Operatoren in der Pr&auml;fix-Form existieren und da&szlig; die Schreibweise als Term in <i class="sans">Mathematica</i> nur eine Vereinfachung ist.</p>
+<p>Teile von Ausdr&uuml;cken k&ouml;nnen extrahiert werden. Das erfolgt mit der Konstruktion <span class="MATH"><img width="116" height="37" align="middle" border="0" src="img33.png" alt="" /></span>, wobei <span class="MATH"><i>i</i></span> die Nummer des entsprechenden Elements ist. Insbesondere wird mit <span class="MATH"><i>i</i>=0</span> der <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img25.png" alt="" /></span> des Ausdrucks wiedergegeben.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><a name="437"></a> Gibt man in <i class="sans">Mathematica</i></p>
+<div align="center" class="mathdisplay"><img width="201" height="63" border="0" src="img34.png" alt="" /></div>
+<p><br clear="all" /></p>
+ein, wobei das Zeichen <span class="MATH">*</span> auch weggelassen werden kann, und bet&auml;tigt die Taste EINF, so antwortet <i class="sans">Mathematica</i> mit<br />
+<div align="center" class="mathdisplay"><img width="175" height="64" border="0" src="img35.png" alt="" /></div>
+<p><br clear="all" /></p>
+<i class="sans">Mathematica</i> hat die Eingabe zur Kenntnis genommen und sie in der mathematischen Standardform wiedergegeben. H&auml;tte man die Eingabe mit einem Semikolon abgeschlossen, so w&auml;re die Ausgabe unterdr&uuml;ckt worden.<br />
+<p>Gibt man</p>
+<div align="center" class="mathdisplay"><img width="170" height="66" border="0" src="img36.png" alt="" /></div>
+<p><br clear="all" /></p>
+ein, so lautet die Antwort<br />
+<div align="center" class="mathdisplay"><img width="315" height="66" border="0" src="img37.png" alt="" /></div>
+<p><br clear="all" /></p>
+Das Zeichen <span class="MATH"><img width="20" height="37" align="middle" border="0" src="img38.png" alt="" /></span> in der eckigen Klammer teilt <i class="sans">Mathematica</i> mit, da&szlig; die letzte Ausgabe als Argument f&uuml;r die neue Eingabe zu verwenden ist. Aus diesem Ausdruck kann man mit<br />
+<div align="center" class="mathdisplay"><img width="383" height="66" border="0" src="img39.png" alt="" /></div>
+<p><br clear="all" /></p>
+das dritte Element herausziehen, das in diesem Fall wiederum ein Ausdruck ist.<br /></td>
+</tr>
+</table>
+<p><span class="begriff">Symbole</span> sind in <i class="sans">Mathematica</i> die Bezeichner der Grundobjekte; sie k&ouml;nnen beliebige Folgen von Buchstaben und Zahlen sein und d&uuml;rfen nicht mit einer Zahl beginnen. Das Sonderzeichen <span class="MATH"><img width="14" height="37" align="middle" border="0" src="img40.png" alt="" /></span> ist zul&auml;ssig. Es wird zwischen Gro&szlig;- und Kleinbuchstaben unterschieden. Systemimmanente Symbole beginnen mit einem Gro&szlig;buchstaben, bei zusammengesetzten Worten beginnt auch der zweite Teil mit einem Gro&szlig;buchstaben. Der Nutzer sollte deshalb zur Unterscheidung seine selbstdefinierten Symbole nur mit Kleinbuchstaben schreiben.</p>
+</body>
+</html>

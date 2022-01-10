@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Bernstein-B&eacute;zier-Darstellung von Kurven und Fl&auml;chen</title>
+<meta name="description" content="Bernstein-B&eacute;zier-Darstellung von Kurven und Fl&auml;chen" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node118.html" />
+<link rel="up" href="node107.html" />
+<link rel="next" href="node120.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node118.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node120.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a id="up" href="node107.html">Darstellung von Kurven und Fl&#228;chen mit Hilfe von Splines</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001873000000000000000" id="SECTION001873000000000000000"></a> <a name="5708"></a> <a name="5709"></a> <a name="5710"></a> <a name="5711"></a>
+Bernstein-B&eacute;zier-Darstellung von Kurven und Fl&auml;chen</h2>
+<p><a name="7569"></a> <a name="7570"></a></p>
+<dl>
+<dd><b>Bernsteinsche Grundpolynome:</b> Die B<small>ERNSTEIN-</small>B&acute;<small>EZIER</small>-Darstellung (kurz B-B-Darstellung) von Kurven und Fl&auml;chen verwendet die <span class="begriff">B<small>ERNSTEIN</small>schen Grundpolynome</span>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="378" height="92" border="0" src="img767.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">247</span>)</td>
+</tr>
+</table>
+</div>
+<p>und nutzt vor allem die folgenden Eigenschaften aus:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="319" height="66" border="0" src="img768.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">248</span>)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay"><a name="F1190720" id="F1190720"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190720" id="F1190720"></a><img width="162" height="102" border="0" src="img769.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">249</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die Formel (<a href="#F1190720">19.249</a>) folgt unmittelbar aus dem <a href="../kap_1/node43.html#v5">binomischen Satz</a>.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="221" height="37" align="middle" border="0" src="img770.png" alt="" /></span></p>
+<p align="left" class="BILD"><a name="BILD_519a012u" class="BILD" id="BILD_519a012u"><img alt="BilD" src="../bilder/kap19/t1/519a012u.gif" border="0" /></a></p>
+<p class="nachBild"></p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="583" height="39" align="middle" border="0" src="img771.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+</dd>
+<dd><b>Vektordarstellungen:</b> Im folgenden werde eine Raumkurve, deren Parameterdarstellung <span class="MATH"><img width="238" height="37" align="middle" border="0" src="img772.png" alt="" /></span> lautet, vektoriell durch
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="292" height="66" border="0" src="img773.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">250</span>)</td>
+</tr>
+</table>
+</div>
+<p>beschrieben. Dabei ist <span class="MATH"><i>t</i></span> der Kurvenparameter. Die entsprechende Darstellung f&uuml;r eine Fl&auml;che lautet</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="387" height="66" border="0" src="img774.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">251</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei sind <span class="MATH"><i>u</i></span> und <span class="MATH"><i>v</i></span> die Fl&auml;chenparameter.</p>
+</dd>
+</dl>
+
+</body>
+</html>

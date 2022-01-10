@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Prinzip des Gau&szlig;schen Eliminationsverfahrens</title>
+<meta name="description" content="Prinzip des Gau&szlig;schen Eliminationsverfahrens" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node20.html" />
+<link rel="previous" href="node18.html" />
+<link rel="up" href="node18.html" />
+<link rel="next" href="node20.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node18.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node20.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node16.html">Numerische L&#246;sung von Gleichungssystemen</a> <a href="node17.html">Lineare Gleichungssysteme</a> <a id="up" href="node18.html">Dreieckszerlegung einer Matrix</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001821110000000000000" id="SECTION001821110000000000000"></a><a name="GaussEliminPrinz" id="GaussEliminPrinz"></a>
+Prinzip des Gau&szlig;schen Eliminationsverfahrens</h4>
+<p><a name="7706"></a> <a name="928"></a> <a name="929"></a> <a name="930"></a> <a name="7707"></a> <a name="7708"></a> <a name="933"></a> Durch die elementaren Umformungen</p>
+<ol>
+<li>
+<div>Vertauschen von Zeilen</div>
+</li>
+<li>
+<div>Multiplikation einer Zeile mit einer von Null verschiedenen Zahl</div>
+</li>
+<li>
+<div>Addition eines Vielfachen einer Zeile zu einer anderen Zeile</div>
+</li>
+</ol>
+wird das System <span class="MATH"><img width="72" height="35" align="middle" border="0" src="img81.png" alt="" /></span> (<a href="node17.html#F1190204">19.26</a>) in ein sogenanntes <span class="begriff">gestaffeltes Gleichungssystem</span>
+<div class="mathdisplay"><a name="F1190205" id="F1190205"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190205" id="F1190205"></a><img width="397" height="163" border="0" src="img82.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">27</span>)</td>
+</tr>
+</table>
+</div>
+<p>&uuml;berf&uuml;hrt. Da dabei nur &auml;quivalente Umformungen vorgenommen werden, besitzt <span class="MATH"><img width="70" height="35" align="middle" border="0" src="img83.png" alt="" /></span> dieselbe L&ouml;sung wie <span class="MATH"><img width="76" height="35" align="middle" border="0" src="img84.png" alt="" /></span>. Man erh&auml;lt sie aus (<a href="#F1190205">19.27</a>):</p>
+<div class="mathdisplay"><a name="F1190206" id="F1190206"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190206" id="F1190206"></a><img width="527" height="106" border="0" src="img85.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">28</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die durch die Formel (<a href="#F1190206">19.28</a>) angegebene Vorschrift nennt man <span class="begriff">R&uuml;ckw&auml;rtseinsetzen</span>, da die Gleichungen von (<a href="#F1190205">19.27</a>) in der umgekehrten Reihenfolge ihrer Entstehung benutzt werden.</p>
+<p>Der &Uuml;bergang von <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img86.png" alt="" /></span> zu <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img87.png" alt="" /></span> erfolgt in <span class="MATH"><i>n</i>-1</span> sogenannten <span class="begriff">Eliminationsschritten</span>, deren Durchf&uuml;hrung am ersten Schritt gezeigt werden soll. Dieser &uuml;berf&uuml;hrt die Matrix <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img86.png" alt="" /></span> in die Matrix <span class="MATH"><img width="28" height="35" align="middle" border="0" src="img88.png" alt="" /></span>:</p>
+<div class="mathdisplay"><a name="F1190207" id="F1190207"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190207" id="F1190207"></a><img width="518" height="196" border="0" src="img89.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">29</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei ist wie folgt vorzugehen:</p>
+<ol>
+<li>
+<div>Man bestimme ein <span class="MATH"><img width="63" height="35" align="middle" border="0" src="img90.png" alt="" /></span>. Falls kein solches existiert, stop: <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img86.png" alt="" /></span> ist singul&auml;r. Andernfalls hei&szlig;t <span class="MATH"><i>a</i><sub><i>r</i>1</sub></span> <span class="begriff">Pivot</span>.</div>
+</li>
+<li>
+<div>Man vertausche die 1.&nbsp;und die <span class="MATH"><i>r</i></span>-te Zeile von <span class="MATH"><img width="24" height="16" align="bottom" border="0" src="img91.png" alt="" /></span>. Das Ergebnis ist die Matrix <span class="MATH"><img width="24" height="20" align="bottom" border="0" src="img92.png" alt="" /></span>.</div>
+</li>
+<li>
+<div>Man subtrahiere f&uuml;r <span class="MATH"><img width="116" height="34" align="middle" border="0" src="img93.png" alt="" /></span> das <span class="MATH"><i>l</i><sub><i>i</i>1</sub></span>-fache der 1.&nbsp;Zeile von der <span class="MATH"><i>i</i></span>-ten Zeile der Matrix <span class="MATH"><img width="21" height="20" align="bottom" border="0" src="img94.png" alt="" /></span>.</div>
+</li>
+</ol>
+Als Ergebnis erh&auml;lt man die Matrix <span class="MATH"><img width="28" height="35" align="middle" border="0" src="img88.png" alt="" /></span> und analog die neue rechte Seite <span class="MATH"><img width="24" height="35" align="middle" border="0" src="img95.png" alt="" /></span> mit folgenden Elementen:<br />
+<div class="myclass">
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>a</i><sub><i>ik</i></sub><sup>(1)</sup></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="199" height="59" align="middle" border="0" src="img96.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>b</i><sub><i>i</i></sub><sup>(1)</sup></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="265" height="43" align="middle" border="0" src="img97.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">30</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+<p>Die in der Matrix <span class="MATH"><img width="28" height="35" align="middle" border="0" src="img88.png" alt="" /></span> (<a href="#F1190207">19.29</a>) eingerahmte Teilmatrix ist vom Typ <span class="MATH">(<i>n</i>-1,<i>n</i>-1)</span> und wird analog zu <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img86.png" alt="" /></span> behandelt; usw. Diese Vorgehensweise bezeichnet man als <span class="begriff">G<small>AUSS</small>sches Eliminationsverfahren</span> oder <a href="../kap_4/node107.html#v74">G<small>AUSS</small>schen Algorithmus</a>.</p>
+</body>
+</html>

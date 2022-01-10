@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Barriereverfahren</title>
+<meta name="description" content="Barriereverfahren" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node93.html" />
+<link rel="up" href="node92.html" />
+<link rel="next" href="node95.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node93.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node95.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a href="node43.html">Nichtlineare Optimierung</a> <a id="up" href="node92.html">Straf- und Barriereverfahren</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001728200000000000000" id="SECTION001728200000000000000"></a> <a name="4773"></a> <a name="4774"></a>
+Barriereverfahren</h3>
+<p>Es wird eine Folge von Ersatzproblemen der Form</p>
+<div class="mathdisplay"><a name="F1180273" id="F1180273"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1180273" id="F1180273"></a><img width="360" height="66" border="0" src="img640.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">105</span>)</td>
+</tr>
+</table>
+</div>
+<p>betrachtet. Der Term <span class="MATH"><img width="62" height="37" align="middle" border="0" src="img641.png" alt="" /></span> verhindert, da&szlig; der zul&auml;ssige Bereich <span class="MATH"><i>M</i></span> bei der L&ouml;sung von (<a href="#F1180273">18.105</a>) verlassen wird, indem die Zielfunktion bei Ann&auml;herung an den Rand von <span class="MATH"><i>M</i></span> unbeschr&auml;nkt w&auml;chst. Die <span class="begriff">Regularit&auml;tsbedingung</span></p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="544" height="69" border="0" src="img642.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">106</span>)</td>
+</tr>
+</table>
+</div>
+<p>sei erf&uuml;llt, d.h., das Innere von <span class="MATH"><i>M</i></span> ist nicht leer und der Abschlu&szlig; von <span class="MATH"><i>M</i><sup>0</sup></span> ist gleich <span class="MATH"><img width="28" height="16" align="bottom" border="0" src="img32.png" alt="" /></span>.<br />
+Die Funktion <span class="MATH"><img width="46" height="37" align="middle" border="0" src="img643.png" alt="" /></span> ist auf <span class="MATH"><i>M</i><sup>0</sup></span> definiert und stetig. Sie w&auml;chst auf dem Rand von <span class="MATH"><i>M</i></span> nach <span class="MATH"><img width="27" height="16" align="bottom" border="0" src="img644.png" alt="" /></span>. Das Ersatzproblem (<a href="#F1180273">18.105</a>) wird mit einer gegen Null fallenden Folge von Barriereparametern <span class="MATH"><i>q</i><sub><i>k</i></sub></span> gel&ouml;st. F&uuml;r die L&ouml;sung <span class="MATH"><img width="24" height="40" align="middle" border="0" src="img459.png" alt="" /></span> des <span class="MATH"><i>k</i></span>-ten Problems (<a href="#F1180273">18.105</a>) gilt</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="140" height="68" border="0" src="img645.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">107</span>)</td>
+</tr>
+</table>
+</div>
+<p>und jeder H&auml;ufungspunkt <span class="MATH"><img width="24" height="35" align="middle" border="0" src="img120.png" alt="" /></span> der Folge <span class="MATH"><img width="43" height="40" align="middle" border="0" src="img418.png" alt="" /></span> ist eine L&ouml;sung von (<a href="node93.html#F1180267">18.99</a>).<br />
+Die folgende Abbildung zeigt eine Veranschaulichung des Barriereverfahrens.</p>
+<p class="BILD" align="left"><a name="BILD_118a012" class="BILD" id="BILD_118a012"><img src="../bilder/kap18/t1/118a012.gif" alt="BilD" border="0" /></a></p>
+<p class="nachBild">
+Als Realisierungen f&uuml;r die Funktion <span class="MATH"><img width="46" height="37" align="middle" border="0" src="img643.png" alt="" /></span> sind z.B. geeignet</p>
+<div class="myclass"><a name="F1180276a" id="F1180276a"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="87" height="39" align="middle" border="0" src="img646.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="304" height="71" align="middle" border="0" src="img647.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">108</span>a)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="89" height="39" align="middle" border="0" src="img648.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="338" height="71" align="middle" border="0" src="img649.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">108</span>b)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="815" height="39" align="middle" border="0" src="img650.png" alt="" /></span>,<br />
+</p>
+<div align="center" class="mathdisplay"><img width="512" height="138" border="0" src="img651.png" alt="" /></div>
+<p><br clear="all" /></p>
+Der Gradient von <span class="MATH"><i>H</i></span> wird hier nur bez&uuml;glich <span class="MATH"><img width="16" height="33" align="middle" border="0" src="img37.png" alt="" /></span> gebildet. Subtraktion beider Gleichungen ergibt <span class="MATH"><img width="69" height="33" align="middle" border="0" src="img652.png" alt="" /></span>,<br />
+<span class="MATH"><img width="520" height="59" align="middle" border="0" src="img653.png" alt="" /></span>,<br />
+<span class="MATH"><img width="498" height="72" align="middle" border="0" src="img654.png" alt="" /></span><br /></td>
+</tr>
+</table>
+<p>Die L&ouml;sung der Aufgaben (<a href="node93.html#F1180268">18.100</a>) und (<a href="#F1180273">18.105</a>) im <span class="MATH"><i>k</i></span>-ten Schritt h&auml;ngt nicht von den L&ouml;sungen der vorangegangenen Schritte ab. Bei der Verwendung gro&szlig;er Straf- bzw. kleiner Barriereparameter treten bei der L&ouml;sung von (<a href="node93.html#F1180268">18.100</a>) und (<a href="#F1180273">18.105</a>) mittels <a href="node71.html#NumSuchVerf">numerischer Verfahren</a> h&auml;ufig Konvergenzprobleme auf, falls keine gute Startn&auml;herung verf&uuml;gbar ist. Praktisch nutzt man deshalb den L&ouml;sungspunkt des <span class="MATH"><i>k</i></span>-ten Ersatzproblems als Startwert der L&ouml;sung des (<span class="MATH"><i>k</i>+1</span>)-ten Problems.</p>
+</body>
+</html>

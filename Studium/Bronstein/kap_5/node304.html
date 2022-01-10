@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Defuzzifizierungsmethoden</title>
+<meta name="description" content="Defuzzifizierungsmethoden" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node305.html" />
+<link rel="previous" href="node303.html" />
+<link rel="up" href="node269.html" />
+<link rel="next" href="node305.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node303.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node305.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a id="up" href="node269.html">Fuzzy-Logik</a> </span>
+</p>
+</div>
+<h2><a name="SECTION00495000000000000000" id="SECTION00495000000000000000"></a> <a name="8115"></a> <a name="8116"></a> <a name="8117"></a> <a name="8118"></a> <a name="8119"></a>
+Defuzzifizierungsmethoden</h2>
+<p><a name="9096"></a> <a name="8121"></a> <a name="8122"></a> <a name="8123"></a> <a name="8124"></a> Zur Berechnung einer scharfen Ausgangsgr&ouml;&szlig;e ist eine <span class="begriff">Defuzzifizierung</span> der Fuzzy-Menge am Ausgang erforderlich. Man bedient sich verschiedener Methoden.</p>
+<dl>
+<dt>1.&nbsp;Maximum-Kriterium-Methode:</dt>
+<dd><a name="MaxKritMeth" id="MaxKritMeth"></a>Aus dem Bereich, innerhalb dessen die Fuzzy-Menge<br />
+<span class="MATH"><img width="65" height="36" align="middle" border="0" src="img1945.png" alt="" /></span> den maximalen Zugeh&ouml;rigkeitsgrad besitzt, wird ein beliebiger Wert <span class="MATH"><img width="53" height="35" align="middle" border="0" src="img1946.png" alt="" /></span> ausgew&auml;hlt.</dd>
+<dt>2.&nbsp;Mean-of-Maximum-Methode (MOM):</dt>
+<dd>Als Ausgabewert wird der Mittelwert &uuml;ber die maximalen Zugeh&ouml;rigkeitswerte genommen:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="503" height="70" border="0" src="img1947.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">407</span>)</td>
+</tr>
+</table>
+</div>
+<p>Wenn die Menge <span class="MATH"><img width="23" height="16" align="bottom" border="0" src="img788.png" alt="" /></span>, die ein Intervall darstellt, nicht leer ist, dann ergibt sich:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="247" height="155" border="0" src="img1948.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">408</span>)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>3.&nbsp;Schwerpunktmethode (S):</dt>
+<dd><a name="SchwerpMethS" id="SchwerpMethS"></a>Bei der Schwerpunktmethode wird die Abszisse des Schwerpunktes einer Fl&auml;che mit gedachter homogener Dichtebelegung vom Werte 1 berechnet.
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="174" height="144" border="0" src="img1949.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">409</span>)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>4.&nbsp;Parametrisierte Schwerpunktmethode (PS):</dt>
+<dd>Die parametrische Methode geht von <span class="MATH"><img width="55" height="35" align="middle" border="0" src="img1950.png" alt="" /></span> aus.
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="185" height="144" border="0" src="img1951.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">410</span>)</td>
+</tr>
+</table>
+</div>
+<p>Aus dieser Formel folgt f&uuml;r <span class="MATH"><img width="134" height="33" align="middle" border="0" src="img1952.png" alt="" /></span> und f&uuml;r <span class="MATH"><img width="171" height="33" align="middle" border="0" src="img1953.png" alt="" /></span></p>
+</dd>
+<dt>5.&nbsp;Verallgemeinerte Schwerpunktmethode (VS):</dt>
+<dd>Wird der Exponent <span class="MATH"><img width="15" height="33" align="middle" border="0" src="img451.png" alt="" /></span> bei der parametrischen Defuzzifizierungsmethode als Funktion von <span class="MATH"><i>y</i></span> angesehen, dann folgt daraus unmittelbar
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="204" height="144" border="0" src="img1954.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">411</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die VS-Methode ist eine Verallgemeinerung der PS-Methode. Sie ist von Interesse, wenn <span class="MATH"><img width="40" height="37" align="middle" border="0" src="img1955.png" alt="" /></span> selbst ein besonderes, von <span class="MATH"><i>y</i></span> abh&auml;ngiges Gewicht erhalten soll.</p>
+</dd>
+<dt>6.&nbsp;Methode der Fl&auml;chenhalbierung (FH):</dt>
+<dd>Die Position einer Geraden parallel zur Ordinate wird so berechnet, da&szlig; die linke und die rechte Seite der Fl&auml;che unter der Zugeh&ouml;rigkeitsfunktion gleich gro&szlig; ist.
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="232" height="93" border="0" src="img1956.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">412</span>)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>7.&nbsp;Methode der parametrisierten Fl&auml;chenhalbierenden (PF):</dt>
+<dd>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="240" height="93" border="0" src="img1957.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">413</span>)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>8.&nbsp;Methode der gr&ouml;&szlig;ten Fl&auml;che (GF):</dt>
+<dd>Es wird die signifikante Teilmenge aus der Gesamtmenge ausgew&auml;hlt, die dann mit bekannten Methoden, wie z.B.&nbsp;der Schwerpunktsmethode (S) oder der Bestimmung der Fl&auml;chenhalbierenden (FH) ausgewertet wird.</dd>
+</dl>
+</body>
+</html>

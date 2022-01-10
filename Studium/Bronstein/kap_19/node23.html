@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Cholesky-Verfahren bei symmetrischer Koeffizientenmatrix</title>
+<meta name="description" content="Cholesky-Verfahren bei symmetrischer Koeffizientenmatrix" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node24.html" />
+<link rel="previous" href="node22.html" />
+<link rel="up" href="node17.html" />
+<link rel="next" href="node24.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node22.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node24.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node16.html">Numerische L&#246;sung von Gleichungssystemen</a> <a id="up" href="node17.html">Lineare Gleichungssysteme</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001821200000000000000" id="SECTION001821200000000000000"></a> <a name="chol-ver" id="chol-ver"></a><a name="v84" id="v84"></a>
+Cholesky-Verfahren bei symmetrischer Koeffizientenmatrix</h3>
+<p><a name="7201"></a> <a name="7202"></a> <a name="1235"></a> <a name="1236"></a> <a name="1237"></a> <a name="7203"></a> <a name="7204"></a> In vielen F&auml;llen ist in (<a href="node17.html#F1190204">19.26</a>) die Koeffizientenmatrix <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img86.png" alt="" /></span> nicht nur symmetrisch, sondern auch <span class="begriff">positiv definit</span>, d.h., f&uuml;r die zugeh&ouml;rige <span class="begriff">quadratische Form</span> <span class="MATH"><img width="45" height="37" align="middle" border="0" src="img116.png" alt="" /></span> gilt:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="296" height="102" border="0" src="img117.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">34</span>)</td>
+</tr>
+</table>
+</div>
+<p>f&uuml;r alle <span class="MATH"><img width="135" height="36" align="middle" border="0" src="img118.png" alt="" /></span>. Da es zu jeder symmetrischen positiv definiten Matrix <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img86.png" alt="" /></span> eine eindeutige Dreieckszerlegung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="81" height="63" border="0" src="img119.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">35</span>)</td>
+</tr>
+</table>
+</div>
+<p>mit</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="269" height="163" border="0" src="img120.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">36</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="417" height="95" border="0" src="img121.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">36</span>b)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="387" height="73" border="0" src="img122.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">36</span>c)</td>
+</tr>
+</table>
+</div>
+<p>gibt, kann die L&ouml;sung des zugeh&ouml;rigen linearen Gleichungssystems <span class="MATH"><img width="72" height="35" align="middle" border="0" src="img81.png" alt="" /></span> nach dem C<small>HOLESKY</small>-<span class="begriff">Verfahren</span> in folgenden Schritten durchgef&uuml;hrt werden:</p>
+<ol>
+<li>
+<div><span class="MATH"><img width="86" height="19" align="bottom" border="0" src="img123.png" alt="" /></span>: Ermittlung der sogenannten <span class="begriff">C<small>HOLESKY</small>-Zerlegung</span> und Substitution <span class="MATH"><img width="77" height="40" align="middle" border="0" src="img124.png" alt="" /></span>.</div>
+</li>
+<li>
+<div><span class="MATH"><img width="67" height="35" align="middle" border="0" src="img125.png" alt="" /></span>: Bestimmung des Hilfsvektors <span class="MATH"><img width="14" height="33" align="middle" border="0" src="img110.png" alt="" /></span> durch Vorw&auml;rtseinsetzen.</div>
+</li>
+<li>
+<div><span class="MATH"><img width="74" height="40" align="middle" border="0" src="img126.png" alt="" /></span>: Bestimmung der L&ouml;sung <span class="MATH"><img width="16" height="33" align="middle" border="0" src="img111.png" alt="" /></span> durch R&uuml;ckw&auml;rtseinsetzen.</div>
+</li>
+</ol>
+F&uuml;r gro&szlig;e Werte von <span class="MATH"><i>n</i></span> ist der Aufwand beim C<small>HOLESKY</small>-Verfahren etwa halb so gro&szlig; wie bei der LR-Zerlegung gem&auml;&szlig; (<a href="node20.html#F1190209">19.31</a>).
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Grundtypen von Zahlen in Maple</title>
+<meta name="description" content="Grundtypen von Zahlen in Maple" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node59.html" />
+<link rel="previous" href="node57.html" />
+<link rel="up" href="node57.html" />
+<link rel="next" href="node59.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node57.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node59.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node53.html">Maple</a> <a id="up" href="node57.html">Zahlenarten in Maple</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001932100000000000000" id="SECTION001932100000000000000">Grundtypen von Zahlen in Maple</a></h3>
+<p><i class="sans">Maple</i> kennt die in der folgenden Tabelle aufgef&uuml;hrten Grundtypen von Zahlen.</p>
+<p><!-- TabellenStart: T2011 -->
+<a name="t20MapleZahlArt" id="t20MapleZahlArt"></a></p>
+<div align="center">Tabelle Zahlenarten in <i class="sans">Maple</i><br />
+<a name="zamap" id="zamap"></a>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left">Zahlenart</td>
+<td align="left">Typ</td>
+<td align="left">Darstellungsform</td>
+</tr>
+<tr valign="baseline">
+<td align="left">Ganze Zahl</td>
+<td align="left"><span class="MATH"><img width="73" height="33" align="middle" border="0" src="img435.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><i>nnnnnn</i></span> Kette beliebig vieler Ziffern</td>
+</tr>
+<tr valign="baseline">
+<td align="left">Bruchzahlen</td>
+<td align="left"><span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img436.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><i>ppp</i>/qqq</span> Bruch zweier ganzer Zahlen</td>
+</tr>
+<tr valign="baseline">
+<td align="left">Gleitpunktzahlen</td>
+<td align="left"><span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img437.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><i>nn</i>.<i>mmm</i></span> oder in wissenschaftlicher Notation <span class="MATH"><img width="134" height="37" align="middle" border="0" src="img438.png" alt="" /></span></td>
+</tr>
+</table>
+</div>
+<p>Mit Hilfe der Typpr&uuml;fungsfunktionen k&ouml;nnen weitere Eigenschaften von Zahlen erfragt werden:</p>
+<dl>
+<dt>1.&nbsp;Rationale Zahlen (Typ <span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img439.png" alt="" /></span>):</dt>
+<dd>Rationale Zahlen sind in <i class="sans">Maple</i> die ganzen Zahlen und die Br&uuml;che, wobei ein Bruch, der zur ganzen Zahl vereinfacht werden kann, von <i class="sans">Maple</i> nicht als Bruch (Typ <span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img436.png" alt="" /></span>) erkannt wird.</dd>
+<dt>2.&nbsp;Gleitpunktzahlen (Typ <span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img437.png" alt="" /></span>):</dt>
+<dd>Setzt man hinter eine ganze Zahl den Dezimalpunkt (<span class="MATH"><i>nnn</i>.</span>), so wird sie automatisch als Gleitpunktzahl interpretiert.</dd>
+<dt>3.&nbsp;Gemeinsamkeiten:</dt>
+<dd>Alle drei Zahlenarten haben die Typen <span class="MATH"><img width="160" height="33" align="middle" border="0" src="img440.png" alt="" /></span> und <span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img441.png" alt="" /></span>. Die letzten beiden Typen treffen auch f&uuml;r komplexe Zahlen zu.</dd>
+<dt>4.&nbsp;Komplexe Zahlen:</dt>
+<dd>Komplexe Zahlen werden mit der imagin&auml;ren Einheit <tt>I</tt> wie &uuml;blich gebildet. Die Zahl <tt>I</tt> repr&auml;sentiert die Quadratwurzel aus <span class="MATH">-1</span>. Sie ist vom Typ <tt>complex</tt>. Ihre Definition lautet intern
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="130" height="66" border="0" src="img442.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">34</span>)</td>
+</tr>
+</table>
+</div>
+<p>F&uuml;r die Darstellung komplexer Zahlen existiert intern der <tt>Complex-</tt>Konstruktor:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="128" height="66" border="0" src="img443.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">35</span>)</td>
+</tr>
+</table>
+</div>
+<p>liefert, wenn <span class="MATH"><i>x</i></span> und <span class="MATH"><i>y</i></span> Zahlen sind, <span class="MATH"><i>x</i>+<i>yI</i></span>.</p>
+</dd>
+</dl>
+</body>
+</html>

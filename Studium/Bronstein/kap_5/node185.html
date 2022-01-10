@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>t-fehlerkorrigierende Codes</title>
+<meta name="description" content="t-fehlerkorrigierende Codes" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node186.html" />
+<link rel="previous" href="node184.html" />
+<link rel="up" href="node183.html" />
+<link rel="next" href="node186.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node184.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node186.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node143.html">Elementare Zahlentheorie</a> <a href="node177.html">Codierungen</a> <a id="up" href="node183.html">Fehlerkorrigierende Codes</a> </span>
+</p>
+</div>
+<h4><a name="SECTION00445220000000000000" id="SECTION00445220000000000000"></a> <a name="5224"></a>
+t-fehlerkorrigierende Codes</h4>
+<p>Die Menge aller Codew&ouml;rter nennt man einen <span class="begriff">Code</span> <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1337.png" alt="" /></span>.<a name="5227"></a> Der <span class="begriff">Abstand</span> zweier Codew&ouml;rter ist die Anzahl der Stellen, in denen sich diese Codew&ouml;rter unterscheiden. Der <span class="begriff">Minimalabstand</span> <span class="MATH"><img width="63" height="37" align="middle" border="0" src="img1338.png" alt="" /></span> des Codes ist der kleinste Abstand, der zwischen zwei Codew&ouml;rtern von <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1337.png" alt="" /></span> vorkommt.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r <span class="MATH"><img width="150" height="37" align="middle" border="0" src="img1339.png" alt="" /></span> gilt <span class="MATH"><img width="104" height="37" align="middle" border="0" src="img1340.png" alt="" /></span>.<br />
+F&uuml;r <span class="MATH"><img width="204" height="37" align="middle" border="0" src="img1341.png" alt="" /></span> gilt <span class="MATH"><img width="104" height="37" align="middle" border="0" src="img1342.png" alt="" /></span>; je zwei Codew&ouml;rter haben den Abstand 2.<br />
+F&uuml;r <span class="MATH"><img width="279" height="37" align="middle" border="0" src="img1343.png" alt="" /></span> gilt <span class="MATH"><img width="104" height="37" align="middle" border="0" src="img1344.png" alt="" /></span>; es gibt in <span class="MATH"><img width="22" height="35" align="middle" border="0" src="img1345.png" alt="" /></span> aber auch Codew&ouml;rter mit dem Abstand 3.</p>
+</td>
+</tr>
+</table>
+<p>Kennt man den Minimalabstand <span class="MATH"><img width="63" height="37" align="middle" border="0" src="img1346.png" alt="" /></span> eines Codes <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1347.png" alt="" /></span>, dann kann man leicht ablesen, wie viele &Uuml;bertragungsfehler korrigierbar sind. <a name="5246"></a> Codes, die <span class="MATH"><i>t</i></span> Fehler korrigieren, werden <span class="begriff"><span class="MATH"><i>t</i></span>-fehlerkorrigierend</span> genannt.<br />
+Ein Code <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1347.png" alt="" /></span> ist <span class="MATH"><i>t</i></span>-fehlerkorrigierend genau dann, wenn <span class="MATH"><img width="137" height="37" align="middle" border="0" src="img1348.png" alt="" /></span> gilt.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel Fortsetzung</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="22" height="35" align="middle" border="0" src="img1349.png" alt="" /></span> ist <span class="MATH">1</span>-fehlerkorrigierend, <span class="MATH"><img width="22" height="35" align="middle" border="0" src="img1350.png" alt="" /></span> ist <span class="MATH">0</span>-fehlerkorrigierend (damit sind also keine Fehler korrigierbar), <span class="MATH"><img width="22" height="35" align="middle" border="0" src="img1345.png" alt="" /></span> ist <span class="MATH">1</span>-fehlerkorrigierend.</p>
+</td>
+</tr>
+</table>
+<p>F&uuml;r jeden <span class="MATH"><i>t</i></span>-fehlerkorrigierenden Code <span class="MATH"><img width="101" height="37" align="middle" border="0" src="img1351.png" alt="" /></span> gilt <span class="MATH"><img width="138" height="65" align="middle" border="0" src="img1352.png" alt="" /></span>. Gilt Gleichheit, dann nennt man <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1347.png" alt="" /></span> einen <span class="begriff"><span class="MATH"><i>t</i></span>-perfekten Code</span>. <a name="5261"></a></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Der Wiederholungscode <span class="MATH"><img width="287" height="39" align="middle" border="0" src="img1353.png" alt="" /></span> ist <span class="MATH"><i>t</i></span>-perfekt.</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

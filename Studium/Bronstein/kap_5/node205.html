@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>AES-Algorithmus (Advanced Encryption Standard)</title>
+<meta name="description" content="AES-Algorithmus (Advanced encryption Standard)" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node206.html" />
+<link rel="previous" href="node204.html" />
+<link rel="up" href="node188.html" />
+<link rel="next" href="node206.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node204.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node206.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a id="up" href="node188.html">Kryptologie</a> </span>
+</p>
+</div>
+<h2><a name="SECTION00458000000000000000" id="SECTION00458000000000000000"></a><a name="AESDES" id="AESDES"></a><a name="5600"></a>
+AES-Algorithmus (Advanced Encryption Standard)</h2>
+<p>Beim AES werden hintereinander &uuml;ber mehrere Runden Substitutionen und Permutationen ausgef&uuml;hrt. Zun&auml;chst wird ein geheimer Schl&uuml;ssel gew&auml;hlt. Die Blockl&auml;nge im zu verschl&uuml;sselnden Klartext und die Schl&uuml;ssell&auml;nge k&ouml;nnen <span class="MATH"><img width="36" height="16" align="bottom" border="0" src="img1432.png" alt="" /></span>, <span class="MATH">192</span> oder <span class="MATH">256</span> Bits betragen. Die verschl&uuml;sselten Klartextbl&ouml;cke bilden den Geheimtext, der die gleiche L&auml;nge wie der Klartext hat. Aus diesem kann mit einem inversen Algorithmus und dem Schl&uuml;ssel wieder blockweise der Klartext rekonstruiert werden. Die aus dem Schl&uuml;ssel erzeugten Rundenschl&uuml;ssel werden dabei im Vergleich zur Verschl&uuml;sselung in umgekehrter Reihenfolge eingesetzt.<br />
+Die St&auml;rke dieses Chiffrierungsverfahrens liegt in der Konstruktion der Abbildungen, die in den einzelnen Iterationsrunden angewendet werden. Die einzige nichtlineare Substitution findet man in der Operation ,,SubBytes``. Zu ihrer Beschreibung werden die zu transformierenden Bl&ouml;cke als Elemente eines endlichen K&ouml;rpers aufgefa&szlig;t. Alle Details zum Algorithmus findet man in Lit.&nbsp;<a href="../kap_22/node5.html#x0556">5.37</a>. Obwohl der AES-Algorithmus bis ins Detail offengelegt wurde, sind bis heute keine realistischen Angriffsm&ouml;glichkeiten bekannt geworden.<br />
+</p>
+<p>Von 1977 bis 2001 diente das DES-Verfahren als offizieller US-Verschl&uuml;sselungsstandard f&uuml;r vertrauliche Daten (s. Lit.&nbsp;<a href="../kap_22/node5.html#x0555">5.36</a> und auch <a href="../kap_22/node22.html#x2229">22.7</a>, S. 350). Im Jahre 2001 wurde vom NIST (National Institute of Standards and Technology) nach einer weltweit gef&uuml;hrten Diskussion eine Variante&nbsp; des von J. D<small>AEMEN</small> und V. R<small>IJNMEN</small> vorgeschlagenen <span class="begriff">Rijndael-Algorithmus</span>&nbsp; als neuer Verschl&uuml;sselungsstandard eingef&uuml;hrt.<br />
+Beim DES-Algorithmus werden Permutationen und nichtlineare Substitutionen hintereinander ausgef&uuml;hrt. Der Algorithmus verwendet einen 56 Bit langen Schl&uuml;ssel. Genauer, man benutzt einen 64-Bit-Schl&uuml;ssel, in dem aber nur 56 Bit beliebig w&auml;hlbar sind; die restlichen 8 Bit erg&auml;nzen Bl&ouml;cke von 7-Bit-Zeichen auf ungerade Parit&auml;t.</p>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Regula falsi</title>
+<meta name="description" content="Regula falsi" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node4.html" />
+<link rel="up" href="node2.html" />
+<link rel="next" href="node6.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node4.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node6.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node1.html">Numerische L&#246;sung nichtlinearer Gleichungen</a> <a id="up" href="node2.html">Iterationsverfahren</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001811300000000000000" id="SECTION001811300000000000000"></a><a name="Regulafalsi" id="Regulafalsi"></a><a name="383"></a>
+Regula falsi</h3>
+<p><a name="7141"></a> <a name="7142"></a></p>
+<dl>
+<dt>1.&nbsp;Vorschrift der Regula falsi:</dt>
+<dd>Zur L&ouml;sung der Nullstellengleichung <span class="MATH"><i>f</i>(<i>x</i>)=0</span> verf&auml;hrt die <span class="begriff">Regula falsi</span> nach der Vorschrift
+<div class="mathdisplay"><a name="F1190110" id="F1190110"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190110" id="F1190110"></a><img width="604" height="88" border="0" src="img28.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">10</span>)</td>
+</tr>
+</table>
+</div>
+<p>d.h., sie benutzt nur Funktionswerte und geht aus dem N<small>EWTON</small>-Verfahren (<a href="node4.html#F1190106">19.6</a>) dadurch hervor, da&szlig; die Ableitung <span class="MATH"><i>f</i>'(<i>x</i><sub><i>n</i></sub>)</span> durch den Differenzenquotienten von <span class="MATH"><i>f</i>(<i>x</i>)</span> zwischen <span class="MATH"><i>x</i><sub><i>n</i></sub></span> und einem vorhergehenden N&auml;herungswert <span class="MATH"><img width="105" height="37" align="middle" border="0" src="img29.png" alt="" /></span> ersetzt wird.</p>
+</dd>
+<dt>2.&nbsp;Geometrische Interpretation:</dt>
+<dd>Die geometrische Interpretation der Regula falsi ist in der folgenden Abbildung dargestellt:<br />
+<p align="left" class="BILD"><a name="BILD_119a004" class="BILD" id="BILD_119a004"><img alt="BilD" src="../bilder/kap19/t1/119a004.gif" border="0" /></a></p>
+<p class="nachBild">
+Die Grundidee der Regula falsi besteht in der lokalen Approximation der Kurve <span class="MATH"><i>y</i> = <i>f</i>(<i>x</i>)</span> durch eine Sekante.</p>
+</dd>
+<dt>3.&nbsp;Konvergenz:</dt>
+<dd>Das Verfahren (<a href="#F1190110">19.10</a>) konvergiert sicher, wenn man <span class="MATH"><i>m</i></span> jeweils so w&auml;hlt, da&szlig; <span class="MATH"><i>f</i>(<i>x</i><sub><i>m</i></sub>)</span> und <span class="MATH"><i>f</i>(<i>x</i><sub><i>n</i></sub>)</span> verschiedene Vorzeichen haben. Ist bei fortgeschrittener Iteration die Konvergenz bereits gesichert, so wird sie beschleunigt, wenn man ohne R&uuml;cksicht auf die Vorzeichenbedingung <span class="MATH"><i>x</i><sub><i>m</i></sub> = <i>x</i><sub><i>n</i>-1</sub></span> setzt.<br />
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="179" height="39" align="middle" border="0" src="img30.png" alt="" /></span></p>
+<div align="center"></div>
+<div align="center"><img width="668" height="179" align="bottom" border="0" src="img31.png" alt="" /><br /></div>
+<div align="center"></div>
+</td>
+</tr>
+</table>
+<p>Falls sich im Verlaufe der Rechnung die Werte <span class="MATH"><img width="83" height="37" align="middle" border="0" src="img32.png" alt="" /></span> nur noch unwesentlich &auml;ndern, kann auf ihre Neuberechnung verzichtet werden.</p>
+</dd>
+<dt>4.&nbsp;Steffensen-Verfahren:</dt>
+<dd>Durch Anwendung der Regula falsi mit <span class="MATH"><i>x</i><sub><i>m</i></sub> = <i>x</i><sub><i>n</i>-1</sub></span> auf die Gleichung <span class="MATH"><img width="172" height="37" align="middle" border="0" src="img33.png" alt="" /></span> l&auml;&szlig;t sich h&auml;ufig die Konvergenz wesentlich beschleunigen oder im Falle <span class="MATH"><img width="96" height="37" align="middle" border="0" src="img34.png" alt="" /></span> sogar erzwingen. Diese Vorgehensweise ist unter dem Namen <span class="begriff">S<small>TEFFENSEN</small>-Verfahren</span> bekannt geworden.<br />
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Zur L&ouml;sung der Gleichung <span class="MATH"><img width="117" height="39" align="middle" border="0" src="img35.png" alt="" /></span> mit Hilfe des S<small>TEFFENSEN</small>-Verfahrens soll die Gleichung <span class="MATH"><img width="187" height="46" align="middle" border="0" src="img36.png" alt="" /></span> benutzt werden.</p>
+<div align="center"></div>
+<div align="center"><img width="678" height="155" align="bottom" border="0" src="img37.png" alt="" /><br /></div>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+</body>
+</html>

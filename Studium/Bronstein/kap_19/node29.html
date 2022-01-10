@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Gau&szlig;-Seidel-Verfahren</title>
+<meta name="description" content="Gau&szlig;-Seidel-Verfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node30.html" />
+<link rel="previous" href="node28.html" />
+<link rel="up" href="node27.html" />
+<link rel="next" href="node30.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node28.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node30.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node16.html">Numerische L&#246;sung von Gleichungssystemen</a> <a href="node17.html">Lineare Gleichungssysteme</a> <a id="up" href="node27.html">Iteration in Gesamt- und Einzelschritten</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001821420000000000000" id="SECTION001821420000000000000"></a><a name="GaussSeidelVerf" id="GaussSeidelVerf"></a>
+Gau&szlig;-Seidel-Verfahren</h4>
+<p><a name="7717"></a> <a name="7718"></a> <a name="7719"></a> <a name="1619"></a> Hat man die 1.&nbsp;Komponente <span class="MATH"><img width="52" height="47" align="middle" border="0" src="img166.png" alt="" /></span> nach dem J<small>ACOBI</small>-Verfahren berechnet, dann liegt es nahe, diesen Wert bei der Berechnung von <span class="MATH"><img width="52" height="47" align="middle" border="0" src="img167.png" alt="" /></span> bereits zu verwenden. Geht man entsprechend bei der Berechnung aller &uuml;brigen Komponenten vor, dann erh&auml;lt man die Iterationsvorschrift</p>
+<div class="myclass"><a name="F1190229" id="F1190229"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="351" height="77" align="middle" border="0" src="img168.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">51</span>)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="581" height="47" align="middle" border="0" src="img169.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+Die Vorschrift (<a href="#F1190229">19.51</a>) wird als G<small>AUSS</small>-S<small>EIDEL</small>-<span class="begriff">Verfahren</span> oder <span class="begriff">Einzelschrittverfahren</span> bezeichnet. Das G<small>AUSS</small>-S<small>EIDEL</small>-Verfahren konvergiert im allgemeinen schneller als das J<small>ACOBI</small>-Verfahren, sein Konvergenzsatz ist aber etwas komplizierter.<br />
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="308" height="161" align="middle" border="0" src="img170.png" alt="" /></span><br />
+Die dazugeh&ouml;rige Iterationsvorschrift gem&auml;&szlig; (<a href="#F1190229">19.51</a>) lautet:</p>
+<div align="center" class="mathdisplay"><img width="323" height="85" border="0" src="img171.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="331" height="85" border="0" src="img172.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="358" height="85" border="0" src="img173.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="390" height="85" border="0" src="img174.png" alt="" /></div>
+<p><br clear="all" /></p>
+Einige N&auml;herungen und die L&ouml;sung findet man in der folgenden Zusammenstellung:
+<div align="center">
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="34" height="42" align="middle" border="0" src="img175.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="34" height="42" align="middle" border="0" src="img176.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="34" height="42" align="middle" border="0" src="img177.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="34" height="42" align="middle" border="0" src="img178.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="16" height="33" align="middle" border="0" src="img111.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center">0</td>
+<td align="center">1,4</td>
+<td align="center">1,5053</td>
+<td align="center">1,5012</td>
+<td align="center">1,5</td>
+</tr>
+<tr valign="baseline">
+<td align="center">0</td>
+<td align="center">1,0077</td>
+<td align="center">0,9946</td>
+<td align="center">0,9989</td>
+<td align="center">1</td>
+</tr>
+<tr valign="baseline">
+<td align="center">0</td>
+<td align="center">1,0976</td>
+<td align="center">0,5059</td>
+<td align="center">0,5014</td>
+<td align="center">0,5</td>
+</tr>
+<tr valign="baseline">
+<td align="center">0</td>
+<td align="center">1,7861</td>
+<td align="center">1,9976</td>
+<td align="center">1,9995</td>
+<td align="center">2</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+</body>
+</html>

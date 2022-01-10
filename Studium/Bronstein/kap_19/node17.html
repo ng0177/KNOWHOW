@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Lineare Gleichungssysteme</title>
+<meta name="description" content="Lineare Gleichungssysteme" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node18.html" />
+<link rel="previous" href="node16.html" />
+<link rel="up" href="node16.html" />
+<link rel="next" href="node18.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node16.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node18.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a id="up" href="node16.html">Numerische L&#246;sung von Gleichungssystemen</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001821000000000000000" id="SECTION001821000000000000000"></a><a name="abschn16.2.1" id="abschn16.2.1"></a><a name="834"></a> <a name="835"></a> <a name="836"></a> <a name="837"></a>
+Lineare Gleichungssysteme</h2>
+<p>Gegeben sei das <a href="../kap_4/node100.html#LinGlgsSyst">lineare Gleichungssystem</a></p>
+<div class="mathdisplay"><a name="F1190203" id="F1190203"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190203" id="F1190203"></a><img width="281" height="147" border="0" src="img75.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">25</span>)</td>
+</tr>
+</table>
+</div>
+<p>Das System (<a href="#F1190203">19.25</a>) lautet in Matrixschreibweise</p>
+<div class="mathdisplay"><a name="F1190204" id="F1190204"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190204" id="F1190204"></a><img width="75" height="64" border="0" src="img76.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">26</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei bedeuten:</p>
+<table cellpadding="3">
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="214" height="122" align="middle" border="0" src="img77.png" alt="" /></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="MATH"><img width="116" height="122" align="middle" border="0" src="img78.png" alt="" /></span></td>
+<td align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="MATH"><img width="118" height="122" align="middle" border="0" src="img79.png" alt="" /></span></td>
+<td align="left">&nbsp;</td>
+</tr>
+</table>
+<br />
+<p>Die quadratische Matrix <span class="MATH"><img width="237" height="37" align="middle" border="0" src="img80.png" alt="" /></span> sei regul&auml;r, so da&szlig; das System (<a href="#F1190203">19.25</a>) eine <a href="../kap_4/node101.html#v332">eindeutige L&ouml;sung</a> besitzt. Bei der numerischen L&ouml;sung von (<a href="#F1190203">19.25</a>) kann man im wesentlichen zwei Verfahrensklassen unterscheiden:</p>
+<dl>
+<dt>1.&nbsp;Direkte Verfahren,</dt>
+<dd>die durch elementare Umformungen das Gleichungssystem auf eine Form bringen, aus der die L&ouml;sungen unmittelbar abzulesen oder leicht zu bestimmen sind. Dazu geh&ouml;ren das <a href="../kap_4/node93.html#v333">Austauschverfahren</a> und die in den folgenden Abschnitten<br />
+<a href="node18.html#kap16.2.1.1">Dreieckszerlegung einer Matrix</a>, <a href="node23.html#v84">C<small>HOLESKY</small>-Verfahren bei symmetrischer Koeffizientenmatrix</a><br />
+und <a href="node24.html#OrthVerfNum">Orthogonalisierungsverfahren</a> beschriebenen Verfahren.</dd>
+<dt>2.&nbsp;Iterationsverfahren,</dt>
+<dd>die von einer bekannten Startn&auml;herung aus eine Folge von N&auml;herungsl&ouml;sungen erzeugen, welche gegen die L&ouml;sung von (<a href="#F1190203">19.25</a>) konvergiert (s.&nbsp;Abschnitt <a href="node27.html#kap16.2.1.4">Iteration in Gesamt- und Einzelschritten</a>).</dd>
+</dl>
+
+</body>
+</html>

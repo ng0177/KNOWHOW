@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Normierte Normalverteilung, Gau&szlig;sches Fehlerintegral</title>
+<meta name="description" content="Normierte Normalverteilung, Gau&szlig;sches Fehlerintegral" />
+<meta name="keywords" content="kap_16" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node43.html" />
+<link rel="previous" href="node41.html" />
+<link rel="up" href="node40.html" />
+<link rel="next" href="node43.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node41.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node43.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_16.html">Wahrscheinlichkeitsrechnung und Mathematische Statistik</a> <a href="node6.html">Wahrscheinlichkeitsrechnung</a> <a id="up" href="node40.html">Stetige Verteilungen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001524200000000000000" id="SECTION001524200000000000000"></a> <a name="gaussnormverteilung" id="gaussnormverteilung"></a><a name="1267"></a>
+Normierte Normalverteilung, Gau&szlig;sches Fehlerintegral</h3>
+<p><a name="5374"></a> <a name="5375"></a> <a name="5376"></a> <a name="5377"></a> <a name="1272"></a></p>
+<dl>
+<dt>1.&nbsp;Verteilungsfunktion und Dichtefunktion:</dt>
+<dd>Aus (<a href="node41.html#F1160253">16.70</a>) erh&auml;lt man f&uuml;r <span class="MATH"><img width="50" height="33" align="middle" border="0" src="img232.png" alt="" /></span> und <span class="MATH"><img width="58" height="19" align="bottom" border="0" src="img233.png" alt="" /></span> die Verteilungsfunktion
+<div class="mathdisplay"><a name="F1160257a" id="F1160257a"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1160257a" id="F1160257a"></a><img width="401" height="115" border="0" src="img234.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">74</span>a)</td>
+</tr>
+</table>
+</div>
+<p>der <span class="begriff">normierten Normalverteilung</span>. Ihre Dichtefunktion</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="135" height="91" border="0" src="img235.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">74</span>b)</td>
+</tr>
+</table>
+</div>
+<p>beschreibt die <span class="begriff">G<small>AUSS</small>sche Glockenkurve</span> (s.&nbsp;Abbildung).</p>
+<p class="BILD" align="left"><a class="BILD" name="BILD_116a005b" id="BILD_116a005b"><img border="0" src="../bilder/kap16/t1/116a005b.gif" alt="BilD" /></a></p>
+<p class="nachBild">
+Die (<span class="MATH">0,1</span>)-Normalverteilung <span class="MATH"><img width="42" height="37" align="middle" border="0" src="img230.png" alt="" /></span> liegt tabelliert vor (<a href="../kap_21/node151.html#tnormver">Tabelle Normierte Normalverteilung</a>), und zwar hier nur f&uuml;r positive Argumente <span class="MATH"><i>x</i></span>, da f&uuml;r negative Argumente der Zusammenhang</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="145" height="66" border="0" src="img236.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">75</span>)</td>
+</tr>
+</table>
+</div>
+<p>genutzt werden kann.</p>
+</dd>
+<dt>2.&nbsp;Wahrscheinlichkeitsintegral:</dt>
+<dd>Das Integral <span class="MATH"><img width="42" height="37" align="middle" border="0" src="img230.png" alt="" /></span> wird auch <span class="begriff">Wahrscheinlichkeitsintegral</span> oder <span class="begriff">G<small>AUSS</small>sches Fehlerintegral</span> genannt. In der Literatur findet man daf&uuml;r auch die folgenden Definitionen:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="297" height="114" border="0" src="img237.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">76</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="310" height="114" border="0" src="img238.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">76</span>b)</td>
+</tr>
+</table>
+</div>
+<p>(Zur Fehler-Funktion <span class="MATH"><img width="56" height="37" align="middle" border="0" src="img239.png" alt="" /></span> s.&nbsp;auch <a href="../kap_8/node101.html#F5080265a">Fehler-Funktion</a>.)</p>
+</dd>
+</dl>
+</body>
+</html>

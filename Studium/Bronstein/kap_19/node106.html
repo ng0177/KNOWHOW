@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Schemata zur FFT</title>
+<meta name="description" content="Schemata zur FFT" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node105.html" />
+<link rel="up" href="node102.html" />
+<link rel="next" href="node107.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node105.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node107.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node76.html">Approximation, Ausgleichsrechnung, Harmonische Analyse</a> <a href="node98.html">Harmonische Analyse</a> <a id="up" href="node102.html">Schnelle Fourier-Transformation (FFT)</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001864240000000000000" id="SECTION001864240000000000000">Schemata zur FFT</a></h4>
+<p><a name="7512"></a> F&uuml;r den speziellen Fall <span class="MATH"><i>N</i> = 8 = 2<sup>3</sup></span> sollen die dazugeh&ouml;rigen 3 Reduktionsschritte der FFT gem&auml;&szlig; (<a href="node105.html#F1190669">19.223</a>) und (<a href="node105.html#F1190671">19.225</a>) im folgenden <b>Schema 1</b> zusammengestellt werden:<br />
+<b>Schema 1:</b><a name="FFT-Schema1" id="FFT-Schema1"></a></p>
+<div align="center"><img width="747" height="316" align="bottom" border="0" src="img692.png" alt="" /><br /></div>
+<p>Die Zuordnung der gesuchten komplexen F<small>OURIER</small>-Koeffizienten zu den <span class="MATH"><i>y</i></span>-Werten des 3.&nbsp;Schrittes erkennt man, wenn man sich &uuml;berlegt, wie in jedem Reduktionsschritt jeweils die Berechnung der Koeffizienten mit geraden und ungeraden Indizes erfolgt. In dem folgenden <b>Schema 2</b> ist diese Verfahrensweise schematisch dargestellt.<br />
+<b>Schema 2:</b></p>
+<div class="mathdisplay"><a name="F-FFT-Schema2" id="F-FFT-Schema2"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F-FFT-Schema2" id="F-FFT-Schema2"></a><img width="472" height="231" border="0" src="img693.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">228</span>)</td>
+</tr>
+</table>
+</div>
+<p><span class="MATH"><img width="542" height="37" align="middle" border="0" src="img694.png" alt="" /></span></p>
+<p>Schreibt man in <b>Schema 1</b> die Koeffizienten <span class="MATH"><img width="21" height="34" align="middle" border="0" src="img670.png" alt="" /></span> auf und gibt man die Dualdarstellung ihrer Indizes vor dem ersten und nach dem dritten Reduktionsschritt an, dann erkennt man, da&szlig; die Reihenfolge der gesuchten Koeffizienten durch sogenannte <span class="begriff">Bitumkehr</span><a name="5244"></a> auf besonders einfache Weise ermittelt werden kann, wie in dem folgenden <b>Schema 3</b> dargestellt ist.</p>
+<div align="center"><img width="463" height="293" align="bottom" border="0" src="img695.png" alt="" /><br /></div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r die Funktion <span class="MATH"><img width="256" height="65" align="middle" border="0" src="img696.png" alt="" /></span>, die periodisch mit der Periode <span class="MATH"><img width="25" height="16" align="bottom" border="0" src="img643.png" alt="" /></span> sein soll, werde mit Hilfe der FFT die diskrete F<small>OURIER</small>-Transformation durchgef&uuml;hrt. Man w&auml;hle <span class="MATH"><img width="59" height="16" align="bottom" border="0" src="img697.png" alt="" /></span>. Mit<br />
+<span class="MATH"><img width="679" height="59" align="middle" border="0" src="img698.png" alt="" /></span>,<br />
+<span class="MATH"><img width="190" height="39" align="middle" border="0" src="img699.png" alt="" /></span> erh&auml;lt man das folgende <b>Schema 4:</b><br />
+<img width="780" height="420" align="bottom" border="0" src="img700.png" alt="" /></p>
+<p>Aus dem dritten (letzten) Reduktionsschritt erh&auml;lt man die nachstehend aufgef&uuml;hrten gesuchten reellen F<small>OURIER</small>-Koeffizienten gem&auml;&szlig; (<a href="node104.html#F1190666">19.220</a>):</p>
+<div align="center">
+<table cellpadding="3">
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="136" height="33" align="middle" border="0" src="img701.png" alt="" /></span></td>
+<td align="left">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="135" height="33" align="middle" border="0" src="img702.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="149" height="35" align="middle" border="0" src="img703.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="135" height="33" align="middle" border="0" src="img704.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="148" height="35" align="middle" border="0" src="img705.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="133" height="33" align="middle" border="0" src="img706.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="148" height="35" align="middle" border="0" src="img707.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="133" height="33" align="middle" border="0" src="img708.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="63" height="35" align="middle" border="0" src="img709.png" alt="" /></span></td>
+</tr>
+</table>
+</div>
+<p>In diesem Beispiel kann man auch die allgemeine Eigenschaft</p>
+</td>
+</tr>
+</table>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="78" height="66" border="0" src="img710.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">229</span>)</td>
+</tr>
+</table>
+</div>
+<p>der diskreten komplexen F<small>OURIER</small>-Koeffizienten &uuml;berpr&uuml;fen.<br />
+F&uuml;r <span class="MATH"><i>k</i>=1,2,3</span> sieht man, da&szlig; gilt: <span class="MATH"><img width="201" height="39" align="middle" border="0" src="img711.png" alt="" /></span>. <!-- BeispielEnde: 1190605 --></p>
+</body>
+</html>

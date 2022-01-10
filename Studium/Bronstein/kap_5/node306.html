@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Methode Mamdani</title>
+<meta name="description" content="Methode Mamdani" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node307.html" />
+<link rel="previous" href="node305.html" />
+<link rel="up" href="node305.html" />
+<link rel="next" href="node307.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node305.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node307.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node269.html">Fuzzy-Logik</a> <a id="up" href="node305.html">Wissensbasierte Fuzzy-Systeme</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00496100000000000000" id="SECTION00496100000000000000">Methode Mamdani</a></h3>
+<p><a name="9128"></a> <a name="8195"></a> F&uuml;r einen fuzzy-geregelten Proze&szlig; werden folgende Entwurfsschritte verwendet:</p>
+<dl>
+<dt>1.&nbsp;Regelbasis:</dt>
+<dd>F&uuml;r die <span class="MATH"><i>i</i></span>-te Regel gelte z.B.
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="440" height="67" border="0" src="img1958.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">414</span>)</td>
+</tr>
+</table>
+</div>
+<p>Hierbei charakterisiert <span class="MATH"><i>e</i></span> den Fehler, <span class="MATH"><img width="13" height="16" align="bottom" border="0" src="img1959.png" alt="" /></span> die &Auml;nderung des Fehlers und <span class="MATH"><i>u</i></span> die &Auml;nderung des Ausgabewertes (nicht fuzzy-wertig). Alle Gr&ouml;&szlig;en seien auf ihren Definitionsbereichen <span class="MATH"><img width="59" height="35" align="middle" border="0" src="img1960.png" alt="" /></span> und <span class="MATH"><i>U</i></span> definiert, und der gesamte Definitionsbereich sei <span class="MATH"><img width="120" height="35" align="middle" border="0" src="img1961.png" alt="" /></span> &Uuml;ber diesem Definitionsbereich werden die Gr&ouml;&szlig;en Fehler und Fehler&auml;nderung fuzzifiziert, d.h.&nbsp;mittels unscharfer Mengen dargestellt, wobei linguistische Beschreibungen benutzt werden.</p>
+</dd>
+<dt>2.&nbsp;Fuzzifizierungsalgorithmus:</dt>
+<dd>Im allgemeinen sind der Fehler <span class="MATH"><i>e</i></span> und dessen &Auml;nderung <span class="MATH"><img width="13" height="16" align="bottom" border="0" src="img1959.png" alt="" /></span> nicht fuzzy-wertig, so da&szlig; sie &uuml;ber eine linguistische Beschreibung fuzzifiziert werden m&uuml;ssen. Die Fuzzy-Werte werden mit den Pr&auml;missen der WENN-DANN-Regeln aus der Regelbasis verglichen. Daraus folgt, welche Regeln aktiv sind und mit welchem Gewicht eine Regel beteiligt ist.</dd>
+<dt>3.&nbsp;Verkn&uuml;pfungsmodul:</dt>
+<dd>Die aktivierten Regeln mit ihrem unterschiedlichen Gewicht werden mit Hilfe einer Verkn&uuml;pfungsoperation zusammengefa&szlig;t und dem Defuzzifizierungsalgorithmus zugef&uuml;hrt.</dd>
+<dt>4.&nbsp;Entscheidungsmodul:</dt>
+<dd>Im Defuzzifizierungsproze&szlig; soll ein scharfer Wert f&uuml;r die Stellgr&ouml;&szlig;e erhalten werden. Mit Hilfe einer Defuzzifizierungsoperation wird aus der Menge der m&ouml;glichen Werte eine nicht fuzzy-wertige Gr&ouml;&szlig;e, d.h. eine scharfe Gr&ouml;&szlig;e, ermittelt. Diese Gr&ouml;&szlig;e dr&uuml;ckt aus, wie eine Einstellung des Systems vorzunehmen ist, so da&szlig; die Regelabweichung gering bleibt.</dd>
+</dl>
+<p>Fuzzy-Regelung bedeutet, da&szlig; die Schritte <b>1.</b> bis <b>4.</b> wiederholt werden, bis das Ziel, geringste Regelabweichung <span class="MATH"><i>e</i></span> und deren &Auml;nderung <span class="MATH"><img width="22" height="34" align="middle" border="0" src="img1962.png" alt="" /></span> erreicht ist.</p>
+</body>
+</html>

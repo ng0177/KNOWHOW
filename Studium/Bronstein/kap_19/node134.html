@@ -1,0 +1,184 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Grundoperationen des numerischen Rechnens</title>
+<meta name="description" content="Grundoperationen des numerischen Rechnens" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node133.html" />
+<link rel="up" href="node132.html" />
+<link rel="next" href="node135.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node133.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node135.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node122.html">Nutzung von Computern</a> <a href="node130.html">Numerische Probleme beim Rechnen auf Computern</a> <a id="up" href="node132.html">Normalisierte Dezimalzahlen und Rundung</a> </span>
+</p>
+</div>
+<p><!--End of Navigation Panel-->
+
+
+<h4><a name="SECTION001882220000000000000" id="SECTION001882220000000000000"></a> <a name="6118"></a>
+Grundoperationen des numerischen Rechnens</h4>
+<p>Jeder numerische Proze&szlig; setzt sich letztlich aus einer Folge von Grundrechenoperationen zusammen. Probleme ergeben sich insbesondere durch die endliche Stellenzahl bei der Gleitpunktarithmetik. Diese sollen kurz betrachtet werden. Es sei vorausgesetzt, da&szlig; <span class="MATH"><i>x</i></span> und <span class="MATH"><i>y</i></span> normalisierte fehlerfreie Gleitkommazahlen gleichen Vorzeichens mit einem Wert <span class="MATH"><img width="34" height="35" align="middle" border="0" src="img820.png" alt="" /></span> sind.</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="231" height="67" border="0" src="img821.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">269</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="287" height="105" border="0" src="img822.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">269</span>b)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="561" height="72" border="0" src="img823.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">269</span>c)</td>
+</tr>
+</table>
+</div>
+<h5><a name="SECTION001882221000000000000" id="SECTION001882221000000000000"></a> <a name="6151"></a> <a name="6152"></a><br />
+Addition:</h5>
+<p>F&uuml;r <span class="MATH"><i>E</i><sub>1</sub> &gt; <i>E</i><sub>2</sub></span> erfolgt der Exponentenangleich an <span class="MATH"><img width="29" height="35" align="middle" border="0" src="img824.png" alt="" /></span>, da wegen der Normalisierung nur eine Linksverschiebung des Punktes m&ouml;glich ist. Die Mantissen werden addiert.</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="295" height="69" border="0" src="img825.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">270</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="264" height="69" border="0" src="img826.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">270</span>b)</td>
+</tr>
+</table>
+</div>
+<p>so erfolgt die Punktverschiebung um eine Stelle nach links bei gleichzeitiger Erh&ouml;hung des Exponenten um eins (Additions&uuml;berlauf).</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="714" height="39" align="middle" border="0" src="img827.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+<h5><a name="SECTION001882222000000000000" id="SECTION001882222000000000000"></a> <a name="6171"></a> <a name="6172"></a> <a name="6173"></a><br />
+Subtraktion:</h5>
+<p>Der Exponentenangleich erfolgt wie bei der Addition, die Mantissen werden subtrahiert. Ist</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="255" height="69" border="0" src="img828.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">271</span>a)</td>
+</tr>
+</table>
+</div>
+<p>und</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="232" height="69" border="0" src="img829.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">271</span>b)</td>
+</tr>
+</table>
+</div>
+<p>so erfolgt die Punktverschiebung um maximal <span class="MATH"><i>t</i></span> Stellen nach rechts mit entsprechender Erniedrigung des Exponenten.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="714" height="39" align="middle" border="0" src="img830.png" alt="" /></span>. Das Beispiel zeigt den kritischen Fall der <span class="begriff">Ausl&ouml;schung</span> f&uuml;hrender Nullen. Durch die beschr&auml;nkte Stellenzahl (hier 4) werden au&szlig;erdem von rechts Nullen eingeschleppt, die eine erh&ouml;hte Anzahl g&uuml;ltiger Ziffern vort&auml;uschen.</p>
+</td>
+</tr>
+</table>
+<h5><a name="SECTION001882223000000000000" id="SECTION001882223000000000000"></a> <a name="6191"></a> <a name="6192"></a> <a name="6193"></a><br />
+Multiplikation:</h5>
+<p>Die Exponenten werden addiert und die Mantissen multipliziert. Ist</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="114" height="66" border="0" src="img831.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">272</span>)</td>
+</tr>
+</table>
+</div>
+<p>so wird der Dezimalpunkt bei gleichzeitiger Erniedrigung des Exponenten um eins um eine Stelle nach rechts verschoben (<span class="begriff">Multiplikationsunterlauf</span>).</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="501" height="39" align="middle" border="0" src="img832.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+<h5><a name="SECTION001882224000000000000" id="SECTION001882224000000000000"></a> <a name="6199"></a> <a name="6200"></a> <a name="6201"></a><br />
+Division:</h5>
+<p>Die Exponenten werden subtrahiert und die Mantissen dividiert. Ist</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="92" height="84" border="0" src="img833.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">273</span>)</td>
+</tr>
+</table>
+</div>
+<p>so wird der Dezimalpunkt bei gleichzeitiger Erh&ouml;hung des Exponenten um eins um eine Stelle nach links verschoben (<span class="begriff">Divisions&uuml;berlauf</span>).</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="512" height="39" align="middle" border="0" src="img834.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+<h5><a name="SECTION001882225000000000000" id="SECTION001882225000000000000"></a> <a name="6211"></a> <a name="6212"></a> <a name="6213"></a><br />
+Resultatfehler:</h5>
+<p>Der Resultatfehler bei den vier Grundrechenarten mit vorausgesetzten fehlerfreien Operanden resultiert dann lediglich aus der Rundung. F&uuml;r den relativen Fehler gilt mit der Stellenzahl <span class="MATH"><i>t</i></span> und der Basis <span class="MATH"><i>B</i></span> die <span class="begriff">Schranke</span></p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="56" height="86" border="0" src="img835.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">274</span>)</td>
+</tr>
+</table>
+</div>
+<h5><a name="SECTION001882226000000000000" id="SECTION001882226000000000000">Vermeidung der Ausl&ouml;schung:</a></h5>
+<p>Es ist ersichtlich, da&szlig; die Subtraktion nahezu gleich gro&szlig;er Gleitkommazahlen die kritische Operation ist. Wenn m&ouml;glich, sollte in solchen F&auml;llen durch Priorit&auml;ten&auml;nderungen oder andere Anordnung der Operanden die Reihenfolge der Operationen ge&auml;ndert werden.</p>
+</body>
+</html>

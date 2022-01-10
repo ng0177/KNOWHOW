@@ -1,0 +1,1360 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Bessel-Funktionen (Zylinderfunktionen) Teil II</title>
+<meta name="description" content="Bessel-Funktionen (Zylinderfunktionen) teil II" />
+<meta name="keywords" content="kap_21" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node118.html" />
+<link rel="previous" href="node116.html" />
+<link rel="up" href="kap_21.html" />
+<link rel="next" href="node118.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node116.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node118.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" id="up" href="kap_21.html">Tabellen</a> </span>
+</p>
+</div>
+<h1><a name="SECTION0020120000000000000000" id="SECTION0020120000000000000000">Bessel-Funktionen (Zylinderfunktionen) Teil II</a></h1>
+<div class="tabcenter">
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="center" colspan="2"><span><span class="MATH"><i>x</i></span></span></td>
+<td align="center" colspan="2"><span><span class="MATH"><i>J</i><sub>0</sub>(<i>x</i>)</span></span></td>
+<td align="left">&nbsp;</td>
+<td align="center" colspan="2"><span><span class="MATH"><i>J</i><sub>1</sub>(<i>x</i>)</span></span></td>
+<td align="left">&nbsp;</td>
+<td align="center" colspan="2"><span><span class="MATH"><i>Y</i><sub>0</sub>(<i>x</i>)</span></span></td>
+<td align="left">&nbsp;</td>
+<td align="center" colspan="2"><span><span class="MATH"><i>Y</i><sub>1</sub>(<i>x</i>)</span></span></td>
+<td align="left">&nbsp;</td>
+<td align="center" colspan="2"><span><span class="MATH"><i>I</i><sub>0</sub>(<i>x</i>)</span></span></td>
+<td align="left">&nbsp;</td>
+<td align="center" colspan="2"><span><span class="MATH"><i>I</i><sub>1</sub>(<i>x</i>)</span></span></td>
+<td align="left">&nbsp;</td>
+<td align="left"><span class="MATH"><i>K</i><sub>0</sub>(<i>x</i>)</span></td>
+<td align="left"><span class="MATH"><i>K</i><sub>1</sub>(<i>x</i>)</span></td>
+<td align="left">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="right">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">0,00</td>
+<td align="left">0,00</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>5,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>0</b></td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1776</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3276</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3085</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1479</td>
+<td align="right">27,</td>
+<td align="left">&nbsp;</td>
+<td align="left">24</td>
+<td align="right">24,</td>
+<td align="left">&nbsp;</td>
+<td align="left">34</td>
+<td align="left">3691</td>
+<td align="left">4045</td>
+</tr>
+<tr valign="baseline">
+<td align="right">5,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1443</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3371</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3216</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1137</td>
+<td align="right">29,</td>
+<td align="left">&nbsp;</td>
+<td align="left">79</td>
+<td align="right">26,</td>
+<td align="left">&nbsp;</td>
+<td align="left">68</td>
+<td align="left">3308</td>
+<td align="left">3619</td>
+</tr>
+<tr valign="baseline">
+<td align="right">5,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1103</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3432</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3313</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0792</td>
+<td align="right">32,</td>
+<td align="left">&nbsp;</td>
+<td align="left">58</td>
+<td align="right">29,</td>
+<td align="left">&nbsp;</td>
+<td align="left">25</td>
+<td align="left">2966</td>
+<td align="left">3239</td>
+</tr>
+<tr valign="baseline">
+<td align="right">5,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0758</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3460</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3374</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0445</td>
+<td align="right">35,</td>
+<td align="left">&nbsp;</td>
+<td align="left">65</td>
+<td align="right">32,</td>
+<td align="left">&nbsp;</td>
+<td align="left">08</td>
+<td align="left">2659</td>
+<td align="left">2900</td>
+</tr>
+<tr valign="baseline">
+<td align="right">5,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0412</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3453</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3402</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0101</td>
+<td align="right">39,</td>
+<td align="left">&nbsp;</td>
+<td align="left">01</td>
+<td align="right">35,</td>
+<td align="left">&nbsp;</td>
+<td align="left">18</td>
+<td align="left">2385</td>
+<td align="left">2597</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>5,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>5</b></td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0068</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3414</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3395</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0238</td>
+<td align="right">42,</td>
+<td align="left">&nbsp;</td>
+<td align="left">69</td>
+<td align="right">38,</td>
+<td align="left">&nbsp;</td>
+<td align="left">59</td>
+<td align="left">2139</td>
+<td align="left">2326</td>
+</tr>
+<tr valign="baseline">
+<td align="right">5,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0270</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3343</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3354</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0568</td>
+<td align="right">46,</td>
+<td align="left">&nbsp;</td>
+<td align="left">74</td>
+<td align="right">42,</td>
+<td align="left">&nbsp;</td>
+<td align="left">33</td>
+<td align="left">1918</td>
+<td align="left">2083</td>
+</tr>
+<tr valign="baseline">
+<td align="right">5,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0599</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3241</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3282</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0887</td>
+<td align="right">51,</td>
+<td align="left">&nbsp;</td>
+<td align="left">17</td>
+<td align="right">46,</td>
+<td align="left">&nbsp;</td>
+<td align="left">44</td>
+<td align="left">1721</td>
+<td align="left">1866</td>
+</tr>
+<tr valign="baseline">
+<td align="right">5,</td>
+<td align="left">&nbsp;</td>
+<td align="left">8</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0917</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3110</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3177</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1192</td>
+<td align="right">56,</td>
+<td align="left">&nbsp;</td>
+<td align="left">04</td>
+<td align="right">50,</td>
+<td align="left">&nbsp;</td>
+<td align="left">95</td>
+<td align="left">1544</td>
+<td align="left">1673</td>
+</tr>
+<tr valign="baseline">
+<td align="right">5,</td>
+<td align="left">&nbsp;</td>
+<td align="left">9</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1220</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2951</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3044</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1481</td>
+<td align="right">61,</td>
+<td align="left">&nbsp;</td>
+<td align="left">38</td>
+<td align="right">55,</td>
+<td align="left">&nbsp;</td>
+<td align="left">90</td>
+<td align="left">1386</td>
+<td align="left">1499</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>6,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>0</b></td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1506</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2767</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2882</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1750</td>
+<td align="right">67,</td>
+<td align="left">&nbsp;</td>
+<td align="left">23</td>
+<td align="right">61,</td>
+<td align="left">&nbsp;</td>
+<td align="left">34</td>
+<td align="left">1244</td>
+<td align="left">1344</td>
+</tr>
+<tr valign="baseline">
+<td align="right">6,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1773</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2559</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2694</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1998</td>
+<td align="right">73,</td>
+<td align="left">&nbsp;</td>
+<td align="left">66</td>
+<td align="right">67,</td>
+<td align="left">&nbsp;</td>
+<td align="left">32</td>
+<td align="left">1117</td>
+<td align="left">1205</td>
+</tr>
+<tr valign="baseline">
+<td align="right">6,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2017</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2329</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2483</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2223</td>
+<td align="right">80,</td>
+<td align="left">&nbsp;</td>
+<td align="left">72</td>
+<td align="right">73,</td>
+<td align="left">&nbsp;</td>
+<td align="left">89</td>
+<td align="left">1003</td>
+<td align="left">1081</td>
+</tr>
+<tr valign="baseline">
+<td align="right">6,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2238</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2081</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2251</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2422</td>
+<td align="right">88,</td>
+<td align="left">&nbsp;</td>
+<td align="left">46</td>
+<td align="right">81,</td>
+<td align="left">&nbsp;</td>
+<td align="left">10</td>
+<td align="left">09001</td>
+<td align="left">09691</td>
+</tr>
+<tr valign="baseline">
+<td align="right">6,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2433</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1816</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1999</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2596</td>
+<td align="right">96,</td>
+<td align="left">&nbsp;</td>
+<td align="left">96</td>
+<td align="right">89,</td>
+<td align="left">&nbsp;</td>
+<td align="left">03</td>
+<td align="left">08083</td>
+<td align="left">08693</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>6,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>5</b></td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2601</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1538</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1732</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2741</td>
+<td align="right">106,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="right">97,</td>
+<td align="left">&nbsp;</td>
+<td align="left">74</td>
+<td align="left">07259</td>
+<td align="left">07799</td>
+</tr>
+<tr valign="baseline">
+<td align="right">6,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2740</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1250</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1452</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2857</td>
+<td align="right">116,</td>
+<td align="left">&nbsp;</td>
+<td align="left">5</td>
+<td align="right">107,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="left">06520</td>
+<td align="left">06998</td>
+</tr>
+<tr valign="baseline">
+<td align="right">6,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2851</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0953</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1162</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2945</td>
+<td align="right">127,</td>
+<td align="left">&nbsp;</td>
+<td align="left">8</td>
+<td align="right">117,</td>
+<td align="left">&nbsp;</td>
+<td align="left">8</td>
+<td align="left">05857</td>
+<td align="left">06280</td>
+</tr>
+<tr valign="baseline">
+<td align="right">6,</td>
+<td align="left">&nbsp;</td>
+<td align="left">8</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2931</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0652</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0864</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3002</td>
+<td align="right">140,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1</td>
+<td align="right">129,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="left">05262</td>
+<td align="left">05636</td>
+</tr>
+<tr valign="baseline">
+<td align="right">6,</td>
+<td align="left">&nbsp;</td>
+<td align="left">9</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2981</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0349</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0563</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3029</td>
+<td align="right">153,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="right">142,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1</td>
+<td align="left">04728</td>
+<td align="left">05059</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>7,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>0</b></td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3001</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0047</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0259</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3027</td>
+<td align="right">168,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="right">156,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0</td>
+<td align="left">04248</td>
+<td align="left">04542</td>
+</tr>
+<tr valign="baseline">
+<td align="right">7,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2991</td>
+<td align="right">+0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0252</td>
+<td align="right">+0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0042</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2995</td>
+<td align="right">185,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0</td>
+<td align="right">171,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="left">03817</td>
+<td align="left">04078</td>
+</tr>
+<tr valign="baseline">
+<td align="right">7,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2951</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0543</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0339</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2934</td>
+<td align="right">202,</td>
+<td align="left">&nbsp;</td>
+<td align="left">9</td>
+<td align="right">188,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="left">03431</td>
+<td align="left">03662</td>
+</tr>
+<tr valign="baseline">
+<td align="right">7,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2882</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0826</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0628</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2846</td>
+<td align="right">222,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="right">206,</td>
+<td align="left">&nbsp;</td>
+<td align="left">8</td>
+<td align="left">03084</td>
+<td align="left">03288</td>
+</tr>
+<tr valign="baseline">
+<td align="right">7,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2786</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1096</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0907</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2731</td>
+<td align="right">244,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="right">227,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="left">02772</td>
+<td align="left">02953</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>7,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>5</b></td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2663</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1352</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1173</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2591</td>
+<td align="right">268,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="right">249,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="left">02492</td>
+<td align="left">02653</td>
+</tr>
+<tr valign="baseline">
+<td align="right">7,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2516</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1592</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1424</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2428</td>
+<td align="right">294,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="right">274,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="left">02240</td>
+<td align="left">02383</td>
+</tr>
+<tr valign="baseline">
+<td align="right">7,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2346</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1813</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1658</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2243</td>
+<td align="right">323,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1</td>
+<td align="right">301,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="left">02014</td>
+<td align="left">02141</td>
+</tr>
+<tr valign="baseline">
+<td align="right">7,</td>
+<td align="left">&nbsp;</td>
+<td align="left">8</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2154</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2014</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1872</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2039</td>
+<td align="right">354,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="right">331,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1</td>
+<td align="left">01811</td>
+<td align="left">01924</td>
+</tr>
+<tr valign="baseline">
+<td align="right">7,</td>
+<td align="left">&nbsp;</td>
+<td align="left">9</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1944</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2192</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2065</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1817</td>
+<td align="right">389,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="right">363,</td>
+<td align="left">&nbsp;</td>
+<td align="left">9</td>
+<td align="left">01629</td>
+<td align="left">01729</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>8,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>0</b></td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1717</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2346</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2235</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1581</td>
+<td align="right">427,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="right">399,</td>
+<td align="left">&nbsp;</td>
+<td align="left">9</td>
+<td align="left">01465</td>
+<td align="left">01554</td>
+</tr>
+<tr valign="baseline">
+<td align="right">8,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1475</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2476</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2381</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1331</td>
+<td align="right">469,</td>
+<td align="left">&nbsp;</td>
+<td align="left">5</td>
+<td align="right">439,</td>
+<td align="left">&nbsp;</td>
+<td align="left">5</td>
+<td align="left">01317</td>
+<td align="left">01396</td>
+</tr>
+<tr valign="baseline">
+<td align="right">8,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1222</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2580</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2501</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1072</td>
+<td align="right">515,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="right">483,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0</td>
+<td align="left">01185</td>
+<td align="left">01255</td>
+</tr>
+<tr valign="baseline">
+<td align="right">8,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0960</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2657</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2595</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0806</td>
+<td align="right">566,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="right">531,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0</td>
+<td align="left">01066</td>
+<td align="left">01128</td>
+</tr>
+<tr valign="baseline">
+<td align="right">8,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0692</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2708</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2662</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0535</td>
+<td align="right">621,</td>
+<td align="left">&nbsp;</td>
+<td align="left">9</td>
+<td align="right">583,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="left">009588</td>
+<td align="left">01014</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>8,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>5</b></td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0419</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2731</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2702</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0262</td>
+<td align="right">683,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="right">641,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="left">008626</td>
+<td align="left">009120</td>
+</tr>
+<tr valign="baseline">
+<td align="right">8,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0146</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2728</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2715</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0011</td>
+<td align="right">750,</td>
+<td align="left">&nbsp;</td>
+<td align="left">5</td>
+<td align="right">705,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="left">007761</td>
+<td align="left">008200</td>
+</tr>
+<tr valign="baseline">
+<td align="right">8,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0125</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2697</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2700</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0280</td>
+<td align="right">824,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="right">775,</td>
+<td align="left">&nbsp;</td>
+<td align="left">5</td>
+<td align="left">006983</td>
+<td align="left">007374</td>
+</tr>
+<tr valign="baseline">
+<td align="right">8,</td>
+<td align="left">&nbsp;</td>
+<td align="left">8</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0392</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2641</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2659</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0544</td>
+<td align="right">905,</td>
+<td align="left">&nbsp;</td>
+<td align="left">8</td>
+<td align="right">852,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="left">006283</td>
+<td align="left">006631</td>
+</tr>
+<tr valign="baseline">
+<td align="right">8,</td>
+<td align="left">&nbsp;</td>
+<td align="left">9</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0653</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2559</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2592</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0799</td>
+<td align="right">995,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="right">937,</td>
+<td align="left">&nbsp;</td>
+<td align="left">5</td>
+<td align="left">005654</td>
+<td align="left">005964</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>9,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>0</b></td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0903</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2453</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2499</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1043</td>
+<td align="right">1094</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">1031</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">005088</td>
+<td align="left">005364</td>
+</tr>
+<tr valign="baseline">
+<td align="right">9,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1142</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2324</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2383</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1275</td>
+<td align="right">1202</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">1134</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">004579</td>
+<td align="left">004825</td>
+</tr>
+<tr valign="baseline">
+<td align="right">9,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1367</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2174</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2245</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1491</td>
+<td align="right">1321</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">1247</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">004121</td>
+<td align="left">004340</td>
+</tr>
+<tr valign="baseline">
+<td align="right">9,</td>
+<td align="left">&nbsp;</td>
+<td align="left">3</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1577</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2004</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2086</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1691</td>
+<td align="right">1451</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">1371</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">003710</td>
+<td align="left">003904</td>
+</tr>
+<tr valign="baseline">
+<td align="right">9,</td>
+<td align="left">&nbsp;</td>
+<td align="left">4</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1768</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1816</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1907</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1871</td>
+<td align="right">1595</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">1508</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">003339</td>
+<td align="left">003512</td>
+</tr>
+<tr valign="baseline">
+<th align="right"><b>9,</b></th>
+<td align="left">&nbsp;</td>
+<td align="left"><b>5</b></td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1939</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1613</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1712</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2032</td>
+<td align="right">1753</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">1658</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">003036</td>
+<td align="left">003160</td>
+</tr>
+<tr valign="baseline">
+<td align="right">9,</td>
+<td align="left">&nbsp;</td>
+<td align="left">6</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2090</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1395</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1502</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2171</td>
+<td align="right">1927</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">1824</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">002706</td>
+<td align="left">002843</td>
+</tr>
+<tr valign="baseline">
+<td align="right">9,</td>
+<td align="left">&nbsp;</td>
+<td align="left">7</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2218</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1166</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1279</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2287</td>
+<td align="right">2119</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">2006</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">002436</td>
+<td align="left">002559</td>
+</tr>
+<tr valign="baseline">
+<td align="right">9,</td>
+<td align="left">&nbsp;</td>
+<td align="left">8</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2323</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0928</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">1045</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2379</td>
+<td align="right">2329</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">2207</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">002193</td>
+<td align="left">002302</td>
+</tr>
+<tr valign="baseline">
+<td align="right">9,</td>
+<td align="left">&nbsp;</td>
+<td align="left">9</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2403</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0684</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0804</td>
+<td align="right">0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2447</td>
+<td align="right">2561</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">2428</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">001975</td>
+<td align="left">002072</td>
+</tr>
+<tr valign="baseline">
+<td align="right"><b>10,</b></td>
+<td align="left">&nbsp;</td>
+<td align="left"><b>0</b></td>
+<td align="right"><span class="MATH">-</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2459</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0435</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">0557</td>
+<td align="right"><span class="MATH">+</span>0,</td>
+<td align="left">&nbsp;</td>
+<td align="left">2490</td>
+<td align="right">2816</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="right">2671</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">001778</td>
+<td align="left">001865</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Bestimmte Integrale, Mehrfachintegrale</title>
+<meta name="description" content="Bestimmte Integrale, Mehrfachintegrale" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node125.html" />
+<link rel="previous" href="node123.html" />
+<link rel="up" href="node121.html" />
+<link rel="next" href="node125.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node123.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node125.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node82.html">Anwendungen von Computeralgebrasystemen</a> <a href="node115.html">Differential- und Integralrechnung</a> <a id="up" href="node121.html">Maple</a> </span>
+</p>
+</div>
+<p><!--End of Navigation Panel-->
+
+
+<h4><a name="SECTION001944230000000000000" id="SECTION001944230000000000000"></a> <a name="3909"></a> <a name="3910"></a>
+Bestimmte Integrale, Mehrfachintegrale</h4>
+<h5><a name="SECTION001944231000000000000" id="SECTION001944231000000000000">Bestimmte Integrale</a></h5>
+<p>Zur Berechnung bestimmter Integrale ist der Befehl <span class="MATH"><img width="34" height="16" align="bottom" border="0" src="img954.png" alt="" /></span> mit dem zweiten Argument <span class="MATH"><img width="75" height="17" align="bottom" border="0" src="img964.png" alt="" /></span> zu verwenden. Hier ist <span class="MATH"><i>x</i></span> die Integrationsvariable, und <span class="MATH"><img width="39" height="17" align="bottom" border="0" src="img965.png" alt="" /></span> gibt die untere und obere Grenze des Integrationsbereiches an.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text"></td>
+</tr>
+</table>
+<p></p>
+<div class="myclass">
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td align="center" nowrap="nowrap">&gt;</td>
+<td align="left" nowrap="nowrap"><img width="294" height="59" align="middle" border="0" src="img966.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td align="center" nowrap="nowrap">&gt;</td>
+<td align="left" nowrap="nowrap"><img width="235" height="59" align="middle" border="0" src="img967.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="448" height="68" border="0" src="img968.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel C</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="278" height="66" border="0" src="img969.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p>Wenn <i class="sans">Maple</i> das Integral symbolisch nicht l&ouml;sen kann, gibt es die Eingabe zur&uuml;ck. In diesem Fall kann man versuchen, eine <a href="../kap_19/node35.html#v194">numerische Integration</a> durchzuf&uuml;hren.</p>
+<h5><a name="SECTION001944232000000000000" id="SECTION001944232000000000000">Mehrfachintegrale</a></h5>
+<p>Auch Mehrfachintegrale k&ouml;nnen, soweit explizit m&ouml;glich, mit <i class="sans">Maple</i> berechnet werden, indem man die Operation <tt>int</tt> entsprechend oft (verschachtelt) anwendet.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="341" height="66" border="0" src="img970.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="648" height="85" border="0" src="img971.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="441" height="85" border="0" src="img972.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

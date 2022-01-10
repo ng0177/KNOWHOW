@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Endliche K&ouml;rper</title>
+<meta name="description" content="Endliche K&ouml;rper" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node133.html" />
+<link rel="previous" href="node131.html" />
+<link rel="up" href="node131.html" />
+<link rel="next" href="node133.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node131.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node133.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node44.html">Klassische algebraische Strukturen</a> <a href="node122.html">Ringe und K&#246;rper</a> <a id="up" href="node131.html">Endliche K&#246;rper und Schieberegister</a> </span>
+</p>
+</div>
+<h4><a name="SECTION00439410000000000000" id="SECTION00439410000000000000">Endliche K&ouml;rper</a></h4>
+<p>K&ouml;rper zeichnen sich insbesondere dadurch aus, dass sie keine Nullteiler besitzen. Endliche K&ouml;rper sind sogar dadurch charakterisiert. <span class="begriff">Nullteiler</span><a name="3649"></a> sind von Null verschiedene Elemente eines Ringes, f&uuml;r die ein von Null verschiedenes Element existiert, so dass das Produkt gleich Null wird. Die als <a href="node126.html#DefRingKoerper">Beispiel D</a> f&uuml;r K&ouml;rpererweiterungen erw&auml;hnten Restklassenringe <span class="MATH"><img width="29" height="35" align="middle" border="0" src="img301.png" alt="" /></span> haben genau dann Nullteiler, wenn <span class="MATH"><i>m</i></span> keine Primzahl ist, denn <span class="MATH"><img width="76" height="17" align="bottom" border="0" src="img865.png" alt="" /></span> hat <span class="MATH"><img width="79" height="35" align="middle" border="0" src="img866.png" alt="" /></span> (Multiplikation modulo <span class="MATH"><i>m</i></span>) zur Folge.<br />
+Auf diese Weise erh&auml;lt man mit <span class="MATH"><img width="24" height="35" align="middle" border="0" src="img867.png" alt="" /></span>, <span class="MATH"><i>p</i></span> Primzahl, (bis auf Isomorphie) alle endlichen K&ouml;rper mit <span class="MATH"><i>p</i></span> Elementen. Allgemeiner gilt:<br />
+F&uuml;r jede Primzahlpotenz <span class="MATH"><i>p</i><sup><i>n</i></sup></span> gibt es (bis auf Isomorphie) genau einen K&ouml;rper mit <span class="MATH"><i>p</i><sup><i>n</i></sup></span> Elementen, und jeder endliche K&ouml;rper hat <span class="MATH"><i>p</i><sup><i>n</i></sup></span> Elemente.<br />
+Die K&ouml;rper mit <span class="MATH"><i>p</i><sup><i>n</i></sup></span> Elementen werden auch mit GF<span class="MATH">(<i>p</i><sup><i>n</i></sup>)</span> bezeichnet (G<small>ALOIS</small> <span class="begriff">field</span>). <a name="GF" id="GF"></a><a name="8753"></a> Man beachte, f&uuml;r <span class="MATH"><i>n</i> &gt;1</span> ist GF<span class="MATH">(<i>p</i><sup><i>n</i></sup>)</span> von <span class="MATH"><img width="32" height="35" align="middle" border="0" src="img868.png" alt="" /></span> verschieden.<br />
+Zur Konstruktion endlicher K&ouml;rper mit <span class="MATH"><i>p</i><sup><i>n</i></sup></span> Elementen (<span class="MATH"><i>p</i></span> Primzahl, <span class="MATH"><i>n</i> &gt;1</span>) werden Polynomringe &uuml;ber <span class="MATH"><img width="24" height="35" align="middle" border="0" src="img867.png" alt="" /></span> (s. <a href="node126.html#DefRingKoerper">Beispiel C</a> im Abschnitt K&ouml;rpererweiterungen) und irreduzible Polynome ben&ouml;tigt:<a name="3659"></a><a name="3660"></a><br />
+<span class="MATH"><img width="45" height="37" align="middle" border="0" src="img869.png" alt="" /></span> besteht aus allen Polynomen mit Koeffizienten aus <span class="MATH"><img width="24" height="35" align="middle" border="0" src="img867.png" alt="" /></span>. Mit den Koeffizienten wird also bei der Addition und Multiplikation der Polynome modulo <span class="MATH"><i>p</i></span> gerechnet.<br />
+In Polynomringen <span class="MATH"><img width="42" height="37" align="middle" border="0" src="img870.png" alt="" /></span> &uuml;ber K&ouml;rpern <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img871.png" alt="" /></span> gilt der <span class="begriff">Divisionsalgorithmus</span> (Polynomdivision mit Rest), d.h. f&uuml;r <span class="MATH"><img width="145" height="37" align="middle" border="0" src="img872.png" alt="" /></span> mit deg<span class="MATH"><img width="64" height="37" align="middle" border="0" src="img873.png" alt="" /></span> deg<span class="MATH"><img width="43" height="37" align="middle" border="0" src="img874.png" alt="" /></span> existieren <span class="MATH"><img width="142" height="37" align="middle" border="0" src="img875.png" alt="" /></span> mit</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="413" height="66" border="0" src="img876.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">207</span>)</td>
+</tr>
+</table>
+</div>
+<p>Diese Situation wird durch <span class="MATH"><img width="192" height="37" align="middle" border="0" src="img877.png" alt="" /></span> beschrieben. Fortgesetzte Division mit Rest liefert den <span class="begriff">E<small>UKLID</small>ischen Algorithmus</span> <a name="8755"></a> <a name="8756"></a> f&uuml;r Polynomringe und der letzte von Null verschiedene Rest den gr&ouml;&szlig;ten gemeinsamen Teiler (ggT) der Polynome <span class="MATH"><i>f</i>(<i>x</i>)</span> und <span class="MATH"><i>g</i>(<i>x</i>)</span>.<br />
+Ein Polynom <span class="MATH"><img width="102" height="37" align="middle" border="0" src="img878.png" alt="" /></span> hei&szlig;t <span class="begriff">irreduzibel</span>, wenn es sich nicht als Produkt von Polynomen niedrigeren Grades schreiben l&auml;sst, d.h (in Analogie zu den Primzahlen in <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img104.png" alt="" /></span>) f(x) ist Primelement in <span class="MATH"><img width="42" height="37" align="middle" border="0" src="img870.png" alt="" /></span>. F&uuml;r Polynome zweiten oder dritten Grades ist Irreduzibilit&auml;t gleichbedeutend mit der Nichtexistenz von Nullstellen in <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img871.png" alt="" /></span>.<br />
+Man kann zeigen, dass in <span class="MATH"><img width="42" height="37" align="middle" border="0" src="img870.png" alt="" /></span> irreduzible Polynome beliebigen Grades liegen.<br />
+F&uuml;r ein irreduzibles Polynom <span class="MATH"><img width="102" height="37" align="middle" border="0" src="img878.png" alt="" /></span> wird</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="406" height="66" border="0" src="img879.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">208</span>)</td>
+</tr>
+</table>
+</div>
+<p>ein K&ouml;rper, in dem modulo <span class="MATH"><i>f</i>(<i>x</i>)</span> multipliziert wird, d.h. <span class="MATH"><img width="299" height="37" align="middle" border="0" src="img880.png" alt="" /></span>.<br />
+Ist <span class="MATH"><img width="65" height="35" align="middle" border="0" src="img881.png" alt="" /></span> und deg<span class="MATH"><img width="84" height="37" align="middle" border="0" src="img882.png" alt="" /></span>, so hat der K&ouml;rper <span class="MATH"><img width="110" height="37" align="middle" border="0" src="img883.png" alt="" /></span> Elemente, d.h. GF<span class="MATH"><img width="149" height="37" align="middle" border="0" src="img884.png" alt="" /></span>, wobei <span class="MATH"><i>f</i>(<i>x</i>)</span> ein irreduzibles Polynom <span class="MATH"><i>n</i></span>-ten Grades ist.<br />
+<br />
+Die multiplikative Gruppe <span class="MATH"><img width="117" height="37" align="middle" border="0" src="img885.png" alt="" /></span> eines endlichen K&ouml;rpers <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img871.png" alt="" /></span> ist <span class="begriff">zyklisch</span>, d.h., es gibt ein Element <span class="MATH"><img width="54" height="35" align="middle" border="0" src="img886.png" alt="" /></span>, so dass jedes Element aus <span class="MATH"><img width="29" height="17" align="bottom" border="0" src="img887.png" alt="" /></span> als Potenz von <span class="MATH"><i>a</i></span> geschrieben werden kann. Man sagt, <span class="MATH"><i>a</i></span> erzeugt die multiplikative Gruppe des K&ouml;rpers: <span class="MATH"><img width="206" height="39" align="middle" border="0" src="img888.png" alt="" /></span>.<br />
+Ein irreduzibles Polynom <span class="MATH"><img width="102" height="37" align="middle" border="0" src="img878.png" alt="" /></span> hei&szlig;t <span class="begriff">primitiv</span>, wenn die Potenzen von <span class="MATH"><i>x</i></span> alle von Null verschiedenen Elemente von <span class="MATH"><img width="132" height="37" align="middle" border="0" src="img889.png" alt="" /></span> durchlaufen, d.h. wenn <span class="MATH"><i>x</i></span> die multiplikative Gruppe von <span class="MATH"><img width="18" height="16" align="bottom" border="0" src="img890.png" alt="" /></span> erzeugt.<a name="3683"></a><br />
+Mit einem primitiven Polynom <span class="MATH"><img width="56" height="37" align="middle" border="0" src="img891.png" alt="" /></span>-ten Grades aus <span class="MATH"><img width="45" height="37" align="middle" border="0" src="img869.png" alt="" /></span> kann man eine ,,Logarithmentafel`` f&uuml;r GF<span class="MATH">(<i>p</i><sup><i>n</i></sup>)</span> aufstellen, die das Rechnen in diesem K&ouml;rper wesentlich erleichtert.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel GF(2<sup>3</sup>)</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><a name="bspGF23" id="bspGF23"></a>Konstruktion des K&ouml;rpers GF<span class="MATH">(2<sup>3</sup>)</span> und Aufstellen der zugeh&ouml;rigen Logarithmentafel.<br />
+<br />
+<span class="MATH"><i>f</i>(<i>x</i>) =1 +<i>x</i> +<i>x</i><sup>3</sup></span> ist &uuml;ber <span class="MATH"><img width="45" height="37" align="middle" border="0" src="img892.png" alt="" /></span> irreduzibel, da weder <span class="MATH">0</span> noch <span class="MATH">1</span> Nullstellen sind, also gilt:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="594" height="67" border="0" src="img893.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">209</span>)</td>
+</tr>
+</table>
+</div>
+<p><span class="MATH"><i>f</i>(<i>x</i>)</span> ist sogar primitiv, und man kann f&uuml;r GF<span class="MATH">(2<sup>3</sup>)</span> eine Logarithmentafel aufstellen.<br />
+Dazu werden jedem Polynom <span class="MATH"><i>a</i><sub>0</sub> +<i>a</i><sub>1</sub><i>x</i> +<i>a</i><sub>2</sub><i>x</i><sup>2</sup></span> aus <span class="MATH"><img width="90" height="37" align="middle" border="0" src="img894.png" alt="" /></span> zwei Ausdr&uuml;cke zugeordnet, der Koeffizientenvektor <span class="MATH"><i>a</i><sub>0</sub><i>a</i><sub>1</sub><i>a</i><sub>2</sub></span> und der sog. Logarithmus, das ist diejenige nat&uuml;rliche Zahl <span class="MATH"><i>i</i></span> mit <span class="MATH"><i>x</i><sup><i>i</i></sup> =<i>a</i><sub>0</sub> +<i>a</i><sub>1</sub><i>x</i> +<i>a</i><sub>2</sub><i>x</i><sup>2</sup></span> modulo <span class="MATH">1 +<i>x</i> +<i>x</i><sup>3</sup></span>. Man erh&auml;lt f&uuml;r GF<span class="MATH">(8)</span> die folgende Logarithmentafel.</p>
+<p><a name="Logtafel" id="Logtafel"></a><span class="MATH"><img width="131" height="204" align="middle" border="0" src="img895.png" alt="" /></span></p>
+<dl>
+<dt>Addition der K&ouml;rperelemente (KE) in GF<span class="MATH">(8)</span>:</dt>
+<dd>Addition der Koordinatenvektoren (KV), komponentenweise mod 2 (allgemein: mod <span class="MATH"><i>p</i></span>).</dd>
+<dt>Multiplikation der KE in GF<span class="MATH">(8)</span>:</dt>
+<dd>Addition der Logarithmen (Log.) mod 7 (allgemein: mod<span class="MATH"><img width="73" height="37" align="middle" border="0" src="img896.png" alt="" /></span>).</dd>
+<dt>Berechnungsbeispiel:</dt>
+<dd><span class="MATH"><img width="212" height="65" align="middle" border="0" src="img897.png" alt="" /></span></dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><span class="MATH"><img width="163" height="37" align="middle" border="0" src="img898.png" alt="" /></span>, kann also als <span class="begriff">Erweiterungsk&ouml;rper</span> von <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img871.png" alt="" /></span>=:GF(<span class="MATH"><i>p</i></span>) aufgefasst werden.<a name="3706"></a> Nach dem <a href="node173.html#Euler-Wilson">Satz von F<small>ERMAT</small></a> gilt f&uuml;r alle <span class="MATH"><img width="52" height="35" align="middle" border="0" src="img899.png" alt="" /></span> die Gleichung <span class="MATH"><i>a</i><sup><i>q</i></sup> =<i>a</i></span>, d.h. jedes Element <span class="MATH"><img width="52" height="35" align="middle" border="0" src="img899.png" alt="" /></span> ist Nullstelle eines Polynoms mit Koeffizienten aus <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img871.png" alt="" /></span>, z.B. des Polynoms <span class="MATH"><i>x</i><sup><i>q</i></sup> -<i>x</i></span>.<br />
+Das Polynom <span class="MATH"><img width="115" height="37" align="middle" border="0" src="img900.png" alt="" /></span> hei&szlig;t <span class="begriff">Minimalpolynom</span> von <span class="MATH"><img width="52" height="35" align="middle" border="0" src="img899.png" alt="" /></span> &uuml;ber <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img871.png" alt="" /></span>, wenn gilt: <span class="MATH"><i>m</i><sub><i>a</i></sub>(<i>x</i>)</span> hat <span class="MATH"><i>a</i></span> zur Nullstelle, den h&ouml;chsten Koeffizienten <span class="MATH">1</span> (<span class="MATH"><i>m</i><sub><i>a</i></sub>(<i>x</i>)</span> ist normiert) und ist unter diesen dasjenige mit minimalem Grad.<a name="3711"></a> Das Minimalpolynom <span class="MATH"><i>m</i><sub><i>a</i></sub>(<i>x</i>)</span> hat folgende Eigenschaften:</p>
+<div class="alpha">
+<ol>
+<li>
+<div><span class="MATH"><i>m</i><sub><i>a</i></sub>(<i>x</i>)</span> ist irreduzibel &uuml;ber <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img871.png" alt="" /></span>.</div>
+</li>
+<li>
+<div><span class="MATH"><i>m</i><sub><i>a</i></sub>(<i>x</i>)</span> teilt jedes <span class="MATH"><img width="102" height="37" align="middle" border="0" src="img878.png" alt="" /></span> mit <span class="MATH"><i>f</i>(<i>a</i>) =0</span>, insbesondere teilt es <span class="MATH"><i>x</i><sup><i>q</i></sup> -<i>x</i></span>.</div>
+</li>
+<li>
+<div>deg<span class="MATH"><img width="94" height="37" align="middle" border="0" src="img901.png" alt="" /></span>.</div>
+</li>
+<li>
+<div>Ist <span class="MATH"><i>a</i></span> erzeugendes Element von <span class="MATH"><img width="26" height="17" align="bottom" border="0" src="img902.png" alt="" /></span>, so ist der Grad seines Minimalpolynoms gleich <span class="MATH"><i>n</i></span>.</div>
+</li>
+</ol>
+</div>
+<p>In den voranstehenden Ausf&uuml;hrungen kann f&uuml;r <span class="MATH"><i>p</i></span> statt einer Primzahl auch eine Primzahlpotenz stehen.<br />
+Es sei <span class="MATH"><i>q</i> =<i>p</i><sup><i>n</i></sup></span> eine Primzahlpotenz und ggT<span class="MATH"><img width="89" height="37" align="middle" border="0" src="img903.png" alt="" /></span>. Dann hei&szlig;t jedes Element <span class="MATH"><i>a</i></span> eines Erweiterungsk&ouml;rpers <span class="MATH"><img width="18" height="16" align="bottom" border="0" src="img890.png" alt="" /></span> von GF<span class="MATH"><img width="31" height="37" align="middle" border="0" src="img904.png" alt="" /></span>, das die Gleichung <span class="MATH"><i>x</i><sup><i>n</i></sup> =1</span> erf&uuml;llt, <span class="begriff"><span class="MATH"><i>n</i></span>-te Einheitswurzel</span> &uuml;ber GF<span class="MATH"><img width="31" height="37" align="middle" border="0" src="img904.png" alt="" /></span>.<br />
+Die <span class="MATH"><i>n</i></span>-ten Einheitswurzeln &uuml;ber GF(<span class="MATH"><i>q</i></span>) bilden eine zyklische Gruppe der Ordnung <span class="MATH"><i>n</i></span>. Ein erzeugendes Element dieser Gruppe hei&szlig;t <span class="begriff">primitive <span class="MATH"><i>n</i></span>-te Einheitswurzel.</span></p>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Zweidimensionale Arrays</title>
+<meta name="description" content="Zweidimensionale Arrays" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node70.html" />
+<link rel="previous" href="node68.html" />
+<link rel="up" href="node66.html" />
+<link rel="next" href="node70.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node68.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node70.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node53.html">Maple</a> <a id="up" href="node66.html">Tabellen- und feldartige Strukturen, Vektoren und Matrizen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001936300000000000000" id="SECTION001936300000000000000">Zweidimensionale Arrays</a></h3>
+<p>Entsprechend definiert man zweidimensionale Arrays, etwa mit</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="575" height="66" border="0" src="img575.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">48</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die so definierte Struktur versteht <i class="sans">Maple</i> als Matrix der Dimension <span class="MATH"><i>n</i> x <i>m</i></span>. Die Werte von <span class="MATH"><i>a</i>(<i>i</i>,<i>j</i>)</span> sind die entsprechenden Matrixelemente.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="264" height="66" border="0" src="img576.png" alt="" /></div>
+<p><br clear="all" /></p>
+<span class="MATH"><img width="133" height="37" align="middle" border="0" src="img577.png" alt="" /></span> ergibt einen Vektor. Eine Matrix bekommt man z.B. mit<br />
+<div align="center" class="mathdisplay"><img width="222" height="66" border="0" src="img578.png" alt="" /></div>
+<p><br clear="all" /></p>
+<span class="MATH"><img width="198" height="37" align="middle" border="0" src="img579.png" alt="" /></span> Diese wird mit<br />
+<div align="center" class="mathdisplay"><img width="379" height="127" border="0" src="img580.png" alt="" /></div>
+<p><br clear="all" /></p>
+<i class="sans">Maple</i> hat hier die nicht festgelegten Werte des Feldes (der Matrix) durch die Eintr&auml;ge <span class="MATH"><img width="36" height="35" align="middle" border="0" src="img581.png" alt="" /></span> charakterisiert. Weist man jetzt allen oder einigen dieser Eintr&auml;ge durch Zuweisungen Werte zu, etwa durch<br />
+<div align="center" class="mathdisplay"><img width="339" height="66" border="0" src="img582.png" alt="" /></div>
+<p><br clear="all" /></p>
+so f&uuml;hrt ein erneuter Aufruf von <span class="MATH"><i>A</i></span> zur Ausgabe der Matrix mit den nunmehr festgelegten Werten:<br />
+<div align="center" class="mathdisplay"><img width="356" height="127" border="0" src="img583.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p>Mit dem Aufruf</p>
+<div align="center" class="mathdisplay"><img width="486" height="66" border="0" src="img584.png" alt="" /></div>
+<p><br clear="all" /></p>
+<span class="MATH"><img width="175" height="99" align="middle" border="0" src="img585.png" alt="" /></span> stellt <i class="sans">Maple</i> die erzeugte Matrix mit ihren Elementen dar, da diese in der Definition explizit angegeben sind. Die optionalen Dimensionsangaben sind hier nicht n&ouml;tig, da durch die vollst&auml;ndige Angabe der Matrixelemente die Definition eindeutig ist. Kennt man allerdings von einer Matrix nur einige Werte, so mu&szlig; der jeweilige Laufbereich angegeben werden; <i class="sans">Maple</i> ersetzt die nichtdefinierten Werte durch ihren formalen Wert:<br />
+<div align="center" class="mathdisplay"><img width="429" height="66" border="0" src="img586.png" alt="" /></div>
+<p><br clear="all" /></p>
+<span class="MATH"><img width="257" height="124" align="middle" border="0" src="img587.png" alt="" /></span>
+<p>Als optionale Argumente k&ouml;nnen <a href="node67.html#KPHIndexfunktion">Indexfunktionen</a> der Art <span class="MATH"><img width="290" height="33" align="middle" border="0" src="img588.png" alt="" /></span>,<br />
+<span class="MATH"><img width="211" height="33" align="middle" border="0" src="img589.png" alt="" /></span> benutzt werden. Man erh&auml;lt damit die entsprechenden Matrizen.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="543" height="127" border="0" src="img590.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p>Ein weiterer Befehl zur Konstruktion von mehrdimensionalen Strukuren ist <span class="MATH"><img width="57" height="33" align="middle" border="0" src="img591.png" alt="" /></span>. Dieses Kommando hat die gleiche Form wie <span class="MATH"><img width="57" height="33" align="middle" border="0" src="img592.png" alt="" /></span>, l&auml;&szlig;t aber wesentlich mehr Optionen zu. Intern unterscheiden sich beide Befehle durch die Art der Datendarstellung (Hash-table (assoziativer Array), feste Blocktabelle (normaler Array)).<br />
+</p>
+</body>
+</html>

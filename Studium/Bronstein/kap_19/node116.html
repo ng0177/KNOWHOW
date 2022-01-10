@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Eigenschaften</title>
+<meta name="description" content="Eigenschaften" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node117.html" />
+<link rel="previous" href="node115.html" />
+<link rel="up" href="node115.html" />
+<link rel="next" href="node117.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node115.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node117.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node107.html">Darstellung von Kurven und Fl&#228;chen mit Hilfe von Splines</a> <a href="node113.html">Bikubische Splines</a> <a id="up" href="node115.html">Bikubische Interpolationssplines</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001872210000000000000" id="SECTION001872210000000000000"></a> <a name="5610"></a>
+Eigenschaften</h4>
+<p>Der bikubische Interpolationsspline <span class="MATH"><i>S</i>(<i>x</i>,<i>y</i>)</span> ist durch folgende Eigenschaften eindeutig festgelegt:</p>
+<ol>
+<li>
+<div><span class="MATH"><i>S</i>(<i>x</i>,<i>y</i>)</span> erf&uuml;llt die Interpolationsbedingung
+<div class="mathdisplay"><a name="F1190712" id="F1190712"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190712" id="F1190712"></a><img width="417" height="66" border="0" src="img750.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">241</span>)</td>
+</tr>
+</table>
+</div>
+</div>
+</li>
+<li>
+<div>Auf jeder Masche <span class="MATH"><i>R</i><sub><i>ij</i></sub></span> des Rechteckbereiches <span class="MATH"><i>R</i></span> ist <span class="MATH"><i>S</i>(<i>x</i>,<i>y</i>)</span> identisch mit einem bikubischen Polynom, d.h., es gilt die Darstellung
+<div class="mathdisplay"><a name="F1190713" id="F1190713"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190713" id="F1190713"></a><img width="415" height="105" border="0" src="img751.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">242</span>)</td>
+</tr>
+</table>
+</div>
+<p>Damit wird <span class="MATH"><i>S</i><sub><i>ij</i></sub>(<i>x</i>,<i>y</i>)</span> durch 16 Ansatzkoeffizienten repr&auml;sentiert, und f&uuml;r die Beschreibung von <span class="MATH"><i>S</i>(<i>x</i>,<i>y</i>)</span> sind <span class="MATH"><img width="78" height="16" align="bottom" border="0" src="img752.png" alt="" /></span> Koeffizienten notwendig.</p>
+</div>
+</li>
+<li>
+<div>Die Ableitungen
+<div class="mathdisplay"><a name="F1190714" id="F1190714"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190714" id="F1190714"></a><img width="157" height="91" border="0" src="img753.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">243</span>)</td>
+</tr>
+</table>
+</div>
+<p>sind stetig auf <span class="MATH"><i>R</i></span>. Damit wird eine gewisse Glattheit der gesuchten Fl&auml;che gew&auml;hrleistet.</p>
+</div>
+</li>
+<li>
+<div><span class="MATH"><i>S</i>(<i>x</i>,<i>y</i>)</span> erf&uuml;llt spezielle Randbedingungen:<br />
+<div class="myclass"><a name="F1190715" id="F1190715"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="87" height="61" align="middle" border="0" src="img754.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="285" height="35" align="middle" border="0" src="img755.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="87" height="61" align="middle" border="0" src="img756.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="287" height="35" align="middle" border="0" src="img757.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">244</span>)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="106" height="65" align="middle" border="0" src="img758.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="233" height="35" align="middle" border="0" src="img759.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+Dabei sind <span class="MATH"><i>p</i><sub><i>ij</i></sub></span>, <span class="MATH"><i>q</i><sub><i>ij</i></sub></span> und <span class="MATH"><i>r</i><sub><i>ij</i></sub></span> vorgegebene Zahlenwerte.</div>
+</li>
+</ol>
+Bei der Bestimmung der Ansatzkoeffizienten <span class="MATH"><i>a</i><sub><i>ijkl</i></sub></span> k&ouml;nnen die Ergebnisse der eindimensionalen kubischen <span class="begriff">Spline-Interpolation</span> ganz entscheidend ausgenutzt werden. Es zeigt sich:
+<ol>
+<li>
+<div>Es ist eine sehr gro&szlig;e Anzahl <span class="MATH">(2<i>n</i>+<i>m</i>+<i>s</i>)</span> linearer Gleichungssyteme, aber nur mit tridiagonaler Koeffizientenmatrix, zu l&ouml;sen.</div>
+</li>
+<li>
+<div>Die linearen Gleichungssysteme unterscheiden sich im wesentlichen nur durch ihre rechten Seiten.</div>
+</li>
+</ol>
+Man kann im allgemeinen sagen, bikubische Interpolationssplines sind g&uuml;nstig bzgl. Rechenzeit und Genauigkeit und damit recht gut geeignet f&uuml;r viele praktische Anwendungen. Zur rechentechnischen Realisierung der Koeffizientenbestimmung s.&nbsp;Lit.&nbsp;<a href="../kap_22/node19.html#x1906">19.6</a>, <a href="../kap_22/node19.html#x1926">19.27</a>.
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Schie&szlig;verfahren</title>
+<meta name="description" content="Schie&szlig;verfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node63.html" />
+<link rel="up" href="node61.html" />
+<link rel="next" href="node65.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node63.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node65.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node48.html">Integration gew&#246;hnlicher Differentialgleichungen</a> <a id="up" href="node61.html">Randwertaufgaben</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001842300000000000000" id="SECTION001842300000000000000">Schie&szlig;verfahren</a></h3>
+<p><a name="7350"></a> <a name="7351"></a> <a name="3112"></a> <a name="3113"></a> Mit dem Schie&szlig;verfahren wird die L&ouml;sung von Randwertaufgaben auf die L&ouml;sung von Anfangswertaufgaben zur&uuml;ckgef&uuml;hrt. Das Prinzip soll am sogenannten <span class="begriff">einfachen Schie&szlig;verfahren</span>, auch <span class="begriff">Einzielverfahren</span> genannt, beschrieben werden.</p>
+<dl>
+<dt>1.&nbsp;Einzielverfahren:</dt>
+<dd>Der Randwertaufgabe (<a href="node61.html#F1190425">19.118</a>) wird die Anfangswertaufgabe
+<div class="mathdisplay"><a name="F1190441" id="F1190441"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190441" id="F1190441"></a><img width="439" height="66" border="0" src="img387.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">134</span>)</td>
+</tr>
+</table>
+</div>
+<p>zugeordnet. Dabei ist <span class="MATH"><i>s</i></span> ein Parameter, von dem die L&ouml;sung <span class="MATH"><i>y</i></span> der Anfangswertaufgabe (<a href="#F1190441">19.134</a>) abh&auml;ngt, d.h., es gilt <span class="MATH"><img width="95" height="37" align="middle" border="0" src="img388.png" alt="" /></span>. Die Funktion <span class="MATH"><i>y</i>(<i>x</i>,<i>s</i>)</span> erf&uuml;llt gem&auml;&szlig; (<a href="#F1190441">19.134</a>) die erste Randbedingung <span class="MATH"><img width="96" height="37" align="middle" border="0" src="img389.png" alt="" /></span>. Der Parameter <span class="MATH"><i>s</i></span> ist so zu bestimmen, da&szlig; <span class="MATH"><i>y</i>(<i>x</i>,<i>s</i>)</span> auch die zweite Randbedingung <span class="MATH"><img width="91" height="37" align="middle" border="0" src="img390.png" alt="" /></span> erf&uuml;llt. Dazu ist die Gleichung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="146" height="66" border="0" src="img391.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">135</span>)</td>
+</tr>
+</table>
+</div>
+<p>zweckm&auml;&szlig;igerweise mit Hilfe der <a href="node5.html#Regulafalsi">Regula falsi</a> zu l&ouml;sen. Diese ben&ouml;tigt nur Funktionswerte <span class="MATH"><img width="46" height="37" align="middle" border="0" src="img392.png" alt="" /></span>, aber jede Funktionswertberechnung erfordert die L&ouml;sung der Anfangswertaufgabe (<a href="#F1190441">19.134</a>) nach einem der im Abschnitt <a href="node49.html#kap16.4.1">Anfangswertaufgaben</a> angegebenen Verfahren bis <span class="MATH"><i>x</i> = <i>b</i></span> f&uuml;r den speziellen Parameterwert <span class="MATH"><img width="17" height="16" align="bottom" border="0" src="img393.png" alt="" /></span>.</p>
+</dd>
+<dt>2.&nbsp;Mehrzielverfahren:</dt>
+<dd>Bei der sogenannten <span class="begriff">Mehrzielmethode</span> wird das Integrationsintervall <span class="MATH">[<i>a</i>,<i>b</i>]</span> in Teilintervalle zerlegt und auf jedem Teilintervall die Einzielmethode angewendet. Damit setzt sich die gesuchte L&ouml;sung aus Teill&ouml;sungen zusammen, deren stetiger &Uuml;bergang an den Teilintervallgrenzen zu sichern ist. Diese Forderung ergibt zus&auml;tzliche Bedingungen. Zur numerischen Realisierung der Mehrzielmethode, die vor allem bei nichtlinearen Randwertaufgaben verwendet wird, s.&nbsp;Lit.&nbsp;<a href="../kap_22/node19.html#x1910">19.12</a>.</dd>
+</dl>
+</body>
+</html>

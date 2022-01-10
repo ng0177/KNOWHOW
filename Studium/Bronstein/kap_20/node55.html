@@ -1,0 +1,251 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Typen und Objekte</title>
+<meta name="description" content="Typen und Objekte" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node56.html" />
+<link rel="previous" href="node54.html" />
+<link rel="up" href="node54.html" />
+<link rel="next" href="node56.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node54.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node56.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node53.html">Maple</a> <a id="up" href="node54.html">Hauptstrukturelemente</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001931100000000000000" id="SECTION001931100000000000000"></a> <a name="1400"></a> <a name="1401"></a> <a name="1402"></a>
+Typen und Objekte</h3>
+<p>In <i class="sans">Maple</i> haben alle <span class="begriff">Objekte</span> (Daten, Ausdr&uuml;cke usw.) einen <span class="begriff">Typ</span>, der ihre Zugeh&ouml;rigkeit zu einer <span class="begriff">Objektklasse</span> bestimmt. Ein Objekt kann mehreren Typen zugeordnet sein, so z.B., wenn eine bestimmte Objektklasse eine durch zus&auml;tzliche Relationen definierte Unterklasse enth&auml;lt. Als Beispiel sei erw&auml;hnt, da&szlig; die Zahl 6 vom Typ <span class="MATH"><img width="73" height="33" align="middle" border="0" src="img310.png" alt="" /></span> und vom Typ <span class="MATH"><img width="64" height="33" align="middle" border="0" src="img311.png" alt="" /></span> ist. Mit Hilfe der Typisierung und damit auch einer Hierarchisierung aller Objekte wird die widerspruchsfreie Formulierung und Abarbeitung bestimmter Klassen von mathematischen Aufgaben garantiert.</p>
+<p>Der Nutzer kann jederzeit den Basistyp eines Objektes mit der Anfrage</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="151" height="66" border="0" src="img312.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">30</span>)</td>
+</tr>
+</table>
+</div>
+<p>erfragen. Nach Abschlu&szlig; der Eingabe ist unbedingt das Semikolon zu setzen. Die R&uuml;ckgabe ist der Basistyp des Objektes. <i class="sans">Maple</i> kennt folgende, in der folgenden Tabelle dargestellten Basistypen:<br />
+<!-- TabellenStart: T2009 -->
+<a name="t20MapleBasTyp" id="t20MapleBasTyp"></a></p>
+<div align="center">Tabelle Basistypen in <i class="sans">Maple</i><br />
+<br />
+<a name="bastyp" id="bastyp"></a>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="44" height="17" align="bottom" border="0" src="img313.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="49" height="35" align="middle" border="0" src="img314.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="31" height="17" align="bottom" border="0" src="img315.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="36" height="17" align="bottom" border="0" src="img316.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="47" height="17" align="bottom" border="0" src="img317.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="51" height="35" align="middle" border="0" src="img318.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="66" height="35" align="middle" border="0" src="img319.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="66" height="35" align="middle" border="0" src="img320.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="51" height="19" align="bottom" border="0" src="img321.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="47" height="19" align="bottom" border="0" src="img322.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="56" height="18" align="bottom" border="0" src="img323.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="58" height="33" align="middle" border="0" src="img324.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="center">exprseq</td>
+<td align="center">float</td>
+<td align="center">fraction</td>
+<td align="center">function</td>
+<td align="center">hfarray</td>
+<td align="center">indexed</td>
+</tr>
+<tr valign="baseline">
+<td align="center">integer</td>
+<td align="center">list</td>
+<td align="center"><span class="MATH"><img width="53" height="17" align="bottom" border="0" src="img325.png" alt="" /></span></td>
+<td align="center"><span class="MATH"><img width="42" height="17" align="bottom" border="0" src="img326.png" alt="" /></span></td>
+<td align="center">procedure</td>
+<td align="center">series</td>
+</tr>
+<tr valign="baseline">
+<td align="center">set</td>
+<td align="center">string</td>
+<td align="center">symbol</td>
+<td align="center">table</td>
+<td align="center">uneval</td>
+<td align="center">Array</td>
+</tr>
+<tr valign="baseline">
+<td align="center">Matrix</td>
+<td align="center">Vector [column]</td>
+<td align="center">Vector [row]</td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+<td align="center">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><!-- TabelleEnde: T2009 -->
+Die weitergehende Typstruktur kann mit Abfragen der Art <span class="MATH"><img width="160" height="37" align="middle" border="0" src="img327.png" alt="" /></span>, deren Werte die B<small>OOLE</small>schen Funktionen <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img328.png" alt="" /></span> oder <span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img329.png" alt="" /></span> sind, ermittelt werden. In der folgenden Tabelle ist eine kleine Auswahl der <i class="sans">Maple</i> bekannten Typnamen dargestellt. <!-- TabellenStart: T2010 -->
+<a name="t20MapleTypUebers" id="t20MapleTypUebers"></a></p>
+<div align="center">Tabelle Typen&uuml;bersicht<br />
+<a name="typ" id="typ"></a>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left"><span class="MATH">*</span></td>
+<td align="left"><span class="MATH">**</span></td>
+<td align="left"><span class="MATH">+</span></td>
+<td align="left"><span class="MATH">.</span></td>
+<td align="left"><span class="MATH">..</span></td>
+<td align="left"><span class="MATH">&lt;</span></td>
+<td align="left"><span class="MATH"><img width="19" height="33" align="middle" border="0" src="img330.png" alt="" /></span></td>
+<td align="left"><span class="MATH">&lt;&gt;</span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH">=</span></td>
+<td align="left"><span class="MATH"><img width="14" height="19" align="bottom" border="0" src="img331.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="57" height="16" align="bottom" border="0" src="img332.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="81" height="16" align="bottom" border="0" src="img333.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="65" height="17" align="bottom" border="0" src="img334.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="77" height="35" align="middle" border="0" src="img335.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="35" align="middle" border="0" src="img336.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="55" height="35" align="middle" border="0" src="img337.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="39" height="35" align="middle" border="0" src="img338.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="90" height="35" align="middle" border="0" src="img339.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="35" height="18" align="bottom" border="0" src="img340.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="76" height="35" align="middle" border="0" src="img341.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="47" height="33" align="middle" border="0" src="img342.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="17" align="bottom" border="0" src="img343.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="75" height="35" align="middle" border="0" src="img344.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="68" height="17" align="bottom" border="0" src="img345.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="79" height="18" align="bottom" border="0" src="img346.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="86" height="18" align="bottom" border="0" src="img347.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="74" height="16" align="bottom" border="0" src="img348.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="47" height="18" align="bottom" border="0" src="img349.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="67" height="35" align="middle" border="0" src="img350.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="75" height="34" align="middle" border="0" src="img351.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="41" height="16" align="bottom" border="0" src="img352.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="76" height="18" align="bottom" border="0" src="img353.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="82" height="35" align="middle" border="0" src="img354.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="50" height="17" align="bottom" border="0" src="img355.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="41" height="17" align="bottom" border="0" src="img356.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="67" height="17" align="bottom" border="0" src="img357.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="72" height="18" align="bottom" border="0" src="img358.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="51" height="35" align="middle" border="0" src="img359.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="67" height="18" align="bottom" border="0" src="img360.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="60" height="34" align="middle" border="0" src="img361.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="74" height="16" align="bottom" border="0" src="img362.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="62" height="18" align="bottom" border="0" src="img363.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="50" height="17" align="bottom" border="0" src="img364.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="30" height="17" align="bottom" border="0" src="img365.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="55" height="17" align="bottom" border="0" src="img366.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="57" height="35" align="middle" border="0" src="img367.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="82" height="18" align="bottom" border="0" src="img368.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="59" height="16" align="bottom" border="0" src="img369.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="53" height="17" align="bottom" border="0" src="img370.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="85" height="17" align="bottom" border="0" src="img371.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="48" height="16" align="bottom" border="0" src="img372.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="72" height="34" align="middle" border="0" src="img373.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="55" height="34" align="middle" border="0" src="img374.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="63" height="33" align="middle" border="0" src="img375.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="85" height="34" align="middle" border="0" src="img376.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="32" height="16" align="bottom" border="0" src="img377.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="70" height="17" align="bottom" border="0" src="img378.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="35" height="18" align="bottom" border="0" src="img379.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="70" height="18" align="bottom" border="0" src="img380.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="74" height="33" align="middle" border="0" src="img381.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img382.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="57" height="35" align="middle" border="0" src="img383.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="47" height="34" align="middle" border="0" src="img384.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="75" height="35" align="middle" border="0" src="img385.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="55" height="34" align="middle" border="0" src="img386.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="68" height="34" align="middle" border="0" src="img387.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="74" height="34" align="middle" border="0" src="img388.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="85" height="35" align="middle" border="0" src="img389.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="82" height="35" align="middle" border="0" src="img390.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="62" height="34" align="middle" border="0" src="img391.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="57" height="18" align="bottom" border="0" src="img392.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="58" height="18" align="bottom" border="0" src="img393.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="84" height="18" align="bottom" border="0" src="img394.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="60" height="18" align="bottom" border="0" src="img395.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="67" height="18" align="bottom" border="0" src="img396.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="93" height="18" align="bottom" border="0" src="img397.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="49" height="33" align="middle" border="0" src="img398.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="68" height="17" align="bottom" border="0" src="img399.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="64" height="35" align="middle" border="0" src="img400.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="70" height="17" align="bottom" border="0" src="img401.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="67" height="17" align="bottom" border="0" src="img402.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="51" height="17" align="bottom" border="0" src="img403.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="48" height="16" align="bottom" border="0" src="img404.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="28" height="16" align="bottom" border="0" src="img405.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="36" height="33" align="middle" border="0" src="img406.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="57" height="33" align="middle" border="0" src="img407.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="51" height="34" align="middle" border="0" src="img408.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="80" height="35" align="middle" border="0" src="img409.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="88" height="35" align="middle" border="0" src="img410.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="52" height="35" align="middle" border="0" src="img411.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="36" height="16" align="bottom" border="0" src="img412.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="34" height="34" align="middle" border="0" src="img413.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="40" height="33" align="middle" border="0" src="img414.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="88" height="35" align="middle" border="0" src="img415.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="57" height="18" align="bottom" border="0" src="img416.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="50" height="17" align="bottom" border="0" src="img417.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="55" height="16" align="bottom" border="0" src="img418.png" alt="" /></span></td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p>Auch die Typpr&uuml;ffunktion selbst besitzt einen Typ, n&auml;mlich <span class="MATH"><img width="44" height="33" align="middle" border="0" src="img419.png" alt="" /></span>. Grob gesprochen, charakterisieren die Basistypen Klassen von grundlegenden Datenstrukturen (Zahlenarten, strukturierte Datentypen) und Basisoperatoren, w&auml;hrend die &uuml;brigen tiefergehenden Klassifizierungen der Basistypen bzw. Sachverhalte algebraischer Natur widerspiegeln bzw. mit bestimmten Prozeduren von <i class="sans">Maple</i> verkn&uuml;pft sind.<br />
+Wichtige Objekte in <i class="sans">Maple</i> sind <span class="begriff">Ausdr&uuml;cke</span>.<a name="1576"></a> Diese umfassen Konstanten (Zahlen), Operatoren, zusammengesetzte Objekte aus Variablen und Operatoren, Datenstrukturen, Funktionsaufrufe usw. Auch Prozeduren und Module k&ouml;nnen (zumindest im technischen Sinne) als Ausdr&uuml;cke aufgefa&szlig;t werden.<br />
+Namen sind in <i class="sans">Maple</i> Aneinanderreihungen von Charakteren (einer oder mehrere), welche eindeutig ein Kommando, eine Variable oder andere Objekte identifizieren.<br />
+Zu unterscheiden sind dabei <span class="begriff">indizierte Namen</span> und <span class="begriff">Symbole</span>. <a name="1581"></a><a name="1582"></a> Ein indizierter Name hat die Form<br />
+<tt>name[index]</tt>, etwa <span class="MATH"><img width="146" height="37" align="middle" border="0" src="img420.png" alt="" /></span><br />
+Symbole sind nichtindizierte Namen.<a name="1586"></a> Indizierten Namen k&ouml;nnen ebenso wie Symbolen Werte zugewiesen werden.<br />
+</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Kontexte, Attribute</title>
+<meta name="description" content="Kontexte, Attribute" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node51.html" />
+<link rel="previous" href="node49.html" />
+<link rel="up" href="node49.html" />
+<link rel="next" href="node51.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node49.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node51.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node19.html">Mathematica</a> <a id="up" href="node49.html">Erg&#228;nzungen zur Syntax, Informationen, Meldungen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION0019210100000000000000" id="SECTION0019210100000000000000"></a> <a name="1314"></a> <a name="1315"></a>
+Kontexte, Attribute</h3>
+<p><i class="sans">Mathematica</i> mu&szlig; mit einer Vielzahl von Symbolen umgehen, dar&uuml;ber hinaus lassen sich weitere Programmoduln je nach Bedarf hinzuladen. Um Mehrdeutigkeiten zu vermeiden, bestehen die Namen von Symbolen in <i class="sans">Mathematica</i> aus zwei Teilen, dem Kontext und dem Kurznamen.</p>
+<p>Als Kurznamen bezeichnet man die <a href="node19.html#KopfElement">Benennungen</a> von <span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img90.png" alt="" /></span> und Elementen der Ausdr&uuml;cke. Dar&uuml;ber hinaus ben&ouml;tigt <i class="sans">Mathematica</i> f&uuml;r die Benennung von Symbolen Angaben &uuml;ber die Zugeh&ouml;rigkeit des Symbols zum jeweiligen Programmteil. Dies wird durch die Angabe des <span class="begriff">Kontext</span> gew&auml;hrleistet, der den entsprechenden Programmteil benennt. Der vollst&auml;ndige Name eines Symbols besteht daher aus dem Kontext und dem Kurznamen, die durch ein ' verbunden werden.</p>
+<p>Beim Start von <i class="sans">Mathematica</i> sind immer zwei Kontexte pr&auml;sent: <span class="begriff">System'</span> sowie <span class="begriff">Global'</span>. &Uuml;ber die Verf&uuml;gbarkeit weiterer Programmoduln kann man sich mit dem Befehl <span class="MATH"><img width="99" height="37" align="middle" border="0" src="img286.png" alt="" /></span> informieren lassen.</p>
+<p>Alle in <i class="sans">Mathematica</i> eingebauten Funktionen laufen unter dem Kontext <span class="begriff">System'</span>, w&auml;hrend die vom Nutzer definierten unter dem Kontext <span class="begriff">Global'</span> abgelegt werden.</p>
+<p>Ist ein gegebener Kontext aktuell, also der entsprechende Programmteil geladen, so k&ouml;nnen die Symbole mit ihrem Kurznamen angesprochen werden.</p>
+<p>Beim Einlesen eines weiteren <i class="sans">Mathematica</i>-Programmoduls mit <span class="MATH"><img width="152" height="33" align="middle" border="0" src="img287.png" alt="" /></span> werden die dazugeh&ouml;rigen Kontexte ge&ouml;ffnet und der schon vorhandenen Liste vorn hinzugef&uuml;gt. Es kann vorkommen, da&szlig; vor dem Zuladen des neuen Moduls ein Symbol mit einem Namen eingef&uuml;hrt wurde, der jetzt in dem neu er&ouml;ffneten Kontext unter einer anderen Definition ebenfalls vorhanden ist. In diesem Falle informiert <i class="sans">Mathematica</i> in einer Meldung dar&uuml;ber. Dann ist entweder der vorher definierte Name mit <span class="MATH"><img width="177" height="37" align="middle" border="0" src="img288.png" alt="" /></span> zu l&ouml;schen, oder aber man verwendet f&uuml;r das zugeladene Symbol den <span class="begriff">vollst&auml;ndigen</span> Namen.</p>
+<p>Neben den Eigenschaften, die Symbole per Definition besitzen und die in der Regel spezieller Natur sind, kann man ihnen allgemeinere Eigenschaften, n&auml;mlich Attribute wie <span class="MATH"><img width="93" height="16" align="bottom" border="0" src="img289.png" alt="" /></span>, d.h. ungeordnet, kommutativ, <span class="MATH"><img width="93" height="16" align="bottom" border="0" src="img290.png" alt="" /></span>, d.h., Werte k&ouml;nnen nicht ge&auml;ndert werden, oder <span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img291.png" alt="" /></span>, d.h, Attribute k&ouml;nnen nicht ge&auml;ndert werden u.a. zuordnen. Auskunft &uuml;ber die f&uuml;r das jeweilige Objekt zutreffenden Attribute erh&auml;lt man mit <span class="MATH"><img width="128" height="37" align="middle" border="0" src="img292.png" alt="" /></span>.</p>
+<p>Eigene Symbole k&ouml;nnen mit <span class="MATH"><img width="212" height="37" align="middle" border="0" src="img293.png" alt="" /></span> gesch&uuml;tzt werden, so da&szlig; keine anderen Definitionen f&uuml;r diese Symbol eingef&uuml;hrt werden k&ouml;nnen. Mit <span class="MATH"><img width="93" height="33" align="middle" border="0" src="img294.png" alt="" /></span> kann das Attribut wieder entfernt werden.</p>
+</body>
+</html>

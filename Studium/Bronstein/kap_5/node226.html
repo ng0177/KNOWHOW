@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Schaltalgebra</title>
+<meta name="description" content="Schaltalgebra" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node225.html" />
+<link rel="up" href="node214.html" />
+<link rel="next" href="node227.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node225.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node227.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a id="up" href="node214.html">Boolesche Algebren und Schaltalgebra</a> </span>
+</p>
+</div>
+<h2><a name="SECTION00477000000000000000" id="SECTION00477000000000000000"></a><a name="schaltalgebra" id="schaltalgebra"></a><a name="6239"></a> <a name="6240"></a> <a name="6241"></a> <a name="6242"></a>
+Schaltalgebra</h2>
+<p>Eine typische Anwendung der B<small>OOLE</small>schen Algebra ist die Vereinfachung von Reihen-Parallel-Schaltungen (RPS). Dazu wird einer RPS ein B<small>OOLE</small>scher Ausdruck zugeordnet (Transformation). Dieser Ausdruck wird mit den Umformungsregeln der B<small>OOLE</small>schen Algebra ,,vereinfacht``. Anschlie&szlig;end wird diesem Ausdruck wieder eine RPS zugeordnet (R&uuml;cktransformation). Im Ergebnis erh&auml;lt man eine vereinfachte RPS, die das gleiche Schaltverhalten wie die Ausgangsschaltung hat.</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a017" id="BILD_105a017"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a017.gif" /></a></p>
+<p class="nachBild">
+RPS bestehen aus Grundelementen, den Arbeits- und Ruhekontakten, mit jeweils zwei Zust&auml;nden (ge&ouml;ffnet oder geschlossen). Die Symbolik ist, wie &uuml;blich, so zu verstehen: Wird die steuernde Schaltvorrichtung eingeschaltet, so schlie&szlig;t der Arbeitskontakt (,,Schlie&szlig;er``)&nbsp; und der Ruhekontakt (,,&Ouml;ffner``)&nbsp; &ouml;ffnet sich. Den die Kontakte steuernden Schaltvorrichtungen werden B<small>OOLE</small>sche Variable zugeordnet. Dem Zustand ,,aus`` bzw. ,,ein`` der Schaltvorrichtung entspricht der Wert 0 bzw.&nbsp;1 der B<small>OOLE</small>schen Variablen. Kontakte, die durch die gleichen Vorrichtungen geschaltet werden, erhalten als Symbol die B<small>OOLE</small>sche Variable dieser Vorrichtung. Der <span class="begriff">Schaltwert</span> einer RPS ist 0 bzw.&nbsp;1, wenn die Schaltung elektrisch leitend bzw. nichtleitend ist. Der Schaltwert ist abh&auml;ngig von der Stellung der Kontakte und damit eine B<small>OOLE</small>sche Funktion <span class="MATH"><i>S</i></span> <span class="begriff">(Schaltfunktion)</span> der den Schaltvorrichtungen zugeordneten Variablen. In der folgenden Abbildung sind Kontakte, Schaltungen, Symbole und die ihnen entsprechenden B<small>OOLE</small>schen Ausdr&uuml;cke dargestellt.</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a018" id="BILD_105a018"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a018.gif" /></a></p>
+<p class="nachBild">
+Die B<small>OOLE</small>schen Ausdr&uuml;cke, die Schaltfunktionen von RPS repr&auml;sentieren, sind dadurch ausgezeichnet, da&szlig; das Negationszeichen <span class="begriff">nur</span> &uuml;ber Variablen (nicht &uuml;ber Teilausdr&uuml;cken) stehen darf.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Die Reihen-Parallel-Schaltung aus der folgenden Abbildung ist zu vereinfachen.</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a019" id="BILD_105a019"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a019.gif" /></a></p>
+<p class="nachBild"></p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a020" id="BILD_105a020"><img alt="BilD" border="0" src="../bilder/kap05/t1/105a020.gif" /></a></p>
+<p class="nachBild">
+Dieser Schaltung ist der B<small>OOLE</small>sche Ausdruck</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="311" height="66" border="0" src="img1565.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">338</span>)</td>
+</tr>
+</table>
+</div>
+<p>als Schaltfunktion zugeordnet. Entsprechend den Umformungsregeln der B<small>OOLE</small>schen Algebra ergibt sich:</p>
+<table width="95%" align="left">
+<tr valign="middle">
+<td align="center" nowrap="nowrap"><img width="579" height="186" align="bottom" border="0" src="img1566.png" alt="" /></td>
+<td class="EQNNR" align="right">(<span class="arabic">5</span>.<span class="arabic">339</span>)</td>
+</tr>
+</table>
+<br />
+<p>Dabei ergibt sich <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img1567.png" alt="" /></span> aus <span class="MATH"><img width="266" height="43" align="middle" border="0" src="img1568.png" alt="" /></span> und <span class="MATH"><img width="42" height="17" align="bottom" border="0" src="img1569.png" alt="" /></span> aus <span class="MATH"><img width="273" height="37" align="middle" border="0" src="img1570.png" alt="" /></span> Man erh&auml;lt die in der Abbildung dargestellte vereinfachte RPS.<br />
+Dieses Beispiel veranschaulicht, da&szlig; es nicht immer einfach ist, durch Umformung auf den ,,einfachsten`` B<small>OOLE</small>schen Ausdruck zu kommen. In der Literatur sind dazu Verfahren bereitgestellt.</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

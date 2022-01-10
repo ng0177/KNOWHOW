@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Prinzip der B-B-Kurvendarstellung</title>
+<meta name="description" content="Prinzip der B-B-Kurvendarstellung" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node121.html" />
+<link rel="previous" href="node119.html" />
+<link rel="up" href="node119.html" />
+<link rel="next" href="node121.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node119.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node121.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node107.html">Darstellung von Kurven und Fl&#228;chen mit Hilfe von Splines</a> <a id="up" href="node119.html">Bernstein-B&#233;zier-Darstellung von Kurven und Fl&#228;chen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001873100000000000000" id="SECTION001873100000000000000"></a> <a name="5767"></a> <a name="5768"></a>
+Prinzip der B-B-Kurvendarstellung</h3>
+<p>Gegeben seien <span class="MATH"><i>n</i>+1</span> Eckpunkte <span class="MATH"><img width="158" height="37" align="middle" border="0" src="img775.png" alt="" /></span> mit den Ortsvektoren <span class="MATH"><img width="25" height="46" align="middle" border="0" src="img776.png" alt="" /></span> eines r&auml;umlichen Polygons, das in diesem Zusammenhang als <span class="begriff">St&uuml;tzpolygon</span> bezeichnet wird. Durch die Vorschrift</p>
+<div class="mathdisplay"><a name="F1190723" id="F1190723"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190723" id="F1190723"></a><img width="158" height="102" border="0" src="img777.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">252</span>)</td>
+</tr>
+</table>
+</div>
+<p>wird diesen Punkten eine Raumkurve, die sogenannte B-B-Kurve zugeordnet. Wegen (<a href="node119.html#F1190720">19.249</a>) kann (<a href="#F1190723">19.252</a>) als ,,variable Konvexkombination`` der gegebenen Punkte aufgefa&szlig;t werden. Die Raumkurve (<a href="#F1190723">19.252</a>) hat folgende wichtige Eigenschaften:</p>
+<ol>
+<li>
+<div>Die Punkte <span class="MATH"><i>P</i><sub>0</sub></span> und <span class="MATH"><i>P</i><sub><i>n</i></sub></span> werden interpoliert.</div>
+</li>
+<li>
+<div>Die Vektoren <span class="MATH"><img width="44" height="56" align="middle" border="0" src="img778.png" alt="" /></span> und <span class="MATH"><img width="64" height="56" align="middle" border="0" src="img779.png" alt="" /></span> sind Tangenten von <span class="MATH"><img width="35" height="37" align="middle" border="0" src="img780.png" alt="" /></span> in <span class="MATH"><i>P</i><sub>0</sub></span> bzw. <span class="MATH"><img width="29" height="35" align="middle" border="0" src="img781.png" alt="" /></span>.</div>
+</li>
+</ol>
+Den Zusammenhang zwischen St&uuml;tzpolygon und B-B-Kurve zeigt die folgende Abbildung.<br />
+<p align="left" class="BILD"><a name="BILD_119a013" class="BILD" id="BILD_119a013"><img alt="BilD" src="../bilder/kap19/t1/119a013.gif" border="0" /></a></p>
+<p class="nachBild">
+Die B-B-Darstellung wird vor allem f&uuml;r den Entwurf von Kurven eingesetzt, da man durch die &Auml;nderung von Polygonecken den Kurvenverlauf auf sehr einfache Weise beeinflussen kann.</p>
+<p>H&auml;ufig werden an Stelle der B<small>ERNSTEIN</small>schen Grundpolynome normalisierte B-Splines verwendet. Die zugeh&ouml;rigen Raumkurven hei&szlig;en dann B-Spline-Kurven. Ihr Verlauf entspricht prinzipiell dem der B-B-Kurven, aber sie haben folgende Vorteile gegen&uuml;ber diesen:</p>
+<ol>
+<li>
+<div>Das St&uuml;tzpolygon wird besser approximiert.</div>
+</li>
+<li>
+<div>Bei &Auml;nderung von Polygoneckpunkten &auml;ndert sich die B-Spline-Kurve nur lokal.</div>
+</li>
+<li>
+<div>Neben der lokalen &Auml;nderung des Kurvenverlaufs kann auch die Differenzierbarkeit beeinflu&szlig;t werden.</div>
+</li>
+</ol>
+So lassen sich z.B. auch Knicke und Geradenst&uuml;cke erzeugen.
+</body>
+</html>

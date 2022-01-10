@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Newton-Verfahren</title>
+<meta name="description" content="Newton-Verfahren" />
+<meta name="keywords" content="kap_12" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node130.html" />
+<link rel="previous" href="node128.html" />
+<link rel="up" href="node123.html" />
+<link rel="next" href="node130.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node128.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node130.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_12.html">Funktionalanalysis</a> <a id="up" href="node123.html">Nichtlineare Operatoren</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001183000000000000000" id="SECTION001183000000000000000">Newton-Verfahren</a></h2>
+<p><a name="4346"></a> <a name="4347"></a> <a name="4348"></a> Seien <span class="MATH"><img width="43" height="35" align="middle" border="0" src="img997.png" alt="" /></span> wie im vorhergehenden Abschnitt und <span class="MATH"><img width="104" height="16" align="bottom" border="0" src="img998.png" alt="" /></span>. Unter der Voraussetzung der Differenzierbarkeit von <span class="MATH"><i>T</i></span> in jedem Punkt der Menge <span class="MATH"><i>D</i></span> ist ein Operator <span class="MATH"><img width="158" height="37" align="middle" border="0" src="img999.png" alt="" /></span> definiert, der jedem <span class="MATH"><img width="55" height="35" align="middle" border="0" src="img1000.png" alt="" /></span> das Element <span class="MATH"><img width="138" height="37" align="middle" border="0" src="img1001.png" alt="" /></span> zuordnet. Der Operator <span class="MATH"><i>T</i>'</span> sei auf <span class="MATH"><i>D</i></span> stetig (in der Operatornorm); in diesem Falle sagt man, <span class="MATH"><i>T</i></span> ist stetig differenzierbar auf <span class="MATH"><img width="24" height="16" align="bottom" border="0" src="img1002.png" alt="" /></span>. Die Menge <span class="MATH"><i>D</i></span> enthalte eine L&ouml;sung <span class="MATH"><i>x</i><sup>*</sup></span> der Gleichung</p>
+<div class="mathdisplay"><a name="F1120809" id="F1120809"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1120809" id="F1120809"></a><img width="81" height="66" border="0" src="img1003.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">12</span>.<span class="arabic">196</span>)</td>
+</tr>
+</table>
+</div>
+<p>Weiter sei nun <span class="MATH"><img width="58" height="16" align="bottom" border="0" src="img1004.png" alt="" /></span> vorausgesetzt, sowie da&szlig; f&uuml;r jedes <span class="MATH"><img width="55" height="35" align="middle" border="0" src="img1000.png" alt="" /></span> der Operator <span class="MATH"><i>T</i>'(<i>x</i>)</span> stetig invertierbar ist, also <span class="MATH">[<i>T</i>'(<i>x</i>)]<sup>-1</sup></span> in <span class="MATH"><img width="48" height="37" align="middle" border="0" src="img1005.png" alt="" /></span> liegt. F&uuml;r ein beliebiges Element <span class="MATH"><img width="62" height="35" align="middle" border="0" src="img1006.png" alt="" /></span> vermutet man wegen (<a href="node128.html#F1120807">12.194</a>), da&szlig; die Elemente <span class="MATH"><i>T</i>(<i>x</i><sub>0</sub>)=<i>T</i>(<i>x</i><sub>0</sub>) - <i>T</i>(<i>x</i><sup>*</sup>)</span> und <span class="MATH"><i>T</i>'(<i>x</i><sub>0</sub>)(<i>x</i><sub>0</sub> - <i>x</i><sup>*</sup>)</span> ,, nahe``&nbsp; beieinander liegen und demzufolge die L&ouml;sung der <span class="begriff">linearen</span> Gleichung, also (unter den gemachten Voraussetzungen)</p>
+<div class="mathdisplay"><a name="F1120810" id="F1120810"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1120810" id="F1120810"></a><img width="217" height="67" border="0" src="img1007.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">12</span>.<span class="arabic">197</span>)</td>
+</tr>
+</table>
+</div>
+<p>das gesuchte Element <span class="MATH"><i>x</i><sup>*</sup></span> approximiert. Auf diese Weise konstruiert man, ausgehend von <span class="MATH"><img width="26" height="33" align="middle" border="0" src="img284.png" alt="" /></span>, die sogenannte <span class="begriff">N<small>EWTON</small></span>sche N&auml;herungsfolge</p>
+<div class="mathdisplay"><a name="F1120811" id="F1120811"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1120811" id="F1120811"></a><img width="367" height="67" border="0" src="img1008.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">12</span>.<span class="arabic">198</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die Begr&uuml;ndung f&uuml;r das beschriebene Vorgehen wird durch eine Reihe von S&auml;tzen, die sich im Allgemeinheitsgrad oder in der Anpassung an spezielle Situationen der gemachten Voraussetzungen unterscheiden, geliefert, von denen exemplarisch nur der folgende zitiert werden soll, aus dem die wesentlichen Eigenschaften und Vorteile des Verfahrens erkennbar werden:<br />
+Es gibt zu <span class="MATH"><img width="92" height="37" align="middle" border="0" src="img1009.png" alt="" /></span> eine Kugel <span class="MATH"><img width="197" height="37" align="middle" border="0" src="img1010.png" alt="" /></span>, so da&szlig; alle <span class="MATH"><i>x</i><sub><i>n</i></sub></span> in <span class="MATH"><i>B</i></span> liegen und die N<small>EWTON</small>sche Folge zur L&ouml;sung <span class="MATH"><i>x</i><sup>*</sup></span> von (<a href="#F1120809">12.196</a>) konvergiert. Dar&uuml;ber hinaus gilt <span class="MATH"><img width="210" height="37" align="middle" border="0" src="img1011.png" alt="" /></span>.</p>
+<p>Das <span class="begriff">modifizierte</span> N<small>EWTON</small>-Verfahren erh&auml;lt man, wenn man in der Formel (<a href="#F1120811">12.198</a>) stets den Operator <span class="MATH">[<i>T</i>'(<i>x</i><sub>0</sub>)]<sup>-1</sup></span> anstelle von <span class="MATH">[<i>T</i>'(<i>x</i><sub><i>n</i></sub>)]<sup>-1</sup></span> benutzt. F&uuml;r weitere Absch&auml;tzungen der Konvergenzgeschwindigkeit, und zur (im allgemeinen sensiblen) Abh&auml;ngigkeit des Verfahrens vom Startpunkt <span class="MATH"><i>x</i><sub>0</sub></span> s. Lit.&nbsp;<a href="../kap_22/node12.html#x1206">12.7</a>, <a href="../kap_22/node12.html#x1212">12.13</a>, <a href="../kap_22/node12.html#x1214">12.15</a>, <a href="../kap_22/node12.html#x1220">12.21</a>.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel Jacobi- oder Funktionalmatrix</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><a name="4351"></a><a name="3304"></a><a name="4352"></a> Sei auf einer offenen Menge <span class="MATH"><img width="71" height="36" align="middle" border="0" src="img1012.png" alt="" /></span> ein nichtlinearer Operator <span class="MATH"><img width="160" height="17" align="bottom" border="0" src="img1013.png" alt="" /></span> durch <span class="MATH"><i>m</i></span> nichtlineare Koordinatenfunktionen <span class="MATH"><img width="119" height="35" align="middle" border="0" src="img1014.png" alt="" /></span> der <span class="MATH"><i>n</i></span> unabh&auml;ngigen Variablen <span class="MATH"><img width="111" height="33" align="middle" border="0" src="img1015.png" alt="" /></span> gegeben. Dann gilt:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="460" height="150" border="0" src="img1016.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">12</span>.<span class="arabic">199</span>a)</td>
+</tr>
+</table>
+</div>
+<p>Falls f&uuml;r die Koordinatenfunktionen <span class="MATH"><img width="159" height="37" align="middle" border="0" src="img1017.png" alt="" /></span> die partiellen Ableitungen <span class="MATH"><img width="152" height="61" align="middle" border="0" src="img1018.png" alt="" /></span> <span class="MATH"><i>n</i>)</span> auf <span class="MATH"><i>D</i></span> existieren und stetig sind, dann ist die Abbildung (der Operator) <span class="MATH"><i>F</i></span> in jedem Punkt aus <span class="MATH"><i>D</i></span> differenzierbar und ihre Ableitung im Punkt <span class="MATH"><img width="201" height="37" align="middle" border="0" src="img1019.png" alt="" /></span> ist der lineare Operator <span class="MATH"><img width="160" height="37" align="middle" border="0" src="img1020.png" alt="" /></span> mit der Darstellung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="388" height="200" border="0" src="img1021.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">12</span>.<span class="arabic">199</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Die Ableitung <span class="MATH"><i>F</i>'(<i>x</i>)</span> ist eine Matrix vom Typ <span class="MATH"><img width="58" height="37" align="middle" border="0" src="img1022.png" alt="" /></span>. Sie hei&szlig;t J<small>ACOBI</small>- oder <span class="begriff">Funktionalmatrix</span>.<a name="3339"></a> Als Spezialfall tritt sie z.B. beim N<small>EWTON</small>-Verfahren zur iterativen L&ouml;sung von nichtlinearen Gleichungssystemen (s. <a href="../kap_19/node4.html#NewtonVf">Newton-Verfahren</a>) oder bei der Beschreibung der Unabh&auml;ngigkeit von Funktionen (s. <a href="../kap_2/node220.html#v172">Abh&auml;ngigkeit von Funktionen</a>) auf. Im Fall <span class="MATH"><i>m</i> =<i>n</i></span> kann zur Funktionalmatrix der sog. <span class="begriff">Jacobian</span><a name="3346"></a> (J<small>ACOBI</small>-Determinante)<a name="4355"></a><a name="4356"></a> oder die sogenannte <span class="begriff">Funktionaldeterminante</span><a name="3351"></a> gebildet werden, die abk&uuml;rzend mit</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="142" height="92" border="0" src="img1023.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">12</span>.<span class="arabic">199</span>c)</td>
+</tr>
+</table>
+</div>
+<p><a name="3358"></a> bezeichnet und bei der L&ouml;sung verschiedener (h&auml;ufig innermathematischer) Probleme eingesetzt wird.</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

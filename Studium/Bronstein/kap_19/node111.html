@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Bestimmung der Spline-Koeffizienten</title>
+<meta name="description" content="Bestimmung der Spline-Koeffizienten" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node110.html" />
+<link rel="up" href="node109.html" />
+<link rel="next" href="node112.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node110.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node112.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node107.html">Darstellung von Kurven und Fl&#228;chen mit Hilfe von Splines</a> <a href="node108.html">Kubische Splines</a> <a id="up" href="node109.html">Interpolationssplines</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001871120000000000000" id="SECTION001871120000000000000"></a><a name="BestSplineKoeff1" id="BestSplineKoeff1"></a><a name="5452"></a>
+Bestimmung der Spline-Koeffizienten</h4>
+<p>F&uuml;r den kubischen Interpolationsspline <span class="MATH"><i>S</i>(<i>x</i>)</span> wird f&uuml;r <span class="MATH"><img width="107" height="37" align="middle" border="0" src="img724.png" alt="" /></span> der Ansatz</p>
+<div class="mathdisplay"><a name="F1190702" id="F1190702"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190702" id="F1190702"></a><img width="645" height="67" border="0" src="img725.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">231</span>)</td>
+</tr>
+</table>
+</div>
+<p>gemacht. Die L&auml;nge der Teilintervalle wird mit <span class="MATH"><i>h</i><sub><i>i</i></sub> = <i>x</i><sub><i>i</i>+1</sub>-<i>x</i><sub><i>i</i></sub></span> bezeichnet. Zur Bestimmung der Ansatzkoeffizienten f&uuml;r den nat&uuml;rlichen Spline kann man wie folgt vorgehen:</p>
+<ol>
+<li>
+<div>Aus der Interpolationsforderung folgt
+<div class="mathdisplay"><a name="F1190703" id="F1190703"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190703" id="F1190703"></a><img width="264" height="66" border="0" src="img726.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">232</span>)</td>
+</tr>
+</table>
+</div>
+<p>Es ist zweckm&auml;&szlig;ig, den im Ansatz nicht auftretenden Koeffizienten <span class="MATH"><i>a</i><sub><i>N</i></sub></span> einzuf&uuml;hren und <span class="MATH"><i>a</i><sub><i>N</i></sub> = <i>f</i><sub><i>N</i></sub></span> zu setzen.</p>
+</div>
+</li>
+<li>
+<div>Die Stetigkeit von <span class="MATH"><i>S</i>''(<i>x</i>)</span> an den inneren Knoten f&uuml;hrt zu
+<div class="mathdisplay"><a name="F1190704" id="F1190704"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190704" id="F1190704"></a><img width="337" height="88" border="0" src="img727.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">233</span>)</td>
+</tr>
+</table>
+</div>
+<p>Aus den nat&uuml;rlichen Randbedingungen folgt <span class="MATH"><img width="58" height="33" align="middle" border="0" src="img728.png" alt="" /></span>, und (<a href="#F1190704">19.233</a>) gilt auch f&uuml;r <span class="MATH"><img width="56" height="16" align="bottom" border="0" src="img729.png" alt="" /></span>, wenn man <span class="MATH"><i>c</i><sub><i>N</i></sub></span> einf&uuml;hrt und <span class="MATH"><i>c</i><sub><i>N</i></sub> = 0</span> setzt.</p>
+</div>
+</li>
+<li>
+<div>Die Stetigkeit von <span class="MATH"><i>S</i>(<i>x</i>)</span> an den inneren Knoten f&uuml;hrt zu
+<div class="mathdisplay"><a name="F1190705" id="F1190705"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190705" id="F1190705"></a><img width="445" height="89" border="0" src="img730.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">234</span>)</td>
+</tr>
+</table>
+</div>
+</div>
+</li>
+<li>
+<div>Die Stetigkeit von <span class="MATH"><i>S</i>'(<i>x</i>)</span> an den inneren Knoten ergibt<br />
+<div class="myclass"><a name="F1190706" id="F1190706"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>c</i><sub><i>i</i>-1</sub><i>h</i><sub><i>i</i>-1</sub>+2(<i>h</i><sub><i>i</i>-1</sub>+<i>h</i><sub><i>i</i></sub>)<i>c</i><sub><i>i</i></sub>+<i>c</i><sub><i>i</i>+1</sub><i>h</i><sub><i>i</i></sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="218" height="64" align="middle" border="0" src="img731.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="178" height="37" align="middle" border="0" src="img732.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">235</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+</div>
+</li>
+</ol>
+Wegen (<a href="#F1190703">19.232</a>) ist die rechte Seite des linearen Gleichungssystems (<a href="#F1190706">19.235</a>) zur Bestimmung der Koeffizienten <span class="MATH"><img width="305" height="37" align="middle" border="0" src="img733.png" alt="" /></span> bekannt. Die linke Seite hat folgende Gestalt:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="611" height="203" border="0" src="img734.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">236</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die Koeffizientenmatrix ist <span class="begriff">tridiagonal</span>, so da&szlig; sich das Gleichungssystem (<a href="#F1190706">19.235</a>) durch <a href="node20.html#v607">LR-Zerlegung</a> sehr einfach numerisch l&ouml;sen l&auml;&szlig;t. Aus den Koeffizienten <span class="MATH"><i>c</i><sub><i>i</i></sub></span> erh&auml;lt man &uuml;ber (<a href="#F1190705">19.234</a>) und (<a href="#F1190704">19.233</a>) die restlichen Koeffizienten.</p>
+</body>
+</html>

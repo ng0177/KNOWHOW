@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Modell</title>
+<meta name="description" content="Modell" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node37.html" />
+<link rel="previous" href="node35.html" />
+<link rel="up" href="node35.html" />
+<link rel="next" href="node37.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node35.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node37.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a href="node1.html">Lineare Optimierung</a> <a href="node34.html">Spezielle lineare Optimierungsprobleme</a> <a id="up" href="node35.html">Transportproblem</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001714110000000000000" id="SECTION001714110000000000000">Modell</a></h4>
+<p>Ein von <span class="MATH"><i>m</i></span> Erzeugern <span class="MATH"><img width="124" height="35" align="middle" border="0" src="img197.png" alt="" /></span> in den Mengen <span class="MATH"><img width="112" height="33" align="middle" border="0" src="img198.png" alt="" /></span> produziertes Erzeugnis soll zu <span class="MATH"><i>n</i></span> Verbrauchern <span class="MATH"><img width="112" height="35" align="middle" border="0" src="img199.png" alt="" /></span> mit dem Bedarf <span class="MATH"><img width="103" height="35" align="middle" border="0" src="img200.png" alt="" /></span> transportiert werden. Die Kosten des Transportes einer Produkteinheit vom Erzeuger <span class="MATH"><i>E</i><sub><i>i</i></sub></span> zum Verbraucher <span class="MATH"><i>V</i><sub><i>j</i></sub></span> betragen <span class="MATH"><img width="27" height="33" align="middle" border="0" src="img201.png" alt="" /></span>. Von <span class="MATH"><i>E</i><sub><i>i</i></sub></span> werden <span class="MATH"><i>x</i><sub><i>ij</i></sub></span> Produkteinheiten zu <span class="MATH"><i>V</i><sub><i>j</i></sub></span> transportiert. Gesucht ist eine, die Transportkosten minimierende Aufteilung der Erzeugnisse auf die Verbraucher. Es wird vorausgesetzt, da&szlig; die Gesamtkapazit&auml;t der Erzeuger gleich dem Gesamtverbrauch ist, d.h.</p>
+<div class="mathdisplay"><a name="F1180123" id="F1180123"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1180123" id="F1180123"></a><img width="123" height="104" border="0" src="img202.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">23</span>)</td>
+</tr>
+</table>
+</div>
+<p>Man bildet die Kostenmatrix <span class="MATH"><img width="20" height="16" align="bottom" border="0" src="img203.png" alt="" /></span> und die Verteilungsmatrix <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img204.png" alt="" /></span>:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="260" height="173" border="0" src="img205.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">24</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="268" height="173" border="0" src="img206.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">24</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Ist die Bedingung (<a href="#F1180123">18.23</a>) nicht erf&uuml;llt, dann werden zwei F&auml;lle unterschieden:</p>
+<div class="alpha">
+<ol>
+<li>
+<div>F&uuml;r <span class="MATH"><img width="107" height="37" align="middle" border="0" src="img207.png" alt="" /></span> wird ein fiktiver Verbraucher <span class="MATH"><i>V</i><sub><i>n</i>+1</sub></span> mit dem Bedarf <span class="MATH"><img width="164" height="37" align="middle" border="0" src="img208.png" alt="" /></span> und den Transportkosten <span class="MATH"><i>c</i><sub><i>i</i>,<i>n</i>+1</sub> = 0</span> eingef&uuml;hrt. <a name="v350" id="v350"></a></div>
+</li>
+<li>
+<div>F&uuml;r <span class="MATH"><img width="107" height="37" align="middle" border="0" src="img209.png" alt="" /></span> wird ein fiktiver Erzeuger <span class="MATH"><i>E</i><sub><i>m</i>+1</sub></span> mit der Kapazit&auml;t <span class="MATH"><img width="170" height="37" align="middle" border="0" src="img210.png" alt="" /></span> und den Transportkosten <span class="MATH"><i>c</i><sub><i>m</i>+1,<i>j</i></sub> = 0</span> eingef&uuml;hrt. Zur Bestimmung eines optimalen Verteilungsplanes ist das folgende Optimierungsproblem zu l&ouml;sen: <a name="v349" id="v349"></a>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="282" height="104" border="0" src="img211.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">25</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="597" height="104" border="0" src="img212.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">25</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Das Minimum dieses Problems wird in einer Ecke des zul&auml;ssigen Bereiches angenommen. Von den <span class="MATH"><i>m</i>+<i>n</i></span> Nebenbedingungen sind <span class="MATH"><i>m</i> + <i>n</i> - 1</span> linear unabh&auml;ngig, so da&szlig; eine Ecke im nicht entarteten Fall, der hier vorausgesetzt werden soll, <span class="MATH"><i>m</i> + <i>n</i> - 1</span> positive Komponenten <span class="MATH"><i>x</i><sub><i>ij</i></sub></span> besitzt. Die folgende Bestimmung eines optimalen Verteilungsplanes wird als Transportalgorithmus bezeichnet.</p>
+</div>
+</li>
+</ol>
+</div>
+</body>
+</html>

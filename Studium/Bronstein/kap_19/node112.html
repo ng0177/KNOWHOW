@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Ausgleichssplines</title>
+<meta name="description" content="Ausgleichssplines" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node111.html" />
+<link rel="up" href="node108.html" />
+<link rel="next" href="node113.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node111.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node113.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node107.html">Darstellung von Kurven und Fl&#228;chen mit Hilfe von Splines</a> <a id="up" href="node108.html">Kubische Splines</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001871200000000000000" id="SECTION001871200000000000000"></a> <a name="5528"></a> <a name="5529"></a> <a name="5530"></a> <a name="5531"></a> <a name="5532"></a> <a name="5533"></a> <a name="5534"></a>
+Ausgleichssplines</h3>
+<p>In der Praxis sind die gegebenen Werte <span class="MATH"><i>f</i><sub><i>i</i></sub></span> h&auml;ufig Me&szlig;werte, also fehlerbehaftet. In diesem Fall ist die Interpolationsforderung unzweckm&auml;&szlig;ig. Man f&uuml;hrt deshalb den <span class="begriff">kubischen Ausgleichsspline</span> ein. Er entsteht, wenn man beim kubischen Interpolationsspline die Interpolationsforderung durch</p>
+<div class="mathdisplay"><a name="F1190708" id="F1190708"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190708" id="F1190708"></a><img width="356" height="116" border="0" src="img735.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">237</span>)</td>
+</tr>
+</table>
+</div>
+<p>ersetzt. Die Forderung nach Stetigkeit von <span class="MATH"><img width="51" height="37" align="middle" border="0" src="img736.png" alt="" /></span> und <span class="MATH"><i>S</i>''</span> bleibt erhalten, so da&szlig; sich zur Bestimmung der Spline-Koeffizienten eine Extremwertaufgabe mit Nebenbedingungen in Gleichungsform ergibt. Die L&ouml;sung erfolgt mit Hilfe einer <a href="../kap_6/node79.html#v297">L<small>AGRANGE</small>-Funktion</a>. Einzelheiten s.&nbsp;Lit.&nbsp;<a href="../kap_22/node19.html#x1928">19.29</a>, <a href="../kap_22/node19.html#x1929">19.30</a>.</p>
+<p>In (<a href="#F1190708">19.237</a>) stellt <span class="MATH"><img width="85" height="37" align="middle" border="0" src="img737.png" alt="" /></span> einen <span class="begriff">Gl&auml;ttungsparameter</span> dar, der vorgegeben werden mu&szlig;. F&uuml;r <span class="MATH"><img width="50" height="18" align="bottom" border="0" src="img738.png" alt="" /></span> ergibt sich als Spezialfall der kubische Interpolationsspline, f&uuml;r ,,gro&szlig;e`` <span class="MATH"><img width="16" height="18" align="bottom" border="0" src="img739.png" alt="" /></span> erh&auml;lt man eine glatte N&auml;herungskurve, die daf&uuml;r aber die Me&szlig;punkte nur ungenau wiedergibt, und f&uuml;r <span class="MATH"><img width="60" height="18" align="bottom" border="0" src="img740.png" alt="" /></span> ergibt sich schlie&szlig;lich als weiterer Spezialfall die Ausgleichsgerade. Eine geeignete Wahl von <span class="MATH"><img width="16" height="18" align="bottom" border="0" src="img739.png" alt="" /></span> kann am Computer im Bildschirmdialog erfolgen.</p>
+<p>Die Parameter <span class="MATH"><img width="95" height="37" align="middle" border="0" src="img741.png" alt="" /></span> in (<a href="#F1190708">19.237</a>) stellen die <a href="../kap_16/node127.html#v363">Standardabweichungen</a> der Me&szlig;fehler dar, mit denen die Me&szlig;werte <span class="MATH"><img width="161" height="37" align="middle" border="0" src="img742.png" alt="" /></span> evtl. behaftet sind.</p>
+<p>Bei den bisher betrachteten kubischen Interpolations- und Ausgleichssplines waren die Abszissen der Interpolations- bzw. Me&szlig;punkte identisch mit den Knoten der Spline-Funktion. Das hat zur Folge, da&szlig; bei gro&szlig;em <span class="MATH"><i>N</i></span> der Spline aus einer sehr gro&szlig;en Anzahl von kubischen Ansatzfunktionen (<a href="node111.html#F1190702">19.231</a>) besteht. Es liegt nahe, Anzahl und Lage der Knotenpunkte frei zu w&auml;hlen, da man in der Praxis meist mit wesentlich weniger Spline-St&uuml;cken auskommt. Dar&uuml;ber hinaus ist es numerisch g&uuml;nstiger, an Stelle des Ansatzes (<a href="node111.html#F1190702">19.231</a>) Splines in der Form</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="162" height="105" border="0" src="img743.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">238</span>)</td>
+</tr>
+</table>
+</div>
+<p>anzusetzen. Dabei ist <span class="MATH"><i>r</i></span> die Anzahl der frei gew&auml;hlten Knoten, und mit <span class="MATH"><i>N</i><sub><i>i</i>,4</sub>(<i>x</i>)</span> werden die sogenannten <span class="begriff">normalisierten <span class="MATH"><i>B</i></span>-Splines</span> (<span class="begriff">Basis-Splines</span>) der Ordnung 4, d.h. vom Polynomgrad 3, zum <span class="MATH"><i>i</i></span>-ten Knoten bezeichnet. Ausf&uuml;hrungen dazu s.&nbsp;Lit.&nbsp;<a href="../kap_22/node19.html#x1904">19.4</a>.</p>
+</body>
+</html>

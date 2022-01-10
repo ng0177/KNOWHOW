@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Verfahren f&uuml;r unrestringierte Aufgaben</title>
+<meta name="description" content="Verfahren f&uuml;r unrestringierte Aufgaben" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node77.html" />
+<link rel="previous" href="node75.html" />
+<link rel="up" href="node43.html" />
+<link rel="next" href="node77.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node75.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node77.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a id="up" href="node43.html">Nichtlineare Optimierung</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001725000000000000000" id="SECTION001725000000000000000"></a><a name="VerfUnrestrAufg" id="VerfUnrestrAufg"></a>
+Verfahren f&uuml;r unrestringierte Aufgaben</h2>
+<p><a name="3630"></a> <a name="3631"></a> Es wird das allgemeine Optimierungsproblem</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="217" height="66" border="0" src="img455.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">71</span>)</td>
+</tr>
+</table>
+</div>
+<p>mit einer stetig differenzierbaren Funktion <span class="MATH"><i>f</i></span> betrachtet. Mit den in diesem Abschnitt beschriebenen Verfahren wird eine im allgemeinen unendliche Punktfolge <span class="MATH"><img width="91" height="40" align="middle" border="0" src="img456.png" alt="" /></span> konstruiert, deren H&auml;ufungspunkte station&auml;re Punkte sind. Die Punktfolge wird ausgehend von <span class="MATH"><img width="72" height="39" align="middle" border="0" src="img457.png" alt="" /></span> nach der Vorschrift</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="269" height="68" border="0" src="img458.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">72</span>)</td>
+</tr>
+</table>
+</div>
+<p>berechnet, d.h., in <span class="MATH"><img width="24" height="40" align="middle" border="0" src="img459.png" alt="" /></span> wird eine Richtung <span class="MATH"><img width="73" height="43" align="middle" border="0" src="img460.png" alt="" /></span> bestimmt und mittels des <span class="begriff">Schrittweitenparameters</span> <span class="MATH"><img width="64" height="35" align="middle" border="0" src="img461.png" alt="" /></span> festgelegt, wie weit <span class="MATH"><img width="41" height="40" align="middle" border="0" src="img453.png" alt="" /></span> in Richtung <span class="MATH"><img width="25" height="43" align="middle" border="0" src="img462.png" alt="" /></span> von <span class="MATH"><img width="24" height="40" align="middle" border="0" src="img459.png" alt="" /></span> entfernt liegt. Ein so konstruiertes Verfahren hei&szlig;t <span class="begriff">Abstiegsverfahren</span>, wenn gilt</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="266" height="68" border="0" src="img463.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">73</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die Bedingung <span class="MATH"><img width="95" height="37" align="middle" border="0" src="img464.png" alt="" /></span>, wobei <span class="MATH"><img width="21" height="17" align="bottom" border="0" src="img281.png" alt="" /></span> der <a href="../kap_13/node60.html#v299">Nablaoperator</a> ist, charakterisiert einen station&auml;ren Punkt und kann als Abbruchtest f&uuml;r die Iterationsverfahren herangezogen werden.<br />
+</p>
+<p>Die in den folgenden Abschnitten angef&uuml;hrten Verfahren unterscheiden sich hinsichtlich der Festlegung der Richtungen <span class="MATH"><img width="25" height="43" align="middle" border="0" src="img462.png" alt="" /></span> und der Schrittweiten <span class="MATH"><img width="25" height="33" align="middle" border="0" src="img465.png" alt="" /></span>. In <a href="../kap_22/node18.html#x1809">18.9</a> werden Optimierungsverfahren untersucht, die zur Angabe der Richtungen und zur Schrittweitensteuerung Evolutionsstrategien einsetzen.</p>
+
+</body>
+</html>

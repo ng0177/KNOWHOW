@@ -1,0 +1,142 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Konvertierung von Zahlensystemen</title>
+<meta name="description" content="Konvertierung von Zahlensystemen" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node125.html" />
+<link rel="up" href="node124.html" />
+<link rel="next" href="node127.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node125.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node127.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node122.html">Nutzung von Computern</a> <a href="node123.html">Interne Zeichendarstellung</a> <a id="up" href="node124.html">Zahlensysteme</a> </span>
+</p>
+</div>
+<p><!--End of Navigation Panel-->
+
+
+<h4><a name="SECTION001881120000000000000" id="SECTION001881120000000000000"></a> <a name="5890"></a> <a name="5891"></a> <a name="5892"></a>
+Konvertierung von Zahlensystemen</h4>
+<p>Die Umrechnung von einem Zahlensystem in ein anderes wird als <span class="begriff">Konvertierung</span> bezeichnet. Werden mehrere Zahlensysteme gleichzeitig benutzt, so ist es zur Vermeidung von Irrt&uuml;mern &uuml;blich, die Basis als Index anzuh&auml;ngen.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r die Konvertierung der Dezimalzahl <span class="MATH">139.8125</span> in das Dualsystem, Oktalsystem und Hexadezimalsystem ergibt sich <span class="MATH"><img width="409" height="35" align="middle" border="0" src="img791.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+<h5><a name="SECTION001881121000000000000" id="SECTION001881121000000000000">1. Konvertierung von Dualzahlen in Oktal- bzw. Hexadezimalzahlen:</a></h5>
+<p>Die Konvertierung von Dualzahlen in Oktal- bzw. Hexadezimalzahlen ist einfach dadurch m&ouml;glich, da&szlig; man vom Punkt ausgehend nach links und rechts Gruppen von drei bzw. vier Bits bildet und den Wert derselben bestimmt. Diese Werte sind dann die Ziffern des Oktal- bzw. Hexadezimalsystems.</p>
+<h5><a name="SECTION001881122000000000000" id="SECTION001881122000000000000">2. Konvertierung von Dezimalzahlen in Dual-, Oktal- oder Hexadezimalzahlen:</a></h5>
+<p>F&uuml;r die Konvertierung vom Dezimal- in eines der anderen Systeme gelten f&uuml;r den ganzen und den gebrochenen Teil der Dezimalzahl folgende Algorithmen:</p>
+<dl>
+<dt>a)&nbsp;Ganzer Teil:</dt>
+<dd>Ist <span class="MATH"><i>G</i></span> die ganze Zahl im Dezimalsystem, dann gilt f&uuml;r das Zahlensystem mit der Basis <span class="MATH"><i>B</i></span> das bereits genannte Bildungsgesetz
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="210" height="102" border="0" src="img792.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">255</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dividiert man <span class="MATH"><i>G</i></span> durch <span class="MATH"><img width="23" height="16" align="bottom" border="0" src="img793.png" alt="" /></span>, so erh&auml;lt man einen ganzzahligen Teil (die Summe) und einen Rest:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="175" height="102" border="0" src="img794.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">256</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei nimmt <span class="MATH"><i>z</i><sub>0</sub></span> die Werte <span class="MATH"><img width="121" height="35" align="middle" border="0" src="img795.png" alt="" /></span> an und ist die niederwertige Ziffer des Zahlensystems. Wendet man das Verfahren jetzt auf die abgespaltete Summe wiederholt an, so ergeben sich die weiteren Ziffern.</p>
+</dd>
+<dt>b)&nbsp;Gebrochener Teil:</dt>
+<dd>Ist <span class="MATH"><i>g</i></span> ein echter Dezimalbruch, so lautet die Vorschrift f&uuml;r die Konvertierung in das Zahlensystem mit der Basis <span class="MATH"><i>B</i></span> jetzt
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="210" height="102" border="0" src="img796.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">257</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die wiederholte Anwendung auf die entstehenden Summen liefert die Werte <span class="MATH"><img width="97" height="33" align="middle" border="0" src="img797.png" alt="" /></span></p>
+</dd>
+</dl>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Umwandlung der Dezimalzahl 139 in eine Dualzahl:</p>
+<div align="center" class="mathdisplay"><img width="278" height="259" border="0" src="img798.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Umwandlung des Dezimalbruchs 0.8125 in einen Dualbruch:</p>
+<div align="center"></div>
+<p></p>
+<div align="center" class="mathdisplay"><img width="233" height="185" border="0" src="img799.png" alt="" /></div>
+<p><br clear="all" /></p>
+<div align="center"></div>
+<div align="center"></div>
+</td>
+</tr>
+</table>
+<h5><a name="SECTION001881123000000000000" id="SECTION001881123000000000000">3. Konvertierung von Dual-, Oktal- oder Hexadezimalzahlen in Dezimalzahlen:</a></h5>
+<p>Der Algorithmus f&uuml;r die Umwandlung eines Wertes aus dem Dual-, Oktal- oder Hexadezimalsystem in das Dezimalsystem lautet, wobei der Dezimalpunkt nach <span class="MATH"><i>z</i><sub>0</sub></span> einzuf&uuml;gen ist:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="378" height="103" border="0" src="img800.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">258</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die Aufl&ouml;sung erfolgt dabei zweckm&auml;&szlig;ig mit dem <a href="node7.html#hornerschema">H<small>ORNER</small>-Schema</a>.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="435" height="39" align="middle" border="0" src="img801.png" alt="" /></span>. Das zugeh&ouml;rige H<small>ORNER</small>-Schema lautet:</p>
+<div align="center" class="mathdisplay"><img width="141" height="119" border="0" src="img802.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

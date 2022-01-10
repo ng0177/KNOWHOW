@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>n-faches kartesisches Produkt</title>
+<meta name="description" content="n-faches kartesisches Produkt" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node298.html" />
+<link rel="previous" href="node296.html" />
+<link rel="up" href="node293.html" />
+<link rel="next" href="node298.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node296.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node298.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node269.html">Fuzzy-Logik</a> <a href="node292.html">Fuzzy-wertige Relationen</a> <a id="up" href="node293.html">Fuzzy-Relationen</a> </span>
+</p>
+</div>
+<h4><a name="SECTION00493140000000000000" id="SECTION00493140000000000000"></a> <a name="7859"></a> <a name="7860"></a>
+n-faches kartesisches Produkt</h4>
+<p>Eine <span class="begriff">Kreuzproduktmenge</span> aus <span class="MATH"><i>n</i></span> Grundmengen repr&auml;sentiert in Analogie zum<br />
+<a href="node295.html#FuzzKartProd1">kartesischen Produkt f&uuml;r unscharfe Mengen</a> ein <span class="MATH"><i>n</i></span>-<span class="begriff">faches kartesisches Produkt</span>, d.h. eine <span class="MATH"><i>n</i></span>-stellige Fuzzy-Relation.</p>
+<dl>
+<dt><b>1.&nbsp;Folgerung:</b></dt>
+<dd>Die bisher betrachteten Fuzzy-Mengen sind einstellige Fuzzy-Relationen, d.h. im Sinne der Analysis Kurven &uuml;ber einer Grundmenge. Eine zweistellige Fuzzy-Relation kann als Fl&auml;che &uuml;ber der Grundmenge <span class="MATH"><i>G</i></span> aufgefa&szlig;t werden. Eine zweistellige Fuzzy-Relation auf diskreten endlichen Grundmengen kann als <span class="begriff">Fuzzy-Relationsmatrix</span> dargestellt werden.<br />
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Farbe-Reifegrad-Relation: Es wird der bekannte Zusammenhang zwischen Farbe <span class="MATH"><i>x</i></span> und Reifegrad <span class="MATH"><i>y</i></span> einer Frucht mit den m&ouml;glichen Farben <span class="MATH"><i>X</i>=</span> {gr&uuml;n, gelb, rot} und dem Reifegrad <span class="MATH"><i>Y</i>=</span> {unreif, halbreif, reif} in Form einer bin&auml;ren Relationsmatrix mit den Elementen aus {0,1} modelliert. Ausgangspunkt f&uuml;r die Relationsmatrix</p>
+</td>
+</tr>
+</table>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="114" height="116" border="0" src="img1883.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">391</span>a)</td>
+</tr>
+</table>
+</div>
+<p>ist die Tabelle</p>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left">&nbsp;</td>
+<td align="left">unreif</td>
+<td align="left">halbreif</td>
+<td align="left">reif</td>
+</tr>
+<tr valign="baseline">
+<td align="left">gr&uuml;n</td>
+<td align="left">1</td>
+<td align="left">0</td>
+<td align="left">0</td>
+</tr>
+<tr valign="baseline">
+<td align="left">gelb</td>
+<td align="left">0</td>
+<td align="left">1</td>
+<td align="left">0</td>
+</tr>
+<tr valign="baseline">
+<td align="left">rot</td>
+<td align="left">0</td>
+<td align="left">0</td>
+<td align="left">1 .</td>
+</tr>
+</table>
+</dd>
+<dt><b>2.&nbsp;Interpretation der Relationsmatrix:</b></dt>
+<dd>WENN eine Frucht gr&uuml;n ist, DANN ist sie unreif.<br />
+WENN eine Frucht gelb ist, DANN ist sie halbreif. WENN eine Frucht rot ist, DANN ist sie reif.<br />
+Gr&uuml;n ist eindeutig unreif zugeordnet, gelb halbreif und rot reif. Soll dar&uuml;ber hinaus noch formuliert werden, da&szlig; eine gr&uuml;ne Frucht zu einem gewissen Prozentsatz durchaus als halbreif angesehen werden kann, beispielsweise mit graduellen Zugeh&ouml;rigkeiten wie<br />
+<table cellpadding="3">
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="27" height="33" align="middle" border="0" src="img1884.png" alt="" /></span> (gr&uuml;n, unreif) = 1,0 ,</td>
+<td align="left"><span class="MATH"><img width="27" height="33" align="middle" border="0" src="img1884.png" alt="" /></span> (gr&uuml;n, halbreif) = 0,5 ,</td>
+<td align="left"><span class="MATH"><img width="27" height="33" align="middle" border="0" src="img1884.png" alt="" /></span> (gr&uuml;n, reif) = 0,0 ,</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="27" height="33" align="middle" border="0" src="img1884.png" alt="" /></span> (gelb, unreif) = 0,25 ,</td>
+<td align="left"><span class="MATH"><img width="27" height="33" align="middle" border="0" src="img1884.png" alt="" /></span> (gelb, halbreif) = 1,0 ,</td>
+<td align="left"><span class="MATH"><img width="27" height="33" align="middle" border="0" src="img1884.png" alt="" /></span> (gelb, reif) = 0,25 ,</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="27" height="33" align="middle" border="0" src="img1884.png" alt="" /></span> (rot, unreif) = 0,0 ,</td>
+<td align="left"><span class="MATH"><img width="27" height="33" align="middle" border="0" src="img1884.png" alt="" /></span> (rot, halbreif) = 0,5 ,</td>
+<td align="left"><span class="MATH"><img width="27" height="33" align="middle" border="0" src="img1884.png" alt="" /></span> (rot, reif) = 1,0 ,</td>
+</tr>
+</table>
+<br />
+dann erh&auml;lt man als neue Relationsmatrix <span class="MATH"><i>R</i></span> mit <span class="MATH"><img width="98" height="37" align="middle" border="0" src="img1885.png" alt="" /></span>
+<div class="mathdisplay"><a name="F1050841b" id="F1050841b"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1050841b" id="F1050841b"></a><img width="209" height="116" border="0" src="img1886.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">391</span>b)</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+</body>
+</html>
