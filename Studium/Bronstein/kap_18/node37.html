@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Ermittlung einer zul&auml;ssigen Basisl&ouml;sung</title>
+<meta name="description" content="Ermittlung einer zul&auml;ssigen Basisl&ouml;sung" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node38.html" />
+<link rel="previous" href="node36.html" />
+<link rel="up" href="node35.html" />
+<link rel="next" href="node38.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node36.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node38.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a href="node1.html">Lineare Optimierung</a> <a href="node34.html">Spezielle lineare Optimierungsprobleme</a> <a id="up" href="node35.html">Transportproblem</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001714120000000000000" id="SECTION001714120000000000000"></a> <a name="1899"></a>
+Ermittlung einer zul&auml;ssigen Basisl&ouml;sung</h4>
+<p>Mit der ,,<span class="begriff">Nordwestecken-Regel</span>``&nbsp; kann immer eine erste zul&auml;ssige Basisl&ouml;sung (Ecke) ermittelt werden:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="229" height="66" border="0" src="img213.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">26</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="472" height="66" border="0" src="img214.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">26</span>b)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="459" height="66" border="0" src="img215.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">26</span>c)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="706" height="66" border="0" src="img216.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">26</span>d)</td>
+</tr>
+</table>
+</div>
+<p>Liegen nur noch eine Zeile, aber mehrere Spalten vor, dann ist eine Spalte zu streichen und umgekehrt.<br />
+<span class="MATH"><img width="23" height="37" align="middle" border="0" src="img217.png" alt="" /></span> Ersetze <span class="MATH"><i>a</i><sub>1</sub></span> durch <span class="MATH"><i>a</i><sub>1</sub> - <i>x</i><sub>11</sub></span> und <span class="MATH"><i>b</i><sub>1</sub></span> durch <span class="MATH"><i>b</i><sub>1</sub> -<i>x</i><sub>11</sub></span> und wiederhole den Vorgang mit dem reduzierten Schema.<br />
+Alle bei diesem Verfahren im Schritt <b>a)</b> besetzten Variablen sind Basisvariable, alle anderen sind Nichtbasisvariable und erhalten den Wert 0.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="701" height="162" border="0" src="img218.png" alt="" /></div>
+<p><br clear="all" /></p>
+Ermittlung einer ersten Ecke mit der Nordwestecken-Regel:<br />
+<br />
+<div align="center" class="mathdisplay"><img width="686" height="185" border="0" src="img219.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p><!-- BeispielEnde: 1180106 -->
+<b>Hinweis:</b> Verfahren zur Aufstellung eines ersten Verteilungsplanes, die auch die anfallenden Transportkosten ber&uuml;cksichtigen (z.B. V<small>OGEL</small>sche Approximationsmethode, s.&nbsp;Lit.&nbsp;<a href="../kap_22/node18.html#x1815">18.15</a>), liefern im allgemeinen bessere Erstl&ouml;sungen.</p>
+</body>
+</html>

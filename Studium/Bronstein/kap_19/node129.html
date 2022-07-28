@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Gleitpunktzahlen</title>
+<meta name="description" content="Gleitpunktzahlen" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node128.html" />
+<link rel="up" href="node127.html" />
+<link rel="next" href="node130.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node128.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node130.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node122.html">Nutzung von Computern</a> <a href="node123.html">Interne Zeichendarstellung</a> <a id="up" href="node127.html">Interne Zahlendarstellung</a> </span>
+</p>
+</div>
+<p><!--End of Navigation Panel-->
+
+
+<h4><a name="SECTION001881220000000000000" id="SECTION001881220000000000000"></a> <a name="6002"></a>
+Gleitpunktzahlen</h4>
+<p>F&uuml;r die Darstellung von Gleitpunktzahlen sind prinzipiell zwei verschiedene Formen &uuml;blich, wobei die interne Realisierung im Detail variieren kann.</p>
+<h5><a name="SECTION001881221000000000000" id="SECTION001881221000000000000"></a> <a name="6006"></a><br />
+Normalisierte halblogarithmische Form:</h5>
+<p>Bei der ersten Form werden die Vorzeichen f&uuml;r den Exponenten <span class="MATH"><i>E</i></span> und f&uuml;r die Mantisse <span class="MATH"><i>M</i></span> der Zahl <span class="MATH"><i>a</i></span></p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="106" height="65" border="0" src="img804.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">260</span>)</td>
+</tr>
+</table>
+</div>
+<p>gesondert gespeichert. Dabei wird meist der Exponent <span class="MATH"><i>E</i></span> so gew&auml;hlt, da&szlig; f&uuml;r die Mantisse die Bedingung <span class="MATH"><img width="119" height="37" align="middle" border="0" src="img805.png" alt="" /></span> gilt. Man spricht dann von der <span class="begriff">normalisierten halblogarithmischen Form</span>.</p>
+<p align="left" class="BILD"><a name="BILD_119a015" class="BILD" id="BILD_119a015"><img alt="BilD" src="../bilder/kap19/t1/119a015.gif" border="0" /></a></p>
+<p class="nachBild">
+Mit den angegebenen Parametern ergibt sich folgender absoluter Wertebereich f&uuml;r die Gleitpunktzahlen:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="265" height="71" border="0" src="img806.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">261</span>)</td>
+</tr>
+</table>
+</div>
+<h5><a name="SECTION001881222000000000000" id="SECTION001881222000000000000"></a> <a name="6022"></a> <a name="6023"></a><br />
+IEEE-Standard</h5>
+<p>Die zweite (heute &uuml;bliche) Form der Gleitpunktdarstellung entspricht dem 1985 verabschiedeten <span class="begriff">IEEE-Standard</span> (<b>I</b>nstitute of <b>E</b>lectrical and <b>E</b>lectronics <b>E</b>ngineers). Dieser befa&szlig;t sich mit der Normung der Rechnerarithmetik und enth&auml;lt Festlegungen zu den Formaten, dem Rundungsverhalten, den arithmetischen Operatoren, der Konvertierung von Zahlenwerten, zu Vergleichsoperatoren und zur Behandlung von Ausnahmef&auml;llen wie Bereichs&uuml;berschreitungen. Dort wird f&uuml;r die Gleitpunktzahl folgende Form festgelegt:</p>
+<p align="left" class="BILD"><a name="BILD_119a016" class="BILD" id="BILD_119a016"><img alt="BilD" src="../bilder/kap19/t1/119a016.gif" border="0" /></a></p>
+<p class="nachBild">
+Die Charakteristik <span class="MATH"><i>C</i></span> wird aus dem Exponenten <span class="MATH"><i>E</i></span> durch Addition einer geeigneten Konstanten <span class="MATH"><i>K</i></span> gebildet. Diese wird so gew&auml;hlt, da&szlig; f&uuml;r die Charakteristik nur positive Werte auftreten. Die darstellbare Zahl lautet:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="421" height="68" border="0" src="img807.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">262</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei gilt: <span class="MATH"><img width="353" height="35" align="middle" border="0" src="img808.png" alt="" /></span> sind reserviert.</p>
+<p>Der Standard gibt zwei Basisformate (einfachgenaue und doppeltgenaue Gleitpunktzahlen) vor, l&auml;&szlig;t aber auch erweiterte Formate zu. Die folgende Tabelle enth&auml;lt die Parameter f&uuml;r die Basisformate des IEEE-Standards. <!-- TabellenStart: T1904 -->
+<a name="tParBasForm" id="tParBasForm"></a></p>
+<div align="center">Tabelle Parameter f&uuml;r Basisformate<br />
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left">Parameter</td>
+<td align="center">einfachgenau</td>
+<td align="center">doppeltgenau</td>
+</tr>
+<tr valign="baseline">
+<td align="left">Wortl&auml;nge in Bits</td>
+<td align="center">32</td>
+<td align="center">64</td>
+</tr>
+<tr valign="baseline">
+<td align="left">maximaler Exponent <span class="MATH"><i>E</i><sub><i>max</i></sub></span></td>
+<td align="center">+127</td>
+<td align="center">+1023</td>
+</tr>
+<tr valign="baseline">
+<td align="left">minimaler Exponent <span class="MATH"><i>E</i><sub><i>min</i></sub></span></td>
+<td align="center">-126</td>
+<td align="center">-1022</td>
+</tr>
+<tr valign="baseline">
+<td align="left">Konstante <span class="MATH"><i>K</i></span></td>
+<td align="center">+127</td>
+<td align="center">+1023</td>
+</tr>
+<tr valign="baseline">
+<td align="left">Anzahl Bits des Exponenten</td>
+<td align="center">8</td>
+<td align="center">11</td>
+</tr>
+<tr valign="baseline">
+<td align="left">Anzahl Bits der Mantisse</td>
+<td align="center">24</td>
+<td align="center">53</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

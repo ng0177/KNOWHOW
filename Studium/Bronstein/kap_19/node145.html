@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Kurvenanpassung und Interpolationsverfahren</title>
+<meta name="description" content="Kurvenanpassung und Interpolationsverfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node146.html" />
+<link rel="previous" href="node144.html" />
+<link rel="up" href="node143.html" />
+<link rel="next" href="node146.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node144.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node146.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node122.html">Nutzung von Computern</a> <a href="node142.html">Anwendung von Computeralgebrasystemen</a> <a id="up" href="node143.html">Mathematica</a> </span>
+</p>
+</div>
+<p><!--End of Navigation Panel-->
+
+
+<h4><a name="SECTION001884120000000000000" id="SECTION001884120000000000000">Kurvenanpassung und Interpolationsverfahren</a></h4>
+<h5><a name="SECTION001884121000000000000" id="SECTION001884121000000000000"></a> <a name="6712"></a><br />
+1.&nbsp;Kurvenanpassung</h5>
+<p>Mit Hilfe der <a href="../kap_6/node74.html#ExtrWerteFktMehrVer">Methode der kleinsten Quadrate</a> (s.&nbsp;auch <a href="node84.html#MethklQuadr">Abschnitt</a> Approximation im Mittel, Diskrete Aufgabe) kann <i class="sans">Mathematica</i> die Anpassung von ausgew&auml;hlten Funktionen an einen Datensatz durchf&uuml;hren. Die allgemeine Anweisung daf&uuml;r lautet:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="216" height="66" border="0" src="img918.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">287</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei bilden die <span class="MATH"><i>y</i><sub><i>i</i></sub></span> die Liste der Daten, <span class="MATH"><i>funkt</i></span> ist die Liste der ausgew&auml;hlten Funktionen, die die Anpassung bewerkstelligen sollen, und <span class="MATH"><i>x</i></span> steht f&uuml;r den zugeh&ouml;rigen Wertebereich der unabh&auml;ngigen Variablen. W&auml;hlt man <span class="MATH"><i>funkt</i></span> z.B. als <span class="MATH"><img width="165" height="37" align="middle" border="0" src="img919.png" alt="" /></span>, so wird die Anpassung durch ein Polynom <span class="MATH"><i>n</i></span>-ten Grades durchgef&uuml;hrt.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Es sei die folgende Liste von Daten gegeben:</p>
+<div align="center" class="mathdisplay"><img width="729" height="66" border="0" src="img920.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><span class="MATH">0.0302744, 0.0212794}</span></div>
+<p><br clear="all" /></p>
+Mit der Eingabe<br />
+<div align="center" class="mathdisplay"><img width="349" height="66" border="0" src="img921.png" alt="" /></div>
+<p><br clear="all" /></p>
+wird angenommen, da&szlig; den Elementen von <span class="MATH"><i>l</i></span> die Werte <span class="MATH"><img width="92" height="33" align="middle" border="0" src="img922.png" alt="" /></span> von <span class="MATH"><i>x</i></span> zugeordnet sind. Man erh&auml;lt das folgende Approximationspolynom 4.&nbsp;Grades:<br />
+<div align="center" class="mathdisplay"><img width="643" height="67" border="0" src="img923.png" alt="" /></div>
+<p><br clear="all" /></p>
+Mit dem Aufruf<br />
+<div align="center" class="mathdisplay"><img width="573" height="66" border="0" src="img924.png" alt="" /></div>
+<p><br clear="all" /></p>
+erh&auml;lt man eine Darstellung der Daten und der Approximationskurve (s.&nbsp;Abbildung).<br />
+<p align="left" class="BILD"><a name="BILD_119a014a" class="BILD" id="BILD_119a014a"><img alt="BilD" src="../bilder/kap19/t1/119a014a.gif" border="0" /></a></p>
+<p class="nachBild">
+F&uuml;r die gegebenen Daten ist diese v&ouml;llig ausreichend. Sie ergeben sich aus den ersten vier Gliedern der Reihenentwicklung von <span class="MATH"><img width="59" height="19" align="bottom" border="0" src="img925.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+<h5><a name="SECTION001884122000000000000" id="SECTION001884122000000000000"></a> <a name="6737"></a><br />
+2.&nbsp;Interpolation</h5>
+<p><i class="sans">Mathematica</i> stellt spezielle Algorithmen f&uuml;r die Bestimmung von Interpolationsfunktionen zur Verf&uuml;gung. Diese werden als sogenannte <span class="MATH"><img width="211" height="33" align="middle" border="0" src="img926.png" alt="" /></span> Objekte dargestellt, die &auml;hnlich wie reine Funktionen aufgebaut sind. Folgende Anweisungen sind vorhanden: <!-- TabellenStart: T1906 -->
+<a name="tAnwInterPol" id="tAnwInterPol"></a></p>
+<div align="center">Tabelle Anweisungen zur Interpolation<br />
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="234" height="37" align="middle" border="0" src="img927.png" alt="" /></span></td>
+<td align="left" valign="top" width="283">erstellt eine N&auml;herungsfunktion mit den Werten <span class="MATH"><i>y</i><sub><i>i</i></sub></span> f&uuml;r die jeweiligen <span class="MATH"><i>x</i><sub><i>i</i></sub>=<i>i</i></span> als ganze Zahlen</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="325" height="37" align="middle" border="0" src="img928.png" alt="" /></span></td>
+<td align="left" valign="top" width="283">erstellt eine N&auml;herungsfunktion f&uuml;r die Punktfolge <span class="MATH">(<i>x</i><sub><i>i</i></sub>,<i>y</i><sub><i>i</i></sub>)</span></td>
+</tr>
+</table>
+</div>
+<p><!-- TabelleEnde: T1906 -->
+Anstelle der Funktionswerte <span class="MATH"><i>y</i><sub><i>i</i></sub></span> kann eine Liste aus Funktionswert und spezifizierten Ableitungen an der jeweiligen Stelle eingegeben werden.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Mit <span class="MATH"><img width="373" height="37" align="middle" border="0" src="img929.png" alt="" /></span> erh&auml;lt man die folgende Abbildung:</p>
+<p align="left" class="BILD"><a name="BILD_119a014b" class="BILD" id="BILD_119a014b"><img alt="BilD" src="../bilder/kap19/t1/119a014b.gif" border="0" /></a></p>
+<p class="nachBild">
+Man erkennt, da&szlig; <i class="sans">Mathematica</i> pr&auml;zise Nachbildung der Datenliste liefert.</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

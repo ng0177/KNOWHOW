@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>L&ouml;sung des Transportproblems mit der Potentialmethode</title>
+<meta name="description" content="L&ouml;sung des Transportproblems mit der Potentialmethode" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node37.html" />
+<link rel="up" href="node35.html" />
+<link rel="next" href="node39.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node37.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node39.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a href="node1.html">Lineare Optimierung</a> <a href="node34.html">Spezielle lineare Optimierungsprobleme</a> <a id="up" href="node35.html">Transportproblem</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001714130000000000000" id="SECTION001714130000000000000"></a> <a name="2042"></a> <a name="2043"></a>
+L&ouml;sung des Transportproblems mit der Potentialmethode</h4>
+<p>Bei der Aufstellung des gew&ouml;hnlichen Simplextableaus f&uuml;r dieses Problem erh&auml;lt man ein riesiges Schema vom Typ <span class="MATH"><img width="149" height="37" align="middle" border="0" src="img220.png" alt="" /></span> mit einer gro&szlig;en Anzahl von Nullen: Jede Spalte enth&auml;lt nur zwei <span class="MATH">1</span>-Elemente. Deshalb arbeitet man besser mit einem reduzierten Schema. Das Verfahren besteht aus Simplexschritten, die nur mit Nicht-Null-Elementen des theoretischen Simplextableaus durchgef&uuml;hrt werden. Die Matrix des Simplextableaus enth&auml;lt die Koeffizienten der Zielfunktion. Die Basisvariablen werden iterativ gegen die Nichtbasisvariablen ausgetauscht, um so jeweils eine zugeh&ouml;rige modifizierte Kostenmatrix zu berechnen. Der Rechengang wird am Beispiel erl&auml;utert.</p>
+<div class="alpha">
+<ol>
+<li>
+<div>Ermittlung der modifizierten Kostenmatrix <span class="MATH"><img width="20" height="21" align="bottom" border="0" src="img221.png" alt="" /></span> aus <span class="MATH"><img width="20" height="16" align="bottom" border="0" src="img203.png" alt="" /></span> mittels
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="398" height="66" border="0" src="img222.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">27</span>a)</td>
+</tr>
+</table>
+</div>
+<p>unter den Bedingungen</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="424" height="66" border="0" src="img223.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">27</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Dazu werden in <span class="MATH"><img width="20" height="16" align="bottom" border="0" src="img203.png" alt="" /></span> die zu Basisvariablen geh&ouml;renden Kosten markiert und <span class="MATH"><i>p</i><sub>1</sub>=0</span> gesetzt. Die weiteren Gr&ouml;&szlig;en <span class="MATH"><i>p</i><sub><i>i</i></sub></span> und <span class="MATH"><img width="23" height="33" align="middle" border="0" src="img224.png" alt="" /></span>, auch Potentiale bzw. Simplexmultiplikatoren genannt, werden so errechnet, da&szlig; zu markierten Kosten geh&ouml;rende <span class="MATH"><i>p</i><sub><i>i</i></sub></span> und <span class="MATH"><i>q</i><sub><i>j</i></sub></span> zusammen mit den Kosten <span class="MATH"><i>c</i><sub><i>ij</i></sub></span> die Summe 0 ergeben:</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text"></td>
+</tr>
+</table>
+<p></p>
+<div class="myclass">
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="436" height="131" align="middle" border="0" src="img225.png" alt="" /></td>
+<td align="center" nowrap="nowrap"><img width="233" height="89" align="middle" border="0" src="img226.png" alt="" /></td>
+<td>&nbsp;</td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">27</span>c)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+</div>
+</li>
+<li>
+<div>Berechnung von:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="120" height="77" border="0" src="img227.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">27</span>d)</td>
+</tr>
+</table>
+</div>
+<p>Ist <span class="MATH"><img width="65" height="34" align="middle" border="0" src="img228.png" alt="" /></span>, dann ist der gegebene Verteilungsplan <span class="MATH"><img width="21" height="16" align="bottom" border="0" src="img204.png" alt="" /></span> optimal; anderenfalls wird <span class="MATH"><i>x</i><sub><i>pq</i></sub></span> als neue Basisvariable gew&auml;hlt. Im Beispiel ist <span class="MATH"><img width="127" height="34" align="middle" border="0" src="img229.png" alt="" /></span>.</p>
+</div>
+</li>
+<li>
+<div>In <span class="MATH"><img width="20" height="21" align="bottom" border="0" src="img221.png" alt="" /></span> werden <span class="MATH"><img width="27" height="34" align="middle" border="0" src="img230.png" alt="" /></span> und die zu Basisvariablen geh&ouml;renden Kosten markiert. Enth&auml;lt <span class="MATH"><img width="20" height="21" align="bottom" border="0" src="img221.png" alt="" /></span> eine Zeile oder Spalte mit maximal einem markierten Element, dann wird diese Spalte oder Zeile gestrichen. Mit der verbleibenden Restmatrix wird dieser Vorgang wiederholt, bis keine Streichungen mehr m&ouml;glich sind.
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="216" height="127" border="0" src="img231.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">27</span>e)</td>
+</tr>
+</table>
+</div>
+</div>
+</li>
+<li>
+<div>Die zu verbleibenden markierten Elementen <span class="MATH"><img width="24" height="34" align="middle" border="0" src="img232.png" alt="" /></span> geh&ouml;renden <span class="MATH"><i>x</i><sub><i>ij</i></sub></span> bilden einen Zyklus. Man setzt zun&auml;chst <span class="MATH"><img width="101" height="35" align="middle" border="0" src="img233.png" alt="" /></span>. Alle weiteren zu markierten <span class="MATH"><img width="24" height="34" align="middle" border="0" src="img232.png" alt="" /></span> geh&ouml;renden <span class="MATH"><img width="27" height="34" align="middle" border="0" src="img234.png" alt="" /></span> werden so bestimmt, da&szlig; die Nebenbedingungen erf&uuml;llt bleiben. Die Gr&ouml;&szlig;e <span class="MATH"><img width="14" height="17" align="bottom" border="0" src="img235.png" alt="" /></span> errechnet sich aus
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="286" height="66" border="0" src="img236.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">27</span>f)</td>
+</tr>
+</table>
+</div>
+<p>wobei <span class="MATH"><i>x</i><sub><i>rs</i></sub></span> Nichtbasisvariable wird. Im Beispiel ist <span class="MATH"><img width="154" height="37" align="middle" border="0" src="img237.png" alt="" /></span>.</p>
+<div class="myclass">
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="296" height="191" align="middle" border="0" src="img238.png" alt="" /></td>
+<td align="center" nowrap="nowrap"><img width="307" height="88" align="middle" border="0" src="img239.png" alt="" /></td>
+<td>&nbsp;</td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">27</span>g)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+Danach wird das Verfahren ab Schritt 1 und <span class="MATH"><img width="62" height="21" align="bottom" border="0" src="img240.png" alt="" /></span> wiederholt.<br />
+<div align="center" class="mathdisplay"><img width="455" height="157" border="0" src="img241.png" alt="" /></div>
+<p><br clear="all" /></p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="228" height="134" border="0" src="img242.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">27</span>h)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="669" height="162" border="0" src="img243.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">27</span>i)</td>
+</tr>
+</table>
+</div>
+<p>Die n&auml;chste zu bestimmende Matrix <span class="MATH"><img width="20" height="21" align="bottom" border="0" src="img221.png" alt="" /></span> enth&auml;lt keine negativen Elemente. Deshalb ist <span class="MATH"><img width="21" height="21" align="bottom" border="0" src="img244.png" alt="" /></span> ein optimaler Verteilungsplan.</p>
+</div>
+</li>
+</ol>
+</div>
+</body>
+</html>

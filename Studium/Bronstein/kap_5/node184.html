@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Modell der Daten&uuml;bertragung und Fehlerkorrektur</title>
+<meta name="description" content="Modell der Daten&uuml;bertragung und Fehlerkorrektur" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node185.html" />
+<link rel="previous" href="node183.html" />
+<link rel="up" href="node183.html" />
+<link rel="next" href="node185.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node183.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node185.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node143.html">Elementare Zahlentheorie</a> <a href="node177.html">Codierungen</a> <a id="up" href="node183.html">Fehlerkorrigierende Codes</a> </span>
+</p>
+</div>
+<h4><a name="SECTION00445210000000000000" id="SECTION00445210000000000000">Modell der Daten&uuml;bertragung und Fehlerkorrektur</a></h4>
+<p>Auch bei der &Uuml;bertragung von Nachrichten in gest&ouml;rten Kan&auml;len ist oft eine Korrektur von Fehlern m&ouml;glich, indem zun&auml;chst die <span class="begriff">Nachrichtenw&ouml;rter</span><a name="5211"></a> codiert und nach einer eventuell fehlerhaften &Uuml;bertragung wieder zu den richtigen <span class="begriff">Codew&ouml;rtern</span><a name="5213"></a> korrigiert werden, so dass die urspr&uuml;ngliche Nachricht durch Decodieren ermittelt werden kann.<a name="5214"></a> Hier wird der Fall betrachtet, dass die Nachrichtenw&ouml;rter die L&auml;nge <span class="MATH"><i>k</i></span> und die Codew&ouml;rter die L&auml;nge <span class="MATH"><i>n</i></span> haben und sowohl Nachrichten- als auch Codew&ouml;rter Folgen von Nullen und Einsen sind. Dabei wird <span class="MATH"><i>k</i></span> auch die Anzahl der <span class="begriff">Informationsstellen</span> und <span class="MATH"><i>n</i>-<i>k</i></span> die Anzahl der <span class="begriff">Redundanzstellen</span> genannt. Jedes Nachrichtenwort ist ein Element des <a href="node131.html#EndlKoerp">endlichen K&ouml;rpers</a> <span class="MATH"><img width="64" height="40" align="middle" border="0" src="img1331.png" alt="" /></span> und jedes Codewort ein Element von <span class="MATH"><img width="64" height="37" align="middle" border="0" src="img1332.png" alt="" /></span>. Zur Vereinfachung der Darstellung schreibt man einfach <span class="MATH"><img width="86" height="33" align="middle" border="0" src="img1333.png" alt="" /></span> f&uuml;r die Nachrichtenw&ouml;rter und <span class="MATH"><img width="81" height="33" align="middle" border="0" src="img1334.png" alt="" /></span> f&uuml;r die Codew&ouml;rter. &Uuml;bertragen werden nicht die Nachrichtenw&ouml;rter selbst, sondern die ihnen zugeordneten Codew&ouml;rter.<br />
+Ein h&auml;ufig benutztes Prinzip der Fehlerkorrektur<a name="5221"></a> ist die Methode, das empfangene Wort <span class="MATH"><img width="86" height="35" align="middle" border="0" src="img1335.png" alt="" /></span> zu einem Codewort <span class="MATH"><img width="81" height="33" align="middle" border="0" src="img1334.png" alt="" /></span> zu decodieren, das sich von <span class="MATH"><img width="86" height="35" align="middle" border="0" src="img1335.png" alt="" /></span> an m&ouml;glichst wenigen Stellen unterscheidet (MLD-Decodierung). Von den Eigenschaften der Codierung und den Eigenschaften des &Uuml;bertragungskanals h&auml;ngt es ab, wie viele Fehler auf diese Weise korrigierbar sind.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Bei Verwendung eines <span class="begriff">Wiederholungscodes</span> kann man die Nachricht <span class="MATH">0</span> als Codewort <span class="MATH">0000</span> darstellen. Erh&auml;lt nach &Uuml;bertragung des Codeworts der Empf&auml;nger das Wort <span class="MATH"><img width="45" height="16" align="bottom" border="0" src="img1336.png" alt="" /></span>, wird er vermuten, dass <span class="MATH">0000</span> das urspr&uuml;ngliche Codewort gewesen ist und <span class="MATH">0</span> die urspr&uuml;ngliche Nachricht. Erh&auml;lt er dagegen <span class="MATH">1010</span>, dann ist eine Entscheidung nicht m&ouml;glich, ob die Nachricht <span class="MATH">0</span> oder die Nachricht <span class="MATH"><img width="17" height="16" align="bottom" border="0" src="img767.png" alt="" /></span>, die bei diesem Wiederholungscode durch <span class="MATH">1111</span> codiert wird, &uuml;bermittelt werden sollte. Man erkennt aber, dass beim &Uuml;bertragen ein Fehler aufgetreten ist.</p>
+</td>
+</tr>
+</table>
+</body>
+</html>

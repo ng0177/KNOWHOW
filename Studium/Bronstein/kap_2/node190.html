@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Vollst&auml;ndig durchgerechnetes Beispiel</title>
+<meta name="description" content="Vollst&auml;ndig durchgerechnetes Beispiel" />
+<meta name="keywords" content="kap_2" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node189.html" />
+<link rel="up" href="node174.html" />
+<link rel="next" href="node191.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node189.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node191.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_2.html">Funktionen und ihre Darstellung</a> <a href="node167.html">Aufstellung empirischer Kurven</a> <a id="up" href="node174.html">Gebr&#228;uchlichste empirische Formeln</a> </span>
+</p>
+</div>
+<h3><a name="SECTION0011621200000000000000" id="SECTION0011621200000000000000"></a><a name="VollBeisp" id="VollBeisp"></a>
+Vollst&auml;ndig durchgerechnetes Beispiel</h3>
+<dl>
+<dt>1.&nbsp;Aufgabenstellung:</dt>
+<dd>Es ist eine empirische Formel f&uuml;r die in der folgenden Tabelle vorgegebene Abh&auml;ngigkeit zwischen <span class="MATH"><i>x</i></span> und <span class="MATH"><i>y</i></span> zu suchen.<br />
+<div align="center">Tabelle zur Ann&auml;herung empirischer Daten<br />
+<a name="t2empiri" id="t2empiri"></a>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="right"><span class="MATH"><i>x</i></span></td>
+<td align="right"><span class="MATH"><i>y</i></span></td>
+<td align="right"><span class="MATH"><img width="19" height="51" align="middle" border="0" src="img1178.png" alt="" /></span></td>
+<td align="right"><span class="MATH"><img width="35" height="51" align="middle" border="0" src="img1179.png" alt="" /></span></td>
+<td align="right"><span class="MATH"><img width="33" height="35" align="middle" border="0" src="img1180.png" alt="" /></span></td>
+<td align="right"><span class="MATH"><img width="32" height="35" align="middle" border="0" src="img1181.png" alt="" /></span></td>
+<td align="right"><span class="MATH"><img width="52" height="35" align="middle" border="0" src="img1182.png" alt="" /></span></td>
+<td align="right"><span class="MATH"><img width="51" height="35" align="middle" border="0" src="img1183.png" alt="" /></span></td>
+<td align="right"><span class="MATH"><img width="59" height="35" align="middle" border="0" src="img1184.png" alt="" /></span></td>
+<td align="right"><span class="MATH"><i>y</i><sub><i>err</i></sub></span></td>
+</tr>
+<tr valign="baseline">
+<td align="right">0,1</td>
+<td align="right">1,78</td>
+<td align="right">0,056</td>
+<td align="right">0,007</td>
+<td align="right">-1,000</td>
+<td align="right">0,250</td>
+<td align="right">0,301</td>
+<td align="right">0,252</td>
+<td align="right">0,252</td>
+<td align="right">1,78</td>
+</tr>
+<tr valign="baseline">
+<td align="right">0,2</td>
+<td align="right">3,18</td>
+<td align="right">0,063</td>
+<td align="right">0,031</td>
+<td align="right">-0,699</td>
+<td align="right">0,502</td>
+<td align="right">0,176</td>
+<td align="right">+0,002</td>
+<td align="right">-0,097</td>
+<td align="right">3,15</td>
+</tr>
+<tr valign="baseline">
+<td align="right">0,3</td>
+<td align="right">3,19</td>
+<td align="right">0,094</td>
+<td align="right">0,063</td>
+<td align="right">-0,523</td>
+<td align="right">0,504</td>
+<td align="right">0,125</td>
+<td align="right">-0,099</td>
+<td align="right">-0,447</td>
+<td align="right">3,16</td>
+</tr>
+<tr valign="baseline">
+<td align="right">0,4</td>
+<td align="right">2,54</td>
+<td align="right">0,157</td>
+<td align="right">0,125</td>
+<td align="right">-0,398</td>
+<td align="right">0,405</td>
+<td align="right">0,097</td>
+<td align="right">-0,157</td>
+<td align="right">-0,803</td>
+<td align="right">2,52</td>
+</tr>
+<tr valign="baseline">
+<td align="right">0,5</td>
+<td align="right">1,77</td>
+<td align="right">0,282</td>
+<td align="right">0,244</td>
+<td align="right">-0,301</td>
+<td align="right">0,248</td>
+<td align="right">0,079</td>
+<td align="right">-0,191</td>
+<td align="right">-1,134</td>
+<td align="right">1,76</td>
+</tr>
+<tr valign="baseline">
+<td align="right">0,6</td>
+<td align="right">1,14</td>
+<td align="right">0,526</td>
+<td align="right">0,488</td>
+<td align="right">-0,222</td>
+<td align="right">0,057</td>
+<td align="right">0,067</td>
+<td align="right">-0,218</td>
+<td align="right">-1,455</td>
+<td align="right">1,14</td>
+</tr>
+<tr valign="baseline">
+<td align="right">0,7</td>
+<td align="right">0,69</td>
+<td align="right">1,014</td>
+<td align="right">0,986</td>
+<td align="right">-0,155</td>
+<td align="right">-0,161</td>
+<td align="right">0,058</td>
+<td align="right">-0,237</td>
+<td align="right">-</td>
+<td align="right">0,70</td>
+</tr>
+<tr valign="baseline">
+<td align="right">0,8</td>
+<td align="right">0,40</td>
+<td align="right">2,000</td>
+<td align="right">1,913</td>
+<td align="right">-0,097</td>
+<td align="right">-0,398</td>
+<td align="right">0,051</td>
+<td align="right">-0,240</td>
+<td align="right">-</td>
+<td align="right">0,41</td>
+</tr>
+<tr valign="baseline">
+<td align="right">0,9</td>
+<td align="right">0,23</td>
+<td align="right">3,913</td>
+<td align="right">3,78</td>
+<td align="right">-0,046</td>
+<td align="right">-0,638</td>
+<td align="right">0,046</td>
+<td align="right">-0,248</td>
+<td align="right">-</td>
+<td align="right">0,23</td>
+</tr>
+<tr valign="baseline">
+<td align="right">1,0</td>
+<td align="right">0,13</td>
+<td align="right">7,69</td>
+<td align="right">8,02</td>
+<td align="right">0,000</td>
+<td align="right">-0,886</td>
+<td align="right">0,041</td>
+<td align="right">-0,269</td>
+<td align="right">-</td>
+<td align="right">0,13</td>
+</tr>
+<tr valign="baseline">
+<td align="right">1,1</td>
+<td align="right">0,07</td>
+<td align="right">15,71</td>
+<td align="right">14,29</td>
+<td align="right">0,041</td>
+<td align="right">-1,155</td>
+<td align="right">0,038</td>
+<td align="right">-0,243</td>
+<td align="right">-</td>
+<td align="right">0,07</td>
+</tr>
+<tr valign="baseline">
+<td align="right">1,2</td>
+<td align="right">0,04</td>
+<td align="right">30,0</td>
+<td align="right">-</td>
+<td align="right">0,079</td>
+<td align="right">-1,398</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">-</td>
+<td align="right">0,04</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>2.&nbsp;Auswahl der N&auml;herungsfunktion:</dt>
+<dd>Ein Vergleich der Kurve, die auf der Grundlage der Daten in der Tabelle erhalten wurde (n&auml;chste Abbildung), mit bisher betrachteten Kurven zeigt, da&szlig; die Formeln <span class="MATH"><img width="144" height="51" align="middle" border="0" src="img1185.png" alt="" /></span> (<a href="node186.html#F1021612">2.253</a>) oder <span class="MATH"><i>y</i>=<i>ax</i><sup><i>b</i></sup><i>e</i><sup><i>cx</i></sup></span> (<a href="node188.html#F1021614a">2.255a</a>) mit den folgenden Abbildungen geeignet sein k&ouml;nnten.<br />
+<p align="left" class="BILD"><a name="BILD_102a092" class="BILD" id="BILD_102a092"><img border="0" src="../bilder/kap02/t2/102a092.gif" alt="BilD" /></a></p>
+<p class="nachBild"></p>
+<p align="left" class="BILD"><a name="BILD_102a088u" class="BILD" id="BILD_102a088u"><img border="0" src="../bilder/kap02/t2/102a088u.gif" alt="BilD" /></a></p>
+<p class="nachBild"></p>
+</dd>
+<dt>3.&nbsp;Parameterbestimmung:</dt>
+<dd>Nimmt man Formel (<a href="node186.html#F1021612">2.253</a>), dann sind <span class="MATH"><img width="35" height="51" align="middle" border="0" src="img1186.png" alt="" /></span> und <span class="MATH"><i>x</i></span> zu rektifizieren. Die Rechnung zeigt aber, da&szlig; die Abh&auml;ngigkeit zwischen <span class="MATH"><i>x</i></span> und <span class="MATH"><img width="35" height="51" align="middle" border="0" src="img1186.png" alt="" /></span> weit entfernt von Linearit&auml;t ist. Zur &Uuml;berpr&uuml;fung der Eignung von Formel (<a href="node188.html#F1021614a">2.255a</a>) wird die Kurve der Abh&auml;ngigkeit <span class="MATH"><img width="61" height="35" align="middle" border="0" src="img1167.png" alt="" /></span> und <span class="MATH"><img width="61" height="35" align="middle" border="0" src="img1166.png" alt="" /></span> f&uuml;r <span class="MATH"><i>h</i>=0,1</span> erzeugt sowie die f&uuml;r <span class="MATH"><img width="68" height="35" align="middle" border="0" src="img1187.png" alt="" /></span> und <span class="MATH"><i>x</i></span> f&uuml;r <span class="MATH"><img width="56" height="33" align="middle" border="0" src="img1188.png" alt="" /></span><br />
+<p align="left" class="BILD"><a name="BILD_102a093u" class="BILD" id="BILD_102a093u"><img border="0" src="../bilder/kap02/t2/102a093u.gif" alt="BilD" /></a></p>
+<p class="nachBild">
+In beiden F&auml;llen ist die &Uuml;bereinstimmung mit einer Geraden ausreichend, so da&szlig; die Formel <span class="MATH"><i>y</i>=<i>ax</i><sup><i>b</i></sup><i>e</i><sup><i>cx</i></sup></span> f&uuml;r die N&auml;herung geeignet ist. Zur Bestimmung der Konstanten <span class="MATH"><i>a</i>,<i>b</i></span> und <span class="MATH"><i>c</i></span> wird eine lineare Abh&auml;ngigkeit zwischen <span class="MATH"><i>x</i></span> und <span class="MATH"><img width="68" height="35" align="middle" border="0" src="img1187.png" alt="" /></span> mit der Mittelwertmethode gesucht. Addition der Bedingungsgleichungen <span class="MATH"><img width="222" height="35" align="middle" border="0" src="img1189.png" alt="" /></span> in zwei Gruppen zu je drei Gleichungen f&uuml;hrt auf</p>
+<div align="center" class="mathdisplay"><img width="231" height="101" border="0" src="img1190.png" alt="" /></div>
+<br clear="all" />
+woraus sich <span class="MATH"><i>b</i>=1,966</span> und <span class="MATH"><i>c</i>=-7,932</span> ergibt. Zur Bestimmung von <span class="MATH"><i>a</i></span> werden alle Gleichungen vom Typ <span class="MATH"><img width="271" height="35" align="middle" border="0" src="img1191.png" alt="" /></span> addiert, was <span class="MATH"><img width="288" height="35" align="middle" border="0" src="img1192.png" alt="" /></span> ergibt, so da&szlig; aus <span class="MATH"><img width="113" height="35" align="middle" border="0" src="img1193.png" alt="" /></span> folgt <span class="MATH"><i>a</i> = 364.</span> Die mit der Formel <span class="MATH"><i>y</i>=364<i>x</i><sup>1,966</sup><i>e</i><sup>-7,032<i>x</i></sup></span> berechneten <span class="MATH"><i>y</i></span>-Werte sind in der letzten Spalte der obigen Werte-Tabelle als <span class="MATH"><img width="31" height="33" align="middle" border="0" src="img1194.png" alt="" /></span> angegeben. Die Fehlerquadratsumme betr&auml;gt <span class="MATH">0,0024</span>. Benutzt man die durch Rektifizierung gewonnenen Parameter als Startwerte zur iterativen L&ouml;sung der <a href="../kap_19/node87.html#NichtlinQumAufg1">nichtlinearen Quadratmittelaufgabe</a><br />
+<br />
+<div align="center" class="mathdisplay"><img width="203" height="105" border="0" src="img1195.png" alt="" /></div>
+<p><br clear="all" /></p>
+dann erh&auml;lt man <span class="MATH"><img width="397" height="35" align="middle" border="0" src="img1196.png" alt="" /></span> mit der minimalen Fehlerquadratsumme <span class="MATH">0,000 0916</span>.</dd>
+</dl>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Matchings, Satz von Tutte</title>
+<meta name="description" content="Matchings, satz von Tutte" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node264.html" />
+<link rel="previous" href="node262.html" />
+<link rel="up" href="node262.html" />
+<link rel="next" href="node264.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node262.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node264.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node227.html">Algorithmen der Graphentheorie</a> <a id="up" href="node262.html">Matchings</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00484100000000000000" id="SECTION00484100000000000000"></a><a name="Tuttesatz" id="Tuttesatz"></a><a name="6867"></a> <a name="6868"></a> <a name="6869"></a>
+Matchings, Satz von Tutte</h3>
+<p><a name="9031"></a> <a name="9032"></a></p>
+<dl>
+<dt>1.&nbsp;Matchings:</dt>
+<dd>Eine Menge <span class="MATH"><i>M</i></span> von Kanten eines Graphen <span class="MATH"><i>G</i></span> hei&szlig;t <span class="begriff">Matching</span> in <span class="MATH"><img width="28" height="35" align="middle" border="0" src="img273.png" alt="" /></span> wenn <span class="MATH"><i>M</i></span> keine Schlingen enth&auml;lt und je zwei verschiedene Kanten aus <span class="MATH"><i>M</i></span> keinen gemeinsamen Endpunkt besitzen.
+<dl>
+<dt>a)&nbsp;Ges&auml;ttigtes Matching:</dt>
+<dd>Ein Matching <span class="MATH"><i>M</i><sup>*</sup></span> von <span class="MATH"><i>G</i></span> hei&szlig;t <span class="begriff">ges&auml;ttigt</span>, wenn es in <span class="MATH"><i>G</i></span> kein Matching <span class="MATH"><i>M</i></span> mit <span class="MATH"><img width="78" height="35" align="middle" border="0" src="img1652.png" alt="" /></span> gibt.</dd>
+<dt>b)&nbsp;Maximales Matching:</dt>
+<dd>Ein Matching <span class="MATH"><i>M</i><sup>**</sup></span> von <span class="MATH"><i>G</i></span> nennt man <span class="begriff">maximal</span>, wenn es in <span class="MATH"><i>G</i></span> kein Matching <span class="MATH"><i>M</i></span> mit <span class="MATH">|M|&gt; |M<sup>**</sup>|</span> gibt.</dd>
+<dt>c)&nbsp;Perfektes Matching:</dt>
+<dd>Ist <span class="MATH"><i>M</i></span> ein Matching in <span class="MATH"><i>G</i></span> mit der Eigenschaft, da&szlig; jeder Knoten von <span class="MATH"><i>G</i></span> mit einer Kante aus <span class="MATH"><i>M</i></span> inzidiert, dann wird <span class="MATH"><i>M</i></span> <span class="begriff">perfektes Matching</span> genannt.<br />
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Im Graphen der folgenden Abbildung ist <span class="MATH"><i>M</i><sub>1</sub>={{2,3},{5,6}}</span> ein ges&auml;ttigtes Matching und <span class="MATH"><i>M</i><sub>2</sub>={{1,2},{3,4},{5,6}}</span> ein maximales Matching, das au&szlig;erdem perfekt ist.</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a051" id="BILD_105a051"><img alt="BilD" border="0" src="../bilder/kap05/t2/105a051.gif" /></a></p>
+<p class="nachBild"></p>
+</td>
+</tr>
+</table>
+</dd>
+<dt>d)&nbsp;Hinweis:</dt>
+<dd>In Graphen mit ungerader Knotenzahl gibt es keine perfekten Matchings.</dd>
+</dl>
+</dd>
+<dt>2.&nbsp;Satz von Tutte:</dt>
+<dd>
+<div class="alpha">
+<ol>
+<li>
+<div>Ein Graph <span class="MATH"><i>G</i>=(<i>V</i>,<i>E</i>)</span> besitzt genau dann ein perfektes Matching, wenn <span class="MATH">|V|</span> gerade ist und f&uuml;r jede Teilmenge <span class="MATH"><i>S</i></span> der Knotenmenge <span class="MATH"><img width="128" height="37" align="middle" border="0" src="img1653.png" alt="" /></span> ist. Dabei ist <span class="MATH"><i>G</i>-<i>S</i></span> der Graph, der aus <span class="MATH"><i>G</i></span> durch L&ouml;schen aller Knoten von <span class="MATH"><i>S</i></span> und der mit diesen Knoten inzidierenden Kanten entsteht. Mit <span class="MATH"><i>q</i>(<i>G</i>-<i>S</i>)</span> wird die Anzahl der Komponenten von <span class="MATH"><i>G</i>-<i>S</i></span> mit ungerader Knotenzahl bezeichnet.</div>
+</li>
+<li>
+<div>Perfekte Matchings haben z.B. vollst&auml;ndige Graphen mit gerader Knotenzahl, vollst&auml;ndige paare Graphen <span class="MATH"><i>K</i><sub><i>n</i>,<i>n</i></sub></span> und beliebige regul&auml;re paare Graphen vom Regularit&auml;tsgrad <span class="MATH"><img width="56" height="33" align="middle" border="0" src="img1654.png" alt="" /></span></div>
+</li>
+</ol>
+</div>
+</dd>
+</dl>
+</body>
+</html>

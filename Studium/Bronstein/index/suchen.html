@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+<script language="JavaScript" type="text/javascript">
+<!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ 
+	function Testen( )	{
+		if (top.frames['Daten'].fertig)  {
+			return top.frames['Daten'].QueryEnter();
+		} else {
+			alert("Das Suchprogramm ist noch nicht geladen."); return false;
+		}
+	}
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+</script>
+</head>
+<body>
+<!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+<p>
+<!-- Das Such-Interface -->
+<form  onSubmit="return Testen();" NAME="QueryForm">
+<input type="hidden" name="such_modus" value="O">
+<input type="hidden" name="ganzwort" value="N">
+<table>
+<tr align="left">
+<td nowrap>
+<span class="dtnav">Navigation</span>
+</td>
+<td nowrap>
+<span class="navitop"><a href="../sonder/inh_d.html" target="_parent" onMouseOver="window.status='Detaillierte Inhaltsverzeichnisse';return true;" onMouseOut="window.status=window.defaultStatus;">Inhalt</a></span>
+&nbsp;&nbsp;
+<span class="navitop"><a href="ind_az.html" onClick="if (top.frames && top.frames['Navi'] && top.frames['Navi'].frames['Anzeige'] && top.frames['Navi'].frames['Anzeige'].indaz && (top.frames['Navi'].frames['Anzeige'].indaz == 'az')) {return false;} else {return true;}" target="Anzeige" onMouseOver="window.status='Stichwortverzeichnissse von A bis Z';return true;" onMouseOut="window.status=window.defaultStatus;">Index A...Z</a></span>
+&nbsp;
+<span class="navitop"><a href="ind_121.html" onClick="if (top.frames && top.frames['Navi'] && top.frames['Navi'].frames['Anzeige'] && top.frames['Navi'].frames['Anzeige'].indaz && (top.frames['Navi'].frames['Anzeige'].indaz == 'nr')) {return false;} else {return true;}" target="Anzeige" onMouseOver="window.status='Stichwortverzeichnisse der Kapitel 1 bis 21';return true;" onMouseOut="window.status=window.defaultStatus;">Index 1...21</a></span>
+</td>
+</tr>
+<tr align="left">
+<td>
+<B>Suchbegriff:</B>
+</td>
+<td nowrap>
+<input type="text" name="query" size=30 stlye="width:200px; height:20px" width=200>
+<!-- <input  type=button onClick="top.frames[\'Daten\'].Validator()" value="Suchen"> -->
+<input  type=button onClick="Testen()" value="Suchen">
+&nbsp;&nbsp;
+<input  type=button onClick="parent.Anzeige.location.href='../hilfe/h_suche.html'" value="&#160;Hilfe&#160;">
+</td>
+</tr>
+<tr>
+<td>
+<B>Suchmodus:</B>
+</td>
+<td nowrap>
+Verkn&uuml;pfung:
+&nbsp;
+<!-- Der oben voreingestellte Wert muss gleich dem checked Wert sein -->
+<input type="radio" name="modus" value="U" onClick="QueryForm.such_modus.value='U'"> UND
+<input type="radio" checked name="modus" value="O" onClick="QueryForm.such_modus.value='O'"> ODER
+&nbsp;&nbsp;
+Ganzwort:
+&nbsp;
+<input type="radio" name="string" value="J" onClick="QueryForm.ganzwort.value='J'"> JA
+<input type="radio" checked name="string" value="N" onClick="QueryForm.ganzwort.value='N'"> NEIN
+</td>
+</tr>
+</table>
+</form>
+</p>
+<script language="JavaScript" type="text/javascript">
+//Focus fuer Eingabe des Suchbegriffs 
+document.QueryForm.query.focus();
+//Sonst wird checked bei einem Reload nicht neu gesetzt 
+document.QueryForm.reset();
+</script>
+</body>
+</html>

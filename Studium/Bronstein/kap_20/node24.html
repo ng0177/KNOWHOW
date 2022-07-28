@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Darstellung und Konvertierung von Zahlen</title>
+<meta name="description" content="Darstellung und Konvertierung von Zahlen" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node23.html" />
+<link rel="up" href="node21.html" />
+<link rel="next" href="node25.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node23.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node25.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node19.html">Mathematica</a> <a id="up" href="node21.html">Zahlenarten in Mathematica</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001922300000000000000" id="SECTION001922300000000000000"></a> <a name="565"></a>
+Darstellung und Konvertierung von Zahlen</h3>
+<p>Zahlen sind in verschiedenen Formen darstellbar, die sich ineinander konvertieren lassen. So l&auml;&szlig;t sich jede reelle Zahl <span class="MATH"><i>x</i></span> mit <span class="MATH"><img width="60" height="37" align="middle" border="0" src="img75.png" alt="" /></span> in eine Gleitpunktzahl mit <span class="MATH"><i>n</i></span>-stelliger Pr&auml;zision konvertieren.</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="483" height="66" border="0" src="img76.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">8</span>a)</td>
+</tr>
+</table>
+</div>
+<p>Mit <span class="MATH"><img width="168" height="37" align="middle" border="0" src="img77.png" alt="" /></span> kann die Zahl <span class="MATH"><i>x</i></span> mit der Genauigkeit <span class="MATH"><i>dx</i></span> in eine rationale Zahl gewandelt werden. So ergibt</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="412" height="85" border="0" src="img78.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">8</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Mit der Genauigkeit <span class="MATH">0</span> &uuml;bermittelt <i class="sans">Mathematica</i> die bestm&ouml;gliche N&auml;herung der Zahl <span class="MATH"><i>x</i></span> durch eine rationale Zahl.<br />
+Zahlen verschiedener Zahlensysteme k&ouml;nnen ineinander konvertiert werden. Mit <span class="MATH"><img width="126" height="37" align="middle" border="0" src="img79.png" alt="" /></span> wird die Zahl <span class="MATH"><i>x</i></span> im Dezimalsystem in die entsprechende Zahl im System mit der Basis <span class="MATH"><i>b</i></span> umgewandelt. Ist <span class="MATH"><img width="60" height="35" align="middle" border="0" src="img80.png" alt="" /></span>, so werden f&uuml;r die Darstellung der weiteren Ziffern wie &uuml;blich die fortlaufenden Buchstaben <span class="MATH"><img width="78" height="35" align="middle" border="0" src="img81.png" alt="" /></span> benutzt.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>So wird z.B.</p>
+</td>
+</tr>
+</table>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="524" height="66" border="0" src="img82.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">9</span>a)</td>
+</tr>
+</table>
+</div>
+<p>oder</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="590" height="66" border="0" src="img83.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">9</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Die Konversion einer Zahl zur Basis <span class="MATH"><i>b</i></span> ins Dezimalsystem wird mit <span class="MATH"><img width="98" height="18" align="bottom" border="0" src="img84.png" alt="" /></span> durchgef&uuml;hrt.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>In diesem Sinne liefert</p>
+</td>
+</tr>
+</table>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="271" height="66" border="0" src="img85.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">9</span>c)</td>
+</tr>
+</table>
+</div>
+<p>Die Darstellung der Zahlen erfolgt mit der jeweiligen Pr&auml;zision (voreingestellt hierf&uuml;r ist die Maschinenpr&auml;zision) und bei gro&szlig;en Zahlen in der sogenannten wissenschaftlichen Schreibweise, d.h. in der Form <span class="MATH"><img width="190" height="37" align="middle" border="0" src="img86.png" alt="" /></span>. <a name="618"></a> <!-- BeispielEnde: 1200203 --></p>
+</body>
+</html>

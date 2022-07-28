@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Bahnen in gerichteten Graphen</title>
+<meta name="description" content="Bahnen in gerichteten Graphen" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node268.html" />
+<link rel="previous" href="node266.html" />
+<link rel="up" href="node227.html" />
+<link rel="next" href="node268.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node266.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node268.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a id="up" href="node227.html">Algorithmen der Graphentheorie</a> </span>
+</p>
+</div>
+<h2><a name="SECTION00486000000000000000" id="SECTION00486000000000000000"></a> <a name="Bahngerichtgraph" id="Bahngerichtgraph"></a>
+Bahnen in gerichteten Graphen</h2>
+<dl>
+<dt>1.&nbsp;Bogenfolgen</dt>
+<dd><a name="Bogenfolgen" id="Bogenfolgen"></a><a name="6950"></a> <a name="6951"></a> <a name="6952"></a> <a name="6953"></a> <a name="6954"></a> <a name="6955"></a> <a name="6956"></a> <a name="6957"></a> <a name="6958"></a>
+<dl>
+<dt>1.&nbsp;Kette:</dt>
+<dd>In gerichteten Graphen wird eine Folge <span class="MATH"><img width="157" height="37" align="middle" border="0" src="img1666.png" alt="" /></span> von B&ouml;gen <span class="begriff">Kette</span> der L&auml;nge <span class="MATH"><i>s</i></span> genannt, wenn <span class="MATH"><i>F</i></span> keinen Bogen zweimal enth&auml;lt und f&uuml;r <span class="MATH"><img width="147" height="34" align="middle" border="0" src="img1667.png" alt="" /></span> jeder Bogen <span class="MATH"><i>e</i><sub><i>i</i></sub></span> einen seiner Endpunkte mit dem Bogen <span class="MATH"><i>e</i><sub><i>i</i>-1</sub></span> und den anderen mit <span class="MATH"><i>e</i><sub><i>i</i>+1</sub></span> gemeinsam hat.</dd>
+<dt>2.&nbsp;Bahn:</dt>
+<dd>Eine Kette hei&szlig;t Bahn, wenn f&uuml;r <span class="MATH"><img width="147" height="34" align="middle" border="0" src="img1668.png" alt="" /></span> der Zielpunkt des Bogens <span class="MATH"><i>e</i><sub><i>i</i></sub></span> mit dem Startpunkt des Bogens <span class="MATH"><i>e</i><sub><i>i</i>+1</sub></span> &uuml;bereinstimmt.</dd>
+<dt>3.&nbsp;Elementare Bahn:</dt>
+<dd>Ketten bzw. Bahnen, die jeden Knoten des Graphen h&ouml;chstens einmal durchlaufen, sind <span class="begriff">elementare Ketten</span> bzw. <span class="begriff">elementare Bahnen</span>.</dd>
+<dt>4.&nbsp;Zyklus:</dt>
+<dd>Eine geschlossene Kette wird <span class="begriff">Zyklus</span> genannt.</dd>
+<dt>5.&nbsp;Kreis:</dt>
+<dd>Eine geschlossene Bahn, in der jeder Knoten Endpunkt genau zweier B&ouml;gen ist, hei&szlig;t <span class="begriff">Kreis</span>.</dd>
+</dl>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>In den folgenden Abbildungen sind Beispiele f&uuml;r die verschiedenen Bogenfolgen dargestellt.</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a056" id="BILD_105a056"><img alt="BilD" border="0" src="../bilder/kap05/t2/105a056.gif" /></a></p>
+</td>
+</tr>
+</table>
+</dd>
+<dt>2.&nbsp;Zusammenh&auml;ngende und stark zusammenh&auml;ngende Graphen</dt>
+<dd><a name="Zushang" id="Zushang"></a><a name="6976"></a> <a name="6977"></a>
+<dl>
+<dt>1.&nbsp;Zusammenh&auml;ngender Graph:</dt>
+<dd>Ein gerichteter Graph <span class="MATH"><i>G</i></span> hei&szlig;t zusammenh&auml;ngend, wenn je zwei Knoten von <span class="MATH"><i>G</i></span> durch eine Kette verbunden sind.</dd>
+<dt>2.&nbsp;Stark zusammenhngender Graph:</dt>
+<dd>Von einem <span class="begriff">stark zusammenh&auml;ngenden</span> Graphen <span class="MATH"><i>G</i></span> spricht man, wenn es in <span class="MATH"><i>G</i></span> zu je zwei Knoten <span class="MATH"><i>v</i>,<i>w</i></span> eine Bahn gibt, die <span class="MATH"><i>v</i></span> mit <span class="MATH"><i>w</i></span> verbindet.</dd>
+</dl>
+</dd>
+<dt>3.&nbsp;Algorithmus von Dantzig</dt>
+<dd><a name="DantzigAlgor" id="DantzigAlgor"></a><a name="9037"></a> Es sei <span class="MATH"><i>G</i> =(<i>V</i>,<i>E</i>,<i>f</i>)</span> ein bewerteter schlichter gerichteter Graph mit <span class="MATH"><i>f</i>(<i>e</i>)&gt;0</span> f&uuml;r alle B&ouml;gen <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img1669.png" alt="" /></span>. Der folgende Algorithmus liefert alle von einem Knoten <span class="MATH"><i>v</i><sub>1</sub></span> von <span class="MATH"><i>G</i></span> aus erreichbaren Knoten zusammen mit ihren Entfernungen von <span class="MATH"><i>v</i><sub>1</sub></span>:
+<div class="alpha">
+<ol>
+<li>
+<div>Der Knoten <span class="MATH"><i>v</i><sub>1</sub></span> erh&auml;lt die Markierung <span class="MATH"><img width="85" height="37" align="middle" border="0" src="img1670.png" alt="" /></span> Es sei <span class="MATH"><img width="93" height="37" align="middle" border="0" src="img1671.png" alt="" /></span></div>
+</li>
+<li>
+<div>Die Menge der markierten Knoten sei <span class="MATH"><img width="37" height="35" align="middle" border="0" src="img1672.png" alt="" /></span></div>
+</li>
+<li>
+<div>Ist <span class="MATH"><img width="405" height="37" align="middle" border="0" src="img1673.png" alt="" /></span>, dann beende man den Algorithmus.</div>
+</li>
+<li>
+<div>Anderenfalls w&auml;hle man einen Bogen <span class="MATH"><i>e</i><sup>*</sup>=(<i>x</i><sup>*</sup>,<i>y</i><sup>*</sup>)</span> aus, f&uuml;r den <span class="MATH"><i>t</i>(<i>x</i><sup>*</sup>)+<i>f</i>(<i>e</i><sup>*</sup>)</span> minimal ist. Man markiere <span class="MATH"><i>e</i><sup>*</sup></span> und <span class="MATH"><i>y</i><sup>*</sup></span>, setze <span class="MATH"><i>t</i>(<i>y</i><sup>*</sup>)=<i>t</i>(<i>x</i><sup>*</sup>)+<i>f</i>(<i>e</i><sup>*</sup>)</span> sowie <span class="MATH"><img width="153" height="37" align="middle" border="0" src="img1674.png" alt="" /></span> und wiederhole <b>b)</b> mit <span class="MATH"><img width="108" height="33" align="middle" border="0" src="img1675.png" alt="" /></span></div>
+</li>
+</ol>
+</div>
+<p>Sind alle B&ouml;gen mit 1 bewertet, dann kann man gem&auml;&szlig; des <a href="node245.html#ProblKurzWeg">Problemes des k&uuml;rzesten Weges</a> mit Hilfe der Adjazenzmatrix die L&auml;nge einer k&uuml;rzesten Bahn von einem Knoten <span class="MATH"><i>v</i></span> zu einem Knoten <span class="MATH"><i>w</i></span> des Graphen finden.<br />
+Wird dagegen ein Knoten <span class="MATH"><i>v</i></span> von <span class="MATH"><i>G</i></span> nicht markiert, dann gibt es keine von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i></span> f&uuml;hrende Bahn.<br />
+Wird <span class="MATH"><i>v</i></span> mit <span class="MATH"><i>t</i>(<i>v</i>)</span> markiert, dann ist <span class="MATH"><i>t</i>(<i>v</i>)</span> die L&auml;nge einer solchen Bahn. Eine k&uuml;rzeste Bahn von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i></span> liegt in dem von allen markierten Knoten und B&ouml;gen gebildeten Baum, dem <span class="begriff">Entfernungsbaum</span> bez&uuml;glich <span class="MATH"><img width="30" height="33" align="middle" border="0" src="img1676.png" alt="" /></span></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Im Graphen der folgenden Abbildung bilden die gr&uuml;n gezeichneten B&ouml;gen einen Entfernungsbaum bez&uuml;glich des Knotens <span class="MATH"><img width="30" height="33" align="middle" border="0" src="img1676.png" alt="" /></span></p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a057" id="BILD_105a057"><img alt="BilD" border="0" src="../bilder/kap05/t2/105a057.gif" /></a></p>
+<p class="nachBild">
+Die L&auml;ngen der k&uuml;rzesten Bahnen sind:</p>
+<table cellpadding="3">
+<tr valign="baseline">
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>3</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1677.png" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>6</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1678.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>7</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1679.png" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>8</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1678.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>9</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1679.png" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>14</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1680.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>2</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1681.png" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>5</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1680.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>10</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1682.png" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>12</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1683.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>4</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1684.png" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>13</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="29" height="16" align="bottom" border="0" src="img1685.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left">von <span class="MATH"><i>v</i><sub>1</sub></span> nach <span class="MATH"><i>v</i><sub>11</sub>:</span></td>
+<td align="left"><span class="MATH"><img width="28" height="16" align="bottom" border="0" src="img1686.png" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+</tr>
+</table>
+<br /></td>
+</tr>
+</table>
+<p><b>Hinweis:</b> F&uuml;r den Fall, da&szlig; <span class="MATH"><i>G</i>=(<i>V</i>,<i>E</i>,<i>f</i>)</span> B&ouml;gen mit negativen L&auml;ngen besitzt, gibt es einen modifizierten Algorithmus zur Ermittlung k&uuml;rzester Bahnen (s.&nbsp;Lit.&nbsp;<a href="../kap_22/node5.html#x0528">5.42</a>).</p>
+</dd>
+</dl>
+</body>
+</html>

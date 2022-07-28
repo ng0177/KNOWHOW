@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Syntax zweidimensionaler Graphik</title>
+<meta name="description" content="Syntax zweidimensionaler Graphik" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node146.html" />
+<link rel="previous" href="node144.html" />
+<link rel="up" href="node144.html" />
+<link rel="next" href="node146.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node144.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node146.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node126.html">Graphik in Computeralgebrasystemen</a> <a href="node143.html">Graphik mit Maple</a> <a id="up" href="node144.html">Zweidimensionale Graphik</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001952110000000000000" id="SECTION001952110000000000000">Syntax zweidimensionaler Graphik</a></h4>
+<p>Der zweidimensionale Plot-Befehl hat die prinzipielle Struktur</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="228" height="66" border="0" src="img1093.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">93</span>)</td>
+</tr>
+</table>
+</div>
+<p>Das erste Argument <span class="MATH"><i>funct</i></span> kann folgende Bedeutung besitzen:</p>
+<div class="alpha">
+<ol>
+<li>
+<div>eine reelle Funktion einer unabh&auml;ngigen Variablen, etwa <span class="MATH"><i>f</i>(<i>x</i>)</span>;</div>
+</li>
+<li>
+<div>eine Prozedur (Funktionssymbol), die z.B. mit dem Pfeilsymbol erzeugt wurde;</div>
+</li>
+<li>
+<div>die Parameterdarstellung einer reellen Funktion in Form einer Liste <span class="MATH">[<i>u</i>(<i>t</i>),<i>v</i>(<i>t</i>),<i>t</i>=<i>a</i>..<i>b</i>]</span>, wobei <span class="MATH"><i>t</i>=<i>a</i>..<i>b</i></span> den Laufbereich des Parameters angibt;</div>
+</li>
+<li>
+<div>mehrere, in geschweifte Klammern eingeschlossene Funktionen, die gemeinsam dargestellt werden sollen;</div>
+</li>
+<li>
+<div>eine Liste von Zahlen (gerade Anzahl), die fortlaufend als <span class="MATH">(<i>x</i>,<i>y</i>)</span>-Koordinaten von Punkten interpretiert werden.</div>
+</li>
+</ol>
+</div>
+<p>Das zweite Argument <span class="MATH"><i>hb</i></span> ist der Laufbereich der unabh&auml;ngigen Variablen; er ist in der Form <span class="MATH"><i>x</i>=<i>a</i>..<i>b</i></span> einzugeben. Wird kein Argument eingegeben, so nimmt <i class="sans">Maple</i> automatisch den Laufbereich <span class="MATH">-10..10</span> an. Es ist m&ouml;glich, einer oder beiden Grenzen den Wert <span class="MATH"><img width="39" height="33" align="middle" border="0" src="img1094.png" alt="" /></span> und/oder <span class="MATH"><img width="24" height="16" align="bottom" border="0" src="img73.png" alt="" /></span> zuzuordnen. In diesem Fall w&auml;hlt <i class="sans">Maple</i> eine Darstellung der <span class="MATH"><i>x</i></span>-Achse mit <span class="MATH"><img width="57" height="16" align="bottom" border="0" src="img1095.png" alt="" /></span>.</p>
+<p>Das dritte Argument <span class="MATH"><i>vb</i></span> steuert den Darstellungsbereich der abh&auml;ngigen (vertikalen) Variablen. Auch er ist in der Form <span class="MATH"><i>y</i>=<i>a</i>..<i>b</i></span> einzugeben. Wird er fortgelassen, so nimmt <i class="sans">Maple</i> die sich aus der Funktionsgleichung ergebenden Werte f&uuml;r den jeweiligen Bereich der unabh&auml;ngigen Variablen. Dies kann problematisch werden, wenn in diesem Bereich z.B. eine Polstelle liegt. Daher sollte man, wenn n&ouml;tig, diesen Bereich begrenzen.</p>
+<p>Als weitere Argumente k&ouml;nnen eine oder mehrere Optionen folgen, die in der folgenden Tabelle dargestellt sind.</p>
+<p><!-- TabellenStart: T2028 -->
+<a name="t20MapleOptPlot" id="t20MapleOptPlot"></a></p>
+<div align="center">Tabelle Optionen des <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img1096.png" alt="" /></span>-Befehls<br />
+<a name="oppl" id="oppl"></a>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="138" height="33" align="middle" border="0" src="img1097.png" alt="" /></span></td>
+<td align="left" valign="top" width="354">Bewirkt die Darstellung einer parametrischen Eingabe in Polarkoordinaten (der erste Parameter ist der Radius, der zweite das Argument).</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="129" height="33" align="middle" border="0" src="img1098.png" alt="" /></span></td>
+<td align="left" valign="top" width="354">Legt die minimale Anzahl der generierten Punkte fest (Voreinstellung 49).</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="144" height="16" align="bottom" border="0" src="img1099.png" alt="" /></span></td>
+<td align="left" valign="top" width="354">Setzt die horizontale Aufl&ouml;sung der Darstellung in pixel (Voreinstellung <span class="MATH"><i>m</i>=200</span>).</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="137" height="33" align="middle" border="0" src="img1100.png" alt="" /></span></td>
+<td align="left" valign="top" width="354">Setzt die Anzahl der Skalenstriche auf der <span class="MATH"><i>x</i></span>-Achse</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="138" height="33" align="middle" border="0" src="img1101.png" alt="" /></span></td>
+<td align="left" valign="top" width="354">Veranla&szlig;t die Verbindung mit kubischer Spline-Interpolation (Voreinstellung).</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="118" height="33" align="middle" border="0" src="img1102.png" alt="" /></span></td>
+<td align="left" valign="top" width="354">Veranla&szlig;t lineare Interpolation.</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="128" height="33" align="middle" border="0" src="img1103.png" alt="" /></span></td>
+<td align="left" valign="top" width="354">Zeichnet nur die Punkte.</td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="92" height="16" align="bottom" border="0" src="img1104.png" alt="" /></span></td>
+<td align="left" valign="top" width="354">Setzt den Titel f&uuml;r die Graphik, <span class="MATH"><i>T</i></span> mu&szlig; ein String sein.</td>
+</tr>
+</table>
+</div>
+<p><!-- TabelleEnde: T2028 -->
+Zur Darstellung mehrerer Funktionen durch <i class="sans">Maple</i> in einer Graphik werden diese in der Regel in verschiedenen Farben oder in unterschiedlicher Linienstruktur erzeugt.</p>
+<p>Die auf der graphischen Oberfl&auml;che laufenden Versionen von <i class="sans">Maple</i> bieten die M&ouml;glichkeit, direkt an der Graphik &uuml;ber entsprechende Men&uuml;s Ver&auml;nderungen wie z.B. das Verh&auml;ltnis von horizontaler zu vertikaler Abmessung, die Rahmung des Bildes, &Auml;nderung der Linienst&auml;rke usw. vorzunehmen.</p>
+</body>
+</html>

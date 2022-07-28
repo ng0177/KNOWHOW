@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Grundlagen des Graphikaufbaus</title>
+<meta name="description" content="Grundlagen des Graphikaufbaus" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node129.html" />
+<link rel="previous" href="node127.html" />
+<link rel="up" href="node127.html" />
+<link rel="next" href="node129.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node127.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node129.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node126.html">Graphik in Computeralgebrasystemen</a> <a id="up" href="node127.html">Graphik mit Mathematica</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001951100000000000000" id="SECTION001951100000000000000"></a> <a name="4046"></a>
+Grundlagen des Graphikaufbaus</h3>
+<p><i class="sans">Mathematica</i> baut graphische Objekte aus eingebauten <span class="begriff">Graphik-Primitiven</span> auf. Das sind Objekte wie Punkte (<span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img983.png" alt="" /></span>), Linien (<span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img984.png" alt="" /></span>) und Polygone (<span class="MATH"><img width="73" height="33" align="middle" border="0" src="img985.png" alt="" /></span>) sowie Eigenschaften dieser Objekte wie Dicke und Farbe.</p>
+<p>Des weiteren verf&uuml;gt <i class="sans">Mathematica</i> &uuml;ber viele Optionen, die angeben, in welcher Umgebung und in welcher Art die graphischen Objekte dargestellt werden sollen.</p>
+<p>Mit dem Befehl <span class="MATH"><img width="130" height="37" align="middle" border="0" src="img986.png" alt="" /></span>, wobei <span class="MATH"><i>liste</i></span> eine Liste graphischer Primitiven ist, wird <i class="sans">Mathematica</i> aufgefordert, eine Graphik aus den aufgelisteten Objekten zu erstellen. Der Objektliste kann eine Liste von Optionen f&uuml;r die Art der Darstellung folgen.</p>
+<p>Mit der folgenden Eingabe</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="575" height="66" border="0" src="img987.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">80</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="694" height="66" border="0" src="img988.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">80</span>b)</td>
+</tr>
+</table>
+</div>
+<p>wird eine Graphik aus folgenden Elementen aufgebaut:</p>
+<div class="alpha">
+<ol>
+<li>
+<div>Linienzug von zwei Linien, beginnend im Punkt <span class="MATH">(0,0)</span> &uuml;ber den Punkt <span class="MATH">(5,5)</span> zum Punkt <span class="MATH">(10,3)</span>.</div>
+</li>
+<li>
+<div>Kreis mit dem Mittelpunkt im Punkt <span class="MATH">(5,5)</span> und dem Radius 4.</div>
+</li>
+<li>
+<div>Text mit dem Inhalt ''Beispiel``, geschrieben in dem Schriftfont Helvetica-Bold (der Text erscheint zum Bezugspunkt <span class="MATH">(5,6)</span> zentriert).</div>
+</li>
+</ol>
+</div>
+<p>Mit dem Aufruf <span class="MATH"><img width="64" height="37" align="middle" border="0" src="img989.png" alt="" /></span> liefert <i class="sans">Mathematica</i> das Bild der erzeugten Graphik:</p>
+<p align="left" class="BILD"><a name="BILD_120a001" class="BILD" id="BILD_120a001"><img src="../bilder/kap20/t1/120a001.gif" border="0" alt="BilD" /></a></p>
+<p class="nachBild">
+Hierbei werden gewisse Voreinsstellungen der Graphikoptionen benutzt. Im gegebenen Fall wurde die Option <span class="MATH"><img width="113" height="33" align="middle" border="0" src="img990.png" alt="" /></span> auf <span class="MATH"><img width="93" height="16" align="bottom" border="0" src="img991.png" alt="" /></span> gesetzt. Ihre Voreinstellung lautet <span class="MATH"><img width="131" height="37" align="middle" border="0" src="img992.png" alt="" /></span>. Das entspricht einem Verh&auml;ltnis zwischen der Ausdehnung in der <span class="MATH"><i>x</i></span>-Richtung zu dem der <span class="MATH"><i>y</i></span>-Richtung von <span class="MATH">1:1/1,618=1:0,618</span>. Mit dieser Einstellung w&auml;re der Kreis verzerrt als Ellipse dargestellt worden. Die Einstellung dieser Option auf <tt>Automatic</tt> bewirkt, da&szlig; die Darstellung unverzerrt erfolgt.</p>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Gau&szlig;-Newton-Verfahren</title>
+<meta name="description" content="Gau&szlig;-Newton-Verfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node88.html" />
+<link rel="up" href="node87.html" />
+<link rel="next" href="node90.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node88.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node90.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node76.html">Approximation, Ausgleichsrechnung, Harmonische Analyse</a> <a href="node81.html">Approximation im Mittel</a> <a id="up" href="node87.html">Nichtlineare Quadratmittelaufgaben</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001862420000000000000" id="SECTION001862420000000000000">Gau&szlig;-Newton-Verfahren</a></h4>
+<p>Einen anderen L&ouml;sungsweg, der bei praktischen Aufgaben in der Regel gegangen wird, vermittelt das <a href="node34.html#gauss-newton-ver">G<small>AUSS</small>-N<small>EWTON</small>-Verfahren</a>, das zur L&ouml;sung der nichtlinearen Quadratmittelaufgabe (<a href="node16.html#F1190202">19.24</a>) beschrieben worden ist. Die &Uuml;bertragung auf die jetzt vorliegende nichtlineare Approximationsaufgabe (<a href="node88.html#F1190632">19.186</a>) erfordert die folgenden Schritte:</p>
+<dl>
+<dt>1.&nbsp;Linearisierung</dt>
+<dd>der Ansatzfunktion <span class="MATH"><img width="58" height="37" align="middle" border="0" src="img580.png" alt="" /></span> nach <a href="../kap_7/node39.html#TaylorEntw">T<small>AYLOR</small></a> bez&uuml;glich der Parameter <span class="MATH"><img width="23" height="33" align="middle" border="0" src="img376.png" alt="" /></span>. Dazu m&uuml;ssen N&auml;herungswerte <span class="MATH"><img width="168" height="47" align="middle" border="0" src="img581.png" alt="" /></span> bekannt sein:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="463" height="102" border="0" src="img582.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">187</span>)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>2.&nbsp;L&ouml;sung</dt>
+<dd>der linearen Ausgleichsaufgabe
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="208" height="105" border="0" src="img583.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">188</span>)</td>
+</tr>
+</table>
+</div>
+<p>mit Hilfe des Normalgleichungssystems</p>
+<div class="mathdisplay"><a name="F1190635" id="F1190635"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190635" id="F1190635"></a><img width="155" height="72" border="0" src="img584.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">189</span>)</td>
+</tr>
+</table>
+</div>
+<p>oder nach dem <a href="../kap_4/node118.html#v850">H<small>OUSEHOLDER</small>-Verfahren</a>. In (<a href="#F1190635">19.189</a>) sind die Komponenten der Vektoren <span class="MATH"><img width="33" height="35" align="middle" border="0" src="img585.png" alt="" /></span> und <span class="MATH"><img width="34" height="35" align="middle" border="0" src="img586.png" alt="" /></span> durch</p>
+<div class="myclass"><a name="F1190636a" id="F1190636a"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="35" height="35" align="middle" border="0" src="img587.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="338" height="47" align="middle" border="0" src="img588.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">190</span>a)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="38" height="35" align="middle" border="0" src="img589.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="280" height="44" align="middle" border="0" src="img590.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">190</span>b)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+<p>gegeben. Die Matrix <span class="MATH"><img width="19" height="21" align="bottom" border="0" src="img591.png" alt="" /></span> wird analog zu <span class="MATH"><i>G</i></span> in (<a href="node85.html#F1190625b">19.179b</a>) gebildet, indem man <span class="MATH"><img width="52" height="37" align="middle" border="0" src="img592.png" alt="" /></span> durch<br />
+<span class="MATH"><img width="108" height="61" align="middle" border="0" src="img593.png" alt="" /></span> <span class="MATH"><img width="269" height="37" align="middle" border="0" src="img594.png" alt="" /></span> ersetzt.</p>
+</dd>
+<dt>3.&nbsp;Berechnung</dt>
+<dd>einer neuen N&auml;herung durch
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="505" height="71" border="0" src="img595.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">191</span>)</td>
+</tr>
+</table>
+</div>
+<p>wobei <span class="MATH"><img width="50" height="33" align="middle" border="0" src="img596.png" alt="" /></span> ein Schrittweitenparameter ist.</p>
+</dd>
+</dl>
+<p>Durch Wiederholung der Schritte 2 und 3 mit <span class="MATH"><i>a</i><sub><i>i</i></sub><sup>(1)</sup></span> an Stelle von <span class="MATH"><i>a</i><sub><i>i</i></sub><sup>(0)</sup></span> usw. erh&auml;lt man f&uuml;r die gesuchten Parameter Folgen von N&auml;herungswerten, deren Konvergenz sehr stark von der G&uuml;te der Startn&auml;herung abh&auml;ngt. Mit Hilfe des Schrittweitenparameters <span class="MATH"><img width="15" height="33" align="middle" border="0" src="img206.png" alt="" /></span> l&auml;&szlig;t sich aber zun&auml;chst eine Verkleinerung der Fehlerquadratsumme erzielen.</p>
+</body>
+</html>

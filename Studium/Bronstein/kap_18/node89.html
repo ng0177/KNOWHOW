@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Aufgabenstellung und L&ouml;sungsprinzip</title>
+<meta name="description" content="Aufgabenstellung und L&ouml;sungsprinzip" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node90.html" />
+<link rel="previous" href="node88.html" />
+<link rel="up" href="node88.html" />
+<link rel="next" href="node90.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node88.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node90.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a href="node43.html">Nichtlineare Optimierung</a> <a href="node84.html">Gradientenverfahren f&#252;r Probleme mit Ungleichungsrestriktionen</a> <a id="up" href="node88.html">Verfahren der projizierten Gradienten</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001727210000000000000" id="SECTION001727210000000000000">Aufgabenstellung und L&ouml;sungsprinzip</a></h4>
+<p>Gegeben ist das konvexe Optimierungsproblem</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="235" height="68" border="0" src="img580.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">97</span>)</td>
+</tr>
+</table>
+</div>
+<p>mit <span class="MATH"><img width="104" height="34" align="middle" border="0" src="img581.png" alt="" /></span>. Eine zul&auml;ssige Abstiegsrichtung <span class="MATH"><img width="25" height="43" align="middle" border="0" src="img462.png" alt="" /></span> im Punkt <span class="MATH"><img width="68" height="40" align="middle" border="0" src="img582.png" alt="" /></span> wird auf folgende Weise ermittelt: Ist <span class="MATH"><img width="81" height="40" align="middle" border="0" src="img555.png" alt="" /></span> eine zul&auml;ssige Richtung, dann wird <span class="MATH"><img width="126" height="43" align="middle" border="0" src="img583.png" alt="" /></span> gesetzt. Anderenfalls liegt <span class="MATH"><img width="24" height="40" align="middle" border="0" src="img459.png" alt="" /></span> auf dem Rand von <span class="MATH"><i>M</i></span> und <span class="MATH"><img width="81" height="40" align="middle" border="0" src="img555.png" alt="" /></span> zeigt aus <span class="MATH"><i>M</i></span> hinaus. Mittels einer linearen Abbildung <span class="MATH"><img width="27" height="35" align="middle" border="0" src="img584.png" alt="" /></span> wird der Vektor <span class="MATH"><img width="81" height="40" align="middle" border="0" src="img555.png" alt="" /></span> auf eine lineare Teilmannigfaltigkeit des Randes von <span class="MATH"><i>M</i></span> projiziert, die von einer Teilmenge der in <span class="MATH"><img width="24" height="40" align="middle" border="0" src="img459.png" alt="" /></span> aktiven Restriktionen gebildet wird. Die Projektion auf eine Kante zeigt die folgende linke Abbildung, die Projektion auf eine Seitenfl&auml;che die rechte Abbildung.</p>
+<p class="BILD" align="left"><a name="BILD_118a010x" class="BILD" id="BILD_118a010x"><img src="../bilder/kap18/t1/118a010x.gif" alt="BilD" border="0" /></a></p>
+<p class="nachBild">
+Unter der Voraussetzung der Nichtentartungsbedingung, d.h. f&uuml;r alle <span class="MATH"><img width="64" height="36" align="middle" border="0" src="img585.png" alt="" /></span> sind die Vektoren <span class="MATH"><img width="110" height="37" align="middle" border="0" src="img586.png" alt="" /></span>, linear unabh&auml;ngig, ist eine solche Projektion gegeben durch</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="465" height="81" border="0" src="img587.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">98</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei besteht <span class="MATH"><img width="29" height="35" align="middle" border="0" src="img588.png" alt="" /></span> aus allen den <span class="MATH"><img width="34" height="40" align="middle" border="0" src="img589.png" alt="" /></span>, deren entsprechende Nebenbedingungen die lineare Teilmannigfaltigkeit bilden, in die <span class="MATH"><img width="81" height="37" align="middle" border="0" src="img590.png" alt="" /></span> projiziert werden soll.</p>
+</body>
+</html>

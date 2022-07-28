@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Gew&ouml;hnliches Iterationsverfahren</title>
+<meta name="description" content="Gew&ouml;hnliches Iterationsverfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node33.html" />
+<link rel="previous" href="node31.html" />
+<link rel="up" href="node31.html" />
+<link rel="next" href="node33.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node31.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node33.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node16.html">Numerische L&#246;sung von Gleichungssystemen</a> <a id="up" href="node31.html">Nichtlineare Gleichungssysteme</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001822100000000000000" id="SECTION001822100000000000000"></a> <a name="1759"></a> <a name="1760"></a> <a name="1761"></a>
+Gew&ouml;hnliches Iterationsverfahren</h3>
+<p>Das gew&ouml;hnliche Iterationsverfahren geht davon aus, da&szlig; sich die Gleichungen (<a href="node31.html#F1190233">19.55</a>) auf eine Fixpunktform</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="318" height="66" border="0" src="img189.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">56</span>)</td>
+</tr>
+</table>
+</div>
+<p>bringen lassen. Dann erh&auml;lt man, von den gesch&auml;tzten N&auml;herungswerten <span class="MATH"><img width="166" height="47" align="middle" border="0" src="img190.png" alt="" /></span> ausgehend, verbesserte Werte durch</p>
+<dl>
+<dt>1.&nbsp;Iteration in Gesamtschritten:</dt>
+<dd><br />
+<div class="myclass">
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="52" height="47" align="middle" border="0" src="img158.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="186" height="53" align="middle" border="0" src="img191.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="327" height="37" align="middle" border="0" src="img192.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">57</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+</dd>
+<dt>2.&nbsp;Iteration in Einzelschritten:</dt>
+<dd><br />
+<div class="myclass">
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="52" height="47" align="middle" border="0" src="img158.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="334" height="53" align="middle" border="0" src="img193.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="262" height="37" align="middle" border="0" src="img194.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">58</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+</dd>
+</dl>
+<p>F&uuml;r die G&uuml;te der Konvergenz dieser Verfahren ist ausschlaggebend, da&szlig; die Funktionen <span class="MATH"><i>f</i><sub><i>i</i></sub></span> in der Umgebung einer L&ouml;sung m&ouml;glichst schwach von den Unbekannten abh&auml;ngen, d.h., falls die <span class="MATH"><i>f</i><sub><i>i</i></sub></span> differenzierbar sind, m&uuml;ssen die Betr&auml;ge der partiellen Ableitungen m&ouml;glichst klein sein. Als <span class="begriff">Konvergenzbedingung</span> erh&auml;lt man</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="355" height="104" border="0" src="img195.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">59</span>)</td>
+</tr>
+</table>
+</div>
+<p>Mit dieser Gr&ouml;&szlig;e <span class="MATH"><i>K</i></span> gilt die <span class="begriff">Fehlerabsch&auml;tzung</span></p>
+<div class="mathdisplay"><a name="F1190238" id="F1190238"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190238" id="F1190238"></a><img width="379" height="87" border="0" src="img196.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">60</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei sind <span class="MATH"><i>x</i><sub><i>i</i></sub></span> die Komponenten der gesuchten L&ouml;sung, <span class="MATH"><img width="35" height="47" align="middle" border="0" src="img197.png" alt="" /></span> und <span class="MATH"><img width="52" height="47" align="middle" border="0" src="img198.png" alt="" /></span> die zugeh&ouml;rigen <span class="MATH"><img width="16" height="33" align="middle" border="0" src="img157.png" alt="" /></span>-ten und <span class="MATH"><img width="63" height="37" align="middle" border="0" src="img199.png" alt="" /></span>-ten N&auml;herungen.</p>
+</body>
+</html>

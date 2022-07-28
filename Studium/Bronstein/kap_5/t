@@ -1,0 +1,192 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>&Uuml;bersicht &uuml;ber die Lie-Gruppen und Lie-Algebren</title>
+<meta name="description" content="&Uuml;bersicht &uuml;ber die Lie-Gruppen und Lie-Algebren" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node89.html" />
+<link rel="up" href="node81.html" />
+<link rel="next" href="node91.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node89.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node91.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node44.html">Klassische algebraische Strukturen</a> <a id="up" href="node81.html">Lie-Gruppen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00435700000000000000" id="SECTION00435700000000000000">&Uuml;bersicht &uuml;ber die Lie-Gruppen und Lie-Algebren</a></h3>
+<p><a name="8681"></a> <a name="KlassLieGrupAlg" id="KlassLieGrupAlg"></a></p>
+<div align="center">Tabelle L<small>IE</small>-Gruppen und L<small>IE</small>-Algebren<br />
+<br /></div>
+<p>
+Bezeichnungen: <span class="MATH"><i>G</i></span> L<small>IE</small>-Gruppe, <span class="MATH"><i>d</i></span> Dimension der Gruppe, <span class="MATH"><img width="47" height="37" align="middle" border="0" src="img501.png" alt="" /></span> L<small>IE</small>-Algebra, <span class="MATH"><img width="45" height="35" align="middle" border="0" src="img502.png" alt="" /></span> quadratische Matrizen, <span class="MATH"><img width="28" height="35" align="middle" border="0" src="img503.png" alt="" /></span> <span class="MATH"><i>n</i></span>-dimensionale Einheitsmatrix, <span class="MATH"><img width="31" height="19" align="bottom" border="0" src="img504.png" alt="" /></span> transponierte Matrix, <span class="MATH"><img width="28" height="16" align="bottom" border="0" src="img505.png" alt="" /></span> konjugiert komplexe Matrix, <span class="MATH"><img width="106" height="40" align="middle" border="0" src="img506.png" alt="" /></span> adjungierte Matrix, <span class="MATH"><i>K</i></span> K&ouml;rper der reellen <span class="MATH"><img width="35" height="37" align="middle" border="0" src="img507.png" alt="" /></span> oder komplexen <span class="MATH"><img width="33" height="37" align="middle" border="0" src="img508.png" alt="" /></span> Zahlen.
+</p>
+<div align="center"><br />
+<br />
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left" valign="top" width="5">
+<table cellpadding="3">
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> L<small>IE</small>-Gruppe</td>
+</tr>
+<tr valign="baseline">
+<td align="center"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> L<small>IE</small>-Algebra</td>
+</tr>
+</table>
+</td>
+<td align="left" valign="top" width="6">Eigenschaften</td>
+<td align="left" valign="top" width="4">Dimension</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> Allgemeine lineare Gruppe</td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> alle regul&auml;ren <span class="MATH"><i>n</i> x <i>n</i></span>-Matrizen <b>A</b></td>
+<td align="left" valign="top" width="4"><span class="MATH"><img width="146" height="39" align="middle" border="0" src="img510.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><i>G</i> =<i>GL</i>(<i>n</i>,<i>K</i>)</span></td>
+<td align="left" valign="top" width="6">mit Werten in <span class="MATH"><img width="109" height="35" align="middle" border="0" src="img511.png" alt="" /></span></td>
+<td align="left" valign="top" width="4"><span class="MATH"><img width="153" height="39" align="middle" border="0" src="img512.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="139" height="37" align="middle" border="0" src="img513.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> alle <span class="MATH"><i>n</i> x <i>n</i></span>-Matrizen <b>A</b> mit Werten in <span class="MATH"><i>K</i></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> Spezielle lineare Gruppe</td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> alle <span class="MATH"><img width="255" height="37" align="middle" border="0" src="img514.png" alt="" /></span></td>
+<td align="left" valign="top" width="4"><span class="MATH"><img width="179" height="39" align="middle" border="0" src="img515.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><i>G</i>=<i>SL</i>(<i>n</i>,<i>K</i>)</span></td>
+<td align="left" valign="top" width="6">&nbsp;</td>
+<td align="left" valign="top" width="4"><span class="MATH"><img width="200" height="39" align="middle" border="0" src="img516.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="138" height="37" align="middle" border="0" src="img517.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> alle <span class="MATH"><img width="233" height="37" align="middle" border="0" src="img518.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> Unit&auml;re Gruppe</td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> alle <span class="MATH"><img width="119" height="37" align="middle" border="0" src="img519.png" alt="" /></span></td>
+<td align="left" valign="top" width="4"><span class="MATH"><i>d</i>=<i>n</i><sup>2</sup></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><i>G</i>=<i>U</i>(<i>n</i>)</span></td>
+<td align="left" valign="top" width="6">mit <span class="MATH"><img width="165" height="40" align="middle" border="0" src="img520.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="109" height="37" align="middle" border="0" src="img521.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> alle <span class="MATH"><img width="222" height="40" align="middle" border="0" src="img522.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5">&nbsp;</td>
+<td align="left" valign="top" width="6">(alle schiefhermiteschen <span class="MATH"><i>n</i> x <i>n</i></span>-Matrizen)</td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> Spezielle unit&auml;re Gruppe</td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="245" height="37" align="middle" border="0" src="img523.png" alt="" /></span></td>
+<td align="left" valign="top" width="4"><span class="MATH"><i>d</i>=<i>n</i><sup>2</sup>-1</span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><i>G</i>=<i>SU</i>(<i>n</i>)</span></td>
+<td align="left" valign="top" width="6">&nbsp;</td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="117" height="37" align="middle" border="0" src="img524.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="233" height="37" align="middle" border="0" src="img525.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> Orthogonale Gruppe</td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="184" height="37" align="middle" border="0" src="img526.png" alt="" /></span></td>
+<td align="left" valign="top" width="4"><span class="MATH"><img width="113" height="63" align="middle" border="0" src="img527.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><i>G</i>=<i>O</i>(<i>n</i>)</span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="164" height="40" align="middle" border="0" src="img528.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="107" height="37" align="middle" border="0" src="img529.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="256" height="40" align="middle" border="0" src="img530.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5">&nbsp;</td>
+<td align="left" valign="top" width="6">(alle schiefsymmetrischen <span class="MATH"><i>n</i> x <i>n</i></span>-Matrizen)</td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> Spezielle orthogonale Gruppe</td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="245" height="37" align="middle" border="0" src="img531.png" alt="" /></span></td>
+<td align="left" valign="top" width="4"><span class="MATH"><i>d</i>=<i>n</i><sup>2</sup>-1</span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><i>G</i>=<i>SO</i>(<i>n</i>)</span></td>
+<td align="left" valign="top" width="6">&nbsp;</td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="116" height="37" align="middle" border="0" src="img532.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><i>so</i>(<i>n</i>)= <i>o</i>(<i>n</i>)</span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> Komplexe orthogonale Gruppe</td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="182" height="37" align="middle" border="0" src="img533.png" alt="" /></span></td>
+<td align="left" valign="top" width="4"><span class="MATH"><i>d</i>=<i>n</i>(<i>n</i>-1)</span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="107" height="37" align="middle" border="0" src="img534.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="167" height="40" align="middle" border="0" src="img535.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="129" height="37" align="middle" border="0" src="img536.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="253" height="40" align="middle" border="0" src="img537.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> Symplektische Gruppe</td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="194" height="37" align="middle" border="0" src="img538.png" alt="" /></span></td>
+<td align="left" valign="top" width="4"><span class="MATH"><i>d</i>=2<i>n</i>(2<i>n</i>+1)</span></td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="123" height="37" align="middle" border="0" src="img539.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="320" height="40" align="middle" border="0" src="img540.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td align="left" valign="top" width="5"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="147" height="37" align="middle" border="0" src="img541.png" alt="" /></span></td>
+<td align="left" valign="top" width="6"><span class="MATH"><img width="14" height="18" align="bottom" border="0" src="img509.png" alt="" /></span> <span class="MATH"><img width="285" height="40" align="middle" border="0" src="img542.png" alt="" /></span></td>
+<td align="left" valign="top" width="4">&nbsp;</td>
+</tr>
+</table>
+</div>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Gradientenverfahren f&uuml;r Probleme mit Ungleichungsrestriktionen</title>
+<meta name="description" content="Gradientenverfahren f&uuml;r probleme mit Ungleichungsrestriktionen" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node85.html" />
+<link rel="previous" href="node83.html" />
+<link rel="up" href="node43.html" />
+<link rel="next" href="node85.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node83.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node85.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a id="up" href="node43.html">Nichtlineare Optimierung</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001727000000000000000" id="SECTION001727000000000000000"></a> <a name="GradientVerf" id="GradientVerf"></a><a name="4113"></a>
+Gradientenverfahren f&uuml;r Probleme mit Ungleichungsrestriktionen</h2>
+<p>Wenn das Problem</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="365" height="66" border="0" src="img525.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">89</span>a)</td>
+</tr>
+</table>
+</div>
+<p>mit einem Iterationsverfahren der Art</p>
+<div class="mathdisplay"><a name="F1180257b" id="F1180257b"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1180257b" id="F1180257b"></a><img width="269" height="68" border="0" src="img458.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">89</span>b)</td>
+</tr>
+</table>
+</div>
+<p>gel&ouml;st werden soll, dann sind auf Grund des eingeschr&auml;nkten zul&auml;ssigen Bereiches zwei Voraussetzungen zu beachten:</p>
+<ol>
+<li>
+<div>Die Richtung <span class="MATH"><img width="25" height="43" align="middle" border="0" src="img462.png" alt="" /></span> mu&szlig; eine in <span class="MATH"><img width="24" height="40" align="middle" border="0" src="img459.png" alt="" /></span> zul&auml;ssige Abstiegsrichtung sein.</div>
+</li>
+<li>
+<div>Die Schrittweite <span class="MATH"><img width="25" height="33" align="middle" border="0" src="img465.png" alt="" /></span> ist so zu bestimmen, da&szlig; auch <span class="MATH"><img width="41" height="40" align="middle" border="0" src="img453.png" alt="" /></span> in <span class="MATH"><i>M</i></span> liegt.</div>
+</li>
+</ol>
+Die verschiedenen Verfahren gem&auml;&szlig; Vorschrift (<a href="#F1180257b">18.89b</a>) unterscheiden sich in der Konstruktion der Richtung <span class="MATH"><img width="28" height="43" align="middle" border="0" src="img526.png" alt="" /></span>. Um die Zul&auml;ssigkeit der Folge <span class="MATH"><img width="89" height="40" align="middle" border="0" src="img527.png" alt="" /></span> zu sichern, werden <span class="MATH"><img width="25" height="37" align="middle" border="0" src="img528.png" alt="" /></span> bzw. <span class="MATH"><img width="25" height="37" align="middle" border="0" src="img529.png" alt="" /></span> folgenderma&szlig;en bestimmt:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="652" height="68" border="0" src="img530.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">90</span>a)</td>
+</tr>
+</table>
+</div>
+<p>Daraus resultiert</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="157" height="66" border="0" src="img531.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">90</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Wenn in einem Schritt <span class="MATH"><i>k</i></span> keine zul&auml;ssige Abstiegsrichtung <span class="MATH"><img width="25" height="43" align="middle" border="0" src="img462.png" alt="" /></span> existiert, dann ist <span class="MATH"><img width="24" height="40" align="middle" border="0" src="img459.png" alt="" /></span> ein station&auml;rer Punkt. <!--Table of Child-Links-->
+<a name="CHILD_LINKS" id="CHILD_LINKS"> </a></p>
+<ul class="ChildLinks">
+<li><a name="tex2html1377" href="node85.html" id="tex2html1377">Verfahren der zul&auml;ssigen Richtungen</a>
+<ul>
+<li><a name="tex2html1378" href="node86.html" id="tex2html1378">Richtungssuchprogramm</a></li>
+<li><a name="tex2html1379" href="node87.html" id="tex2html1379">Spezialfall linearer Restriktionen</a></li>
+</ul>
+<br /></li>
+<li><a name="tex2html1380" href="node88.html" id="tex2html1380">Verfahren der projizierten Gradienten</a>
+<ul>
+<li><a name="tex2html1381" href="node89.html" id="tex2html1381">Aufgabenstellung und L&ouml;sungsprinzip</a></li>
+<li><a name="tex2html1382" href="node90.html" id="tex2html1382">Algorithmus</a></li>
+<li><a name="tex2html1383" href="node91.html" id="tex2html1383">Bemerkungen zum Algorithmus</a></li>
+</ul>
+</li>
+</ul>
+<!--End of Table of Child-Links-->
+</body>
+</html>

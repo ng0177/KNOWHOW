@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Numerische L&ouml;sung von Differentialgleichungen</title>
+<meta name="description" content="Numerische L&ouml;sung von Differentialgleichungen" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node152.html" />
+<link rel="up" href="node149.html" />
+<link rel="next" href="../kap_20/kap_20.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node152.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="../kap_20/kap_20.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node122.html">Nutzung von Computern</a> <a href="node142.html">Anwendung von Computeralgebrasystemen</a> <a id="up" href="node149.html">Maple</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001884240000000000000" id="SECTION001884240000000000000"></a> <a name="7034"></a>
+Numerische L&ouml;sung von Differentialgleichungen</h4>
+<p>Im Kapitel Computeralgebrasysteme, <a href="../kap_20/node120.html#r100">L&ouml;sung von Differentialgleichungen mit <i class="sans">Maple</i></a> wird die L&ouml;sung von gew&ouml;hnlichen Differentialgleichungen mit der Operation <span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img1009.png" alt="" /></span> behandelt. In den meisten F&auml;llen ist es jedoch nicht m&ouml;glich, die L&ouml;sung in geschlossener Form anzugeben. In diesen F&auml;llen kann man versuchen, die Gleichung numerisch zu l&ouml;sen, wobei entsprechende Anfangsbedingungen gegeben sein m&uuml;ssen.<br />
+Daf&uuml;r wird der Befehl <span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img1009.png" alt="" /></span> in der Form</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="220" height="66" border="0" src="img1010.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">292</span>)</td>
+</tr>
+</table>
+</div>
+<p>mit der Option <span class="MATH"><img width="73" height="16" align="bottom" border="0" src="img1011.png" alt="" /></span> als drittes Argument verwendet. Hier enth&auml;lt das Argument <span class="MATH"><i>dgln</i></span> neben der eigentlichen Differentialgleichung auch die Anfangsbedingungen. Das Resultat dieser Operation ist eine Prozedur, die, wenn man sie z.B. mit <span class="MATH"><i>f</i></span> bezeichnet, durch den Aufruf <span class="MATH"><i>f</i>(<i>t</i>)</span> den Wert der L&ouml;sung f&uuml;r den Wert <span class="MATH"><i>t</i></span> der unabh&auml;ngigen Variablen berechnet.<br />
+<i class="sans">Maple</i> benutzt f&uuml;r diesen Proze&szlig; das <a href="node51.html#RungeKalkutta1">R<small>UNGE-</small>K<small>UTTA</small>-Verfahren</a>. Die voreingestellte Genauigkeit f&uuml;r den relativen und den absoluten Fehler betr&auml;gt <span class="MATH"><img width="90" height="19" align="bottom" border="0" src="img1012.png" alt="" /></span>. Mit den globalen Symbolen <span class="MATH"><img width="74" height="33" align="middle" border="0" src="img1013.png" alt="" /></span> und <span class="MATH"><img width="74" height="33" align="middle" border="0" src="img1014.png" alt="" /></span> kann der Nutzer diese Einstellungen &auml;ndern.<br />
+Treten bei der Berechnung Probleme auf, dann zeigt <i class="sans">Maple</i> dies durch verschiedenartige Meldungen an.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Behandlung des <a href="node52.html#bsp1190401">Beispiels zum R<small>UNGE-</small>K<small>UTTA</small>-Verfahren</a> mit <i class="sans">Maple</i>. Man erh&auml;lt</p>
+<div align="center" class="mathdisplay"><img width="672" height="66" border="0" src="img1015.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="484" height="66" border="0" src="img1016.png" alt="" /></div>
+<p><br clear="all" /></p>
+Mit<br />
+<div align="center" class="mathdisplay"><img width="505" height="66" border="0" src="img1017.png" alt="" /></div>
+<p><br clear="all" /></p>
+kann z.B. der Wert der L&ouml;sung im Punkt <span class="MATH"><i>x</i>=0.5</span> bestimmt werden.</td>
+</tr>
+</table>
+</body>
+</html>

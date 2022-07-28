@@ -1,0 +1,131 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Wavelet-Transformation</title>
+<meta name="description" content="Wavelet-Transformation" />
+<meta name="keywords" content="kap_15" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node103.html" />
+<link rel="previous" href="node101.html" />
+<link rel="up" href="node99.html" />
+<link rel="next" href="node103.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node101.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node103.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_15.html">Integraltransformationen</a> <a id="up" href="node99.html">Wavelet-Transformation</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001453000000000000000" id="SECTION001453000000000000000"></a> <a name="4000"></a>
+Wavelet-Transformation</h2>
+<p>Zu einem Wavelet <span class="MATH"><img width="39" height="37" align="middle" border="0" src="img555.png" alt="" /></span> kann man mit Hilfe eines Parameters <span class="MATH"><i>a</i></span> eine ganze Schar von Funktionen bilden:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="275" height="96" border="0" src="img556.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">15</span>.<span class="arabic">148</span>)</td>
+</tr>
+</table>
+</div>
+<p>Im Falle <span class="MATH">| <i>a</i> | &gt;0</span> wird die Ausgangsfunktion <span class="MATH"><img width="39" height="37" align="middle" border="0" src="img555.png" alt="" /></span> gestaucht. Im Falle <span class="MATH"><i>a</i>&lt;0</span> wird zus&auml;tzlich eine Spiegelung vorgenommen. Der Faktor <span class="MATH"><img width="63" height="45" align="middle" border="0" src="img557.png" alt="" /></span> ist ein Skalierungsfaktor.</p>
+<p>Mit Hilfe eines zweiten Parameters <span class="MATH"><i>b</i></span> k&ouml;nnen die Funktionen <span class="MATH"><img width="46" height="37" align="middle" border="0" src="img558.png" alt="" /></span> noch verschoben werden. Man erh&auml;lt dann die zweiparametrige Kurvenschar</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="378" height="96" border="0" src="img559.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">15</span>.<span class="arabic">149</span>)</td>
+</tr>
+</table>
+</div>
+<p>Der reelle Verschiebunbgsparameter <span class="MATH"><i>b</i></span> charakterisiert den Zeitpunkt (bzw. den Ort), w&auml;hrend der Parameter <span class="MATH"><i>a</i></span> die Ausdehnung der Funktion <span class="MATH"><img width="56" height="37" align="middle" border="0" src="img560.png" alt="" /></span> angibt. Die Funktion <span class="MATH"><img width="56" height="37" align="middle" border="0" src="img560.png" alt="" /></span> wird im Zusammenhang mit der <span class="begriff">Wavelet-Transformation</span> als <span class="begriff">Basisfunktion</span> bezeichnet.</p>
+<p>Die Wavelet-Transformation einer Funktion <span class="MATH"><i>f</i>(<i>t</i>)</span> ist wie folgt definiert:</p>
+<div class="mathdisplay"><a name="F1150509a" id="F1150509a"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1150509a" id="F1150509a"></a><img width="490" height="115" border="0" src="img561.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">15</span>.<span class="arabic">150</span>a)</td>
+</tr>
+</table>
+</div>
+<p>F&uuml;r die R&uuml;cktransformation gilt:</p>
+<div class="mathdisplay"><a name="F1150509b" id="F1150509b"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1150509b" id="F1150509b"></a><img width="301" height="115" border="0" src="img562.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">15</span>.<span class="arabic">150</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Dabei ist <span class="MATH"><i>c</i></span> eine Konstante, die vom speziellen Wavelet <span class="MATH"><img width="17" height="35" align="middle" border="0" src="img544.png" alt="" /></span> abh&auml;ngt.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Unter Verwendung des H<small>AAR</small>-Wavelets (<a href="node101.html#F1150502">15.143</a>) erh&auml;lt man</p>
+<div align="center" class="mathdisplay"><img width="391" height="116" border="0" src="img563.png" alt="" /></div>
+<p><br clear="all" /></p>
+und damit<br />
+<div class="myclass"><a name="F1150516" id="F1150516"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="80" height="37" align="middle" border="0" src="img564.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="321" height="76" align="middle" border="0" src="img565.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="363" height="76" align="middle" border="0" src="img566.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">15</span>.<span class="arabic">151</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+Der Wert <span class="MATH"><img width="80" height="37" align="middle" border="0" src="img567.png" alt="" /></span> gem&auml;&szlig; (<a href="#F1150516">15.151</a>) stellt eine Differenz von Mittelwerten der Funktion <span class="MATH"><i>f</i>(<i>t</i>)</span> &uuml;ber zwei benachbarten Intervallen der L&auml;nge <span class="MATH"><img width="29" height="63" align="middle" border="0" src="img568.png" alt="" /></span> um den Punkt <span class="MATH"><i>b</i></span> dar.</td>
+</tr>
+</table>
+<p><!-- BeispielEnde: 1150502 -->
+<b>Bemerkungen:</b> <a name="4090"></a> <a name="4091"></a> <a name="4831"></a> <a name="4093"></a></p>
+<ol>
+<li>
+<div>In den Anwendungen spielt die <span class="begriff">dyadische Wavelet-Transformation</span> eine gro&szlig;e Rolle. Als Basisfunktionen verwendet sie die Funktionen
+<div class="mathdisplay"><a name="F1150510" id="F1150510"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1150510" id="F1150510"></a><img width="221" height="93" border="0" src="img569.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">15</span>.<span class="arabic">152</span>)</td>
+</tr>
+</table>
+</div>
+<p>d.h. die verschiedenen Basisfunktionen ergeben sich aus einem Wavelet <span class="MATH"><img width="39" height="37" align="middle" border="0" src="img555.png" alt="" /></span> durch Verdoppeln oder Halbieren der Breite und durch Verschieben um ganzzahlige Vielfache der Breite.</p>
+</div>
+</li>
+<li>
+<div>Als <span class="begriff">orthogonales Wavelet</span> bezeichnet man ein Wavelet <span class="MATH"><img width="42" height="37" align="middle" border="0" src="img570.png" alt="" /></span>, bei dem die gem&auml;&szlig; (<a href="#F1150510">15.152</a>) erzeugten Basisfunktionen eine orthogonale Basis bilden.</div>
+</li>
+<li>
+<div>Besonders gute numerische Eigenschaften haben D<small>AUBECHIES</small>-Wavelets. Das sind orthogonale Wavelets mit einem kompakten Tr&auml;ger, d.h. sie sind nur auf einem Teil der Zeitachse von Null verschieden. F&uuml;r sie gibt es aber keine geschlossene Darstellung (s.&nbsp;Lit.&nbsp;<a href="../kap_22/node15.html#x1519">15.10</a>).</div>
+</li>
+</ol>
+</body>
+</html>

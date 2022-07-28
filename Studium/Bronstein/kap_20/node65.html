@@ -1,0 +1,159 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Folgen und Listen</title>
+<meta name="description" content="Folgen und Listen" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node66.html" />
+<link rel="previous" href="node64.html" />
+<link rel="up" href="node53.html" />
+<link rel="next" href="node66.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node64.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node66.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a id="up" href="node53.html">Maple</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001935000000000000000" id="SECTION001935000000000000000"></a><a name="FolgList" id="FolgList"></a><a name="1875"></a> <a name="1876"></a>
+Folgen und Listen</h2>
+<p><i class="sans">Maple</i> versteht unter einer (Ausdruck-)<span class="begriff">Folge</span> die Aneinanderreihung von Ausdr&uuml;cken, die durch Kommas getrennt sind. Die Reihenfolge der Elemente ist signifikant. Folgen mit gleichen Elementen in unterschiedlicher Reihenfolge sind verschiedene Objekte. Die Folge ist ein Basistyp von <i class="sans">Maple</i>: <span class="MATH"><img width="73" height="33" align="middle" border="0" src="img525.png" alt="" /></span>.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text"></td>
+</tr>
+</table>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="259" height="65" border="0" src="img526.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">42</span>a)</td>
+</tr>
+</table>
+</div>
+<p>definiert eine Folge, denn</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="312" height="66" border="0" src="img527.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">42</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Mit dem Befehl</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="488" height="66" border="0" src="img528.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">43</span>)</td>
+</tr>
+</table>
+</div>
+<p>erzeugt.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Mit <span class="MATH"><img width="162" height="39" align="middle" border="0" src="img529.png" alt="" /></span> erh&auml;lt man <span class="MATH">1,4,9,16,25</span>.</p>
+</td>
+</tr>
+</table>
+<p>Die Bereichsfunktion <span class="MATH"><img width="54" height="33" align="middle" border="0" src="img530.png" alt="" /></span> definiert Laufbereiche von ganzzahligen Variablen, die in der Form <span class="MATH"><i>i</i>=<i>n</i>..<i>m</i></span> dargestellt werden, und bewirkt, da&szlig; die Indexvariable <span class="MATH"><i>i</i></span> nacheinander die Werte <span class="MATH"><img width="178" height="33" align="middle" border="0" src="img531.png" alt="" /></span> annimmt. Der Typ dieser Struktur lautet <span class="MATH"><img width="43" height="17" align="bottom" border="0" src="img532.png" alt="" /></span>.</p>
+<p>Eine &auml;quivalente Form der Erzeugung von Folgen bietet die vereinfachte Schreibweise</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="139" height="66" border="0" src="img533.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">44</span>)</td>
+</tr>
+</table>
+</div>
+<p>die ebenfalls <span class="MATH"><img width="203" height="37" align="middle" border="0" src="img534.png" alt="" /></span> erzeugt. Entsprechend liefert <span class="MATH"><img width="57" height="37" align="middle" border="0" src="img535.png" alt="" /></span> die Folge <span class="MATH"><img width="126" height="33" align="middle" border="0" src="img536.png" alt="" /></span> und <span class="MATH"><img width="36" height="37" align="middle" border="0" src="img537.png" alt="" /></span> die Folge mit <span class="MATH"><i>i</i></span> Gliedern <span class="MATH"><i>x</i></span>.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Indizierte Variable (Namen) erzeugt man durch</p>
+<div align="center" class="mathdisplay"><img width="279" height="66" border="0" src="img538.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p>Folgen k&ouml;nnen durch Anh&auml;ngen weiterer Glieder erg&auml;nzt werden:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="107" height="64" border="0" src="img539.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">45</span>)</td>
+</tr>
+</table>
+</div>
+<p>Klammert man eine Folge <span class="MATH"><i>f</i></span> in eckige Klammern, so entsteht eine <span class="begriff">Liste</span>, die vom Typ <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img475.png" alt="" /></span> ist.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="379" height="66" border="0" src="img540.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p>Mit dem schon bekannten Operator <span class="MATH"><img width="24" height="33" align="middle" border="0" src="img519.png" alt="" /></span> erh&auml;lt man &uuml;ber <span class="MATH"><img width="81" height="37" align="middle" border="0" src="img541.png" alt="" /></span> die der Liste zugrundeliegende Folge zur&uuml;ck.</p>
+<p>Um Listen zu erweitern, sind sie zun&auml;chst mit <span class="MATH"><img width="75" height="37" align="middle" border="0" src="img542.png" alt="" /></span> in Folgen umzuwandeln, diese dann entsprechend zu erweitern und mit eckigen Klammern erneut in Listen umzuwandeln.</p>
+<p>Listen k&ouml;nnen als Elemente wiederum Listen enthalten, ihr Typ ist <span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img476.png" alt="" /></span>. Strukturen dieser Art spielen bei der Konstruktion von Matrizen eine Rolle.</p>
+<p>Der Zugriff auf Elemente einer Liste erfolgt mit dem Befehl <span class="MATH"><img width="100" height="37" align="middle" border="0" src="img543.png" alt="" /></span>. Dieser liefert das <span class="MATH"><i>n</i></span>-te Element der Liste. Einfacher ist es, wenn der Liste ein Name gegeben wurde, etwa <span class="MATH"><i>L</i></span>, und dann <span class="MATH"><i>L</i>[<i>n</i>];</span> aufgerufen wird. Bei einer zweifachen Liste findet man die Elemente auf der unteren Ebene mit <span class="MATH"><img width="135" height="37" align="middle" border="0" src="img544.png" alt="" /></span> oder mit dem gleichbedeutenden Aufruf <span class="MATH"><i>L</i>[<i>n</i>][<i>m</i>];</span>.</p>
+<p>Es bereitet keine Schwierigkeit, Listen mit h&ouml;herem Verschachtelungsgrad aufzubauen.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Erzeugung einer einfachen Liste:</p>
+<div align="center" class="mathdisplay"><img width="424" height="66" border="0" src="img545.png" alt="" /></div>
+<p><br clear="all" /></p>
+Extraktion des 4.&nbsp;Elements dieser Liste:<br />
+<div align="center" class="mathdisplay"><img width="325" height="66" border="0" src="img546.png" alt="" /></div>
+<p><br clear="all" /></p>
+Erzeugung einer zweifach verschachtelten Liste:<br />
+<div align="center" class="mathdisplay"><img width="213" height="66" border="0" src="img547.png" alt="" /></div>
+<p><br clear="all" /></p>
+(Ausgabe unterdr&uuml;ckt!) Der Zugriff auf das 3.&nbsp;Element der 2.&nbsp;Unterliste:<br />
+<div align="center" class="mathdisplay"><img width="367" height="66" border="0" src="img548.png" alt="" /></div>
+<p><br clear="all" /></p>
+Erzeugung einer dreifach verschachtelten Liste:<br />
+<div align="center" class="mathdisplay"><img width="432" height="66" border="0" src="img549.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

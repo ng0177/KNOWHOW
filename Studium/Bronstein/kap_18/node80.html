@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Verfahren von Davidon, Fletcher und Powell (DFP)</title>
+<meta name="description" content="Verfahren von Davidon, fletcher und powell (DFP)" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node79.html" />
+<link rel="up" href="node76.html" />
+<link rel="next" href="node81.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node79.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node81.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a href="node43.html">Nichtlineare Optimierung</a> <a id="up" href="node76.html">Verfahren f&#252;r unrestringierte Aufgaben</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001725400000000000000" id="SECTION001725400000000000000"></a> <a name="3939"></a>
+Verfahren von Davidon, Fletcher und Powell (DFP)</h3>
+<p>Mit dem DFP-Verfahren ermittelt man, ausgehend von <span class="MATH"><img width="75" height="39" align="middle" border="0" src="img504.png" alt="" /></span>, eine Punktfolge nach der Vorschrift</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="348" height="68" border="0" src="img505.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">83</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dabei ist <span class="MATH"><img width="33" height="35" align="middle" border="0" src="img506.png" alt="" /></span> eine symmetrische, positiv definite Matrix. Die Idee des Verfahrens besteht in einer schrittweisen Approximation der inversen <a href="node78.html#HesseMatrix1">H<small>ESSE</small>-Matrix</a> durch die Matrizen <span class="MATH"><img width="33" height="35" align="middle" border="0" src="img506.png" alt="" /></span> in dem Falle, da&szlig; <span class="MATH"><img width="42" height="37" align="middle" border="0" src="img176.png" alt="" /></span> eine quadratische Funktion ist. Ausgehend von einer symmetrischen, positiv definiten Matrix <span class="MATH"><img width="36" height="35" align="middle" border="0" src="img507.png" alt="" /></span>, z.B. <span class="MATH"><img width="66" height="35" align="middle" border="0" src="img508.png" alt="" /></span>&nbsp;(<span class="MATH"><img width="13" height="16" align="bottom" border="0" src="img378.png" alt="" /></span> Einheitsmatrix), wird <span class="MATH"><img width="33" height="35" align="middle" border="0" src="img506.png" alt="" /></span> aus <span class="MATH"><img width="50" height="35" align="middle" border="0" src="img509.png" alt="" /></span> durch Addition einer Rang-Zwei-Korrekturmatrix</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="382" height="99" border="0" src="img510.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">84</span>)</td>
+</tr>
+</table>
+</div>
+<p>mit <span class="MATH"><img width="129" height="40" align="middle" border="0" src="img511.png" alt="" /></span> und <span class="MATH"><img width="334" height="40" align="middle" border="0" src="img512.png" alt="" /></span> ermittelt. Die Schrittweite <span class="MATH"><img width="25" height="33" align="middle" border="0" src="img465.png" alt="" /></span> erh&auml;lt man durch Strahlminimierung aus</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="315" height="68" border="0" src="img513.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">85</span>)</td>
+</tr>
+</table>
+</div>
+<p>Ist <span class="MATH"><img width="42" height="37" align="middle" border="0" src="img176.png" alt="" /></span> eine quadratische Funktion, dann geht das DFP-Verfahren f&uuml;r <span class="MATH"><img width="66" height="35" align="middle" border="0" src="img508.png" alt="" /></span> in das Verfahren der konjugierten Gradienten &uuml;ber.<br />
+</p>
+</body>
+</html>

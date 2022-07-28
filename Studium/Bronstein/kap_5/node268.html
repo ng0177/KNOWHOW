@@ -1,0 +1,126 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Transportnetze</title>
+<meta name="description" content="Transportnetze" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node267.html" />
+<link rel="up" href="node227.html" />
+<link rel="next" href="node269.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node267.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node269.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a id="up" href="node227.html">Algorithmen der Graphentheorie</a> </span>
+</p>
+</div>
+<h2><a name="SECTION00487000000000000000" id="SECTION00487000000000000000"></a><a name="Transpnetze" id="Transpnetze"></a>
+Transportnetze</h2>
+<dl>
+<dt>Transportnetz</dt>
+<dd><a name="Transportnetz" id="Transportnetz"></a><a name="7013"></a> <a name="7014"></a> <a name="7015"></a> <a name="7016"></a> <a name="7017"></a> <a name="7018"></a> <a name="7019"></a> <a name="7020"></a> Ein zusammenh&auml;ngender gerichteter Graph hei&szlig;t <span class="begriff">Transportnetz</span>, wenn in ihm zwei Knoten als <span class="begriff">Quelle</span> <span class="MATH"><i>Q</i></span> bzw. <span class="begriff">Senke</span> <span class="MATH"><i>S</i></span> ausgezeichnet sind und folgende Eigenschaften gelten:
+<div class="alpha">
+<ol>
+<li>
+<div>Es existiert ein Bogen <span class="MATH"><i>u</i><sub>1</sub></span> von <span class="MATH"><i>S</i></span> nach <span class="MATH"><i>Q</i>,</span> wobei <span class="MATH"><i>u</i><sub>1</sub></span> der einzige Bogen mit dem Startknoten <span class="MATH"><i>S</i></span> und der einzige Bogen mit dem Zielknoten <span class="MATH"><i>Q</i></span> ist.</div>
+</li>
+<li>
+<div>Jedem von <span class="MATH"><i>u</i><sub>1</sub></span> verschiedenen Bogen <span class="MATH"><i>u</i><sub><i>i</i></sub></span> ist eine reelle Zahl <span class="MATH"><img width="86" height="37" align="middle" border="0" src="img1687.png" alt="" /></span> seine <span class="begriff">Kapazit&auml;t</span>, zugeordnet. Der Bogen <span class="MATH"><i>u</i><sub>1</sub></span> hat die Kapazit&auml;t <span class="MATH"><img width="32" height="16" align="bottom" border="0" src="img1688.png" alt="" /></span></div>
+</li>
+</ol>
+</div>
+<p>Eine Funktion <span class="MATH"><img width="25" height="33" align="middle" border="0" src="img1689.png" alt="" /></span> die jedem Bogen eine reelle Zahl zuordnet, hei&szlig;t <span class="begriff">Strom</span> auf <span class="MATH"><i>G</i></span>, wenn f&uuml;r jeden Knoten <span class="MATH"><i>v</i></span> die Gleichung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="242" height="95" border="0" src="img1690.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">349</span>a)</td>
+</tr>
+</table>
+</div>
+<p>gilt. Die Summe</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="111" height="95" border="0" src="img1691.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">349</span>b)</td>
+</tr>
+</table>
+</div>
+<p>hei&szlig;t Stromst&auml;rke. Ein Strom <span class="MATH"><img width="17" height="33" align="middle" border="0" src="img258.png" alt="" /></span> hei&szlig;t <span class="begriff">mit den Kapazit&auml;ten vertr&auml;glich</span>, wenn f&uuml;r jeden Bogen <span class="MATH"><i>u</i><sub><i>i</i></sub></span> von <span class="MATH"><i>G</i></span> gilt: <span class="MATH"><img width="155" height="37" align="middle" border="0" src="img1692.png" alt="" /></span></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><a href="#bspHerstVerbr">Transportnetz</a>.</p>
+</td>
+</tr>
+</table>
+</dd>
+<dt>2.&nbsp;Maximalstrom-Algorithmus von Ford und Fulkerson</dt>
+<dd><a name="FordFulkerson" id="FordFulkerson"></a><a name="7049"></a> <a name="9040"></a> Mit dem Maximalstrom-Algorithmus ist feststellbar, ob ein vorgegebener Strom <span class="MATH"><img width="17" height="33" align="middle" border="0" src="img258.png" alt="" /></span> maximal ist.<br />
+Es sei <span class="MATH"><i>G</i></span> ein Transportnetz und <span class="MATH"><img width="17" height="33" align="middle" border="0" src="img258.png" alt="" /></span> ein mit den Kapazit&auml;ten vertr&auml;glicher Strom der St&auml;rke <span class="MATH"><i>v</i><sub>1</sub>.</span> Der Algorithmus beinhaltet die folgenden Schritte zur Markierung von Knoten, nach deren Ausf&uuml;hrung man ablesen kann, um welchen Betrag die Stromst&auml;rke in Abh&auml;ngigkeit von den ausgew&auml;hlten Markierungsschritten verbessert werden kann.
+<div class="alpha">
+<ol>
+<li>
+<div>Man markiere <span class="MATH"><i>Q</i></span> und setze <span class="MATH"><img width="95" height="37" align="middle" border="0" src="img1693.png" alt="" /></span></div>
+</li>
+<li>
+<div>Existiert ein Bogen <span class="MATH"><i>e</i><sub><i>i</i></sub>=(<i>x</i>,<i>y</i>)</span> mit markiertem <span class="MATH"><i>x</i></span>, nichtmarkiertem <span class="MATH"><i>y</i></span> und <span class="MATH"><img width="116" height="37" align="middle" border="0" src="img1694.png" alt="" /></span> dann markiere man <span class="MATH"><i>y</i></span> und <span class="MATH"><img width="56" height="37" align="middle" border="0" src="img1695.png" alt="" /></span> setze <span class="MATH"><img width="260" height="37" align="middle" border="0" src="img1696.png" alt="" /></span> und wiederhole Schritt <b>b)</b>, anderenfalls folgt Schritt <b>c)</b>.</div>
+</li>
+<li>
+<div>Existiert ein Bogen <span class="MATH"><i>e</i><sub><i>i</i></sub>=(<i>x</i>,<i>y</i>)</span> mit nichtmarkiertem <span class="MATH"><i>x</i>,</span> markiertem <span class="MATH"><img width="100" height="37" align="middle" border="0" src="img1697.png" alt="" /></span> und <span class="MATH"><img width="69" height="35" align="middle" border="0" src="img1698.png" alt="" /></span> dann markiere man <span class="MATH"><i>x</i></span> und <span class="MATH">(<i>x</i>,<i>y</i>),</span> setze <span class="MATH"><img width="198" height="37" align="middle" border="0" src="img1699.png" alt="" /></span> und f&uuml;hre, falls m&ouml;glich, Schritt <b>b)</b> aus. Anderenfalls beende man den Algorithmus.</div>
+</li>
+</ol>
+</div>
+<p>Wird die Senke <span class="MATH"><i>S</i></span> von <span class="MATH"><i>G</i></span> markiert, dann l&auml;&szlig;t sich der Strom in <span class="MATH"><i>G</i></span> um <span class="MATH"><img width="41" height="37" align="middle" border="0" src="img1700.png" alt="" /></span> verbessern. Wird die Senke nicht markiert, dann ist der Strom maximal.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Maximalstrom: Im Graphen der oberen Abbildung geben die Bewertungen der Kanten die Kapazit&auml;ten der Kanten an. Im bewerteten Graphen der unteren Abbildung ist ein mit diesen Kapazit&auml;ten vertr&auml;glicher Strom der St&auml;rke 13 dargestellt. Es handelt sich dabei um einen Maximalstrom.</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a058" id="BILD_105a058"><img alt="BilD" border="0" src="../bilder/kap05/t2/105a058.gif" /></a></p>
+<p class="nachBild"></p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a059" id="BILD_105a059"><img alt="BilD" border="0" src="../bilder/kap05/t2/105a059.gif" /></a></p>
+<p class="nachBild"></p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Transportnetz: Ein Produkt wird von <span class="MATH"><i>p</i></span> Firmen <span class="MATH"><img width="114" height="35" align="middle" border="0" src="img1701.png" alt="" /></span> hergestellt. Es gibt <span class="MATH"><i>q</i></span> Verbraucher <span class="MATH"><img width="115" height="35" align="middle" border="0" src="img1702.png" alt="" /></span> In einem bestimmten Zeitraum werden <span class="MATH"><i>s</i><sub><i>i</i></sub></span> Einheiten von <span class="MATH"><i>F</i><sub><i>i</i></sub></span> produziert und <span class="MATH"><i>t</i><sub><i>j</i></sub></span> Einheiten von <span class="MATH"><i>V</i><sub><i>j</i></sub></span> ben&ouml;tigt.<a name="bspHerstVerbr" id="bspHerstVerbr"></a><br />
+In der vorgegebenen Zeit k&ouml;nnen <span class="MATH"><i>c</i><sub><i>ij</i></sub></span> Einheiten von <span class="MATH"><i>F</i><sub><i>i</i></sub></span> nach <span class="MATH"><i>V</i><sub><i>j</i></sub></span> transportiert werden. K&ouml;nnen in diesem Zeitraum alle Bedarfsw&uuml;nsche erf&uuml;llt werden? Den zugeh&ouml;rigen Graphen zeigt die folgende Abbildung.</p>
+<p align="left" class="BILD"><a class="BILD" name="BILD_105a060" id="BILD_105a060"><img alt="BilD" border="0" src="../bilder/kap05/t2/105a060.gif" /></a></p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+</body>
+</html>

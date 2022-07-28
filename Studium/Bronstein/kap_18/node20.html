@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Simplextableau</title>
+<meta name="description" content="Simplextableau" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node21.html" />
+<link rel="previous" href="node19.html" />
+<link rel="up" href="node19.html" />
+<link rel="next" href="node21.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node19.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node21.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a href="node1.html">Lineare Optimierung</a> <a id="up" href="node19.html">Simplexverfahren</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001713100000000000000" id="SECTION001713100000000000000"></a><a name="SimplexTabl" id="SimplexTabl"></a><a name="861"></a>
+Simplextableau</h3>
+<p>Mit dem <span class="begriff">Simplexverfahren</span> wird eine Folge von Eckpunkten des zul&auml;ssigen Bereiches mit wachsenden Zielfunktionswerten ermittelt. Der &Uuml;bergang zu einer neuen Ecke wird vollzogen, indem eine zur gegebenen Ecke geh&ouml;rende Normalform zu einer Normalform der neuen Ecke umgewandelt wird. Zur &uuml;bersichtlichen Darstellung dieses Vorganges sowie zur Formalisierung der rechentechnischen Umsetzung wird eine als bekannt vorausgesetzte Normalform (<a href="node17.html#F1180108a">18.8a</a>,b) in das folgende Simplextableau eingetragen:</p>
+<div align="center">Schema 2<br />
+<span class="MATH"><img width="239" height="155" align="middle" border="0" src="img71.png" alt="" /></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; oder k&uuml;rzer&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="MATH"><img width="106" height="101" align="middle" border="0" src="img72.png" alt="" /></span></div>
+<p>Die <span class="MATH"><i>k</i></span>-te Zeile des Tableaus ist zu lesen als</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="340" height="65" border="0" src="img73.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">14</span>a)</td>
+</tr>
+</table>
+</div>
+<p>F&uuml;r die Zielfunktion gilt</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="291" height="66" border="0" src="img74.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">14</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Aus dem Simplextableau wird die Ecke <span class="MATH"><img width="145" height="37" align="middle" border="0" src="img75.png" alt="" /></span> abgelesen. Gleichzeitig ist der Zielfunktionswert dieser Ecke durch <span class="MATH"><img width="83" height="37" align="middle" border="0" src="img76.png" alt="" /></span> bestimmt.<br />
+Auf jedes Tableau trifft genau einer der drei F&auml;lle zu:</p>
+<div class="alpha">
+<ol>
+<li>
+<div><span class="MATH"><img width="205" height="34" align="middle" border="0" src="img77.png" alt="" /></span>: Das Tableau ist optimal. Der Punkt <span class="MATH"><img width="145" height="37" align="middle" border="0" src="img75.png" alt="" /></span> ist der Maximalpunkt.</div>
+</li>
+<li>
+<div>F&uuml;r mindestens ein <span class="MATH"><i>j</i></span> gilt <span class="MATH"><i>c</i><sub><i>j</i></sub> &gt; 0</span> und <span class="MATH"><img width="178" height="34" align="middle" border="0" src="img78.png" alt="" /></span>: Das lineare Optimierungsproblem besitzt keine L&ouml;sung, da die Zielfunktion in Richtung wachsender <span class="MATH"><i>x</i><sub><i>j</i></sub></span>-Werte unbeschr&auml;nkt w&auml;chst.</div>
+</li>
+<li>
+<div>F&uuml;r alle <span class="MATH"><i>j</i></span> mit <span class="MATH"><i>c</i><sub><i>j</i></sub> &gt; 0</span> gibt es mindestens ein <span class="MATH"><i>i</i></span> mit <span class="MATH"><i>a</i><sub><i>ij</i></sub> &gt; 0</span>: Man kann von einer Ecke <span class="MATH"><img width="16" height="33" align="middle" border="0" src="img37.png" alt="" /></span> zu einer Ecke <span class="MATH"><img width="16" height="35" align="middle" border="0" src="img79.png" alt="" /></span> &uuml;bergehen mit <span class="MATH"><img width="108" height="37" align="middle" border="0" src="img80.png" alt="" /></span>.<a name="FallC" id="FallC"></a>F&uuml;r eine nichtentartete Ecke <span class="MATH"><img width="16" height="33" align="middle" border="0" src="img37.png" alt="" /></span> gilt immer das ,,<span class="MATH">&gt;</span>``-Zeichen.</div>
+</li>
+</ol>
+</div>
+</body>
+</html>

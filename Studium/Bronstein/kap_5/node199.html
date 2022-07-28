@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Kasiski-Friedman-Test</title>
+<meta name="description" content="Kasiski-Friedman-Test" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node198.html" />
+<link rel="up" href="node197.html" />
+<link rel="next" href="node200.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node198.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node200.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node188.html">Kryptologie</a> <a id="up" href="node197.html">Methoden der klassischen Kryptoanalysis</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00455200000000000000" id="SECTION00455200000000000000">Kasiski-Friedman-Test</a></h3>
+<p><a name="8921"></a> Mit der kombinierten Methode von K<small>ASISKI</small> und F<small>RIEDMAN</small> ist es m&ouml;glich, V<small>IGENERE</small>-Chiffren zu brechen. Dabei wird die Tatsache ausgenutzt, da&szlig; bei diesem Chiffrierverfahren das Schl&uuml;sselwort periodisch verwendet wird. Es treten also Wiederholungen von Teilfolgen im Schl&uuml;sseltext auf, wenn gleiche Klartextfolgen mit gleichen Schl&uuml;sselfolgen verschl&uuml;sselt worden sind. Der Abstand solcher &uuml;bereinstimmender Teilfolgen mit der L&auml;nge <span class="MATH">&gt; 2</span> im Schl&uuml;sseltext ist ein Vielfaches der Schl&uuml;ssell&auml;nge. Gibt es mehrere sich wiederholende Schl&uuml;sseltextfolgen, dann mu&szlig; die Schl&uuml;ssell&auml;nge den gr&ouml;&szlig;ten gemeinsamen Teiler der Abst&auml;nde teilen. Diese &Uuml;berlegung wird K<small>ASISKI</small>-Test genannt. Man mu&szlig; aber die M&ouml;glichkeit in Betracht ziehen, da&szlig; solche &Uuml;bereinstimmungen auch durch Zufall enstanden sein k&ouml;nnten und damit das Ergebnis verf&auml;lschen w&uuml;rden.</p>
+<p>W&auml;hrend der K<small>ASISKI</small>-Test die Schl&uuml;sselwortl&auml;nge nur bis auf Vielfache und Teiler liefert, gibt der Friedman-Test die Gr&ouml;&szlig;enordnung der Schl&uuml;sselwortl&auml;nge an. F&uuml;r die Schl&uuml;sselwortl&auml;nge <span class="MATH"><i>l</i></span> eines V<small>IGENERE</small>-verschl&uuml;sselten Klartextes in deutscher Sprache mit einem Schl&uuml;sseltext der L&auml;nge <span class="MATH"><i>n</i></span> (Zeichenzahl) gilt</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="292" height="90" border="0" src="img1409.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">298</span>a)</td>
+</tr>
+</table>
+</div>
+<p>Dabei ist <span class="MATH"><i>IC</i></span> der Koinzidenzindex des Schl&uuml;sseltextes, der sich wie folgt aus den Anzahlen <span class="MATH"><i>n</i><sub><i>i</i></sub></span> der Buchstaben <span class="MATH"><img width="180" height="37" align="middle" border="0" src="img1410.png" alt="" /></span> des Schl&uuml;sseltextes berechnen l&auml;&szlig;t:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="165" height="118" border="0" src="img1411.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">298</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Zur Ermittlung des Schl&uuml;sselwortes schreibt man den Schl&uuml;sseltext der L&auml;nge <span class="MATH"><i>n</i></span> in <span class="MATH"><i>l</i></span> Spalten. Es gen&uuml;gt nun, spaltenweise das &Auml;quivalent der Buchstaben E zu finden, da die Spalten bei der V<small>IGENERE</small>-Chiffre durch eine Verschiebechiffre entstanden sind. Ist z.B. V der h&auml;ufigste Buchstabe in einer Spalte, dann findet man im V<small>IGENERE</small>-Tableau</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="57" height="124" border="0" src="img1412.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">298</span>c)</td>
+</tr>
+</table>
+</div>
+<p>den Buchstaben R des Schl&uuml;sselwortes.</p>
+<p>Benutzt eine V<small>IGENERE</small>-Chiffre einen sehr langen Schl&uuml;ssel (z.B.&nbsp;von der L&auml;nge des Klartextes), dann f&uuml;hren die hier beschriebenen Methoden nicht zum Ziel. Man kann aber erkennen, ob die verwendete Chiffre monoalphabetisch, polyalphabetisch mit kleiner Periode oder polyalphabetisch mit gro&szlig;er Periode ist.</p>
+</body>
+</html>

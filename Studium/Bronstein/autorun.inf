@@ -1,0 +1,5 @@
+[autorun]
+icon=clixx.ico,0
+shell\startdtbron\command=.\tool\shelexec .\sonder\dt_bron.html
+shell\startdtbron=&DeskTopBronstein
+shell=startdtbron

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Numerische L&ouml;sung von Variationsaufgaben</title>
+<meta name="description" content="Numerische L&ouml;sung von Variationsaufgaben" />
+<meta name="keywords" content="kap_10" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node16.html" />
+<link rel="previous" href="node14.html" />
+<link rel="up" href="kap_10.html" />
+<link rel="next" href="node16.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node14.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node16.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" id="up" href="kap_10.html">Variationsrechnung</a> </span>
+</p>
+</div>
+<h1><a name="SECTION00950000000000000000" id="SECTION00950000000000000000"></a> <a name="1045"></a>
+Numerische L&ouml;sung von Variationsaufgaben</h1>
+<p><a name="1358"></a> <a name="1359"></a> <a name="1360"></a> Zur praktischen L&ouml;sung von Variationsproblemen werden im wesentlichen zwei L&ouml;sungswege verwendet.</p>
+<ol>
+<li>
+<div>L&ouml;sung der Eulerschen Differentialgleichung und Anpassung der gefundenen L&ouml;sung an die Randbedingungen. Allerdings wird die exakte L&ouml;sung der Eulerschen Differentialgleichung nur in den einfachsten F&auml;llen m&ouml;glich sein, so da&szlig; man numerische Methoden zur L&ouml;sung von Randwertaufgaben bei <a href="../kap_19/node48.html#v156">gew&ouml;hnlichen Differentialgleichungen</a> bzw. <a href="../kap_19/node65.html#kap16.5">partiellen Differentialgleichungen</a> einsetzen mu&szlig; (s.&nbsp;auch Kapitel <a href="../kap_20/node1.html#CompAlgSyst">Computeralgebrasysteme</a>).</div>
+</li>
+<li>
+<div><span class="begriff">Direkte Methoden</span> gehen unmittelbar von der Variationsaufgabe aus und verwenden nicht die E<small>ULER</small>sche Differentialgleichung. Das h&ouml;chstwahrscheinlich &auml;lteste und bekannteste Verfahren dieser Art stellt das <a href="../kap_19/node63.html#ritz-ver">R<small>ITZ</small>-Verfahren</a> dar. Es geh&ouml;rt zu den sogenannten <a href="../kap_19/node63.html#AnsatzVerf">Ansatzverfahren</a>, die zur gen&auml;herten L&ouml;sung von gew&ouml;hnlichen Differentialgleichungen verwendet werden bzw. <a href="../kap_19/node67.html#AnsatzVerf2">Ansatzverfahren</a> zur L&ouml;sung von partiellen Differentialgleichungen, und soll an dem folgenden einfachen Beispiel demonstriert werden.</div>
+</li>
+</ol>
+<p><!-- BeispielStart: 1100501 -->
+<a name="1067"></a> <a name="1068"></a></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Das isoperimetrische Problem</p>
+</td>
+</tr>
+</table>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="174" height="116" border="0" src="img125.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">52</span>)</td>
+</tr>
+</table>
+</div>
+<p>bei</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="314" height="116" border="0" src="img126.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">53</span>)</td>
+</tr>
+</table>
+</div>
+<p>ist numerisch zu l&ouml;sen. Das zugeh&ouml;rige Variationsproblem ohne Integralnebenbedingung lautet gem&auml;&szlig; <a href="node8.html#VarAufgNebenbed">Variationsaufgaben mit Nebenbedingungen</a></p>
+<div class="mathdisplay"><a name="F1100501c" id="F1100501c"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1100501c" id="F1100501c"></a><img width="322" height="116" border="0" src="img127.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">54</span>)</td>
+</tr>
+</table>
+</div>
+<p>Als Ansatz f&uuml;r die N&auml;herungsl&ouml;sung wird</p>
+<div align="center" class="mathdisplay"><a name="F1100501d" id="F1100501d"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><span class="MATH"><i>y</i>(<i>x</i>)=<i>a</i><sub>1</sub><i>x</i>(<i>x</i>-1)+<i>a</i><sub>2</sub><i>x</i><sup>2</sup>(<i>x</i>-1)</span></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">55</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+gew&auml;hlt. Die beiden Ansatzfunktionen <span class="MATH"><i>x</i>(<i>x</i>-1)</span> und <span class="MATH"><i>x</i><sup>2</sup>(<i>x</i>-1)</span> sind linear unabh&auml;ngig und erf&uuml;llen beide die Randbedingungen. Mit (<a href="#F1100501d">10.55</a>) geht (<a href="#F1100501c">10.54</a>) in
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="510" height="92" border="0" src="img128.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">56</span>)</td>
+</tr>
+</table>
+</div>
+<p>&uuml;ber, und die notwendigen Bedingungen <span class="MATH"><img width="128" height="50" align="middle" border="0" src="img129.png" alt="" /></span> ergeben das homogene lineare Gleichungssystem</p>
+<div class="mathdisplay"><a name="F1100501f" id="F1100501f"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1100501f" id="F1100501f"></a><img width="614" height="92" border="0" src="img130.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">57</span>)</td>
+</tr>
+</table>
+</div>
+<p>Dieses System hat nichttriviale L&ouml;sungen, wenn die Koeffizientendeterminante verschwindet. Daraus folgt:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="385" height="66" border="0" src="img131.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">58</span>)</td>
+</tr>
+</table>
+</div>
+<p>F&uuml;r <span class="MATH"><img width="103" height="35" align="middle" border="0" src="img132.png" alt="" /></span> erh&auml;lt man aus (<a href="#F1100501f">10.57</a>) <span class="MATH"><img width="91" height="33" align="middle" border="0" src="img133.png" alt="" /></span> beliebig, so da&szlig; die zu <span class="MATH"><img width="67" height="35" align="middle" border="0" src="img134.png" alt="" /></span> geh&ouml;rende, normierte L&ouml;sung lautet:</p>
+<div class="mathdisplay"><a name="F1100501h" id="F1100501h"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1100501h" id="F1100501h"></a><img width="147" height="66" border="0" src="img135.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">59</span>)</td>
+</tr>
+</table>
+</div>
+<p>Zum Vergleich kann man die zur Variationsaufgabe (<a href="#F1100501f">10.57</a>) geh&ouml;rende E<small>ULER</small>sche Differentialgleichung aufstellen. Man erh&auml;lt die Randwertaufgabe</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="289" height="66" border="0" src="img136.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">60</span>)</td>
+</tr>
+</table>
+</div>
+<p>mit den Eigenwerten <span class="MATH"><img width="202" height="39" align="middle" border="0" src="img137.png" alt="" /></span> und den Eigenl&ouml;sungen <span class="MATH"><img width="128" height="35" align="middle" border="0" src="img138.png" alt="" /></span>. F&uuml;r den Fall <span class="MATH"><img width="53" height="17" align="bottom" border="0" src="img139.png" alt="" /></span>, d.h. <span class="MATH"><img width="132" height="39" align="middle" border="0" src="img140.png" alt="" /></span>, ergibt sich die normierte Eigenl&ouml;sung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="119" height="68" border="0" src="img141.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">10</span>.<span class="arabic">61</span>)</td>
+</tr>
+</table>
+</div>
+<p>deren Verlauf sich nur unwesentlich von dem der N&auml;herungsl&ouml;sung (<a href="#F1100501h">10.59</a>) unterscheidet.<br />
+<!-- BeispielEnde: 1100501 --></p>
+<p><b>Hinweis:</b> Beim heutigen Stand der Computer- und Software-Entwicklung sollte man zur numerischen L&ouml;sung von Variationsproblemen vor allem die <span class="begriff">Methode der finiten Elemente</span> (FEM) einsetzen.<br />
+Die Grundz&uuml;ge der <a href="../kap_19/node70.html#FEM">Methode der finiten Elemente</a> werden bei der numerischen Behandlung von Differentialgleichungen beschrieben. Dort wird der Zusammenhang zwischen Differential- und Variationsgleichungen, der z.B. durch E<small>ULER</small>sche Differentialgleichungen oder Bilinearformen gem&auml;&szlig; (<a href="../kap_19/node71.html#F1190510a">19.145a</a>,b) vermittelt wird, ausgenutzt.<br />
+Auch die <a href="../kap_18/node84.html#GradientVerf">Gradientenverfahren</a>, wie sie zur numerischen Behandlung von nichtlinearen Optimierungsaufgaben verwendet werden, k&ouml;nnen zur numerischen L&ouml;sung von Variationsaufgaben eingesetzt werden.</p>
+</body>
+</html>

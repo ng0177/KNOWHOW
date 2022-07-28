@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Extrapolationsprinzip</title>
+<meta name="description" content="Extrapolationsprinzip" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node46.html" />
+<link rel="up" href="node45.html" />
+<link rel="next" href="node48.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node46.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node48.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node35.html">Numerische Integration</a> <a id="up" href="node45.html">Verfahren von Romberg</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001834200000000000000" id="SECTION001834200000000000000">Extrapolationsprinzip</a></h3>
+<p><a name="7310"></a> <a name="2323"></a> Das R<small>OMBERG</small>-Verfahren stellt eine Anwendung des sogenannten <span class="begriff">Extrapolationsprinzips</span> dar. Es soll an der Herleitung der Formel (<a href="node46.html#F1190319">19.87</a>) f&uuml;r den Fall <span class="MATH"><i>k</i>=1</span> demonstriert werden. Mit <span class="MATH"><i>I</i></span> werde das gesuchte Integral, mit <span class="MATH"><i>T</i>(<i>h</i>)</span> die zugeh&ouml;rige Trapezsumme (<a href="node39.html#F1190308">19.76</a>) bezeichnet. Ist der Integrand von <span class="MATH"><i>I</i></span> im Integrationsintervall <span class="MATH">(2<i>m</i>+2)</span>-mal stetig differenzierbar, dann l&auml;&szlig;t sich zeigen, da&szlig; f&uuml;r den Quadraturformelfehler <span class="MATH"><i>R</i></span> der Trapezsumme eine <span class="begriff">asymptotische Entwicklung</span> bez&uuml;glich <span class="MATH"><i>h</i></span> der Form</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="475" height="67" border="0" src="img271.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">89</span>a)</td>
+</tr>
+</table>
+</div>
+<p>oder</p>
+<div class="mathdisplay"><a name="F1190321b" id="F1190321b"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190321b" id="F1190321b"></a><img width="412" height="67" border="0" src="img272.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">89</span>b)</td>
+</tr>
+</table>
+</div>
+<p>gilt. Die Koeffizienten <span class="MATH"><img width="138" height="33" align="middle" border="0" src="img273.png" alt="" /></span> sind von <span class="MATH"><i>h</i></span> unabh&auml;ngige Konstanten.<br />
+Man bildet <span class="MATH"><i>T</i>(<i>h</i>)</span> und <span class="MATH"><img width="64" height="64" align="middle" border="0" src="img274.png" alt="" /></span> gem&auml;&szlig; (<a href="#F1190321b">19.89b</a>) und betrachtet die Linearkombination</p>
+<div class="myclass">
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>T</i><sub>1</sub>(<i>h</i>)</td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="165" height="64" align="middle" border="0" src="img275.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="456" height="53" align="middle" border="0" src="img276.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">90</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+<p>Setzt man <span class="MATH"><img width="101" height="33" align="middle" border="0" src="img277.png" alt="" /></span> und <span class="MATH"><img width="108" height="51" align="middle" border="0" src="img278.png" alt="" /></span>, dann hat <span class="MATH"><i>T</i><sub>1</sub>(<i>h</i>)</span> die Fehlerordnung 4, w&auml;hrend <span class="MATH"><i>T</i>(<i>h</i>)</span> und <span class="MATH"><i>T</i>(<i>h</i>/2)</span> beide nur die Fehlerordnung 2 haben. Es ergibt sich</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="472" height="118" border="0" src="img279.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">91</span>)</td>
+</tr>
+</table>
+</div>
+<p>Das ist die Formel (<a href="node46.html#F1190319">19.87</a>) f&uuml;r <span class="MATH"><img width="53" height="17" align="bottom" border="0" src="img280.png" alt="" /></span>. Fortgesetzte Wiederholung des eben beschriebenen Vorgehens f&uuml;hrt auf die N&auml;herung <span class="MATH"><i>T</i><sub><i>ki</i></sub></span> gem&auml;&szlig; (<a href="node46.html#F1190319">19.87</a>), und es gilt</p>
+<div class="mathdisplay"><a name="F1190324" id="F1190324"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190324" id="F1190324"></a><img width="161" height="68" border="0" src="img281.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">92</span>)</td>
+</tr>
+</table>
+</div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r das bestimmte Integral <span class="MATH"><img width="133" height="67" align="middle" border="0" src="img282.png" alt="" /></span> (<a href="../kap_8/node97.html#v240">Integralsinus</a>), das sich nicht elementar integrieren l&auml;&szlig;t, sind N&auml;herungswerte zu ermitteln (8stellige Rechnung).</p>
+<dl>
+<dt>1.&nbsp;Romberg-Verfahren:</dt>
+<dd>
+<div align="center"><span class="MATH"><img width="442" height="149" align="middle" border="0" src="img283.png" alt="" /></span></div>
+<p>F&uuml;r <span class="MATH"><i>k</i>=3</span> liefert das R<small>OMBERG</small>-Verfahren den N&auml;herungwert 0,94608307. Der auf 10 Stellen genaue Wert lautet 0,9460830704. Die Gr&ouml;&szlig;enordnung <span class="MATH"><img width="176" height="44" align="middle" border="0" src="img284.png" alt="" /></span> des Fehlers gem&auml;&szlig; (<a href="#F1190324">19.92</a>) wird best&auml;tigt.</p>
+</dd>
+<dt>2.&nbsp;Trapez- und Simpson-Formel:</dt>
+<dd>Aus dem Schema zum R<small>OMBERG</small>-Verfahren liest man unmittelbar ab, da&szlig; f&uuml;r <span class="MATH"><i>h</i><sub>3</sub>=1/8</span> die Trapezformel den N&auml;herungswert 0,94569086 und die S<small>IMPSON</small>-Formel den Wert 0,94608331 ergibt.<br />
+Die Verbesserung der Trapezformel nach H<small>ERMITE</small> gem&auml;&szlig; (<a href="node40.html#F1190309">19.77</a>) liefert<br />
+<span class="MATH"><img width="373" height="59" align="middle" border="0" src="img285.png" alt="" /></span>.</dd>
+<dt>3.&nbsp;Gau&szlig;-Formel:</dt>
+<dd>Nach Formel (<a href="node43.html#F1190315">19.83</a>) erh&auml;lt man f&uuml;r<br />
+<div align="center" class="mathdisplay"><img width="698" height="198" border="0" src="img286.png" alt="" /></div>
+<p><br clear="all" /></p>
+Man sieht, da&szlig; die G<small>AUSS</small>-Formel im Fall <span class="MATH"><img width="53" height="16" align="bottom" border="0" src="img287.png" alt="" /></span>, d.h. mit nur 4 Funktionswerten, einen auf 8 Dezimalen genauen N&auml;herungswert liefert. Diese Genauigkeit w&uuml;rde mit der Trapezsumme erst mit einer sehr hohen Zahl (<span class="MATH">&gt; 1000</span>) von Funktionswerten erreicht.</dd>
+</dl>
+</td>
+</tr>
+</table>
+<p><!-- BeispielEnde: 1190301 -->
+<b>Hinweise:</b><a name="2463"></a></p>
+<ol>
+<li>
+<div>Eigenst&auml;ndige Bedeutung hat die Integration periodischer Funktionen im Zusammenhang mit der <a href="../kap_7/node49.html#v175">F<small>OURIER</small>-Analyse</a> erlangt. Ihre numerische Realisierung findet man unter dem Stichwort <a href="node98.html#v110">Harmonische Analyse</a>, die auf dem Rechner mit Hilfe der sogenannten<br />
+<a href="node102.html#v338">Schnellen F<small>OURIER</small>-Transformation</a> FFT (<b>F</b>ast <b>F</b><small>OURIER</small> <b>T</b>ransformation) durchgef&uuml;hrt wird.</div>
+</li>
+<li>
+<div>In vielen F&auml;llen ist es zweckm&auml;&szlig;ig, bei der numerischen Integration spezielle Eigenschaften des Integranden auszunutzen. Auf diese Weise sind neben den oben vorgestellten Quadraturformeln noch viele andere entwickelt worden, und die Literatur zu Fragen der Konvergenz, der Absch&auml;tzung des Quadraturformelfehlers oder zur Konstruktion optimaler Quadraturformeln ist sehr umfangreich (s.&nbsp;Lit.&nbsp;<a href="../kap_22/node19.html#x1903">19.3</a>).</div>
+</li>
+<li>
+<div>Zur numerischen Integration <span class="begriff">mehrfacher Integrale</span> mu&szlig; auf die Literatur verwiesen werden (s.&nbsp;Lit. <a href="../kap_22/node19.html#x1928">19.29</a>).</div>
+</li>
+</ol>
+</body>
+</html>

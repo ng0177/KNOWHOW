@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Lineares Gleichungssystem: Allgemeiner Fall</title>
+<meta name="description" content="Lineares Gleichungssystem: allgemeiner Fall" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node111.html" />
+<link rel="previous" href="node109.html" />
+<link rel="up" href="node108.html" />
+<link rel="next" href="node111.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node109.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node111.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node82.html">Anwendungen von Computeralgebrasystemen</a> <a href="node107.html">Elemente der linearen Algebra</a> <a id="up" href="node108.html">Mathematica</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001943120000000000000" id="SECTION001943120000000000000"></a> <a name="3158"></a>
+Lineares Gleichungssystem: Allgemeiner Fall</h4>
+<p>Mit den Anweisungen <span class="MATH"><img width="113" height="16" align="bottom" border="0" src="img810.png" alt="" /></span> und <span class="MATH"><img width="93" height="33" align="middle" border="0" src="img811.png" alt="" /></span> lassen sich alle im Kapitel Lineare Algebra, Abschnitt <a href="../kap_4/node98.html#v161">L&ouml;sung linearer Gleichungssysteme</a> beschriebenen F&auml;lle behandeln, d.h., es l&auml;&szlig;t sich festzustellen, ob prinzipiell eine L&ouml;sung existiert, und wenn ja, dann wird diese ermittelt. Im Folgenden werden einige Beispiele aus dem Abschnitt <a href="../kap_4/node98.html#v161">L&ouml;sung linearer Gleichungssysteme</a> betrachtet.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Das <a href="../kap_4/node101.html#v316">Beispiel</a> im Abschnitt <a href="../kap_4/node101.html#TrivLoesgundFundSyst">Triviale L&ouml;sung und Fundamentalsystem</a></p>
+<div align="center" class="mathdisplay"><img width="230" height="139" border="0" src="img812.png" alt="" /></div>
+<p><br clear="all" /></p>
+hat als homogenes System nichttriviale L&ouml;sungen, die aus Linearkombinationen von Basisvektoren des Nullraumes der Matrix <span class="MATH"><i>p</i></span> bestehen. Das ist jener Teilraum des <span class="MATH"><i>n</i></span>-dimensionalen Vektorraumes, der bei Transformationen mit <span class="MATH"><i>p</i></span> auf die Null abgebildet wird. Ein Satz solcher Basisvektoren l&auml;&szlig;t sich mit der Anweisung <span class="MATH"><img width="113" height="37" align="middle" border="0" src="img813.png" alt="" /></span> erzeugen. Mit der Eingabe<br />
+<div align="center" class="mathdisplay"><img width="546" height="66" border="0" src="img814.png" alt="" /></div>
+<p><br clear="all" /></p>
+erzeugt man die f&uuml;r das System zust&auml;ndige Matrix, deren Determinante tats&auml;chlich Null ist, was sich mit <span class="MATH"><img width="54" height="37" align="middle" border="0" src="img815.png" alt="" /></span> &uuml;berpr&uuml;fen l&auml;&szlig;t. Nun wird eingegeben<br />
+<div align="center" class="mathdisplay"><img width="174" height="66" border="0" src="img816.png" alt="" /></div>
+<p><br clear="all" /></p>
+und als Ausgabe erscheint<br />
+<div align="center" class="mathdisplay"><img width="319" height="85" border="0" src="img817.png" alt="" /></div>
+<p><br clear="all" /></p>
+eine Liste mit zwei linear unabh&auml;ngigen Vektoren des vierdimensionalen Raumes, die im zweidimensionalen Nullraum der Matrix <span class="MATH"><i>p</i></span> eine Basis bilden. Beliebige Linearkombinationen dieser beiden Vektoren liegen ebenfalls im Nullraum, sind also L&ouml;sungen des homogenen Gleichungssystems. Ein Vergleich mit der L&ouml;sung des betrachteten <a href="../kap_4/node101.html#v316">Beispiels</a> zeigt die Identit&auml;t.</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Man erzeugt gem&auml;&szlig; <a href="../kap_4/node101.html#v317">Beispiel <b>A</b></a> aus Abschnitt <a href="../kap_4/node101.html#AllgRegInhomSys">Allgemeine Regel f&uuml;r das inhomogene System</a></p>
+<div align="center" class="mathdisplay"><img width="295" height="116" border="0" src="img818.png" alt="" /></div>
+<p><br clear="all" /></p>
+die Matrix <span class="MATH"><i>m</i>1</span>, die vom Typ <span class="MATH">(3,5)</span> ist und den Vektor <span class="MATH"><i>b</i>1</span><br />
+<div align="center" class="mathdisplay"><img width="560" height="66" border="0" src="img819.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="178" height="66" border="0" src="img820.png" alt="" /></div>
+<p><br clear="all" /></p>
+Auf die Anweisung<br />
+<div align="center" class="mathdisplay"><img width="235" height="66" border="0" src="img821.png" alt="" /></div>
+<p><br clear="all" /></p>
+erscheint die Meldung<br />
+<div align="center" class="mathdisplay"><img width="608" height="64" border="0" src="img822.png" alt="" /></div>
+<p><br clear="all" /></p>
+Danach wird die Eingabe nochmals ausgegeben.<br /></td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel C</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Gem&auml;&szlig; <a href="../kap_4/node101.html#v318">Beispiel <b>B</b></a> aus Abschnitt <a href="../kap_4/node101.html#AllgRegInhomSys">Allgemeine Regel f&uuml;r das inhomogene System</a></p>
+<div align="center" class="mathdisplay"><img width="203" height="139" border="0" src="img823.png" alt="" /></div>
+<p><br clear="all" /></p>
+wird eingegeben:<br />
+<div align="center" class="mathdisplay"><img width="496" height="66" border="0" src="img824.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="210" height="66" border="0" src="img825.png" alt="" /></div>
+<p><br clear="all" /></p>
+Da in diesem Fall das System &uuml;berbestimmt ist, wird gepr&uuml;ft, ob sich die Matrix <span class="MATH"><i>m</i>2</span> aufgrund linearer Abh&auml;ngigkeiten der Zeilen reduzieren l&auml;&szlig;t. Mit<br />
+<div align="center" class="mathdisplay"><img width="618" height="66" border="0" src="img826.png" alt="" /></div>
+<p><br clear="all" /></p>
+geschieht das. Danach gibt man ein<br />
+<div align="center" class="mathdisplay"><img width="478" height="85" border="0" src="img827.png" alt="" /></div>
+<p><br clear="all" /></p>
+Die Ausgabe enth&auml;lt die bekannte L&ouml;sung.</td>
+</tr>
+</table>
+</body>
+</html>

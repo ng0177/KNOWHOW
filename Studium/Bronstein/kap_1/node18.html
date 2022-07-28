@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Vollst&auml;ndige Induktion</title>
+<meta name="description" content="Vollst&auml;ndige Induktion" />
+<meta name="keywords" content="kap_1" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node19.html" />
+<link rel="previous" href="node17.html" />
+<link rel="up" href="node15.html" />
+<link rel="next" href="node19.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node17.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node19.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_1.html">Arithmetik</a> <a href="node1.html">Elementare Rechenregeln</a> <a id="up" href="node15.html">Beweismethoden</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00012300000000000000" id="SECTION00012300000000000000"></a> <a name="644"></a>
+Vollst&auml;ndige Induktion</h3>
+<p><a name="4741"></a> <a name="4742"></a> <a name="4743"></a> Mit dieser Beweismethode werden S&auml;tze oder Formeln bewiesen, die von nat&uuml;rlichen Zahlen <span class="MATH"><i>n</i></span> abh&auml;ngen. Das Prinzip der vollst&auml;ndigen Induktion lautet:<br />
+Ist eine Aussage f&uuml;r eine nat&uuml;rliche Zahl <span class="MATH"><i>n</i><sub>0</sub></span> wahr, und folgt aus der Wahrheit der Aussage f&uuml;r eine nat&uuml;rliche Zahl <span class="MATH"><img width="60" height="33" align="middle" border="0" src="img97.png" alt="" /></span> die Wahrheit der Aussage f&uuml;r <span class="MATH"><img width="51" height="33" align="middle" border="0" src="img98.png" alt="" /></span>, dann ist die Aussage f&uuml;r alle nat&uuml;rlichen Zahlen <span class="MATH"><img width="60" height="33" align="middle" border="0" src="img99.png" alt="" /></span> g&uuml;ltig. Danach erfolgt der Beweis in folgenden Schritten:</p>
+<dl>
+<dt>1.&nbsp;Induktionsanfang:</dt>
+<dd>Die Wahrheit der Aussage wird f&uuml;r <span class="MATH"><i>n</i>=<i>n</i><sub>0</sub></span> gezeigt. Meist kann man <span class="MATH"><i>n</i><sub>0</sub>=1</span> w&auml;hlen.</dd>
+<dt>2.&nbsp;Induktionsannahme:</dt>
+<dd>Die Aussage sei f&uuml;r <span class="MATH"><i>n</i></span> wahr (Voraussetzung <span class="MATH"><i>p</i></span>).</dd>
+<dt>3.&nbsp;Induktionsbehauptung:</dt>
+<dd>Die Aussage sei f&uuml;r <span class="MATH"><i>n</i>+1</span> wahr (Behauptung <span class="MATH"><i>q</i></span>).</dd>
+<dt>4.&nbsp;Beweis der Implikation</dt>
+<dd><span class="MATH"><img width="61" height="33" align="middle" border="0" src="img100.png" alt="" /></span></dd>
+</dl>
+<p>Die Schritte <b>3.</b> und <b>4.</b> werden zusammengefa&szlig;t als <span class="begriff">Induktionschlu&szlig;</span> oder <span class="begriff">Schlu&szlig; von <span class="MATH"><i>n</i></span> auf <span class="MATH"><i>n</i>+1</span></span> bezeichnet.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Es ist die Formel <span class="MATH"><img width="416" height="59" align="middle" border="0" src="img101.png" alt="" /></span> zu beweisen.<br />
+Die einzelnen Schritte des Induktionsbeweises sind:</p>
+<ol>
+<li>
+<div><span class="MATH"><img width="223" height="59" align="middle" border="0" src="img102.png" alt="" /></span> ist offensichtlich richtig.</div>
+</li>
+<li>
+<div><span class="MATH"><img width="416" height="59" align="middle" border="0" src="img101.png" alt="" /></span> sei wahr f&uuml;r <span class="MATH"><img width="59" height="33" align="middle" border="0" src="img103.png" alt="" /></span></div>
+</li>
+<li>
+<div>Unter der Voraussetzung von <b>2.</b> ist zu zeigen: <span class="MATH"><img width="121" height="59" align="middle" border="0" src="img104.png" alt="" /></span></div>
+</li>
+<li>
+<div>Beweis: <span class="MATH"><img width="504" height="59" align="middle" border="0" src="img105.png" alt="" /></span><br />
+<span class="MATH"><img width="401" height="59" align="middle" border="0" src="img106.png" alt="" /></span><br />
+<span class="MATH"><img width="370" height="65" align="middle" border="0" src="img107.png" alt="" /></span></div>
+</li>
+</ol>
+</td>
+</tr>
+</table>
+</body>
+</html>

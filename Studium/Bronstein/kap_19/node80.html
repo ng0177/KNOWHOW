@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Interpolation nach Aitken-Neville</title>
+<meta name="description" content="Interpolation nach Aitken-Neville" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node79.html" />
+<link rel="up" href="node77.html" />
+<link rel="next" href="node81.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node79.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node81.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node76.html">Approximation, Ausgleichsrechnung, Harmonische Analyse</a> <a id="up" href="node77.html">Polynominterpolation</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001861300000000000000" id="SECTION001861300000000000000">Interpolation nach Aitken-Neville</a></h3>
+<p><a name="7404"></a> <a name="7405"></a> In vielen praktischen F&auml;llen wird das Interpolationspolynom <span class="MATH"><i>p</i><sub><i>n</i></sub>(<i>x</i>)</span> explizit nicht ben&ouml;tigt, sondern nur sein Funktionswert an einer vorgegebenen Stelle <span class="MATH"><i>x</i></span> des Interpolationsgebietes. Zur Berechnung dieses Funktionswertes kann man nach A<small>ITKEN/</small>N<small>EVILLE</small> rekursiv vorgehen. Dazu verwendet man zweckm&auml;&szlig;igerweise die Bezeichnung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="157" height="66" border="0" src="img510.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">161</span>)</td>
+</tr>
+</table>
+</div>
+<p>in der die Indizierung die verwendeten St&uuml;tzstellen und damit auch den Grad des Interpolationspolynoms angibt. Es gilt</p>
+<div class="mathdisplay"><a name="F1190607" id="F1190607"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190607" id="F1190607"></a><img width="462" height="90" border="0" src="img511.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">162</span>)</td>
+</tr>
+</table>
+</div>
+<p>d.h., der Funktionswert <span class="MATH"><img width="84" height="37" align="middle" border="0" src="img512.png" alt="" /></span> ergibt sich durch lineare Interpolation aus den Funktionswerten von <span class="MATH"><img width="84" height="37" align="middle" border="0" src="img513.png" alt="" /></span> und <span class="MATH"><img width="115" height="37" align="middle" border="0" src="img514.png" alt="" /></span>, zwei Interpolationspolynomen vom Grad <span class="MATH"><img width="72" height="33" align="middle" border="0" src="img515.png" alt="" /></span>. Die gezielte Anwendung von (<a href="#F1190607">19.162</a>) f&uuml;hrt auf ein Schema, das f&uuml;r den Fall <span class="MATH"><i>n</i>=4</span> angegeben werden soll:</p>
+<div class="mathdisplay"><a name="F1190608" id="F1190608"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190608" id="F1190608"></a><img width="334" height="166" border="0" src="img516.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">163</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die Elemente von (<a href="#F1190608">19.163</a>) werden spaltenweise berechnet. Ein neuer Wert im Schema entsteht jeweils aus dem links daneben stehenden und dem unmittelbar &uuml;ber diesem stehenden Wert, z.B.</p>
+<div class="myclass"><a name="F1190609a" id="F1190609a"></a><a name="F1190609b" id="F1190609b"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>p</i><sub>23</sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="408" height="63" align="middle" border="0" src="img517.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">164</span>a)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>p</i><sub>123</sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="442" height="63" align="middle" border="0" src="img518.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">164</span>b)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>p</i><sub>1234</sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="475" height="63" align="middle" border="0" src="img519.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">164</span>c)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+<p>F&uuml;r die Durchf&uuml;hrung des <span class="begriff">Algorithmus von A<small>ITKEN/</small>N<small>EVILLE</small></span> auf dem Computer braucht man nach Lit.&nbsp;<a href="../kap_22/node19.html#x1903">19.3</a> nur einen Vektor <span class="MATH"><img width="17" height="33" align="middle" border="0" src="img520.png" alt="" /></span> mit <span class="MATH"><i>n</i>+1</span> Komponenten, der nacheinander die einzelnen Spalten von (<a href="#F1190608">19.163</a>) aufnimmt. Dazu wird vereinbart, da&szlig; der Wert <span class="MATH"><img width="274" height="37" align="middle" border="0" src="img521.png" alt="" /></span> der <span class="MATH"><i>k</i></span>-ten Spalte die <span class="MATH"><i>i</i></span>-te Komponente <span class="MATH"><i>p</i><sub><i>i</i></sub></span> von <span class="MATH"><img width="17" height="33" align="middle" border="0" src="img520.png" alt="" /></span> wird. Damit sind die Spalten von (<a href="#F1190608">19.163</a>) von oben nach unten zu berechnen, um die noch ben&ouml;tigten Werte zur Verf&uuml;gung zu haben. Der Algorithmus besteht dann aus folgenden zwei Schritten:</p>
+<div class="myclass"><a name="F1190610a" id="F1190610a"></a><a name="F1190610b" id="F1190610b"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="21" height="33" align="middle" border="0" src="img522.png" alt="" /></td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="273" height="35" align="middle" border="0" src="img523.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">165</span>a)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="21" height="33" align="middle" border="0" src="img524.png" alt="" /></td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="690" height="57" align="middle" border="0" src="img525.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">165</span>b)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+Nach Abschlu&szlig; von (<a href="#F1190610b">19.165b</a>) stellt <span class="MATH"><i>p</i><sub><i>n</i></sub></span> den gesuchten Funktionswert von <span class="MATH"><i>p</i><sub><i>n</i></sub>(<i>x</i>)</span> an der Stelle <span class="MATH"><i>x</i></span> dar.
+</body>
+</html>

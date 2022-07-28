@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Bestimmung des gr&ouml;&szlig;ten gemeinsamen Teilers zweier Polynome</title>
+<meta name="description" content="Bestimmung des gr&ouml;&szlig;ten gemeinsamen Teilers zweier Polynome" />
+<meta name="keywords" content="kap_1" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node47.html" />
+<link rel="up" href="node39.html" />
+<link rel="next" href="node49.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node47.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node49.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_1.html">Arithmetik</a> <a href="node1.html">Elementare Rechenregeln</a> <a id="up" href="node39.html">Ganzrationale Ausdr&#252;cke</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00016300000000000000" id="SECTION00016300000000000000"></a> <a name="gr._gem._Teiler" id="gr._gem._Teiler"></a><a name="1526"></a>
+Bestimmung des gr&ouml;&szlig;ten gemeinsamen Teilers zweier Polynome</h3>
+<p><a name="4813"></a> <a name="4814"></a> <a name="4815"></a> <a name="4816"></a></p>
+<h5><a name="SECTION00016301000000000000" id="SECTION00016301000000000000"></a> <a name="1534"></a><br />
+Teiler und Vielfaches</h5>
+<p><a name="1535"></a> Das Polynome <span class="MATH"><i>P</i>(<i>x</i>)</span> ist durch das Polynom <span class="MATH"><img width="143" height="37" align="middle" border="0" src="img230.png" alt="" /></span> teilbar, wenn ein Polynom <span class="MATH"><i>T</i>(<i>x</i>)</span> existiert, so da&szlig;</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="322" height="92" border="0" src="img231.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">1</span>.<span class="arabic">44</span>)</td>
+</tr>
+</table>
+</div>
+<p>gilt. Ist <span class="MATH"><i>P</i>(<i>x</i>)</span> durch <span class="MATH"><i>Q</i>(<i>x</i>)</span> teilbar, so hei&szlig;t <span class="MATH"><i>Q</i>(<i>x</i>)</span> <span class="begriff">Teiler</span> von <span class="MATH"><i>P</i>(<i>x</i>)</span>, und <span class="MATH"><i>P</i>(<i>x</i>)</span> hei&szlig;t <span class="begriff">Vielfaches</span> von <span class="MATH"><img width="48" height="37" align="middle" border="0" src="img232.png" alt="" /></span>.</p>
+<h5><a name="SECTION00016302000000000000" id="SECTION00016302000000000000"></a> <a name="1547"></a><br />
+Gr&ouml;&szlig;ter gemeinsamer Teiler</h5>
+<p>Jedes Polynom, das gemeinsamer Teiler der Polynome <span class="MATH"><i>P</i>(<i>x</i>)</span> und <span class="MATH"><i>Q</i>(<i>x</i>)</span> ist und gleichzeitig Vielfaches jedes anderen gemeinsamen Teilers dieser beiden Polynome, hei&szlig;t <span class="begriff">gr&ouml;&szlig;ter gemeinsamer Teiler</span> <span class="MATH"><img width="87" height="37" align="middle" border="0" src="img233.png" alt="" /></span> der Polynome <span class="MATH"><i>P</i>(<i>x</i>)</span> und <span class="MATH"><img width="48" height="37" align="middle" border="0" src="img232.png" alt="" /></span>.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="771" height="39" align="middle" border="0" src="img234.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+<p>Wenn <span class="MATH"><i>P</i>(<i>x</i>)</span> und <span class="MATH"><i>Q</i>(<i>x</i>)</span> keine gemeinsamen Polynomfaktoren besitzen, dann nennt man sie <span class="begriff">teilerfremd</span>. Ihr gr&ouml;&szlig;ter gemeinsamer Teiler ist dann eine Konstante.</p>
+<h5><a name="SECTION00016303000000000000" id="SECTION00016303000000000000"></a><a name="Euklid" id="Euklid"></a><br />
+Euklidischer Algorithmus</h5>
+<p><a name="4819"></a> <a name="4820"></a> Der <span class="begriff">E<small>UKLID</small>ische Algorithmus</span> ist eine Methode zur Bestimmung des gr&ouml;&szlig;ten gemeinsamen Teilers zweier Polynome <span class="MATH"><i>P</i>(<i>x</i>)</span> und <span class="MATH"><img width="48" height="37" align="middle" border="0" src="img232.png" alt="" /></span>. <span class="MATH"><i>P</i>(<i>x</i>)</span> sei vom Grade <span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img235.png" alt="" /></span>, <span class="MATH"><i>Q</i>(<i>x</i>)</span> sei vom Grade <span class="MATH"><img width="24" height="16" align="bottom" border="0" src="img236.png" alt="" /></span>, und es gelte <span class="MATH"><img width="92" height="33" align="middle" border="0" src="img237.png" alt="" /></span>. Dann f&uuml;hrt man die folgenden Divisionen durch:</p>
+<ol>
+<li>
+<div>Division von <span class="MATH"><i>P</i>(<i>x</i>)</span> durch <span class="MATH"><i>Q</i>(<i>x</i>)</span> f&uuml;hrt auf den Quotienten <span class="MATH"><i>T</i><sub>1</sub>(<i>x</i>)</span> und den Rest <span class="MATH"><i>R</i><sub>1</sub>(<i>x</i>)</span>:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="225" height="66" border="0" src="img238.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">1</span>.<span class="arabic">45</span>a)</td>
+</tr>
+</table>
+</div>
+</div>
+</li>
+<li>
+<div>Division von <span class="MATH"><i>Q</i>(<i>x</i>)</span> durch <span class="MATH"><i>R</i><sub>1</sub>(<i>x</i>)</span> f&uuml;hrt auf den Quotienten <span class="MATH"><i>T</i><sub>2</sub>(<i>x</i>)</span> und den Rest <span class="MATH"><i>R</i><sub>2</sub>(<i>x</i>)</span>:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="232" height="66" border="0" src="img239.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">1</span>.<span class="arabic">45</span>b)</td>
+</tr>
+</table>
+</div>
+</div>
+</li>
+<li>
+<div>Division von <span class="MATH"><i>R</i><sub>1</sub>(<i>x</i>)</span> durch <span class="MATH"><i>R</i><sub>2</sub>(<i>x</i>)</span> f&uuml;hrt auf den Quotienten <span class="MATH"><i>T</i><sub>3</sub>(<i>x</i>)</span> und den Rest <span class="MATH"><i>R</i><sub>3</sub>(<i>x</i>)</span> usw:<br />
+Der gr&ouml;&szlig;te gemeinsame Teiler der beiden Polynome ist dann der letzte von <span class="MATH">0</span> verschiedene Rest <span class="MATH"><img width="61" height="37" align="middle" border="0" src="img240.png" alt="" /></span> Die Methode ist als <a href="node13.html#F5010105">E<small>UKLID</small>ischer Algorithmus</a> aus der Arithmetik mit nat&uuml;rlichen Zahlen bekannt.</div>
+</li>
+</ol>
+Die Ermittlung des gr&ouml;&szlig;ten gemeinsamen Teilers wird bei der L&ouml;sung von Gleichungen eingesetzt, z.B. bei der Abspaltung mehrfacher Wurzeln und bei der Anwendung der <a href="node159.html#v7">S<small>TURM</small>schen Methode</a>. 
+</body>
+</html>

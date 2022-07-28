@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Newton-Verfahren</title>
+<meta name="description" content="Newton-Verfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node5.html" />
+<link rel="previous" href="node3.html" />
+<link rel="up" href="node2.html" />
+<link rel="next" href="node5.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node3.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node5.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node1.html">Numerische L&#246;sung nichtlinearer Gleichungen</a> <a id="up" href="node2.html">Iterationsverfahren</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001811200000000000000" id="SECTION001811200000000000000"></a><a name="NewtonVf" id="NewtonVf"></a>
+Newton-Verfahren</h3>
+<p><a name="7135"></a> <a name="7136"></a> <a name="7137"></a> <a name="7138"></a></p>
+<dl>
+<dt>1.&nbsp;Vorschrift des N<small>EWTON</small>-Verfahrens:</dt>
+<dd>Zur L&ouml;sung der Nullstellengleichung <span class="MATH"><i>f</i>(<i>x</i>) = 0</span> verf&auml;hrt das N<small>EWTON</small>-<span class="begriff">Verfahren</span> nach der Vorschrift
+<div class="mathdisplay"><a name="F1190106" id="F1190106"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190106" id="F1190106"></a><img width="417" height="92" border="0" src="img19.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">6</span>)</td>
+</tr>
+</table>
+</div>
+<p>d.h., es ben&ouml;tigt zur Berechnung des neuen N&auml;herungswertes <span class="MATH"><i>x</i><sub><i>n</i>+1</sub></span> die Werte der Funktion <span class="MATH"><i>f</i>(<i>x</i>)</span> und ihrer 1.&nbsp;Ableitung <span class="MATH"><i>f</i>'(<i>x</i>)</span> an der Stelle <span class="MATH"><img width="27" height="33" align="middle" border="0" src="img20.png" alt="" /></span>.</p>
+</dd>
+<dt>2.&nbsp;Konvergenz des Newton-Verfahrens:</dt>
+<dd>F&uuml;r die Konvergenz des N<small>EWTON</small>-Verfahrens ist die Bedingung
+<div class="mathdisplay"><a name="F1190107a" id="F1190107a"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190107a" id="F1190107a"></a><img width="74" height="66" border="0" src="img21.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">7</span>a)</td>
+</tr>
+</table>
+</div>
+<p>notwendig, die Bedingung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="293" height="92" border="0" src="img22.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">7</span>b)</td>
+</tr>
+</table>
+</div>
+<p>hinreichend. Die Bedingungen (<a href="#F1190107a">19.7a</a>,b) m&uuml;ssen in einer Umgebung von <span class="MATH"><img width="26" height="16" align="bottom" border="0" src="img11.png" alt="" /></span>, die alle Punkte <span class="MATH"><i>x</i><sub><i>n</i></sub></span> sowie <span class="MATH"><img width="23" height="16" align="bottom" border="0" src="img3.png" alt="" /></span> enth&auml;lt, erf&uuml;llt sein. Falls das N<small>EWTON</small>-Verfahren konvergiert, dann konvergiert es so gut, da&szlig; sich bei jedem Iterationsschritt die Anzahl der genauen Stellen etwa verdoppelt. Man spricht in diesem Fall auch von quadratischer Konvergenz.<a name="quadrKonv" id="quadrKonv"></a></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Zur L&ouml;sung der Gleichung <span class="MATH"><img width="155" height="39" align="middle" border="0" src="img23.png" alt="" /></span>, d.h. speziell zur Berechnung der Werte <span class="MATH"><img width="66" height="39" align="middle" border="0" src="img24.png" alt="" /></span>&nbsp;(<span class="MATH"><i>a</i> &gt; 0</span> gegeben) liefert das N<small>EWTON</small>-Verfahren die Iterationsvorschrift</p>
+</td>
+</tr>
+</table>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="182" height="92" border="0" src="img25.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">8</span>)</td>
+</tr>
+</table>
+</div>
+<p>F&uuml;r <span class="MATH"><i>a</i>=2</span> erh&auml;lt man:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p><img width="417" height="65" align="bottom" border="0" src="img26.png" alt="" /><br />
+<!-- BeispielEnde: 1190101 --></p>
+</dd>
+<dt>3.&nbsp;Geometrische Interpretation:</dt>
+<dd>Die geometrische Interpretation des N<small>EWTON</small>-Verfahrens ist in der folgenden Abbildung dargestellt:<br />
+<p align="left" class="BILD"><a name="BILD_119a003" class="BILD" id="BILD_119a003"><img alt="BilD" src="../bilder/kap19/t1/119a003.gif" border="0" /></a></p>
+<p class="nachBild"></p>
+<p>Die Grundidee des N<small>EWTON</small>-Verfahrens besteht in der lokalen Approximation der Kurve <span class="MATH"><i>y</i> = <i>f</i>(<i>x</i>)</span> durch eine Tangente.</p>
+</dd>
+<dt>4.&nbsp;Modifiziertes Newton-Verfahren:</dt>
+<dd>Wenn sich im Laufe der Iteration die Werte von <span class="MATH"><i>f</i>'(<i>x</i><sub><i>n</i></sub>)</span> nur noch unwesentlich &auml;ndern, kann man diese konstant lassen und mit dem sogenannten modifizierten N<small>EWTON</small>-Verfahren weiterrechnen:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="321" height="92" border="0" src="img27.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">9</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die G&uuml;te der Konvergenz wird durch diese Vereinfachung nicht wesentlich beeinflu&szlig;t.</p>
+</dd>
+<dt>5.&nbsp;Differenzierbare Funktionen komplexen Argumentes:</dt>
+<dd>Das N<small>EWTON</small>-Verfahren ist auch auf differenzierbare Funktionen komplexen Arguments anwendbar.</dd>
+</dl>
+</body>
+</html>

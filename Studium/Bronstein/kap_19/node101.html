@@ -1,0 +1,83 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Trigonometrische Interpolation</title>
+<meta name="description" content="Trigonometrische Interpolation" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node100.html" />
+<link rel="up" href="node99.html" />
+<link rel="next" href="node102.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node100.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node102.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node76.html">Approximation, Ausgleichsrechnung, Harmonische Analyse</a> <a href="node98.html">Harmonische Analyse</a> <a id="up" href="node99.html">Formeln zur trigonometrischen Interpolation</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001864120000000000000" id="SECTION001864120000000000000"></a><a name="v353" id="v353"></a><a name="4835"></a>
+Trigonometrische Interpolation</h4>
+<p>Einige spezielle trigonometrische Polynome, die mit den N&auml;herungskoeffizienten <span class="MATH"><img width="23" height="34" align="middle" border="0" src="img654.png" alt="" /></span> und <span class="MATH"><img width="21" height="44" align="middle" border="0" src="img655.png" alt="" /></span> gebildet werden, haben wichtige Approximationseigenschaften. Zwei davon sind:</p>
+<dl>
+<dt>1.&nbsp;Interpolation:</dt>
+<dd>Es sei <span class="MATH"><img width="70" height="16" align="bottom" border="0" src="img656.png" alt="" /></span>. Das spezielle trigonometrische Polynom
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="429" height="105" border="0" src="img657.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">211</span>)</td>
+</tr>
+</table>
+</div>
+<p>mit den Koeffizienten (<a href="node100.html#F1190656">19.210</a>) erf&uuml;llt an den St&uuml;tzstellen <span class="MATH"><img width="24" height="33" align="middle" border="0" src="img251.png" alt="" /></span> (<a href="node100.html#F1190655">19.209</a>) die Interpolationsbedingung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="300" height="66" border="0" src="img658.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">212</span>)</td>
+</tr>
+</table>
+</div>
+<p>Infolge der Periodizit&auml;t von <span class="MATH"><i>f</i>(<i>x</i>)</span> ist <span class="MATH"><img width="126" height="37" align="middle" border="0" src="img659.png" alt="" /></span>.</p>
+</dd>
+<dt>2.&nbsp;Approximation im Mittel:</dt>
+<dd>Es sei <span class="MATH"><img width="70" height="16" align="bottom" border="0" src="img656.png" alt="" /></span>. Das spezielle trigonometrische Polynom
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="319" height="102" border="0" src="img660.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">213</span>)</td>
+</tr>
+</table>
+</div>
+<p>mit <span class="MATH"><i>m</i> &lt; <i>n</i></span> und den Koeffizienten (<a href="node100.html#F1190656">19.210</a>) approximiert die Funktion <span class="MATH"><i>f</i>(<i>x</i>)</span> im diskreten quadratischen Mittel bez&uuml;glich der <span class="MATH"><i>N</i></span> St&uuml;tzstellen <span class="MATH"><img width="24" height="33" align="middle" border="0" src="img251.png" alt="" /></span> (<a href="node100.html#F1190655">19.209</a>), d.h., die Fehlerquadratsumme</p>
+<div class="mathdisplay"><a name="v111" id="v111"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="v111" id="v111"></a><img width="300" height="105" border="0" src="img661.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">214</span>)</td>
+</tr>
+</table>
+</div>
+</dd>
+</dl>
+<p>Die Formeln (<a href="node100.html#F1190656">19.210</a>) bilden den Ausgangspunkt f&uuml;r verschiedene Verfahren zur effektiven Berechnung der F<small>OURIER</small>-Koeffizienten.</p>
+</body>
+</html>

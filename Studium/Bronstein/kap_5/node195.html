@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Vigenere-Chiffre</title>
+<meta name="description" content="Vigenere-Chiffre" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node196.html" />
+<link rel="previous" href="node194.html" />
+<link rel="up" href="node192.html" />
+<link rel="next" href="node196.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node194.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node196.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node188.html">Kryptologie</a> <a id="up" href="node192.html">Sicherheit von Kryptosystemen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00454300000000000000" id="SECTION00454300000000000000">Vigenere-Chiffre</a></h3>
+<p><a name="8919"></a> Die Verschl&uuml;sselung bei der V<small>IGENERE</small>-Chiffre basiert auf der periodischen Verwendung eines Schl&uuml;sselwortes, dessen Buchstaben paarweise verschieden sind.</p>
+<p>In einer Version dieser Chiffre nach L.&nbsp;C<small>AROLL</small> wird zum Ver- und Entschl&uuml;sseln das sogenannte V<small>IGENERE</small>-Tableau benutzt:</p>
+<div align="center" class="mathdisplay"><img width="207" height="262" border="0" src="img1400.png" alt="" /></div>
+<p><br clear="all" /></p>
+Steht das Klartextzeichen in Zeile <span class="MATH"><i>i</i></span> und das Schl&uuml;sselzeichen in Spalte <span class="MATH"><i>j</i></span> des V<small>IGENERE</small>-Tableaus, dann wird das Schl&uuml;sseltextzeichen im Schnittpunkt der beiden Reihen im Innern des Tableaus abgelesen. Die Entschl&uuml;sselung erfolgt in umgekehrter Reihenfolge.<br />
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Als Schl&uuml;sselwort wird ,,Hut``&nbsp; gew&auml;hlt.</p>
+<table cellpadding="3">
+<tr valign="baseline">
+<td align="left">Klartext:</td>
+<td align="center">E</td>
+<td align="center">S</td>
+<td align="center">W</td>
+<td align="center">A</td>
+<td align="center">R</td>
+<td align="center">E</td>
+<td align="center">I</td>
+<td align="center">N</td>
+<td align="center">M</td>
+<td align="center">A</td>
+<td align="center">L</td>
+</tr>
+<tr valign="baseline">
+<td align="left">Schl&uuml;ssel:</td>
+<td align="center">H</td>
+<td align="center">U</td>
+<td align="center">T</td>
+<td align="center">H</td>
+<td align="center">U</td>
+<td align="center">T</td>
+<td align="center">H</td>
+<td align="center">U</td>
+<td align="center">T</td>
+<td align="center">H</td>
+<td align="center">U</td>
+</tr>
+<tr valign="baseline">
+<td align="left">Schl&uuml;sseltext:</td>
+<td align="center">L</td>
+<td align="center">M</td>
+<td align="center">P</td>
+<td align="center">H</td>
+<td align="center">L</td>
+<td align="center">X</td>
+<td align="center">P</td>
+<td align="center">H</td>
+<td align="center">F</td>
+<td align="center">H</td>
+<td align="center">F</td>
+</tr>
+</table>
+<br /></td>
+</tr>
+</table>
+<p>Formal kann man die V<small>IGENERE</small>-Chiffre auch wie folgt schreiben: Ist <span class="MATH"><i>a</i><sub><i>i</i></sub></span> der Klartextbuchstabe und <span class="MATH"><i>a</i><sub><i>j</i></sub></span> der zugeh&ouml;rige Schl&uuml;sselbuchstabe, dann ist <span class="MATH"><i>a</i><sub><i>k</i></sub></span> der Schkl&uuml;sseltextbuchstabe genau dann, wenn <span class="MATH"><i>i</i>+<i>j</i>=<i>k</i></span> gilt.</p>
+</body>
+</html>

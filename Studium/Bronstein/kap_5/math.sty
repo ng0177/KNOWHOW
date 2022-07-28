@@ -1,0 +1,31 @@
+%% Definition der in LPLAIN.TEX fehlenden Funktionen [Detlef KÅchler,17.Dez.1991]
+\message{ Funktionsdefinitionen }
+
+\def\cosec{\mathop{\rm cosec}\nolimits}
+\def\sign{\mathop{\rm sign}\nolimits}
+\def\sgn{\sign}
+\def\sech{\mathop{\rm sech}\nolimits}
+\def\cosech{\mathop{\rm cosech}\nolimits}
+\def\arsinh{\mathop{\rm Arsinh}\nolimits}
+\def\arcosh{\mathop{\rm Arcosh}\nolimits}
+\def\artanh{\mathop{\rm Artanh}\nolimits}
+\def\arcoth{\mathop{\rm Arcoth}\nolimits}
+\def\arsech{\mathop{\rm Arsech}\nolimits}
+\def\arcosech{\mathop{\rm Arcosech}\nolimits}
+\def\arccot{\mathop{\rm arccot}\nolimits}
+\def\si{\mathop{\rm si}\nolimits}
+\def\Ci{\mathop{\rm Ci}\nolimits}
+\def\@winkel{<\kern-0.6em )}
+%
+\def\winkel{\mathop{\@winkel\,}}
+\def\bogen#1{\stackrel{\D\frown}{#1}}
+\def\dddots{\mathinner{\mkern1mu\raise\p@\vbox{\kern7\p@\hbox{.}}\mkern2mu\raise4\p@\hbox{.}
+\mkern2mu\raise7\p@\hbox{.}\mkern1mu}}
+%
+% Doppelringintegral \drint{unterer Index}{oberer Index}
+%
+\def\drint#1#2{\mathop{\mathchoice{\int\mkern-16mu\bigcirc\mkern-18mu\int_{#1}^{#2}}%
+{\int\mkern-11mu\circ\mkern-11mu\int_{#1}^{#2}}{}{}}\nolimits}
+%
+%\def\kdrint{\int\mkern-11mu\circ\mkern-11mu\int}
+\def\lambdabar{{\mathchar'26\mkern-9mu\lambda}}

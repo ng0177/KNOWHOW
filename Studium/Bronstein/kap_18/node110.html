@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Bellmannsches Optimalit&auml;tsprinzip</title>
+<meta name="description" content="Bellmannsches Optimalit&auml;tsprinzip" />
+<meta name="keywords" content="kap_18" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node111.html" />
+<link rel="previous" href="node109.html" />
+<link rel="up" href="node98.html" />
+<link rel="next" href="node111.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node109.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node111.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_18.html">Optimierung</a> <a id="up" href="node98.html">Diskrete dynamische Optimierung</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001734000000000000000" id="SECTION001734000000000000000">Bellmannsches Optimalit&auml;tsprinzip</a></h2>
+<p><a name="6280"></a> Die Berechnung der Funktionalgleichung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="386" height="83" border="0" src="img729.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">131</span>)</td>
+</tr>
+</table>
+</div>
+<p>entspricht der Bestimmung einer optimalen Politik <span class="MATH"><img width="101" height="37" align="middle" border="0" src="img730.png" alt="" /></span> f&uuml;r den mit dem Zustand <span class="MATH"><img width="40" height="33" align="middle" border="0" src="img680.png" alt="" /></span> startenden Teilproze&szlig; <span class="MATH"><img width="27" height="35" align="middle" border="0" src="img731.png" alt="" /></span>, welcher aus den letzten <span class="MATH"><i>n</i>-<i>j</i>+1</span> Stufen des Gesamtprozesses <span class="MATH"><i>P</i></span> besteht und dem die Kostenfunktion</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="345" height="68" border="0" src="img732.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">18</span>.<span class="arabic">132</span>)</td>
+</tr>
+</table>
+</div>
+<p>zugrunde liegt. Die optimale Politik des Prozesses <span class="MATH"><i>P</i><sub><i>j</i></sub></span> mit dem Anfangszustand <span class="MATH"><img width="40" height="33" align="middle" border="0" src="img680.png" alt="" /></span> ist unabh&auml;ngig von den Entscheidungen <span class="MATH"><img width="102" height="33" align="middle" border="0" src="img733.png" alt="" /></span> in den ersten <span class="MATH"><i>j</i>-1</span> Stufen von <span class="MATH"><img width="22" height="16" align="bottom" border="0" src="img734.png" alt="" /></span>, die zum Zustand <span class="MATH"><img width="40" height="33" align="middle" border="0" src="img735.png" alt="" /></span> f&uuml;hrten. F&uuml;r die Ermittlung von <span class="MATH"><img width="73" height="37" align="middle" border="0" src="img736.png" alt="" /></span> wird die Gr&ouml;&szlig;e <span class="MATH"><img width="73" height="37" align="middle" border="0" src="img737.png" alt="" /></span> ben&ouml;tigt. Ist nun <span class="MATH"><img width="101" height="37" align="middle" border="0" src="img730.png" alt="" /></span> eine optimale Politik f&uuml;r <span class="MATH"><img width="27" height="35" align="middle" border="0" src="img731.png" alt="" /></span>, dann ist offensichtlich <span class="MATH"><img width="118" height="37" align="middle" border="0" src="img738.png" alt="" /></span> eine optimale Politik f&uuml;r den Teilproze&szlig; <span class="MATH"><i>P</i><sub><i>j</i>+1</sub></span> zum Anfangszustand <span class="MATH"><img width="145" height="37" align="middle" border="0" src="img739.png" alt="" /></span>. Diese Aussage wird im <span class="begriff">B<small>ELLMANN</small>schen Optimalit&auml;tsprinzip</span> verallgemeinert.</p>
+<p><b>B<small>ELLMANN</small>sches Prinzip:</b> Ist <span class="MATH"><img width="101" height="37" align="middle" border="0" src="img740.png" alt="" /></span> eine optimale Politik eines Prozesses <span class="MATH"><i>P</i></span> und <span class="MATH"><img width="100" height="37" align="middle" border="0" src="img741.png" alt="" /></span> die zugeh&ouml;rige Zustandsfolge, dann ist f&uuml;r jeden Teilproze&szlig; <span class="MATH"><img width="114" height="37" align="middle" border="0" src="img742.png" alt="" /></span>, mit dem Startzustand <span class="MATH"><img width="40" height="35" align="middle" border="0" src="img743.png" alt="" /></span> die Politik <span class="MATH"><img width="101" height="37" align="middle" border="0" src="img730.png" alt="" /></span> ebenfalls optimal (s. <a href="../kap_22/node18.html#x1801">18.1</a>).</p>
+</body>
+</html>

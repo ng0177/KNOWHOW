@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Algebraische Ausdr&uuml;cke</title>
+<meta name="description" content="Algebraische Ausdr&uuml;cke" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node65.html" />
+<link rel="previous" href="node63.html" />
+<link rel="up" href="node53.html" />
+<link rel="next" href="node65.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node63.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node65.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a id="up" href="node53.html">Maple</a> </span>
+</p>
+</div>
+<h2><a name="SECTION001934000000000000000" id="SECTION001934000000000000000"></a> <a name="1845"></a>
+Algebraische Ausdr&uuml;cke</h2>
+<p>Mit Hilfe der arithmetischen Operatoren lassen sich aus Variablen (Symbolen) algebraische Ausdr&uuml;cke konstruieren. Sie alle haben den Typ <span class="MATH"><img width="93" height="33" align="middle" border="0" src="img514.png" alt="" /></span>, zu welchem die ,,Untertypen``&nbsp; <span class="MATH"><img width="73" height="33" align="middle" border="0" src="img435.png" alt="" /></span>, <span class="MATH"><img width="573" height="33" align="middle" border="0" src="img515.png" alt="" /></span> sowie die arithmetischen Operatortypen und der Punktoperatortyp geh&ouml;ren.</p>
+<p>Man erkennt, da&szlig; eine einzelne Variable (ein Symbol) auch vom Typ <span class="MATH"><img width="93" height="33" align="middle" border="0" src="img514.png" alt="" /></span> ist. Die Basiszahlentypen geh&ouml;ren ebenfalls dazu, denn zu ihnen lassen sich algebraische Ausdr&uuml;cke in der Regel mit dem Befehl <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img516.png" alt="" /></span> auswerten.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="277" height="65" border="0" src="img517.png" alt="" /></div>
+<p><br clear="all" /></p>
+Hier wird ein Ausdruck, in diesem Fall ein Polynom dritten Grades in <span class="MATH"><i>x</i></span>, definiert. Mit dem Substitutionsoperator <span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img516.png" alt="" /></span> kann man der Variablen <span class="MATH"><i>x</i></span> im Polynom (Ausdruck) Werte (Zahlen) zuweisen und die Auswertung veranlassen:<br />
+<div align="center" class="mathdisplay"><img width="530" height="120" border="0" src="img518.png" alt="" /></div>
+<p><br clear="all" /></p>
+<p>Der Operator <span class="MATH"><img width="24" height="33" align="middle" border="0" src="img519.png" alt="" /></span> dient zur Extraktion von Unterausdr&uuml;cken aus einem Ausdruck. Mit</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="47" height="66" border="0" src="img520.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">40</span>)</td>
+</tr>
+</table>
+</div>
+<p>erh&auml;lt man die <a href="node65.html#FolgList">Folge</a> der Teilausdr&uuml;cke auf der ersten Ebene, also</p>
+<div align="center" class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><span class="MATH"><i>x</i><sup>3</sup>,-4<i>x</i><sup>2</sup>,3<i>x</i>,5</span></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">41</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+In der Form <span class="MATH"><img width="68" height="37" align="middle" border="0" src="img521.png" alt="" /></span> wird der <span class="MATH"><i>i</i></span>-te Term zur&uuml;ckgegeben, also liefert z.B. <span class="MATH"><img width="66" height="37" align="middle" border="0" src="img522.png" alt="" /></span> den Term <span class="MATH">-4<i>x</i><sup>2</sup></span>, mit <span class="MATH"><img width="66" height="37" align="middle" border="0" src="img523.png" alt="" /></span> wird der Basistyp von <span class="MATH"><i>p</i></span>, n&auml;mlich <span class="MATH">+</span> zur&uuml;ckgegeben. Die Anzahl der Terme (Operanden) des Ausdrucks ermittelt man mit <span class="MATH"><img width="73" height="37" align="middle" border="0" src="img524.png" alt="" /></span>.</td>
+</tr>
+</table>
+</body>
+</html>

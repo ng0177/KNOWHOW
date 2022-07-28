@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Bestimmte Integrale, Mehrfachintegrale</title>
+<meta name="description" content="Bestimmte Integrale, Mehrfachintegrale" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node120.html" />
+<link rel="previous" href="node118.html" />
+<link rel="up" href="node116.html" />
+<link rel="next" href="node120.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node118.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node120.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node82.html">Anwendungen von Computeralgebrasystemen</a> <a href="node115.html">Differential- und Integralrechnung</a> <a id="up" href="node116.html">Mathematica</a> </span>
+</p>
+</div>
+<p><!--End of Navigation Panel-->
+
+
+<h4><a name="SECTION001944130000000000000" id="SECTION001944130000000000000"></a> <a name="3656"></a> <a name="3657"></a>
+Bestimmte Integrale, Mehrfachintegrale</h4>
+<h5><a name="SECTION001944131000000000000" id="SECTION001944131000000000000">Bestimmte Integrale</a></h5>
+<p>Mit der Anweisung <span class="MATH"><img width="205" height="37" align="middle" border="0" src="img919.png" alt="" /></span> kann <i class="sans">Mathematica</i> das bestimmte Integral der Funktion <span class="MATH"><i>f</i>(<i>x</i>)</span> mit der unteren Grenze <span class="MATH"><i>x</i><sub><i>a</i></sub></span> und der oberen Grenze <span class="MATH"><i>x</i><sub><i>e</i></sub></span> bestimmen.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="464" height="67" border="0" src="img920.png" alt="" /></div>
+<p><br clear="all" /></p>
+<br />
+<div align="center" class="mathdisplay"><img width="144" height="66" border="0" src="img921.png" alt="" /></div>
+<p><br clear="all" /></p>
+<i class="sans">Mathematica</i> liefert den Wert <span class="MATH"><img width="16" height="16" align="bottom" border="0" src="img19.png" alt="" /></span> (s.&nbsp;Tabelle <a href="../kap_21/node106.html#v218">Bestimmte Integrale</a> Nr. 9 f&uuml;r <span class="MATH"><i>a</i>=1</span>).</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Gibt man aber ein</p>
+</td>
+</tr>
+</table>
+<p></p>
+<div class="myclass">
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="50" height="39" align="middle" border="0" src="img742.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="345" height="39" align="middle" border="0" src="img922.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="57" height="37" align="middle" border="0" src="img744.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="24" height="33" align="middle" border="0" src="img923.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+unendlich, da es sich um ein uneigentliches Integral mit einem Pol des Integranden bei <span class="MATH"><i>x</i>=0</span> handelt.
+<p><b>Hinweis:</b> Bei der Berechnung bestimmter Integrale ist Vorsicht geboten. Wenn man die Eigenschaften des Integranden nicht kennt, sollte man sich vor der Integration eine Graphik der Funktion im interessierenden Bereich anfertigen.</p>
+<h5><a name="SECTION001944132000000000000" id="SECTION001944132000000000000">Mehrfachintegrale</a></h5>
+<p>Zweifache bestimmte Integrale ruft man mit der Anweisung</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="323" height="66" border="0" src="img924.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">73</span>)</td>
+</tr>
+</table>
+</div>
+<p>auf. Die Abarbeitung erfolgt von rechts nach links, zun&auml;chst wird also die Integration &uuml;ber <span class="MATH"><i>y</i></span> durchgef&uuml;hrt. Die Grenzen <span class="MATH"><i>y</i><sub><i>a</i></sub></span> und <span class="MATH"><i>y</i><sub><i>e</i></sub></span> k&ouml;nnen daher Funktionen von <span class="MATH"><i>x</i></span> sein, die in die Stammfunktion eingesetzt werden. Danach wird das Integral &uuml;ber <span class="MATH"><i>x</i></span> bestimmt.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r das Integral <span class="MATH"><i>A</i></span> zur Berechnung einer Fl&auml;che zwischen Parabel und einer, diese zweifach schneidenden Geraden, in Abschnitt <a href="../kap_8/node140.html#BerechDoppInt1">Berechnung des Doppelintegrals</a> erh&auml;lt man</p>
+<div align="center" class="mathdisplay"><img width="547" height="85" border="0" src="img925.png" alt="" /></div>
+<p><br clear="all" /></p>
+Auch hier ist Aufmerksamkeit in bezug auf Unstetigkeiten der beteiligten Funktionen geboten.</td>
+</tr>
+</table>
+</body>
+</html>

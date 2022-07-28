@@ -1,0 +1,76 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Relaxationsverfahren</title>
+<meta name="description" content="Relaxationsverfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node29.html" />
+<link rel="up" href="node27.html" />
+<link rel="next" href="node31.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node29.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node31.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node16.html">Numerische L&#246;sung von Gleichungssystemen</a> <a href="node17.html">Lineare Gleichungssysteme</a> <a id="up" href="node27.html">Iteration in Gesamt- und Einzelschritten</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001821430000000000000" id="SECTION001821430000000000000"></a> <a name="1699"></a> <a name="1700"></a>
+Relaxationsverfahren</h4>
+<p><a name="7720"></a> <a name="1702"></a> <a name="1703"></a> <a name="1704"></a> Die Iterationsvorschrift des G<small>AUSS</small>-S<small>EIDEL</small>-Verfahrens (<a href="node29.html#F1190229">19.51</a>) l&auml;&szlig;t sich auch in der sogenannten <span class="begriff">Korrekturform</span><a name="KorrForm" id="KorrForm"></a></p>
+<div class="myclass"><a name="F1190230" id="F1190230"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="52" height="47" align="middle" border="0" src="img158.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="402" height="77" align="middle" border="0" src="img179.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="52" height="47" align="middle" border="0" src="img158.png" alt="" /></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="357" height="47" align="middle" border="0" src="img180.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">52</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+schreiben. Durch geeignete Wahl eines <span class="begriff">Relaxationsparameters</span> <span class="MATH"><img width="17" height="16" align="bottom" border="0" src="img181.png" alt="" /></span>, so da&szlig; (<a href="#F1190230">19.52</a>) in
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="434" height="71" border="0" src="img182.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">53</span>)</td>
+</tr>
+</table>
+</div>
+<p>&uuml;bergeht, kann man versuchen, die Konvergenzeigenschaften des Einzelschrittverfahrens zu verbessern. Es l&auml;&szlig;t sich zeigen, da&szlig; Konvergenz nur f&uuml;r</p>
+<div class="mathdisplay"><a name="F1190232" id="F1190232"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190232" id="F1190232"></a><img width="80" height="59" border="0" src="img183.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">54</span>)</td>
+</tr>
+</table>
+</div>
+<p>m&ouml;glich ist. F&uuml;r <span class="MATH"><img width="51" height="16" align="bottom" border="0" src="img184.png" alt="" /></span> erh&auml;lt man das Einzelschrittverfahren. Im Fall <span class="MATH"><img width="51" height="33" align="middle" border="0" src="img185.png" alt="" /></span> spricht man von &Uuml;berrelaxation, die zugeh&ouml;rigen Iterationsverfahren werden als <span class="begriff">SOR-Verfahren</span> (<b>s</b>uccessive <b>o</b>ver <b>r</b>elaxation) bezeichnet. Die Bestimmung optimaler Relaxationsparameter ist nur f&uuml;r einige spezielle Matrizentypen explizit m&ouml;glich.<br />
+Die Anwendung iterativer Methoden zur L&ouml;sung linearer Gleichungssysteme ist vor allem angebracht, wenn die Hauptdiagonalelemente <span class="MATH"><i>a</i><sub><i>ii</i></sub></span> der Koeffizientenmatrix gegen&uuml;ber den &uuml;brigen Elementen <span class="MATH"><img width="93" height="37" align="middle" border="0" src="img186.png" alt="" /></span> betragsm&auml;&szlig;ig stark &uuml;berwiegen oder wenn durch Umstellung oder geeignete Kombination der einzelnen Gleichungen eine solche Anordnung erreicht werden kann.</p>
+</body>
+</html>

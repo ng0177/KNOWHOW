@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Gr&ouml;&szlig;ter gemeinsamer Teiler</title>
+<meta name="description" content="Gr&ouml;&szlig;ter gemeinsamer Teiler" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node153.html" />
+<link rel="previous" href="node151.html" />
+<link rel="up" href="node144.html" />
+<link rel="next" href="node153.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node151.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node153.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node143.html">Elementare Zahlentheorie</a> <a id="up" href="node144.html">Teilbarkeit</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00441600000000000000" id="SECTION00441600000000000000"></a><a name="ggT1" id="ggT1"></a>
+Gr&ouml;&szlig;ter gemeinsamer Teiler</h3>
+<p><a name="8799"></a> <a name="8800"></a> <a name="4342"></a> F&uuml;r ganze Zahlen <span class="MATH"><img width="117" height="33" align="middle" border="0" src="img1076.png" alt="" /></span> die nicht alle gleich <span class="MATH">0</span> sind, wird die gr&ouml;&szlig;te Zahl in der Menge der gemeinsamen Teiler von <span class="MATH"><img width="123" height="37" align="middle" border="0" src="img186.png" alt="" /></span> der <span class="begriff">gr&ouml;&szlig;te gemeinsame Teiler</span> von <span class="MATH"><img width="123" height="37" align="middle" border="0" src="img186.png" alt="" /></span> genannt und mit <span class="MATH"><img width="155" height="37" align="middle" border="0" src="img1077.png" alt="" /></span> bezeichnet. Gilt <span class="MATH"><img width="193" height="37" align="middle" border="0" src="img1078.png" alt="" /></span>, dann hei&szlig;en die Zahlen <span class="MATH"><img width="123" height="37" align="middle" border="0" src="img186.png" alt="" /></span> <span class="begriff">teilerfremd</span>.<br />
+F&uuml;r die Bestimmung des gr&ouml;&szlig;ten gemeinsamen Teilers reicht es aus, die positiven gemeinsamen Teiler zu betrachten. Sind die kanonischen Primfaktorenzerlegungen</p>
+<div class="mathdisplay"><a name="F1050418a" id="F1050418a"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1050418a" id="F1050418a"></a><img width="112" height="93" border="0" src="img1079.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">253</span>a)</td>
+</tr>
+</table>
+</div>
+<p>von <span class="MATH"><img width="123" height="37" align="middle" border="0" src="img186.png" alt="" /></span> gegeben, dann gilt</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="344" height="116" border="0" src="img1080.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">253</span>b)</td>
+</tr>
+</table>
+</div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r die Zahlen <span class="MATH"><img width="613" height="39" align="middle" border="0" src="img1081.png" alt="" /></span> ist der <span class="MATH"><img width="242" height="39" align="middle" border="0" src="img1082.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+<dl>
+<dt>1.&nbsp;Euklidischer Algorithmus</dt>
+<dd><a name="EuklAlg" id="EuklAlg"></a><a name="8805"></a> <a name="8806"></a> F&uuml;r zwei nat&uuml;rliche Zahlen <span class="MATH"><i>a</i>,<i>b</i></span> kann man den gr&ouml;&szlig;ten gemeinsamen Teiler mit dem E<small>UKLID</small>ischen Algorithmus ohne Zuhilfenahme der Primfaktorenzerlegung ermitteln. Dazu ist nach dem folgenden Schema eine Kette von Divisionen mit Rest auszuf&uuml;hren. F&uuml;r <span class="MATH"><i>a</i> &gt; <i>b</i></span> sei <span class="MATH"><img width="124" height="35" align="middle" border="0" src="img1083.png" alt="" /></span> Dann gilt:<br />
+<br />
+<div class="myclass"><a name="F1050419a" id="F1050419a"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>a</i><sub>0</sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="235" height="33" align="middle" border="0" src="img1084.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>a</i><sub>1</sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="235" height="33" align="middle" border="0" src="img1085.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="10" height="57" align="middle" border="0" src="img1086.png" alt="" /></td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="52" height="57" align="middle" border="0" src="img1087.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">254</span>a)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>a</i><sub><i>n</i>-2</sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="257" height="33" align="middle" border="0" src="img1088.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>a</i><sub><i>n</i>-1</sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="49" height="33" align="middle" border="0" src="img1089.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+Der Divisionsalgorithmus endet nach endlich vielen Schritten, da die Folge <span class="MATH"><img width="81" height="33" align="middle" border="0" src="img1090.png" alt="" /></span> eine streng monoton fallende Folge nat&uuml;rlicher Zahlen ist. Der letzte von <span class="MATH">0</span> verschiedene Rest <span class="MATH"><i>a</i><sub><i>n</i></sub></span> ist der gr&ouml;&szlig;te gemeinsame Teiler von <span class="MATH"><i>a</i><sub>0</sub></span> und <span class="MATH"><i>a</i><sub>1</sub>.</span><br />
+Benutzt man die Reduktionsvorschrift
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="425" height="66" border="0" src="img1091.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">254</span>b)</td>
+</tr>
+</table>
+</div>
+<p>dann kann man durch wiederholte Anwendung des E<small>UKLID</small>ischen Algorithmus auch f&uuml;r <span class="MATH"><i>n</i></span> nat&uuml;rliche Zahlen mit <span class="MATH"><i>n</i> &gt; 2</span> den gr&ouml;&szlig;ten gemeinsamen Teiler ermitteln.<br />
+(S.&nbsp;auch <a href="#EuklidAlgorith">Satz zum E<small>UKLID</small>ischen Algorithmus</a>.)</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Es gilt <span class="MATH"><img width="141" height="37" align="middle" border="0" src="img1092.png" alt="" /></span>, denn <span class="MATH"><img width="581" height="33" align="middle" border="0" src="img1093.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="510" height="37" align="middle" border="0" src="img1094.png" alt="" /></span></p>
+</td>
+</tr>
+</table>
+<p><!-- BeispielStart: 1050407 -->
+<a name="BSPEuklidAlgor" id="BSPEuklidAlgor"></a></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Der E<small>UKLID</small>ische Algorithmus (s.&nbsp;<a href="../kap_1/node13.html#EuklidAlgor">Formulierung 1</a> und <a href="#EuklAlg">Formulierung 2</a>) zur Berechnung des <span class="MATH"><img width="37" height="35" align="middle" border="0" src="img1095.png" alt="" /></span> zweier Zahlen hat besonders viele Rechenschritte, wenn es sich um benachbarte Zahlen aus der Folge der F<small>IBONACCI</small>-Zahlen handelt. In der nachstehenden Rechnung ist ein Beispiel gegeben, in dem die auftretenden Quotienten jeweils gleich 1 sind.<br />
+<span class="MATH"><img width="132" height="33" align="middle" border="0" src="img1096.png" alt="" /></span></p>
+<p><span class="MATH"><img width="132" height="33" align="middle" border="0" src="img1097.png" alt="" /></span></p>
+<p><span class="MATH"><img width="123" height="33" align="middle" border="0" src="img1098.png" alt="" /></span></p>
+<p><span class="MATH"><img width="113" height="33" align="middle" border="0" src="img1099.png" alt="" /></span></p>
+<p><span class="MATH"><img width="104" height="33" align="middle" border="0" src="img1100.png" alt="" /></span></p>
+<p><span class="MATH"><img width="104" height="33" align="middle" border="0" src="img1101.png" alt="" /></span></p>
+<p><span class="MATH"><img width="104" height="33" align="middle" border="0" src="img1102.png" alt="" /></span></p>
+<p><span class="MATH"><img width="104" height="33" align="middle" border="0" src="img1103.png" alt="" /></span></p>
+<p><span class="MATH"><img width="80" height="16" align="bottom" border="0" src="img1104.png" alt="" /></span></p>
+</td>
+</tr>
+</table>
+<p><!-- BeispielEnde: 1050407 -->
+Satz zum Euklidischen Algorithmus<a name="EuklidAlgorith" id="EuklidAlgorith"></a><a name="8810"></a> <a name="8811"></a> F&uuml;r nat&uuml;rliche Zahlen <span class="MATH"><i>a</i>,<i>b</i></span> mit <span class="MATH"><i>a</i> &gt; <i>b</i> &gt; 0</span> sei <span class="MATH"><img width="56" height="37" align="middle" border="0" src="img1105.png" alt="" /></span> die Anzahl der Divisionen mit Rest im E<small>UKLID</small>ischen Algorithmus und <span class="MATH"><img width="38" height="37" align="middle" border="0" src="img1106.png" alt="" /></span> die Stellenzahl von <span class="MATH"><i>b</i></span> im dekadischen System. Dann gilt:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="140" height="66" border="0" src="img1107.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">255</span>)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>2.&nbsp;Gr&ouml;&szlig;ter gemeinsamer Teiler als Linearkombination</dt>
+<dd><a name="ggTalsLK" id="ggTalsLK"></a><a name="8812"></a> <a name="8813"></a> Aus dem E<small>UKLID</small>ischen Algorithmus folgt:<br />
+<div class="myclass"><a name="F1050420a" id="F1050420a"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>a</i><sub>2</sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="203" height="35" align="middle" border="0" src="img1108.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>a</i><sub>3</sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="203" height="35" align="middle" border="0" src="img1109.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="10" height="57" align="middle" border="0" src="img1086.png" alt="" /></td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="10" height="57" align="middle" border="0" src="img1086.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">256</span>a)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><i>a</i><sub><i>n</i></sub></td>
+<td align="center" nowrap="nowrap">=</td>
+<td align="left" nowrap="nowrap"><img width="296" height="35" align="middle" border="0" src="img1110.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+Dabei sind <span class="MATH"><i>c</i><sub><i>n</i>-2</sub></span> und <span class="MATH"><i>d</i><sub><i>n</i>-2</sub></span> ganze Zahlen. Also ist <span class="MATH"><img width="95" height="37" align="middle" border="0" src="img1111.png" alt="" /></span> als Linearkombination von <span class="MATH"><i>a</i><sub>0</sub></span> und <span class="MATH"><i>a</i><sub>1</sub></span> mit ganzzahligen Koeffizienten darstellbar:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="251" height="66" border="0" src="img1112.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">256</span>b)</td>
+</tr>
+</table>
+</div>
+<p>Man kann auch <span class="MATH"><img width="155" height="37" align="middle" border="0" src="img1077.png" alt="" /></span> als Linearkombination von <span class="MATH"><img width="123" height="37" align="middle" border="0" src="img186.png" alt="" /></span> darstellen, denn:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="691" height="66" border="0" src="img1113.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">256</span>c)</td>
+</tr>
+</table>
+</div>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><span class="MATH"><img width="505" height="37" align="middle" border="0" src="img1114.png" alt="" /></span> mit <span class="MATH"><img width="203" height="37" align="middle" border="0" src="img1115.png" alt="" /></span> und <span class="MATH"><img width="188" height="37" align="middle" border="0" src="img1116.png" alt="" /></span>, also <span class="MATH"><img width="439" height="37" align="middle" border="0" src="img1117.png" alt="" /></span>.</p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+</body>
+</html>

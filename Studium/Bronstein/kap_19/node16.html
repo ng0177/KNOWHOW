@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Numerische L&ouml;sung von Gleichungssystemen</title>
+<meta name="description" content="Numerische L&ouml;sung von Gleichungssystemen" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node17.html" />
+<link rel="previous" href="node15.html" />
+<link rel="up" href="kap_19.html" />
+<link rel="next" href="node17.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node15.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node17.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" id="up" href="kap_19.html">Numerische Mathematik</a> </span>
+</p>
+</div>
+<h1><a name="SECTION001820000000000000000" id="SECTION001820000000000000000"></a><a name="16.2.1"></a><a name="793"></a> <a name="794"></a> <a name="795"></a> <a name="796"></a> <a name="797"></a> <a name="798"></a>
+Numerische L&ouml;sung von Gleichungssystemen</h1>
+<p>Bei vielen praktischen Aufgaben werden f&uuml;r <span class="MATH"><i>n</i></span> unbekannte Gr&ouml;&szlig;en <span class="MATH"><img width="182" height="37" align="middle" border="0" src="img71.png" alt="" /></span> Bedingungen in Gleichungsform gestellt:</p>
+<div class="mathdisplay"><a name="F1190201" id="F1190201"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190201" id="F1190201"></a><img width="193" height="147" border="0" src="img72.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">23</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die Unbekannten <span class="MATH"><i>x</i><sub><i>i</i></sub></span> sind so zu bestimmen, da&szlig; sie eine L&ouml;sung des Gleichungssystems (<a href="#F1190201">19.23</a>) darstellen. In der Regel ist <span class="MATH"><img width="60" height="16" align="bottom" border="0" src="img73.png" alt="" /></span>, d.h., die Anzahl der Unbekannten stimmt mit der Anzahl der Gleichungen &uuml;berein. Im Falle <span class="MATH"><i>m</i> &gt; <i>n</i></span> bezeichnet man (<a href="#F1190201">19.23</a>) als <span class="begriff">&uuml;berbestimmtes System</span>, im Falle <span class="MATH"><i>m</i> &lt; <i>n</i></span> als <span class="begriff">unterbestimmtes System</span>.<br />
+&Uuml;berbestimmte Systeme haben in der Regel keine L&ouml;sung. Man formuliert deshalb die zu (<a href="#F1190201">19.23</a>) geh&ouml;rende <span class="begriff">Quadratmittelaufgabe</span></p>
+<div class="mathdisplay"><a name="F1190202" id="F1190202"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190202" id="F1190202"></a><img width="229" height="102" border="0" src="img74.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">24</span>)</td>
+</tr>
+</table>
+</div>
+<p>als Ersatzaufgabe. Im unterbestimmten Fall k&ouml;nnen im allgemeinen <span class="MATH"><i>n</i>-<i>m</i></span> Unbekannte frei gew&auml;hlt werden, so da&szlig; die L&ouml;sung von (<a href="#F1190201">19.23</a>) von <span class="MATH"><i>n</i>-<i>m</i></span> Parametern abh&auml;ngt. Man spricht dann von einer <span class="MATH">(<i>n</i>-<i>m</i>)</span>-dimensionalen <span class="begriff">L&ouml;sungsmannigfaltigkeit</span>.<br />
+Man unterscheidet <span class="begriff">lineare</span> und <span class="begriff">nichtlineare Gleichungssysteme</span>, je nachdem, ob in (<a href="#F1190201">19.23</a>) die Unbekannten nur linear oder auch nichtlinear auftreten. <!--Table of Child-Links-->
+<a name="CHILD_LINKS" id="CHILD_LINKS"> </a></p>
+<ul class="ChildLinks">
+<li><a name="tex2html296" href="node17.html" id="tex2html296">Lineare Gleichungssysteme</a>
+<ul>
+<li><a name="tex2html297" href="node18.html" id="tex2html297">Dreieckszerlegung einer Matrix</a></li>
+<li><a name="tex2html298" href="node23.html" id="tex2html298">Cholesky-Verfahren bei symmetrischer Koeffizientenmatrix</a></li>
+<li><a name="tex2html299" href="node24.html" id="tex2html299">Orthogonalisierungsverfahren</a></li>
+<li><a name="tex2html300" href="node27.html" id="tex2html300">Iteration in Gesamt- und Einzelschritten</a></li>
+</ul>
+<br /></li>
+<li><a name="tex2html301" href="node31.html" id="tex2html301">Nichtlineare Gleichungssysteme</a>
+<ul>
+<li><a name="tex2html302" href="node32.html" id="tex2html302">Gew&ouml;hnliches Iterationsverfahren</a></li>
+<li><a name="tex2html303" href="node33.html" id="tex2html303">Newton-Verfahren</a></li>
+<li><a name="tex2html304" href="node34.html" id="tex2html304">Ableitungsfreies Gau&szlig;-Newton-Verfahren</a></li>
+</ul>
+</li>
+</ul>
+<!--End of Table of Child-Links-->
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Kryptosysteme</title>
+<meta name="description" content="Kryptosysteme" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node191.html" />
+<link rel="previous" href="node189.html" />
+<link rel="up" href="node188.html" />
+<link rel="next" href="node191.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node189.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node191.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a id="up" href="node188.html">Kryptologie</a> </span>
+</p>
+</div>
+<h2><a name="SECTION00452000000000000000" id="SECTION00452000000000000000"></a><a name="KryptosystemSymmAsymm" id="KryptosystemSymmAsymm"></a><a name="5367"></a>
+Kryptosysteme</h2>
+<p>Ein abstraktes Kryptosystem besteht aus den folgenden Mengen: Nachrichtenraum <span class="MATH"><i>M</i></span>, Schl&uuml;sseltextraum <span class="MATH"><i>C</i></span>, Schl&uuml;sselr&auml;ume <span class="MATH"><i>K</i></span> und <span class="MATH"><i>K</i>'</span>, Funktionsr&auml;ume <span class="MATH"><img width="19" height="16" align="bottom" border="0" src="img1376.png" alt="" /></span> und <span class="MATH"><img width="22" height="16" align="bottom" border="0" src="img1377.png" alt="" /></span>.</p>
+<p>Eine Nachricht <span class="MATH"><img width="64" height="35" align="middle" border="0" src="img1378.png" alt="" /></span> wird durch Anwendung einer Abbildung <span class="MATH"><img width="58" height="35" align="middle" border="0" src="img1379.png" alt="" /></span> mit einem Schl&uuml;ssel <span class="MATH"><img width="56" height="35" align="middle" border="0" src="img926.png" alt="" /></span> zu einem Schl&uuml;sseltext <span class="MATH"><img width="51" height="35" align="middle" border="0" src="img1380.png" alt="" /></span> verschl&uuml;sselt und &uuml;ber einen Kommunikationskanal &uuml;bermittelt. Der Empf&auml;nger kann aus <span class="MATH"><i>c</i></span> die urspr&uuml;ngliche Nachricht <span class="MATH"><i>m</i></span> reproduzieren, sofern er &uuml;ber eine geeignete Abbildung <span class="MATH"><img width="62" height="35" align="middle" border="0" src="img1381.png" alt="" /></span> und den dazu passenden Schl&uuml;ssel <span class="MATH"><img width="65" height="37" align="middle" border="0" src="img1382.png" alt="" /></span> verf&uuml;gt.</p>
+<p>Es gibt zwei Arten von Kryptosystemen:</p>
+<dl>
+<dt>1.&nbsp;Symmetrische Kryptosysteme:</dt>
+<dd>Beim klassischen symmetrischen Kryptosystem verwendet man den gleichen Schl&uuml;ssel <span class="MATH"><i>k</i></span> zum Verschl&uuml;sseln der Nachricht und zum Entschl&uuml;sseln des Schl&uuml;sseltextes.
+<p>Beim Erstellen von klassischen Kryptosystemen kann der Anwender seiner Phantasie freien Lauf lassen. Das Verschl&uuml;sseln und Entschl&uuml;sseln darf aber nicht zu kompliziert werden. In jedem Fall ist die sichere &Uuml;bertragung zwischen beiden Kommunikationspartnern unabdingbar.</p>
+</dd>
+<dt>2.&nbsp;Asymmetrische Kryptosysteme:</dt>
+<dd>Beim <a href="node202.html#DiffieHellman">asymmetrischen Kryptosystem</a> verwendet man zwei Schl&uuml;ssel, einen privaten (streng geheimen) und einen &ouml;ffentlichen Schl&uuml;ssel. Der &ouml;ffentliche Schl&uuml;ssel kann auf dem gleichen Weg wie der Schl&uuml;sseltext &uuml;bertragen werden. Die Sicherheit der Kommunikation ist hierbei durch die Verwendung sogenannter <a href="node203.html#Einwegfunktion1">Einwegfunktionen</a> gew&auml;hrleistet, die es dem unbefugten Lauscher unm&ouml;glich machen, den Klartext aus dem Schl&uuml;sseltext zu ermitteln.</dd>
+</dl>
+</body>
+</html>

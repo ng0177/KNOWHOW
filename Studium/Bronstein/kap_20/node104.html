@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>L&ouml;sung von Gleichungen mit einer Unbekannten</title>
+<meta name="description" content="L&ouml;sung von Gleichungen mit einer Unbekannten" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node105.html" />
+<link rel="previous" href="node103.html" />
+<link rel="up" href="node102.html" />
+<link rel="next" href="node105.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node103.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node105.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node82.html">Anwendungen von Computeralgebrasystemen</a> <a href="node96.html">L&#246;sung von Gleichungen und Gleichungssystemen</a> <a id="up" href="node102.html">Maple</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001942220000000000000" id="SECTION001942220000000000000"></a> <a name="3026"></a>
+L&ouml;sung von Gleichungen mit einer Unbekannten</h4>
+<p>Polynomgleichungen mit einer Unbekannten, f&uuml;r deren Grad <span class="MATH"><img width="34" height="33" align="middle" border="0" src="img719.png" alt="" /></span> gilt, kann <i class="sans">Maple</i> symbolisch l&ouml;sen.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="420" height="71" border="0" src="img790.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p>Mit <i class="sans">Maple</i> kann man allgemeine Gleichung dritten Grades mit allgemeinen Koeffizienten in geschlossener Form l&ouml;sen.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="543" height="264" border="0" src="img791.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p>Man erh&auml;lt entsprechende Ausdr&uuml;cke f&uuml;r <span class="MATH"><i>r</i>[2],<i>r</i>[3]</span>, die wegen ihrer L&auml;nge hier nicht explizit angegeben werden. Auch die allgemeine Gleichung vierten Grades wird von <i class="sans">Maple</i> ohne Probleme gel&ouml;st.<br />
+Benutzt man in <span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img782.png" alt="" /></span> eine Gleichung, in der Koeffizienten als Gleitpunktzahlen geschrieben sind, so l&ouml;st <i class="sans">Maple</i> die Gleichung numerisch.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="627" height="97" border="0" src="img792.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+<p><i class="sans">Maple</i> kann Gleichungen l&ouml;sen, die Wurzelausdr&uuml;cke der Unbekannten enthalten. Hier ist jedoch zu beachten, da&szlig; <i class="sans">Maple</i> nur dann L&ouml;sungen anbietet, wenn die Gleichung (die ja quadriert werden mu&szlig;) keine Scheinl&ouml;sungen liefert.</p>
+<p></p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>F&uuml;r die Gleichung <span class="MATH"><img width="222" height="42" align="middle" border="0" src="img793.png" alt="" /></span> bietet <i class="sans">Maple</i> keine L&ouml;sung, da zweimal quadriert werden mu&szlig; und die resultierende quadratische Gleichung eine Scheinl&ouml;sung der Ausgangsgleichung liefert.</p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Die Gleichung <span class="MATH"><img width="133" height="39" align="middle" border="0" src="img794.png" alt="" /></span> l&ouml;st <i class="sans">Maple</i> dagegen ohne Probleme:</p>
+<p></p>
+<div align="center" class="mathdisplay"><img width="252" height="66" border="0" src="img795.png" alt="" /></div>
+<p><br clear="all" /></p>
+liefert<br />
+<div align="center" class="mathdisplay"><img width="307" height="97" border="0" src="img796.png" alt="" /></div>
+<p><br clear="all" /></p>
+</td>
+</tr>
+</table>
+</body>
+</html>

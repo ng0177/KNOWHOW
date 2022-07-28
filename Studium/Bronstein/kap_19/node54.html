@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Mehrschrittverfahren</title>
+<meta name="description" content="Mehrschrittverfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node55.html" />
+<link rel="previous" href="node53.html" />
+<link rel="up" href="node49.html" />
+<link rel="next" href="node55.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node53.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node55.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node48.html">Integration gew&#246;hnlicher Differentialgleichungen</a> <a id="up" href="node49.html">Anfangswertaufgaben</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001841300000000000000" id="SECTION001841300000000000000"></a><a name="v344" id="v344"></a><a name="2619"></a> <a name="2620"></a> <a name="2621"></a>
+Mehrschrittverfahren</h3>
+<p><a name="7330"></a> <a name="7331"></a> Das E<small>ULER</small>sche Polygonzugverfahren (<a href="node50.html#F1190405">19.97</a>) und das R<small>UNGE-</small>K<small>UTTA</small>-Verfahren (<a href="node52.html#F1190407">19.99</a>) stellen sogenannte <span class="begriff">Einschrittverfahren</span> dar, da sie bei der Berechnung von <span class="MATH"><i>y</i><sub><i>i</i>+1</sub></span> nur auf das Ergebnis <span class="MATH"><i>y</i><sub><i>i</i></sub></span> des vorangegangenen Schrittes zur&uuml;ckgreifen. Allgemeine <span class="begriff">lineare Mehrschrittverfahren</span> sind dagegen von der Form</p>
+<div class="myclass"><a name="F1190409" id="F1190409"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="434" height="33" align="middle" border="0" src="img302.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="384" height="37" align="middle" border="0" src="img303.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">101</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+mit geeignet gew&auml;hlten Konstanten <span class="MATH"><img width="24" height="33" align="middle" border="0" src="img304.png" alt="" /></span> und <span class="MATH"><img width="234" height="37" align="middle" border="0" src="img305.png" alt="" /></span>. Die Vorschrift (<a href="#F1190409">19.101</a>) wird als <span class="begriff"><span class="MATH"><i>k</i></span>-Schrittverfahren</span> bezeichnet, falls <span class="MATH"><img width="121" height="37" align="middle" border="0" src="img306.png" alt="" /></span> ist. Es hei&szlig;t <span class="begriff">explizit</span>, falls <span class="MATH"><img width="58" height="35" align="middle" border="0" src="img307.png" alt="" /></span> ist, weil dann in den Werten <span class="MATH"><i>f</i><sub><i>i</i>+<i>j</i></sub> = <i>f</i>(<i>x</i><sub><i>i</i>+<i>j</i></sub>,<i>y</i><sub><i>i</i>+<i>j</i></sub>)</span> der rechten Seite von (<a href="#F1190409">19.101</a>) nur die bereits bekannten N&auml;herungswerte <span class="MATH"><img width="170" height="33" align="middle" border="0" src="img308.png" alt="" /></span> auftreten. Ist <span class="MATH"><img width="61" height="35" align="middle" border="0" src="img309.png" alt="" /></span>, so hei&szlig;t das Verfahren <span class="begriff">implizit</span>, da dann der gesuchte neue Wert <span class="MATH"><i>y</i><sub><i>i</i>+<i>k</i></sub></span> auf beiden Seiten von (<a href="#F1190409">19.101</a>) auftritt. Bei der Anwendung eines <span class="MATH"><i>k</i></span>-Schrittverfahrens ist die Kenntnis von <span class="MATH"><i>k</i></span> Startwerten <span class="MATH"><img width="123" height="33" align="middle" border="0" src="img310.png" alt="" /></span> notwendig. Diese verschafft man sich z.B. mit Hilfe eines Einschrittverfahrens.<br />
+<p>Spezielle Mehrschrittverfahren zur L&ouml;sung der Anfangswertaufgabe (<a href="node49.html#F1190401">19.93</a>) kann man dadurch gewinnen, da&szlig; man in (<a href="node49.html#F1190401">19.93</a>) die Ableitung <span class="MATH"><i>y</i>'(<i>x</i><sub><i>i</i></sub>)</span> durch <a href="../kap_9/node26.html#v341">Differenzenformeln</a> ersetzt oder in (<a href="node50.html#F1190403">19.95</a>) das Integral durch <a href="node36.html#quadraturformel">Quadraturformeln</a> approximiert.<br />
+Beispiele f&uuml;r spezielle Mehrschrittverfahren sind:</p>
+<dl>
+<dt>1.&nbsp;Mittelpunktsregel:</dt>
+<dd>Die Ableitung <span class="MATH"><i>y</i>'(<i>x</i><sub><i>i</i>+1</sub>)</span> in (<a href="node49.html#F1190401">19.93</a>) wird durch die Sekantensteigung bez&uuml;glich der St&uuml;tzstellen <span class="MATH"><i>x</i><sub><i>i</i></sub></span> und <span class="MATH"><i>x</i><sub><i>i</i>+2</sub></span> ersetzt. Man erh&auml;lt:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="154" height="64" border="0" src="img311.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">102</span>)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>2.&nbsp;Verfahren von Milne:</dt>
+<dd>Das Integral in (<a href="node50.html#F1190403">19.95</a>) wird durch die <a href="node41.html#SimpsonF">S<small>IMPSON</small>-Formel</a> approximiert. Man erh&auml;lt:
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="265" height="86" border="0" src="img312.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">103</span>)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>3.&nbsp;Verfahren von Adams-Bashforth:</dt>
+<dd><a name="AdamsBeshforth" id="AdamsBeshforth"></a>Der Integrand in (<a href="node50.html#F1190403">19.95</a>) wird durch das<br />
+<a href="node79.html#LagrIntpolFormel">Interpolationspolynom vonL<small>AGRANGE</small></a> bez&uuml;glich der <span class="MATH"><i>k</i></span> St&uuml;tzstellen<br />
+<span class="MATH"><img width="181" height="33" align="middle" border="0" src="img313.png" alt="" /></span> ersetzt. Man integriert zwischen <span class="MATH"><i>x</i><sub><i>i</i>+<i>k</i>-1</sub></span> und <span class="MATH"><i>x</i><sub><i>i</i>+<i>k</i></sub></span> und erh&auml;lt:
+<div class="mathdisplay"><a name="F1190412" id="F1190412"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F1190412" id="F1190412"></a><img width="596" height="119" border="0" src="img314.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">104</span>)</td>
+</tr>
+</table>
+</div>
+<p>Das Verfahren (<a href="#F1190412">19.104</a>) ist explizit bez&uuml;glich <span class="MATH"><img width="40" height="33" align="middle" border="0" src="img315.png" alt="" /></span>. Zur Berechnung des Koeffizienten <span class="MATH"><img width="22" height="35" align="middle" border="0" src="img316.png" alt="" /></span> s. Lit. <a href="../kap_22/node19.html#x1901">19.1</a>.</p>
+</dd>
+</dl>
+</body>
+</html>

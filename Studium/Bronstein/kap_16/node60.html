@@ -1,0 +1,156 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Poisson-Proze&szlig;</title>
+<meta name="description" content="Poisson-Proze&szlig;" />
+<meta name="keywords" content="kap_16" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node61.html" />
+<link rel="previous" href="node59.html" />
+<link rel="up" href="node59.html" />
+<link rel="next" href="node61.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node59.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node61.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_16.html">Wahrscheinlichkeitsrechnung und Mathematische Statistik</a> <a href="node6.html">Wahrscheinlichkeitsrechnung</a> <a href="node52.html">Stochastische Prozesse und stochastische Ketten</a> <a id="up" href="node59.html">Poisson-Prozesse</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001526210000000000000" id="SECTION001526210000000000000">Poisson-Proze&szlig;</a></h4>
+<p><a name="5106"></a><a name="KPHPoissonProzess" id="KPHPoissonProzess"></a>Bei den stochastischen Ketten sind sowohl der Zustandsraum <span class="MATH"><i>Z</i></span> als auch der Parameterraum <span class="MATH"><i>T</i></span> diskret, d.h., der stochastische Proze&szlig; wurde nur zu den diskreten Zeitpunkten <span class="MATH"><img width="95" height="33" align="middle" border="0" src="img373.png" alt="" /></span> betrachtet. Beim <span class="begriff">P<small>OISSON</small>-Proze&szlig;</span> wird dagegen ein stetiger Parameterraum <span class="MATH"><i>T</i></span> vorausgesetzt.</p>
+<dl>
+<dt>1.&nbsp;Mathematische Formulierung</dt>
+<dd>Zur mathematischen Formulierung des P<small>OISSON</small>-Prozesses wird festgelegt:
+<ul>
+<li>
+<div><b>1.</b> Die Zufallsgr&ouml;&szlig;e <span class="MATH"><i>X</i><sub><i>t</i></sub></span> sei die Anzahl der Signale im Zeitintervall [0,t);</div>
+</li>
+<li>
+<div><b>2.</b> die Wahrscheinlichkeit <span class="MATH"><i>p</i><sub><i>X</i></sub>(<i>t</i>)=<i>P</i>(<i>X</i><sub><i>t</i></sub>=<i>x</i>)</span> sei die Wahrscheinlichkeit f&uuml;r <span class="MATH"><i>x</i></span> Signale im Zeitintervall <span class="MATH"><img width="45" height="37" align="middle" border="0" src="img374.png" alt="" /></span>.</div>
+</li>
+</ul>
+Dar&uuml;ber hinaus werden folgende Voraussetzungen gefordert, die vom radioaktiven Zerfall und von vielen anderen zuf&auml;llig ablaufenden Prozessen (zumindest ann&auml;hernd) erf&uuml;llt werden:
+<ul>
+<li>
+<div><b>3.</b> Die Wahrscheinlichkeit <span class="MATH"><i>P</i>(<i>X</i><sub><i>t</i></sub>=<i>x</i>)</span> f&uuml;r <span class="MATH"><i>x</i></span> Signale in einem Zeitintervall der L&auml;nge <span class="MATH"><i>t</i></span> h&auml;ngt nur von <span class="MATH"><i>x</i></span> und <span class="MATH"><i>t</i></span> ab, aber nicht von der Lage des Zeitintervalls auf der Zeitachse.</div>
+</li>
+<li>
+<div><b>4.</b> Die Anzahl der Signale in disjunkten Zeitintervallen sind unabh&auml;ngige Zufallsgr&ouml;&szlig;en.</div>
+</li>
+<li>
+<div><b>5.</b> Die Wahrscheinlichkeit f&uuml;r mindestens ein Signal in einem kleinen Zeitintervall der L&auml;nge <span class="MATH"><img width="27" height="16" align="bottom" border="0" src="img375.png" alt="" /></span> ist proportional zu dieser L&auml;nge. Der Proportionalit&auml;tsfaktor werde mit <span class="MATH"><img width="85" height="37" align="middle" border="0" src="img376.png" alt="" /></span> bezeichnet.</div>
+</li>
+</ul>
+</dd>
+<dt>2.&nbsp;Verteilungsfunktion</dt>
+<dd>Durch die voranstehenden Eigenschaften <b>3.</b> bis <b>5.</b> ist die Wahrscheinlichkeitsverteilung der Zufallsgr&ouml;&szlig;e <span class="MATH"><i>X</i><sub><i>t</i></sub></span> bestimmt. Man erh&auml;lt:
+<div class="mathdisplay"><a name="F51602122a" id="F51602122a"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F51602122a" id="F51602122a"></a><img width="187" height="87" border="0" src="img377.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">120</span>a)</td>
+</tr>
+</table>
+</div>
+<div class="mathdisplay"><a name="F51602122b" id="F51602122b"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F51602122b" id="F51602122b"></a><img width="456" height="66" border="0" src="img378.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">120</span>b)</td>
+</tr>
+</table>
+</div>
+</dd>
+<dt>3.&nbsp;Bemerkungen</dt>
+<dd>
+<ol>
+<li>
+<div>F&uuml;r <span class="MATH"><i>t</i>=1</span> ergibt sich aus (<a href="#F51602122a">16.121a</a>) als Spezialfall die <a href="node39.html#PoissVertlg">P<small>OISSON</small>-Verteilung</a>.<br /></div>
+</li>
+<li>
+<div>Zur Interpretation des Parameters <span class="MATH"><img width="16" height="18" align="bottom" border="0" src="img166.png" alt="" /></span> und eventuell zu seiner gen&auml;herten Bestimmung aus beobachteten Daten sind die folgenden Zusammenh&auml;nge n&uuml;tzlich:</div>
+</li>
+<li>
+<div><span class="MATH"><img width="16" height="18" align="bottom" border="0" src="img166.png" alt="" /></span> ist die mittlere Anzahl von Signalen pro Zeiteinheit,</div>
+</li>
+<li>
+<div><span class="MATH"><img width="19" height="59" align="middle" border="0" src="img379.png" alt="" /></span> ist der mittlere Abstand zweier Signale eines P<small>OISSON</small>-Prozesses.</div>
+</li>
+<li>
+<div>Der P<small>OISSON</small>-Proze&szlig; kann als zuf&auml;llige Bewegung (Irrfahrt) eines Teilchens auf dem Zustandsraum <span class="MATH"><img width="138" height="37" align="middle" border="0" src="img380.png" alt="" /></span> gedeutet werden. Das Teilchen startet im Zustand <span class="MATH"><img width="17" height="16" align="bottom" border="0" src="img130.png" alt="" /></span>, und bei jedem Signal springt es vom Zustand <span class="MATH"><i>i</i></span> in den n&auml;chsten Zustand <span class="MATH"><img width="47" height="34" align="middle" border="0" src="img381.png" alt="" /></span>. Dabei soll in einem kleinen Zeitintervall <span class="MATH"><img width="27" height="16" align="bottom" border="0" src="img382.png" alt="" /></span> f&uuml;r die &Uuml;bergangswahrscheinlichkeit <span class="MATH"><i>p</i><sub><i>i</i>,<i>i</i>+1</sub></span> vom Zustand <span class="MATH"><i>i</i></span> in den Zustand <span class="MATH"><i>i</i>+1</span> gelten:
+<div class="mathdisplay"><a name="F51602123" id="F51602123"></a>
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><a name="F51602123" id="F51602123"></a><img width="108" height="65" border="0" src="img383.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">16</span>.<span class="arabic">121</span>)</td>
+</tr>
+</table>
+</div>
+<p>Die Gr&ouml;&szlig;e <span class="MATH"><img width="16" height="18" align="bottom" border="0" src="img166.png" alt="" /></span> hei&szlig;t hier &Uuml;bergangsrate.</p>
+</div>
+</li>
+</ol>
+</dd>
+<dt>f&uuml;r Poisson-Prozesse</dt>
+<dd>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel A</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><a name="2220"></a> Der radioaktive Zerfall ist ein typisches Beispiel f&uuml;r den P<small>OISSON</small>-Proze&szlig;: Mit einem Z&auml;hlger&auml;t werden die Zerfallsakte (Signale) registriert und &uuml;ber einer Zeitachse abgetragen. Der Beobachtungszeitraum sei dabei vernachl&auml;ssigbar klein im Vergleich zur Halbwertszeit des radioaktiven Strahlers.</p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel B</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><a name="2223"></a> F&uuml;r die Anzahl der in einer Telefonzentrale bis zum Zeitpunkt <span class="MATH"><i>t</i></span> registrierten Telefongespr&auml;che l&auml;&szlig;t sich z.B. die Wahrscheinlichkeit daf&uuml;r berechnen, da&szlig; bis zur Zeit <span class="MATH"><i>t</i></span> h&ouml;chstens <span class="MATH"><i>x</i></span> Gespr&auml;che vermittelt werden, wenn pro Zeiteinheit durchschnittlich <span class="MATH"><img width="16" height="18" align="bottom" border="0" src="img166.png" alt="" /></span> Gespr&auml;che gef&uuml;hrt werden.</p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel C</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><a name="2226"></a> Bei Zuverl&auml;ssigkeitsuntersuchungen wird die wahrscheinliche Anzahl der Ausf&auml;lle eines reparierbaren Systems w&auml;hrend der Betriebsdauer berechnet.</p>
+</td>
+</tr>
+</table>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel D</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p><a name="2227"></a> In der Bedienungstheorie wird die Anzahl der bis zur Zeit <span class="MATH"><i>t</i></span> eintreffenden Kunden an einer Kaufhauskasse, einem Fahrkartenschalter oder einer Tankstelle betrachtet.</p>
+</td>
+</tr>
+</table>
+</dd>
+</dl>
+</body>
+</html>

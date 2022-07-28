@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Matrixsubstitutionen</title>
+<meta name="description" content="Matrixsubstitutionen" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node195.html" />
+<link rel="up" href="node192.html" />
+<link rel="next" href="node197.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node195.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node197.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node188.html">Kryptologie</a> <a id="up" href="node192.html">Sicherheit von Kryptosystemen</a> </span>
+</p>
+</div>
+<h3><a name="SECTION00454400000000000000" id="SECTION00454400000000000000"></a> <a name="5450"></a>
+Matrixsubstitutionen</h3>
+<p><a name="8920"></a> Sei <span class="MATH"><img width="184" height="37" align="middle" border="0" src="img1383.png" alt="" /></span> ein Alphabet und <span class="MATH"><img width="273" height="37" align="middle" border="0" src="img1401.png" alt="" /></span>, eine nichtsingul&auml;re Matrix vom Typ <span class="MATH">(<i>m</i>,<i>m</i>)</span> mit <span class="MATH"><img width="146" height="37" align="middle" border="0" src="img1402.png" alt="" /></span>. Die Abbildung, die jedem Klartextblock<br />
+<span class="MATH"><img width="158" height="33" align="middle" border="0" src="img1403.png" alt="" /></span> den Schl&uuml;sseltextblock mit der Indexfolge (die Rechnung wird modulo <span class="MATH"><i>n</i></span> ausgef&uuml;hrt)</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="143" height="153" border="0" src="img1404.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">297</span>)</td>
+</tr>
+</table>
+</div>
+<p>zuordnet, hei&szlig;t H<small>ILL</small>-Chiffre. Es handelt sich dabei um eine monoalphabetische Matrixsubstitution.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p></p>
+<div align="center" class="mathdisplay"><img width="137" height="116" border="0" src="img1405.png" alt="" /></div>
+<p><br clear="all" /></p>
+Die Buchstaben des Alphabetes seien <span class="MATH"><img width="236" height="35" align="middle" border="0" src="img1406.png" alt="" /></span>. W&auml;hlt man als Klartext das Wort ,,HERBST``, dann sind den Buchstabenfolgen HER, BST die Indexfolgen <span class="MATH">(7,4,17)</span> bzw. <span class="MATH">(1,18,19)</span> zugeordnet. Man erh&auml;lt <span class="MATH"><img width="254" height="40" align="middle" border="0" src="img1407.png" alt="" /></span> und <span class="MATH"><img width="266" height="40" align="middle" border="0" src="img1408.png" alt="" /></span>. Nach Reduktion modulo 26 ergeben sich die Indexfolgen <span class="MATH">(25,6,20)</span> und <span class="MATH">(7,6,6)</span> sowie die zugeh&ouml;rigen Buchstabenfolgen ZGU bzw. HGG. Der Schl&uuml;sseltext zum Klartext HERBST lautet also ZGUHGG.</td>
+</tr>
+</table>
+</body>
+</html>

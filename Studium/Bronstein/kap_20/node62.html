@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Zahlen verschiedener Basis</title>
+<meta name="description" content="Zahlen verschiedener Basis" />
+<meta name="keywords" content="kap_20" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="previous" href="node61.html" />
+<link rel="up" href="node60.html" />
+<link rel="next" href="node63.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node61.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node63.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_20.html">Computeralgebrasysteme</a> <a href="node53.html">Maple</a> <a href="node57.html">Zahlenarten in Maple</a> <a id="up" href="node60.html">Darstellung und Konvertierung von Zahlen</a> </span>
+</p>
+</div>
+<h4><a name="SECTION001932320000000000000" id="SECTION001932320000000000000"></a> <a name="1707"></a>
+Zahlen verschiedener Basis</h4>
+<p>Die Umwandlung von Zahlen im Zehnersystem in Zahlen einer anderen Basis erfolgt mit dem Befehl <span class="MATH"><img width="73" height="16" align="bottom" border="0" src="img450.png" alt="" /></span>. Dieser Befehl ist in seiner Grundform</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="214" height="66" border="0" src="img451.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">20</span>.<span class="arabic">37</span>)</td>
+</tr>
+</table>
+</div>
+<p>von besonderer Bedeutung, da er Ausdr&uuml;cke von einer Form in eine andere umwandelt, sofern dies sinnvoll ist. Das Argument <span class="MATH"><i>form</i></span> kann einer der in der folgenden Tabelle aufgez&auml;hlten Typen sein.</p>
+<p><!-- TabellenStart: T2012 -->
+<a name="t20MapleArgConv" id="t20MapleArgConv"></a></p>
+<div align="center">Tabelle Einige ausgew&auml;hlte Argumente der Funktion <span class="MATH"><img width="73" height="16" align="bottom" border="0" src="img450.png" alt="" /></span><br />
+<a name="argfu" id="argfu"></a>
+<table cellpadding="3" border="1">
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="49" height="35" align="middle" border="0" src="img314.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="44" height="17" align="bottom" border="0" src="img452.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="14" height="16" align="bottom" border="0" src="img453.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="33" align="middle" border="0" src="img454.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img455.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="64" height="33" align="middle" border="0" src="img456.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="73" height="16" align="bottom" border="0" src="img457.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="73" height="16" align="bottom" border="0" src="img458.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="73" height="33" align="middle" border="0" src="img459.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img460.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img461.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="73" height="33" align="middle" border="0" src="img462.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="33" align="middle" border="0" src="img463.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="34" height="33" align="middle" border="0" src="img464.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="33" align="middle" border="0" src="img465.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="93" height="33" align="middle" border="0" src="img466.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="93" height="16" align="bottom" border="0" src="img467.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img437.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img436.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img468.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="34" height="16" align="bottom" border="0" src="img469.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img470.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img471.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="93" height="33" align="middle" border="0" src="img472.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img473.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="93" height="33" align="middle" border="0" src="img474.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img475.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img476.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="24" height="16" align="bottom" border="0" src="img477.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img478.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img479.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img480.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img481.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="44" height="16" align="bottom" border="0" src="img426.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="16" align="bottom" border="0" src="img482.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="73" height="33" align="middle" border="0" src="img483.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="54" height="33" align="middle" border="0" src="img484.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="73" height="33" align="middle" border="0" src="img485.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="73" height="16" align="bottom" border="0" src="img486.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="73" height="16" align="bottom" border="0" src="img487.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="83" height="16" align="bottom" border="0" src="img439.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="73" height="33" align="middle" border="0" src="img488.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img489.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img490.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="34" height="16" align="bottom" border="0" src="img491.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img492.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="73" height="33" align="middle" border="0" src="img493.png" alt="" /></span></td>
+<td align="left"><span class="MATH"><img width="34" height="16" align="bottom" border="0" src="img494.png" alt="" /></span></td>
+</tr>
+<tr valign="baseline">
+<td align="left"><span class="MATH"><img width="64" height="16" align="bottom" border="0" src="img495.png" alt="" /></span></td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+<td align="left">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><!-- TabelleEnde: T2012 -->
+Die Tabelle zeigt, da&szlig; f&uuml;r die Umwandlung von Zahlen eine Vielzahl von Formfunktionen zur Verf&uuml;gung stehen.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Beispiele f&uuml;r Formfunktionen:<br />
+<span class="MATH"><img width="330" height="37" align="middle" border="0" src="img496.png" alt="" /></span> <span class="MATH"><img width="272" height="37" align="middle" border="0" src="img497.png" alt="" /></span><br />
+<span class="MATH"><img width="259" height="37" align="middle" border="0" src="img498.png" alt="" /></span> <span class="MATH"><img width="311" height="59" align="middle" border="0" src="img499.png" alt="" /></span><br />
+<span class="MATH"><img width="811" height="37" align="middle" border="0" src="img500.png" alt="" /></span><br />
+Im letzten der 6 Beispiele ist die Hexadezimalzahl in Linksakzenten einzuschlie&szlig;en.</p>
+</td>
+</tr>
+</table>
+<p>Mit dem Befehl <span class="MATH"><img width="252" height="37" align="middle" border="0" src="img501.png" alt="" /></span> erfolgt die Umwandlung einer Zahl zur Basis <span class="MATH"><i>bas</i>1</span>, die in Listenform einzugeben ist, in eine Zahl zur Basis <span class="MATH"><i>bas</i>2</span>, die in Listenform ausgegeben wird. Eingabe in Listenform hei&szlig;t, da&szlig; die Zahl in der Form <span class="MATH"><img width="379" height="39" align="middle" border="0" src="img502.png" alt="" /></span> zu schreiben ist und die Liste <span class="MATH"><img width="114" height="37" align="middle" border="0" src="img503.png" alt="" /></span> einzugeben ist.</p>
+<table class="bsp">
+<tr>
+<td class="bsp_titel">Beispiel</td>
+</tr>
+<tr>
+<td class="bsp_text">
+<p>Die Oktalzahl 153 soll in eine Hexadezimalzahl umgewandelt werden:</p>
+<div align="center" class="mathdisplay"><img width="350" height="66" border="0" src="img504.png" alt="" /></div>
+<p><br clear="all" /></p>
+Die Ausgabe erfolgt als Liste.</td>
+</tr>
+</table>
+</body>
+</html>

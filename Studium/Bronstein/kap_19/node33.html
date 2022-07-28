@@ -1,0 +1,85 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Newton-Verfahren</title>
+<meta name="description" content="Newton-Verfahren" />
+<meta name="keywords" content="kap_19" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node34.html" />
+<link rel="previous" href="node32.html" />
+<link rel="up" href="node31.html" />
+<link rel="next" href="node34.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node32.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node34.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_19.html">Numerische Mathematik</a> <a href="node16.html">Numerische L&#246;sung von Gleichungssystemen</a> <a id="up" href="node31.html">Nichtlineare Gleichungssysteme</a> </span>
+</p>
+</div>
+<h3><a name="SECTION001822200000000000000" id="SECTION001822200000000000000"></a><a name="newton-ver" id="newton-ver"></a>
+Newton-Verfahren</h3>
+<p><a name="7258"></a> <a name="7259"></a> <a name="7260"></a> <a name="7261"></a> <a name="1816"></a> <a name="1817"></a> Das N<small>EWTON</small>-Verfahren geht von der Nullstellenaufgabe (<a href="node31.html#F1190233">19.55</a>) aus. Nach Vorgabe von gesch&auml;tzten N&auml;herungswerten <span class="MATH"><img width="166" height="47" align="middle" border="0" src="img190.png" alt="" /></span> werden die Funktionen <span class="MATH"><i>F</i><sub><i>i</i></sub></span> als Funktionen von <span class="MATH"><i>n</i></span> unabh&auml;ngigen Variablen <span class="MATH"><img width="131" height="33" align="middle" border="0" src="img200.png" alt="" /></span> nach <a href="../kap_7/node40.html#v154">T<small>AYLOR</small></a> entwickelt. Durch Abbruch dieser Entwicklungen nach den linearen Gliedern erh&auml;lt man aus (<a href="node31.html#F1190233">19.55</a>) ein lineares Gleichungssystem, mit dessen Hilfe man iterativ Verbesserungen nach folgender Vorschrift ermitteln kann:</p>
+<div class="myclass"><a name="F1190239" id="F1190239"></a>
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="189" height="53" align="middle" border="0" src="img201.png" alt="" /></td>
+<td align="center" nowrap="nowrap">+</td>
+<td align="left" nowrap="nowrap"><img width="358" height="71" align="middle" border="0" src="img202.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">61</span>)</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td>&nbsp;</td>
+<td align="left" nowrap="nowrap"><img width="262" height="37" align="middle" border="0" src="img194.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+Die Koeffizientenmatrix des linearen Gleichungssystems (<a href="#F1190239">19.61</a>), das in jedem Iterationsschritt zu l&ouml;sen ist, lautet
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="481" height="92" border="0" src="img203.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">62</span>)</td>
+</tr>
+</table>
+</div>
+<p>und wird als <span class="begriff">J<small>ACOBI</small>-Matrix</span> bezeichnet. Das N<small>EWTON</small>-Verfahren ist lokal <a href="node4.html#quadrKonv">quadratisch konvergent</a>, d.h., seine schnelle Konvergenz ist wesentlich von der G&uuml;te der Startn&auml;herungen abh&auml;ngig. Setzt man in (<a href="#F1190239">19.61</a>) <span class="MATH"><img width="165" height="47" align="middle" border="0" src="img204.png" alt="" /></span>, dann kann das N<small>EWTON</small>-Verfahren in der <a href="node30.html#KorrForm">Korrekturform</a></p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="422" height="71" border="0" src="img205.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">63</span>)</td>
+</tr>
+</table>
+</div>
+<p>geschrieben werden. Zur Herabsetzung der Startwertempfindlichkeit kann man dann analog zum Relaxationsverfahren einen sogenannten <span class="begriff">D&auml;mpfungs-</span> oder <span class="begriff">Schrittweitenparameter</span> <span class="MATH"><img width="15" height="33" align="middle" border="0" src="img206.png" alt="" /></span> einf&uuml;hren:</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="502" height="71" border="0" src="img207.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">19</span>.<span class="arabic">64</span>)</td>
+</tr>
+</table>
+</div>
+<p>Angaben zur Bestimmung von <span class="MATH"><img width="15" height="33" align="middle" border="0" src="img206.png" alt="" /></span> findet man in Lit.&nbsp;<a href="../kap_22/node19.html#x1925">19.26</a>.</p>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!--Converted with LaTeX2HTML 2002-2-1 (1.70)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator" content="HTML Tidy for Linux/x86 (vers 1st September 2004), see www.w3.org" />
+<title>Interpolationsmechanismen</title>
+<meta name="description" content="Interpolationsmechanismen" />
+<meta name="keywords" content="kap_5" />
+<meta name="resource-type" content="document" />
+<meta name="distribution" content="global" />
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<link id="cssstyle" rel="stylesheet" href="../sonder/bron.css" type="text/css" />
+<link rel="next" href="node315.html" />
+<link rel="previous" href="node313.html" />
+<link rel="up" href="node313.html" />
+<link rel="next" href="node315.html" />
+<script src="../sonder/bron.js" type="text/javascript"></script>
+</head>
+<body>
+<div class="navigation">
+<p id="nav1">
+<span id="nav1r"><a href="../sonder/inhalt.html">Inhalt</a> <a id="index" href="../index_os/main.html">Index</a></span>
+<span id="nav1l"><a id="dtb" href="../sonder/dt_bron.html">DeskTop Bronstein</a></span>
+</p>
+<p id="nav2">
+<span id="nav2r"><a id="prev" href="node313.html"><img src="../icons/prev.png" alt="Zurück" /></a><a id="next" href="node315.html"><img src="../icons/next.png" alt="Zurück" /></a></span>
+<span id="nav2l"><a class="kap" href="kap_5.html">Algebra und Diskrete Mathematik</a> <a href="node269.html">Fuzzy-Logik</a> <a href="node305.html">Wissensbasierte Fuzzy-Systeme</a> <a id="up" href="node313.html">Wissensbasiertes Interpolationssystem</a> </span>
+</p>
+</div>
+<h4><a name="SECTION00496410000000000000" id="SECTION00496410000000000000"></a> <a name="8441"></a> <a name="8442"></a>
+Interpolationsmechanismen</h4>
+<p>Mit Hilfe der Fuzzy-Logik lassen sich Interpolationsmechanismen aufbauen. Fuzzy-Systeme sind Systeme zur Verarbeitung unscharfer Informationen, mit ihnen lassen sich Funktionen approximieren und interpolieren. Ein einfaches Fuzzy-System, an dem diese Eigenschaften untersucht wurden, ist der S<small>UGENO</small>-Controller. Er besitzt <span class="MATH"><i>n</i></span> Eingangsvariable <span class="MATH"><img width="79" height="35" align="middle" border="0" src="img1996.png" alt="" /></span> und bestimmt den Wert der Ausgangsvariablen <span class="MATH"><i>y</i></span> durch Regeln <span class="MATH"><img width="91" height="35" align="middle" border="0" src="img1997.png" alt="" /></span> der Form</p>
+<div class="myclass">
+<table class="meqnarr" width="95%" cellpadding="0" align="center">
+<tr valign="baseline">
+<td nowrap="nowrap" align="right"><img width="36" height="35" align="middle" border="0" src="img1998.png" alt="" /></td>
+<td align="center" nowrap="nowrap"><img width="65" height="35" align="middle" border="0" src="img1964.png" alt="" /></td>
+<td align="left" nowrap="nowrap"><img width="279" height="47" align="middle" border="0" src="img1999.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">&nbsp;</td>
+</tr>
+<tr valign="baseline">
+<td nowrap="nowrap" align="right">&nbsp;</td>
+<td align="center" nowrap="nowrap"><img width="60" height="35" align="middle" border="0" src="img1966.png" alt="" /></td>
+<td align="left" nowrap="nowrap"><img width="309" height="37" align="middle" border="0" src="img2000.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">421</span>)</td>
+</tr>
+</table>
+</div>
+<p><br clear="all" /></p>
+<p>Die Fuzzy-Sets <span class="MATH"><img width="111" height="47" align="middle" border="0" src="img2001.png" alt="" /></span> partitionieren dabei jeweils die Eingabenmenge <span class="MATH"><img width="36" height="35" align="middle" border="0" src="img2002.png" alt="" /></span> Die Konklusionen <span class="MATH"><img width="109" height="37" align="middle" border="0" src="img2003.png" alt="" /></span> der Regeln sind Singletons, die von den Eingabevariablen <span class="MATH"><img width="79" height="35" align="middle" border="0" src="img1996.png" alt="" /></span> abh&auml;ngen k&ouml;nnen.<br />
+Durch die einfache Wahl der Konklusionen kann auf eine aufwendige Defuzzifizierung verzichtet werden und der Ausgangswert <span class="MATH"><i>y</i></span> als gewichtete Summe berechnet werden. Dazu berechnet der Controller f&uuml;r jede Regel <span class="MATH"><img width="24" height="35" align="middle" border="0" src="img2004.png" alt="" /></span> mit einer <span class="MATH"><i>t</i></span>-Norm aus den Zugeh&ouml;rigkeitsgraden der einzelnen Eingaben einen Erf&uuml;llungsgrad <span class="MATH"><img width="22" height="33" align="middle" border="0" src="img1764.png" alt="" /></span> und bestimmt den Ausgangswert zu</p>
+<div class="mathdisplay">
+<table width="95%" class="meqn">
+<tr valign="middle">
+<td width="80%" class="meqnf" nowrap="nowrap"><img width="213" height="99" border="0" src="img2005.png" alt="" /></td>
+<td class="eqno" width="20%" align="right">(<span class="arabic">5</span>.<span class="arabic">422</span>)</td>
+</tr>
+</table>
+</div>
+</body>
+</html>
