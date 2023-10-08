@@ -1,0 +1,27 @@
+use PDL::AutoLoader;
+use PDL::IO::Pic;
+use PDL::Graphics::Simple;
+use PDL::FFT; # gist
+use PDL::ImageND; # gist
+
+# infrared false color image
+$catreal = rim 'cat.jpg'; imag $catreal;
+$catimag = $catreal * 0;
+
+# transform
+fftnd $catreal, $catimag; # inplace
+
+# low pass filter
+$tmp = rvals($catreal)<10;
+$filter = kernctr $tmp, $tmp;
+imag $filter;
+
+# convolution
+($catreal2, $catimag2) = cmul $catreal, $catimag, $filter, 0;
+pdl> ($catreal2, $catimag2) = cmul $catreal, $catimag, $filter, 0;
+Can't locate object method "cmul" via package "PDL"
+
+# transform back
+ifftnd $catreal2, $catimag2;
+imag $catreal2;
+

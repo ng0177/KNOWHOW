@@ -1,0 +1,17 @@
+use PDL::AutoLoader
+use PDL::Graphics::Simple
+
+$a = rfits "m51_raw.fits";
+wfits $a, 'm51_raw.fits'
+
+imag $a,0,1000;
+print sum($a);
+
+$r = rvals $gal;
+imag $r;
+$mask = $r<50;
+imag $mask;
+
+$section = $gal(337:357,178:198);
+imag $section; # the bright star
+

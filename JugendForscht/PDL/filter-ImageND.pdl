@@ -1,0 +1,31 @@
+use PDL::AutoLoader;
+use PDL::IO::Pic;
+use PDL::Graphics::Simple;
+use PDL::FFT;
+
+# infrared false color image
+$catreal = rim 'cat.jpg'; imag $catreal;
+$catimag = $catreal * 0;
+
+# allocate inplace FFT arrays
+$catmagn = $catreal;
+$catphas = $catimag;
+
+# inplace FFT
+fftnd $catmagn, $catphas; # inplace
+
+# low pass filter: still use FFT vs PDL::ImageND
+$tmp = rvals($catreal)<10;
+use PDL::ImageND;
+$filter = kernctr $tmp, $tmp;
+imag $filter;
+
+($gal2, $imag2) = cmul $catmagn, $imag, $filter, 0;
+
+# back allocate inplace FFT arrays
+$catreal = $catmagn;
+$catimag = $catphas;
+ifftnd $catreal, $catimag;
+
+imag $catreal;
+

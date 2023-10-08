@@ -17,7 +17,9 @@ plt.show()
 
 # opencv: second
 rows, cols = img.shape
-crow,ccol = rows/2 , cols/2
+crow, ccol = int(rows/2), int(cols/2)
+print(crow, ccol)
+
 # create a mask first, center square is 1, remaining all zeros
 mask = np.zeros((rows,cols,2),np.uint8)
 mask[crow-30:crow+30, ccol-30:ccol+30] = 1
@@ -30,3 +32,4 @@ plt.subplot(121),plt.imshow(img, cmap = 'gray')
 plt.title('Input Image'), plt.xticks([]), plt.yticks([])
 plt.subplot(122),plt.imshow(img_back, cmap = 'gray')
 plt.title('Magnitude Spectrum'), plt.xticks([]), plt.yticks([])
+plt.show()
