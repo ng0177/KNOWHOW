@@ -1,0 +1,19 @@
+use PDL::AutoLoader;
+use PDL::IO::Pic;
+use PDL::Graphics::Simple;
+use PDL::FFT; # gist
+
+# infrared false color image
+$image = rim 'cat.jpg'; imag $image;
+
+# low pass filter
+$tmp = rvals($image)<10;
+$kernel = kernctr($image,$tmp);
+imag $kernel;
+
+# convolution
+fftconvolve($image,$kernel);
+pdl> fftconvolve($image,$kernel); 
+Unrecognized character \xC2; marked by <-- HERE after ,$kernel);<-- HERE near column 37
+imag $image;
+
