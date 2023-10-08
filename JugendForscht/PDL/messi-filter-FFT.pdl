@@ -4,7 +4,7 @@ use PDL::Graphics::Simple;
 use PDL::FFT; # gist
 
 # infrared false color image
-$image = rim 'cat.jpg'; imag $image;
+$image = rim 'messi5.jpg'; imag $image;
 
 # low pass filter
 $tmp = rvals($image)<10;
