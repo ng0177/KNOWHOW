@@ -1,0 +1,16 @@
+Hoi Thomas,
+
+nicht schummeln - wer Maxima, Wolfram alfa or friends benutzt, wird in die Ecke gestellt!
+
+Schreiben wir das gesuchte Integral einfach abgekürzt int(2,2) (f(x) + 0.5)*g(x) dx) = int(2,2) (f(x)*g(x) dx) + 0.5*int(2,2) (g(x)).
+
+Nun ist f(x) als Produkt einer geraden und ungeraden Funktion eine ungerade Funktion. g() ist eine gerade Funktion, und somit ist f(x)*g(x) wiederum eine ungerade Funktion, also punktsymmetrisch zum Ursprung. Damit ist das erste Integral von -2 bis +2 gerade 0.
+
+Das Integral von g(x) ist einfach, denn g(x) beschreibt einen Kreis mit Radius 2 um den Ursprung. Das Integral von -2 bis +2 ist dann die halbe Fläche, also 4*Pi/2=2*Pi. Im gesuchchten Ausdruck taucht noch ein Faktor 0.5 auf, also ist das gesuchte WiFi-Integral gerade Pi.
+
+Ich glaube, kürzer geht's nicht ;-)
+
+Ich bin gerade von einem verlängerten Wochenende bei meiner Mutter zurückgekommen. Alles in Ordnung, unter den gegebenen Umständen.
+
+Schöne Woche
+Andreas
