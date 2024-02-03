@@ -1,0 +1,169 @@
+\documentclass[fleqn]{article}
+
+%% Created with wxMaxima 23.12.0
+
+\setlength{\parskip}{\medskipamount}
+\setlength{\parindent}{0pt}
+\usepackage{iftex}
+\ifPDFTeX
+  % PDFLaTeX or LaTeX 
+  \usepackage[utf8]{inputenc}
+  \usepackage[T1]{fontenc}
+  \DeclareUnicodeCharacter{00B5}{\ensuremath{\mu}}
+\else
+  %  XeLaTeX or LuaLaTeX
+  \usepackage{fontspec}
+\fi
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage{grffile}
+\usepackage{ifthen}
+\newsavebox{\picturebox}
+\newlength{\pictureboxwidth}
+\newlength{\pictureboxheight}
+\newcommand{\includeimage}[1]{
+    \savebox{\picturebox}{\includegraphics{#1}}
+    \settoheight{\pictureboxheight}{\usebox{\picturebox}}
+    \settowidth{\pictureboxwidth}{\usebox{\picturebox}}
+    \ifthenelse{\lengthtest{\pictureboxwidth > .95\linewidth}}
+    {
+        \includegraphics[width=.95\linewidth,height=.80\textheight,keepaspectratio]{#1}
+    }
+    {
+        \ifthenelse{\lengthtest{\pictureboxheight>.80\textheight}}
+        {
+            \includegraphics[width=.95\linewidth,height=.80\textheight,keepaspectratio]{#1}
+            
+        }
+        {
+            \includegraphics{#1}
+        }
+    }
+}
+\newlength{\thislabelwidth}
+\DeclareMathOperator{\abs}{abs}
+
+\definecolor{labelcolor}{RGB}{100,0,0}
+
+\begin{document}
+
+
+\noindent
+%%%%%%%%
+%% INPUT:
+\begin{minipage}[t]{4.000000em}\color{red}\bfseries
+ --\ensuremath{\ensuremath{>}}	
+\end{minipage}
+\begin{minipage}[t]{\textwidth}\color{blue}
+kill(all)\$
+\end{minipage}
+
+\noindent%
+
+
+
+\noindent
+%%%%%%%%
+%% INPUT:
+\begin{minipage}[t]{4.000000em}\color{red}\bfseries
+ --\ensuremath{\ensuremath{>}}	
+\end{minipage}
+\begin{minipage}[t]{\textwidth}\color{blue}
+/*\ see\ README\_moss\ */\\
+/*\ determine\ resistance\ R\ */
+\end{minipage}
+
+\noindent%
+
+
+
+\noindent
+%%%%%%%%
+%% INPUT:
+\begin{minipage}[t]{4.000000em}\color{red}\bfseries
+ --\ensuremath{\ensuremath{>}}	
+\end{minipage}
+\begin{minipage}[t]{\textwidth}\color{blue}
+Uo:1\$\ /*\ applied\ voltage\ */\\
+/*\ R:2\$\ \ /*\ resistance\ */\ */\\
+C:0.2\$\ \ /*\ capacity\ by\ experiment\ */\\
+tau:\ 1\$
+\end{minipage}
+
+\noindent%
+
+
+
+\noindent
+%%%%%%%%
+%% INPUT:
+\begin{minipage}[t]{4.000000em}\color{red}\bfseries
+ --\ensuremath{\ensuremath{>}}	
+\end{minipage}
+\begin{minipage}[t]{\textwidth}\color{blue}
+chargeUc(t):=Uo*(1-exp(-t/R/C))\$
+\end{minipage}
+
+\noindent%
+
+
+
+\noindent
+%%%%%%%%
+%% INPUT:
+\begin{minipage}[t]{4.000000em}\color{red}\bfseries
+ --\ensuremath{\ensuremath{>}}	
+\end{minipage}
+\begin{minipage}[t]{\textwidth}\color{blue}
+eqnC:\ 0.98\ =\ chargeUc(5);
+\end{minipage}
+%%%% OUTPUT:
+\[\displaystyle \tag{eqnC} 
+0.98\mathop{=}1\mathop{-}{{\% e}^{-\left( \frac{25.0}{R}\right) }}\mbox{}
+\]
+%%%%%%%%%%%%%%%%
+
+
+\noindent
+%%%%%%%%
+%% INPUT:
+\begin{minipage}[t]{4.000000em}\color{red}\bfseries
+ --\ensuremath{\ensuremath{>}}	
+\end{minipage}
+\begin{minipage}[t]{\textwidth}\color{blue}
+solL:\ last(solve(eqnC,R));
+\end{minipage}
+%%%% OUTPUT:
+\[\displaystyle rat: replaced -0.020000000000000018 by -1/50 = -0.02
+rat: replaced -25.0 by -25/1 = -25.0
+\mbox{}\]
+
+\[\tag{solL} 
+R\mathop{=}\frac{25}{\log{(50)}}\mbox{}
+\]
+%%%%%%%%%%%%%%%%
+
+
+\noindent
+%%%%%%%%
+%% INPUT:
+\begin{minipage}[t]{4.000000em}\color{red}\bfseries
+ --\ensuremath{\ensuremath{>}}	
+\end{minipage}
+\begin{minipage}[t]{\textwidth}\color{blue}
+disUc(t):=Uo*exp(-t/R/C)\$\\
+eqnD:\ 0.98\ =\ disUc(5);\\
+solD:\ last(solve(eqnD,R));
+\end{minipage}
+%%%% OUTPUT:
+\[\displaystyle \tag{eqnD} 
+0.98\mathop{=}{{\% e}^{-\left( \frac{25.0}{R}\right) }}rat: replaced 0.98 by 49/50 = 0.98
+rat: replaced -25.0 by -25/1 = -25.0
+\mbox{}\]
+
+\[\tag{solD} 
+R\mathop{=}\frac{1}{\]\[\log{\left( \frac{{{50}^{\frac{1}{25}}}}{{{49}^{\frac{1}{25}}}}\right) }}\mbox{}
+\]
+%%%%%%%%%%%%%%%%
+\end{document}
